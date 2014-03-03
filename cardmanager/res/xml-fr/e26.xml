@@ -1,0 +1,188 @@
+<extension nb="92" reverse="true">
+  <carte cid="1" pkmnid="142">
+  </carte>
+  <carte cid="2" pkmnid="306">
+  </carte>
+  <carte cid="3" pkmnid="346">
+  </carte>
+  <carte cid="4" pkmnid="301">
+  </carte>
+  <carte cid="5" pkmnid="94">
+  </carte>
+  <carte cid="6" pkmnid="76">
+  </carte>
+  <carte cid="7" pkmnid="141">
+  </carte>
+  <carte cid="8" nom="Locklass">
+  </carte>
+  <carte cid="9" pkmnid="68">
+  </carte>
+  <carte cid="10" pkmnid="151">
+  </carte>
+  <carte cid="11" pkmnid="89">
+  </carte>
+  <carte cid="12" pkmnid="275">
+  </carte>
+  <carte cid="13" pkmnid="71">
+  </carte>
+  <carte cid="14" pkmnid="321">
+  </carte>
+  <carte cid="15" pkmnid="359">
+  </carte>
+  <carte cid="16" pkmnid="203">
+  </carte>
+  <carte cid="17" pkmnid="368">
+  </carte>
+  <carte cid="18" pkmnid="367">
+  </carte>
+  <carte cid="19" pkmnid="171">
+  </carte>
+  <carte cid="20" pkmnid="337">
+  </carte>
+  <carte cid="21" pkmnid="126">
+  </carte>
+  <carte cid="22" pkmnid="82">
+  </carte>
+  <carte cid="23" pkmnid="139">
+  </carte>
+  <carte cid="24" pkmnid="127">
+  </carte>
+  <carte cid="25" pkmnid="338">
+  </carte>
+  <carte cid="26" pkmnid="327">
+  </carte>
+  <carte cid="27" pkmnid="324">
+  </carte>
+  <carte cid="28" pkmnid="202">
+  </carte>
+  <carte cid="29" pkmnid="347">
+  </carte>
+  <carte cid="30" pkmnid="268">
+  </carte>
+  <carte cid="31" pkmnid="206">
+  </carte>
+  <carte cid="32" pkmnid="101">
+  </carte>
+  <carte cid="33" pkmnid="162">
+  </carte>
+  <carte cid="34" pkmnid="75">
+  </carte>
+  <carte cid="35" pkmnid="93">
+  </carte>
+  <carte cid="36" pkmnid="140">
+  </carte>
+  <carte cid="37" pkmnid="352">
+  </carte>
+  <carte cid="38" pkmnid="305">
+  </carte>
+  <carte cid="39" pkmnid="67">
+  </carte>
+  <carte cid="40" pkmnid="200">
+  </carte>
+  <carte cid="41" pkmnid="274">
+  </carte>
+  <carte cid="42" pkmnid="315">
+  </carte>
+  <carte cid="43" pkmnid="364">
+  </carte>
+  <carte cid="44" pkmnid="114">
+  </carte>
+  <carte cid="45" pkmnid="73">
+  </carte>
+  <carte cid="46" pkmnid="329">
+  </carte>
+  <carte cid="47" pkmnid="70">
+  </carte>
+  <carte cid="48" pkmnid="304">
+  </carte>
+  <carte cid="49" pkmnid="69">
+  </carte>
+  <carte cid="50" pkmnid="170">
+  </carte>
+  <carte cid="51" pkmnid="366">
+  </carte>
+  <carte cid="52" pkmnid="92">
+  </carte>
+  <carte cid="53" pkmnid="74">
+  </carte>
+  <carte cid="54" pkmnid="88">
+  </carte>
+  <carte cid="55" pkmnid="58">
+  </carte>
+  <carte cid="56" pkmnid="345">
+  </carte>
+  <carte cid="57" pkmnid="66">
+  </carte>
+  <carte cid="58" pkmnid="240">
+  </carte>
+  <carte cid="59" pkmnid="81">
+  </carte>
+  <carte cid="60" pkmnid="138">
+  </carte>
+  <carte cid="61" nom="Granipiot">
+  </carte>
+  <carte cid="62" pkmnid="161">
+  </carte>
+  <carte cid="63" pkmnid="353">
+  </carte>
+  <carte cid="64" pkmnid="300">
+  </carte>
+  <carte cid="65" pkmnid="363">
+  </carte>
+  <carte cid="66" pkmnid="72">
+  </carte>
+  <carte cid="67" pkmnid="328">
+  </carte>
+  <carte cid="68" pkmnid="100">
+  </carte>
+  <carte cid="69" pkmnid="320">
+  </carte>
+  <carte cid="70" pkmnid="265">
+  </carte>
+  <carte cid="71" nom="Okeoke">
+  </carte>
+  <carte cid="72" nom="Pierre Malefique">
+  </carte>
+  <carte cid="73" nom="Travailleur de Terrain">
+  </carte>
+  <carte cid="74" nom="Flamme maximale">
+  </carte>
+  <carte cid="75" nom="Souche géante">
+  </carte>
+  <carte cid="76" nom="Arbre de puissance">
+  </carte>
+  <carte cid="77" nom="Cave etrange">
+  </carte>
+  <carte cid="78" nom="Fossile griffe PV 40">
+  </carte>
+  <carte cid="79" nom="Mystérieux fossile PV 50">
+  </carte>
+  <carte cid="80" nom="Fossile racine PV 40">
+  </carte>
+  <carte cid="81" nom="Energie multicolore">
+  </carte>
+  <carte cid="82" nom="Energie réaction">
+  </carte>
+  <carte cid="83" nom="Arcanin ex">
+  </carte>
+  <carte cid="84" nom="Armaldo ex">
+  </carte>
+  <carte cid="85" nom="Branette ex">
+  </carte>
+  <carte cid="86" nom="Papinox ex">
+  </carte>
+  <carte cid="87" nom="Libegon ex">
+  </carte>
+  <carte cid="88" nom="Mew ex">
+  </carte>
+  <carte cid="89" nom="Kaimorse ex">
+  </carte>
+  <carte cid="90" nom="Regice Shiney">
+  </carte>
+  <carte cid="91" nom="Regirock Shiney">
+  </carte>
+  <carte cid="92" nom="Registeel Shiney">
+  </carte>
+  <carte cid="93" nom="Pikachu [Espèces Delta]">
+  </carte>
+</extension>

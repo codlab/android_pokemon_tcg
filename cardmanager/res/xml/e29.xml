@@ -1,0 +1,202 @@
+<extension nb="100" reverse="true">
+  <carte cid="1" pkmnid="354">
+  </carte>
+  <carte cid="2" pkmnid="9">
+  </carte>
+  <carte cid="3" pkmnid="323">
+  </carte>
+  <carte cid="4" pkmnid="6">
+  </carte>
+  <carte cid="5" pkmnid="51">
+  </carte>
+  <carte cid="6" pkmnid="272">
+  </carte>
+  <carte cid="7" nom="Lovdisc">
+  </carte>
+  <carte cid="8" pkmnid="310">
+  </carte>
+  <carte cid="9" pkmnid="303">
+  </carte>
+  <carte cid="10" pkmnid="302">
+  </carte>
+  <carte cid="11" pkmnid="317">
+  </carte>
+  <carte cid="12" pkmnid="128">
+  </carte>
+  <carte cid="13" pkmnid="40">
+  </carte>
+  <carte cid="14" pkmnid="9">
+  </carte>
+  <carte cid="15" pkmnid="332">
+  </carte>
+  <carte cid="16" pkmnid="256">
+  </carte>
+  <carte cid="17" pkmnid="356">
+  </carte>
+  <carte cid="18" pkmnid="22">
+  </carte>
+  <carte cid="19" pkmnid="253">
+  </carte>
+  <carte cid="20" pkmnid="326">
+  </carte>
+  <carte cid="21" pkmnid="174">
+  </carte>
+  <carte cid="22" pkmnid="99">
+  </carte>
+  <carte cid="23" pkmnid="294">
+  </carte>
+  <carte cid="24" pkmnid="259">
+  </carte>
+  <carte cid="25" pkmnid="308">
+  </carte>
+  <carte cid="26" pkmnid="279">
+  </carte>
+  <carte cid="27" pkmnid="260">
+  </carte>
+  <carte cid="28" pkmnid="3">
+  </carte>
+  <carte cid="29" pkmnid="5">
+  </carte>
+  <carte cid="30" pkmnid="5">
+  </carte>
+  <carte cid="31" pkmnid="256">
+  </carte>
+  <carte cid="32" nom="Missko">
+  </carte>
+  <carte cid="33" pkmnid="316">
+  </carte>
+  <carte cid="34" pkmnid="2">
+  </carte>
+  <carte cid="35" pkmnid="2">
+  </carte>
+  <carte cid="36" pkmnid="305">
+  </carte>
+  <carte cid="37" pkmnid="271">
+  </carte>
+  <carte cid="38" pkmnid="259">
+  </carte>
+  <carte cid="39" pkmnid="274">
+  </carte>
+  <carte cid="40" nom="Polychombr">
+  </carte>
+  <carte cid="41" pkmnid="300">
+  </carte>
+  <carte cid="42" pkmnid="8">
+  </carte>
+  <carte cid="43" pkmnid="8">
+  </carte>
+  <carte cid="44" pkmnid="304">
+  </carte>
+  <carte cid="45" pkmnid="1">
+  </carte>
+  <carte cid="46" pkmnid="1">
+  </carte>
+  <carte cid="47" pkmnid="331">
+  </carte>
+  <carte cid="48" pkmnid="4">
+  </carte>
+  <carte cid="49" pkmnid="4">
+  </carte>
+  <carte cid="50" pkmnid="50">
+  </carte>
+  <carte cid="51" pkmnid="355">
+  </carte>
+  <carte cid="52" pkmnid="309">
+  </carte>
+  <carte cid="53" pkmnid="39">
+  </carte>
+  <carte cid="54" pkmnid="98">
+  </carte>
+  <carte cid="55" pkmnid="270">
+  </carte>
+  <carte cid="56" pkmnid="307">
+  </carte>
+  <carte cid="57" pkmnid="258">
+  </carte>
+  <carte cid="58" pkmnid="258">
+  </carte>
+  <carte cid="59" pkmnid="322">
+  </carte>
+  <carte cid="60" pkmnid="273">
+  </carte>
+  <carte cid="61" pkmnid="21">
+  </carte>
+  <carte cid="62" pkmnid="325">
+  </carte>
+  <carte cid="63" pkmnid="7">
+  </carte>
+  <carte cid="64" pkmnid="7">
+  </carte>
+  <carte cid="65" pkmnid="255">
+  </carte>
+  <carte cid="66" pkmnid="255">
+  </carte>
+  <carte cid="67" pkmnid="252">
+  </carte>
+  <carte cid="68" pkmnid="252">
+  </carte>
+  <carte cid="69" pkmnid="293">
+  </carte>
+  <carte cid="70" pkmnid="278">
+  </carte>
+  <carte cid="71" nom="Entretien de Leo">
+  </carte>
+  <carte cid="72" nom="Naufragé">
+  </carte>
+  <carte cid="73" nom="Le réseau de Ciléo">
+  </carte>
+  <carte cid="74" nom="Arrêt de cristal">
+  </carte>
+  <carte cid="75" nom="Plage de cristal">
+  </carte>
+  <carte cid="76" nom="Echarde de cristal">
+  </carte>
+  <carte cid="77" nom="Double Guérison Totale">
+  </carte>
+  <carte cid="78" nom="Double boule">
+  </carte>
+  <carte cid="79" nom="Cercle Holon">
+  </carte>
+  <carte cid="80" nom="Baie de mémoire">
+  </carte>
+  <carte cid="81" nom="Echarde mystérieuse">
+  </carte>
+  <carte cid="82" nom="Poké balle">
+  </carte>
+  <carte cid="83" nom="PokéNav">
+  </carte>
+  <carte cid="84" nom="Point d'échange">
+  </carte>
+  <carte cid="85" nom="Tempête">
+  </carte>
+  <carte cid="86" nom="Recherche d'énergie">
+  </carte>
+  <carte cid="87" nom="Potion">
+  </carte>
+  <carte cid="88" nom="Double Energie Multicolore">
+  </carte>
+  <carte cid="89" nom="Galeking ex">
+  </carte>
+  <carte cid="90" nom="Brasegali ex">
+  </carte>
+  <carte cid="91" nom="Delcatty ex">
+  </carte>
+  <carte cid="92" nom="Brouhabam ex">
+  </carte>
+  <carte cid="93" nom="Groudon ex">
+  </carte>
+  <carte cid="94" nom="Jirachi ex">
+  </carte>
+  <carte cid="95" nom="Kyogre ex">
+  </carte>
+  <carte cid="96" nom="Jungko ex">
+  </carte>
+  <carte cid="97" nom="Tengalice ex">
+  </carte>
+  <carte cid="98" nom="Laggron ex">
+  </carte>
+  <carte cid="99" pkmnid="65">
+  </carte>
+  <carte cid="100" pkmnid="251">
+  </carte>
+</extension>

@@ -1,0 +1,218 @@
+<extension nb="107" reverse="true">
+  <carte cid="1" pkmnid="334">
+  </carte>
+  <carte cid="2" pkmnid="267">
+  </carte>
+  <carte cid="3" pkmnid="286">
+  </carte>
+  <carte cid="4" pkmnid="323">
+  </carte>
+  <carte cid="5" pkmnid="344">
+  </carte>
+  <carte cid="6" nom="Colhomard">
+  </carte>
+  <carte cid="7" pkmnid="356">
+  </carte>
+  <carte cid="8" pkmnid="130">
+  </carte>
+  <carte cid="9" pkmnid="385">
+  </carte>
+  <carte cid="10" pkmnid="272">
+  </carte>
+  <carte cid="11" pkmnid="376">
+  </carte>
+  <carte cid="12" pkmnid="262">
+  </carte>
+  <carte cid="13" pkmnid="291">
+  </carte>
+  <carte cid="14" pkmnid="292">
+  </carte>
+  <carte cid="15" pkmnid="289">
+  </carte>
+  <carte cid="16" nom="Deoxys [Forme Normale]">
+  </carte>
+  <carte cid="17" nom="Deoxys [Forme Attaque]">
+  </carte>
+  <carte cid="18" nom="Deoxys [Forme Défense]">
+  </carte>
+  <carte cid="19" pkmnid="272">
+  </carte>
+  <carte cid="20" pkmnid="219">
+  </carte>
+  <carte cid="21" pkmnid="279">
+  </carte>
+  <carte cid="22" pkmnid="384">
+  </carte>
+  <carte cid="23" pkmnid="302">
+  </carte>
+  <carte cid="24" pkmnid="119">
+  </carte>
+  <carte cid="25" pkmnid="275">
+  </carte>
+  <carte cid="26" pkmnid="227">
+  </carte>
+  <carte cid="27" pkmnid="357">
+  </carte>
+  <carte cid="28" pkmnid="340">
+  </carte>
+  <carte cid="29" pkmnid="178">
+  </carte>
+  <carte cid="30" pkmnid="232">
+  </carte>
+  <carte cid="31" pkmnid="42">
+  </carte>
+  <carte cid="32" pkmnid="326">
+  </carte>
+  <carte cid="33" pkmnid="271">
+  </carte>
+  <carte cid="34" pkmnid="271">
+  </carte>
+  <carte cid="35" pkmnid="270">
+  </carte>
+  <carte cid="36" pkmnid="337">
+  </carte>
+  <carte cid="37" pkmnid="219">
+  </carte>
+  <carte cid="38" pkmnid="310">
+  </carte>
+  <carte cid="39" pkmnid="284">
+  </carte>
+  <carte cid="40" pkmnid="375">
+  </carte>
+  <carte cid="41" pkmnid="312">
+  </carte>
+  <carte cid="42" pkmnid="299">
+  </carte>
+  <carte cid="43" pkmnid="274">
+  </carte>
+  <carte cid="44" pkmnid="311">
+  </carte>
+  <carte cid="45" pkmnid="372">
+  </carte>
+  <carte cid="46" pkmnid="266">
+  </carte>
+  <carte cid="47" pkmnid="338">
+  </carte>
+  <carte cid="48" pkmnid="121">
+  </carte>
+  <carte cid="49" pkmnid="277">
+  </carte>
+  <carte cid="50" pkmnid="288">
+  </carte>
+  <carte cid="51" pkmnid="110">
+  </carte>
+  <carte cid="52" pkmnid="371">
+  </carte>
+  <carte cid="53" pkmnid="343">
+  </carte>
+  <carte cid="54" pkmnid="339">
+  </carte>
+  <carte cid="55" pkmnid="374">
+  </carte>
+  <carte cid="56" pkmnid="318">
+  </carte>
+  <carte cid="57" pkmnid="341">
+  </carte>
+  <carte cid="58" pkmnid="355">
+  </carte>
+  <carte cid="59" pkmnid="309">
+  </carte>
+  <carte cid="60" pkmnid="309">
+  </carte>
+  <carte cid="61" pkmnid="118">
+  </carte>
+  <carte cid="62" pkmnid="109">
+  </carte>
+  <carte cid="63" pkmnid="270">
+  </carte>
+  <carte cid="64" pkmnid="129">
+  </carte>
+  <carte cid="65" pkmnid="296">
+  </carte>
+  <carte cid="66" pkmnid="177">
+  </carte>
+  <carte cid="67" pkmnid="290">
+  </carte>
+  <carte cid="68" pkmnid="322">
+  </carte>
+  <carte cid="69" pkmnid="231">
+  </carte>
+  <carte cid="70" pkmnid="261">
+  </carte>
+  <carte cid="71" pkmnid="273">
+  </carte>
+  <carte cid="72" pkmnid="285">
+  </carte>
+  <carte cid="73" pkmnid="287">
+  </carte>
+  <carte cid="74" pkmnid="218">
+  </carte>
+  <carte cid="75" pkmnid="218">
+  </carte>
+  <carte cid="76" pkmnid="325">
+  </carte>
+  <carte cid="77" pkmnid="120">
+  </carte>
+  <carte cid="78" pkmnid="283">
+  </carte>
+  <carte cid="79" pkmnid="333">
+  </carte>
+  <carte cid="80" pkmnid="276">
+  </carte>
+  <carte cid="81" pkmnid="278">
+  </carte>
+  <carte cid="82" pkmnid="265">
+  </carte>
+  <carte cid="83" pkmnid="41">
+  </carte>
+  <carte cid="84" nom="Baie Ballon">
+  </carte>
+  <carte cid="85" nom="Echarde de Cristal">
+  </carte>
+  <carte cid="86" nom="Recharge de puissance">
+  </carte>
+  <carte cid="87" nom="Mademoiselle Sortie">
+  </carte>
+  <carte cid="88" nom="Master Ball">
+  </carte>
+  <carte cid="89" nom="Site Météore">
+  </carte>
+  <carte cid="90" nom="La découverte du Professeur Kosmo">
+  </carte>
+  <carte cid="91" nom="Centre Spacial">
+  </carte>
+  <carte cid="92" nom="Fétiche de force">
+  </carte>
+  <carte cid="93" nom="Energie Super">
+  </carte>
+  <carte cid="94" nom="Energie Guerisseuse">
+  </carte>
+  <carte cid="95" nom="Energie Codée">
+  </carte>
+  <carte cid="96" nom="Nostenfer ex">
+  </carte>
+  <carte cid="97" nom="Deoxys ex [Forme Normale]">
+  </carte>
+  <carte cid="98" nom="Deoxys ex [Forme Attaque]">
+  </carte>
+  <carte cid="99" nom="Deoxys ex [Forme Défense]">
+  </carte>
+  <carte cid="100" nom="Hariyama ex">
+  </carte>
+  <carte cid="101" nom="Elecsprint ex">
+  </carte>
+  <carte cid="102" nom="Rayquaza ex">
+  </carte>
+  <carte cid="103" nom="Drattak ex">
+  </carte>
+  <carte cid="104" nom="Sharpedo ex">
+  </carte>
+  <carte cid="105" nom="Latias 'star'">
+  </carte>
+  <carte cid="106" nom="Latios 'star'">
+  </carte>
+  <carte cid="107" nom="Rayquaza 'star'">
+  </carte>
+  <carte cid="108" nom="Raikou Obscur de la Team Rocket">
+  </carte>
+</extension>
