@@ -1,0 +1,218 @@
+<extension nb="108" reverse="true">
+  <carte cid="1" pkmnid="306">
+  </carte>
+  <carte cid="2" pkmnid="334">
+  </carte>
+  <carte cid="3" pkmnid="348">
+  </carte>
+  <carte cid="4" pkmnid="354">
+  </carte>
+  <carte cid="5" pkmnid="257">
+  </carte>
+  <carte cid="6" pkmnid="6">
+  </carte>
+  <carte cid="7" pkmnid="346">
+  </carte>
+  <carte cid="8" pkmnid="301">
+  </carte>
+  <carte cid="9" pkmnid="282">
+  </carte>
+  <carte cid="10" pkmnid="141">
+  </carte>
+  <carte cid="11" pkmnid="68">
+  </carte>
+  <carte cid="12" pkmnid="26">
+  </carte>
+  <carte cid="13" pkmnid="289">
+  </carte>
+  <carte cid="14" pkmnid="356">
+  </carte>
+  <carte cid="15" pkmnid="171">
+  </carte>
+  <carte cid="16" pkmnid="82">
+  </carte>
+  <carte cid="17" pkmnid="303">
+  </carte>
+  <carte cid="18" pkmnid="262">
+  </carte>
+  <carte cid="19" pkmnid="38">
+  </carte>
+  <carte cid="20" pkmnid="139">
+  </carte>
+  <carte cid="21" pkmnid="172">
+  </carte>
+  <carte cid="22" pkmnid="302">
+  </carte>
+  <carte cid="23" pkmnid="336">
+  </carte>
+  <carte cid="24" nom="Qulbutoké">
+  </carte>
+  <carte cid="25" pkmnid="335">
+  </carte>
+  <carte cid="26" pkmnid="347">
+  </carte>
+  <carte cid="27" pkmnid="332">
+  </carte>
+  <carte cid="28" pkmnid="5">
+  </carte>
+  <carte cid="29" pkmnid="256">
+  </carte>
+  <carte cid="30" pkmnid="362">
+  </carte>
+  <carte cid="31" pkmnid="281">
+  </carte>
+  <carte cid="32" pkmnid="305">
+  </carte>
+  <carte cid="33" pkmnid="67">
+  </carte>
+  <carte cid="34" pkmnid="308">
+  </carte>
+  <carte cid="35" pkmnid="375">
+  </carte>
+  <carte cid="36" pkmnid="274">
+  </carte>
+  <carte cid="37" pkmnid="364">
+  </carte>
+  <carte cid="38" pkmnid="319">
+  </carte>
+  <carte cid="39" pkmnid="372">
+  </carte>
+  <carte cid="40" pkmnid="329">
+  </carte>
+  <carte cid="41" pkmnid="288">
+  </carte>
+  <carte cid="42" pkmnid="304">
+  </carte>
+  <carte cid="43" pkmnid="371">
+  </carte>
+  <carte cid="44" pkmnid="343">
+  </carte>
+  <carte cid="45" pkmnid="374">
+  </carte>
+  <carte cid="46" pkmnid="331">
+  </carte>
+  <carte cid="47" pkmnid="318">
+  </carte>
+  <carte cid="48" pkmnid="4">
+  </carte>
+  <carte cid="49" pkmnid="170">
+  </carte>
+  <carte cid="50" pkmnid="355">
+  </carte>
+  <carte cid="51" pkmnid="140">
+  </carte>
+  <carte cid="52" pkmnid="345">
+  </carte>
+  <carte cid="53" pkmnid="66">
+  </carte>
+  <carte cid="54" pkmnid="81">
+  </carte>
+  <carte cid="55" pkmnid="307">
+  </carte>
+  <carte cid="56" pkmnid="138">
+  </carte>
+  <carte cid="57" pkmnid="25">
+  </carte>
+  <carte cid="58" pkmnid="261">
+  </carte>
+  <carte cid="59" pkmnid="280">
+  </carte>
+  <carte cid="60" pkmnid="273">
+  </carte>
+  <carte cid="61" pkmnid="353">
+  </carte>
+  <carte cid="62" pkmnid="300">
+  </carte>
+  <carte cid="63" nom="Parcool">
+  </carte>
+  <carte cid="64" pkmnid="361">
+  </carte>
+  <carte cid="65" pkmnid="363">
+  </carte>
+  <carte cid="66" pkmnid="333">
+  </carte>
+  <carte cid="67" pkmnid="255">
+  </carte>
+  <carte cid="68" pkmnid="328">
+  </carte>
+  <carte cid="69" pkmnid="37">
+  </carte>
+  <carte cid="70" nom="Okeoke">
+  </carte>
+  <carte cid="71" nom="Zone de combat">
+  </carte>
+  <carte cid="72" nom="Stade d'Aragon">
+  </carte>
+  <carte cid="73" nom="Recyclage d'énergie">
+  </carte>
+  <carte cid="74" nom="Supression d'énergie 2">
+  </carte>
+  <carte cid="75" nom="Echange d'énergie">
+  </carte>
+  <carte cid="76" nom="Stade de Glacia">
+  </carte>
+  <carte cid="77" nom="Super Ball">
+  </carte>
+  <carte cid="78" nom="Master Ball">
+  </carte>
+  <carte cid="79" nom="Stade de Spectra">
+  </carte>
+  <carte cid="80" nom="Professor Seko">
+  </carte>
+  <carte cid="81" nom="Scott">
+  </carte>
+  <carte cid="82" nom="Stade de Damien">
+  </carte>
+  <carte cid="83" nom="Les conseils de Pierre">
+  </carte>
+  <carte cid="84" nom="Fossile Griffe HP 40">
+  </carte>
+  <carte cid="85" nom="Mystérieux Fossile HP 50">
+  </carte>
+  <carte cid="86" nom="Fossile Racine HP 40">
+  </carte>
+  <carte cid="87" nom="Energie Obscurité">
+  </carte>
+  <carte cid="88" nom="Energie Métal">
+  </carte>
+  <carte cid="89" nom="Energies Multiple">
+  </carte>
+  <carte cid="90" nom="Energie Cyclone">
+  </carte>
+  <carte cid="91" nom="Energie de distortion">
+  </carte>
+  <carte cid="92" nom="Absol EX">
+  </carte>
+  <carte cid="93" nom="Kaorine EX">
+  </carte>
+  <carte cid="94" nom="Libegon EX">
+  </carte>
+  <carte cid="95" nom="Metalosse EX">
+  </carte>
+  <carte cid="96" nom="Drattak EX">
+  </carte>
+  <carte cid="97" nom="Tengalice EX">
+  </carte>
+  <carte cid="98" nom="Airmure EX">
+  </carte>
+  <carte cid="99" nom="Kaimorse EX">
+  </carte>
+  <carte cid="100" nom="Pyroli STAR">
+  </carte>
+  <carte cid="101" nom="Voltali STAR">
+  </carte>
+  <carte cid="102" nom="Aquali STAR">
+  </carte>
+  <carte cid="103" nom="Energie Plante">
+  </carte>
+  <carte cid="104" nom="Energie Feu">
+  </carte>
+  <carte cid="105" nom="Energie Eau">
+  </carte>
+  <carte cid="106" nom="Energie Electrik">
+  </carte>
+  <carte cid="107" nom="Energie Psy">
+  </carte>
+  <carte cid="108" nom="Energie Combat">
+  </carte>
+</extension>

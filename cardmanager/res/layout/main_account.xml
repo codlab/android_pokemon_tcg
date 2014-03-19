@@ -4,7 +4,8 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <fr.codlab.cartes.widget.RobotoTextview
+        typeface="thin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -18,7 +19,8 @@
         android:layout_marginBottom="15dp"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -39,7 +41,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

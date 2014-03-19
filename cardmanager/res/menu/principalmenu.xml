@@ -8,7 +8,7 @@
         android:id="@+id/principal_paypal"
         android:title=""
         android:icon="@drawable/paypal_button"
-        android:showAsAction="ifRoom" />
+        android:showAsAction="never" />
     <!-- ifRoom| -->
     <item
         android:id="@+id/principal_useus"

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listback"
+    android:cacheColorHint="#00000000"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+
+    <fr.codlab.cartes.views.CardImage
+        android:id="@+id/image"
+        android:layout_width="113dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|left"
+        android:scaleType="fitEnd"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/carte"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardname"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <!-- partie inferieure -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- partie numero + type + rarete -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/infos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardnumber"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/vue.types"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <!--
+                         <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" 
+						android:background="@drawable/energyback" android:layout_gravity="center_vertical">
+                    -->
+
+                    <ImageView
+                        android:id="@+id/rarete"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rarete_common" />
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+            </LinearLayout>
+            <!-- partie - + texte -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp" >
+
+                <TextView
+                    android:id="@+extension/quick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quickus"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" >
+
+                    <!-- HOLO -->
+
+                    <LinearLayout
+                        android:id="@+extension/holo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/holo"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/holocarte.sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/minus" />
+
+                            <ImageView
+                                android:id="@+id/holocarte.add"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/plus" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/holocarte.possedees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <!-- NORMAL -->
+
+                    <LinearLayout
+                        android:id="@+extension/normal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/normal"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/carte.sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/minus" />
+
+                            <ImageView
+                                android:id="@+id/carte.add"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/plus" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/carte.possedees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <!-- REVERSE OR FIRST EDITION -->
+
+                    <LinearLayout
+                        android:id="@+extension/reverse"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+extension/reversetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/reverse"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/reversecarte.sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/minus" />
+
+                            <ImageView
+                                android:id="@+id/reversecarte.add"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/plus" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/reversecarte.possedees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

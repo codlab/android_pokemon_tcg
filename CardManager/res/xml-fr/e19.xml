@@ -1,0 +1,196 @@
+<extension nb="95" reverse="true">
+  <carte cid="1" nom="Cacturne de Team Aqua">
+  </carte>
+  <carte cid="2" nom="Colhomar de Team Aqua">
+  </carte>
+  <carte cid="3" nom="Kyogre de Team Aqua">
+  </carte>
+  <carte cid="4" nom="Elecsprint de Team Aqua">
+  </carte>
+  <carte cid="5" nom="Sharpedo de Team Aqua">
+  </carte>
+  <carte cid="6" nom="Kaimorse de Team Aqua">
+  </carte>
+  <carte cid="7" nom="Galeking de Team Magma">
+  </carte>
+  <carte cid="8" nom="Kaorine de Team Magma">
+  </carte>
+  <carte cid="9" nom="Groudon de Team Magma">
+  </carte>
+  <carte cid="10" nom="Démolosse de Team Magma">
+  </carte>
+  <carte cid="11" nom="Rinoféros de Team Magma">
+  </carte>
+  <carte cid="12" nom="Chartor de Team Magma">
+  </carte>
+  <carte cid="13" pkmnid="26">
+  </carte>
+  <carte cid="14" nom="Colhomar de Team Aqua">
+  </carte>
+  <carte cid="15" nom="Grahyena de Team Aqua">
+  </carte>
+  <carte cid="16" nom="Phogleur de Team Aqua">
+  </carte>
+  <carte cid="17" nom="Seviper de Team Aqua">
+  </carte>
+  <carte cid="18" nom="Sharpedo de Team Aqua">
+  </carte>
+  <carte cid="19" nom="Camerupt de Team Magma">
+  </carte>
+  <carte cid="20" nom="Galegon de Team Magma">
+  </carte>
+  <carte cid="21" nom="Grahyena de Team Magma">
+  </carte>
+  <carte cid="22" nom="Rinoféros de Team Magma">
+  </carte>
+  <carte cid="23" nom="Mangriff de Team Magma">
+  </carte>
+  <carte cid="24" nom="Cacnea de Team Aqua">
+  </carte>
+  <carte cid="25" nom="Carvanha de Team Aqua">
+  </carte>
+  <carte cid="26" nom="Ecrapince de Team Aqua">
+  </carte>
+  <carte cid="27" nom="Dynavolt de Team Aqua">
+  </carte>
+  <carte cid="28" nom="Lanturn de Team Aqua">
+  </carte>
+  <carte cid="29" nom="Elecsprint de Team Aqua">
+  </carte>
+  <carte cid="30" nom="Grahyena de Team Aqua">
+  </carte>
+  <carte cid="31" nom="Phogleur de Team Aqua">
+  </carte>
+  <carte cid="32" nom="Balbuto de Team Magma">
+  </carte>
+  <carte cid="33" nom="Kaorine de Team Magma">
+  </carte>
+  <carte cid="34" nom="Démolosse de Team Magma">
+  </carte>
+  <carte cid="35" nom="Malosse de Team Magma">
+  </carte>
+  <carte cid="36" nom="Galegon de Team Magma">
+  </carte>
+  <carte cid="37" nom="Grahyena de Team Magma">
+  </carte>
+  <carte cid="38" nom="Rhinocorne de Team Magma">
+  </carte>
+  <carte cid="39" pkmnid="1">
+  </carte>
+  <carte cid="40" pkmnid="104">
+  </carte>
+  <carte cid="41" pkmnid="39">
+  </carte>
+  <carte cid="42" pkmnid="52">
+  </carte>
+  <carte cid="43" pkmnid="25">
+  </carte>
+  <carte cid="44" pkmnid="54">
+  </carte>
+  <carte cid="45" pkmnid="79">
+  </carte>
+  <carte cid="46" pkmnid="7">
+  </carte>
+  <carte cid="47" nom="Carvanha de Team Aqua">
+  </carte>
+  <carte cid="48" nom="Carvanha de Team Aqua">
+  </carte>
+  <carte cid="49" nom="Loupio de Team Aqua">
+  </carte>
+  <carte cid="50" nom="Ecrapince de Team Aqua">
+  </carte>
+  <carte cid="51" nom="Ecrapince de Team Aqua">
+  </carte>
+  <carte cid="52" nom="Dynavolt de Team Aqua">
+  </carte>
+  <carte cid="53" nom="Dynavolt de Team Aqua">
+  </carte>
+  <carte cid="54" nom="Medhyena de Team Aqua">
+  </carte>
+  <carte cid="55" nom="Medhyena de Team Aqua">
+  </carte>
+  <carte cid="56" nom="Obalie de Team Aqua">
+  </carte>
+  <carte cid="57" nom="Obalie de Team Aqua">
+  </carte>
+  <carte cid="58" nom="Galekid de Team Magma">
+  </carte>
+  <carte cid="59" nom="Galekid de Team Magma">
+  </carte>
+  <carte cid="60" nom="Balbuto de Team Magma">
+  </carte>
+  <carte cid="61" nom="Balbuto de Team Magma">
+  </carte>
+  <carte cid="62" nom="Malosse de Team Magma">
+  </carte>
+  <carte cid="63" nom="Malosse de Team Magma">
+  </carte>
+  <carte cid="64" nom="Chamallot de Team Magma">
+  </carte>
+  <carte cid="65" nom="Medhyena de Team Magma">
+  </carte>
+  <carte cid="66" nom="Medhyena de Team Magma">
+  </carte>
+  <carte cid="67" nom="Rhinocorne de Team Magma">
+  </carte>
+  <carte cid="68" nom="Rhinocorne de Team Magma">
+  </carte>
+  <carte cid="69" nom="Manipulateur de Team Aqua">
+  </carte>
+  <carte cid="70" nom="Manipulateur de Team Magma">
+  </carte>
+  <carte cid="71" nom="Arthur">
+  </carte>
+  <carte cid="72" nom="Double Boule">
+  </carte>
+  <carte cid="73" nom="Max">
+  </carte>
+  <carte cid="74" nom="Sort de Force">
+  </carte>
+  <carte cid="75" nom="Boule de Team Aqua">
+  </carte>
+  <carte cid="76" nom="Raclée de Team Aqua">
+  </carte>
+  <carte cid="77" nom="Conspirateur de Team Aqua">
+  </carte>
+  <carte cid="78" nom="Cachette de Team Aqua">
+  </carte>
+  <carte cid="79" nom="Machine Technique 01 de Team Aqua">
+  </carte>
+  <carte cid="80" nom="Boule de Team Magma">
+  </carte>
+  <carte cid="81" nom="Raclée de Team Magma">
+  </carte>
+  <carte cid="82" nom="Manipulateur de Team Magma">
+  </carte>
+  <carte cid="83" nom="Cachette de Team Magma">
+  </carte>
+  <carte cid="84" nom="Machine Technique 01 de Team Magma">
+  </carte>
+  <carte cid="85" nom="Point D'échange">
+  </carte>
+  <carte cid="86" nom="Energie Aqua">
+  </carte>
+  <carte cid="87" nom="Energie Magma">
+  </carte>
+  <carte cid="88" nom="Double Energie Multicolore">
+  </carte>
+  <carte cid="89" nom="Brasegali ex">
+  </carte>
+  <carte cid="90" nom="Vacilys ex">
+  </carte>
+  <carte cid="91" nom="Entei ex">
+  </carte>
+  <carte cid="92" nom="Raikou ex">
+  </carte>
+  <carte cid="93" nom="Jungko ex">
+  </carte>
+  <carte cid="94" nom="Suicune ex">
+  </carte>
+  <carte cid="95" nom="Laggron ex">
+  </carte>
+  <carte cid="96" pkmnid="359">
+  </carte>
+  <carte cid="97" pkmnid="385">
+  </carte>
+</extension>

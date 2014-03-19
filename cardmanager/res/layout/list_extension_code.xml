@@ -17,13 +17,14 @@
         android:cacheColorHint="#00000000"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="regular"
             android:id="@+id/managetcgo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
             android:text="@string/managetcgo"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:textStyle="bold" />
 
         <TextView

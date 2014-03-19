@@ -1,0 +1,202 @@
+<extension nb="100" reverse="true">
+  <carte cid="1" pkmnid="144">
+  </carte>
+  <carte cid="2" pkmnid="488">
+  </carte>
+  <carte cid="3" pkmnid="491">
+  </carte>
+  <carte cid="4" pkmnid="483">
+  </carte>
+  <carte cid="5" pkmnid="471">
+  </carte>
+  <carte cid="6" pkmnid="141">
+  </carte>
+  <carte cid="7" pkmnid="470">
+  </carte>
+  <carte cid="8" pkmnid="490">
+  </carte>
+  <carte cid="9" pkmnid="150">
+  </carte>
+  <carte cid="10" pkmnid="146">
+  </carte>
+  <carte cid="11" pkmnid="484">
+  </carte>
+  <carte cid="12" pkmnid="489">
+  </carte>
+  <carte cid="13" pkmnid="479">
+  </carte>
+  <carte cid="14" pkmnid="145">
+  </carte>
+  <carte cid="15" pkmnid="142">
+  </carte>
+  <carte cid="16" nom="Archeogong">
+  </carte>
+  <carte cid="17" pkmnid="395">
+  </carte>
+  <carte cid="18" pkmnid="196">
+  </carte>
+  <carte cid="19" pkmnid="136">
+  </carte>
+  <carte cid="20" pkmnid="471">
+  </carte>
+  <carte cid="21" pkmnid="450">
+  </carte>
+  <carte cid="22" pkmnid="392">
+  </carte>
+  <carte cid="23" pkmnid="135">
+  </carte>
+  <carte cid="24" pkmnid="470">
+  </carte>
+  <carte cid="25" pkmnid="312">
+  </carte>
+  <carte cid="26" pkmnid="139">
+  </carte>
+  <carte cid="27" pkmnid="489">
+  </carte>
+  <carte cid="28" pkmnid="311">
+  </carte>
+  <carte cid="29" pkmnid="212">
+  </carte>
+  <carte cid="30" pkmnid="389">
+  </carte>
+  <carte cid="31" pkmnid="454">
+  </carte>
+  <carte cid="32" pkmnid="197">
+  </carte>
+  <carte cid="33" nom="Zarbi [P]">
+  </carte>
+  <carte cid="34" pkmnid="134">
+  </carte>
+  <carte cid="35" pkmnid="424">
+  </carte>
+  <carte cid="36" pkmnid="22">
+  </carte>
+  <carte cid="37" pkmnid="388">
+  </carte>
+  <carte cid="38" pkmnid="115">
+  </carte>
+  <carte cid="39" pkmnid="108">
+  </carte>
+  <carte cid="40" pkmnid="310">
+  </carte>
+  <carte cid="41" pkmnid="391">
+  </carte>
+  <carte cid="42" nom="Papilord">
+  </carte>
+  <carte cid="43" pkmnid="417">
+  </carte>
+  <carte cid="44" pkmnid="394">
+  </carte>
+  <carte cid="45" pkmnid="26">
+  </carte>
+  <carte cid="46" pkmnid="123">
+  </carte>
+  <carte cid="47" pkmnid="397">
+  </carte>
+  <carte cid="48" pkmnid="185">
+  </carte>
+  <carte cid="49" nom="Zarbi [Q]">
+  </carte>
+  <carte cid="50" pkmnid="190">
+  </carte>
+  <carte cid="51" pkmnid="190">
+  </carte>
+  <carte cid="52" pkmnid="436">
+  </carte>
+  <carte cid="53" pkmnid="427">
+  </carte>
+  <carte cid="54" nom="Cheniti Cape Sable">
+  </carte>
+  <carte cid="55" pkmnid="441">
+  </carte>
+  <carte cid="56" pkmnid="390">
+  </carte>
+  <carte cid="57" pkmnid="390">
+  </carte>
+  <carte cid="58" pkmnid="433">
+  </carte>
+  <carte cid="59" pkmnid="415">
+  </carte>
+  <carte cid="60" pkmnid="453">
+  </carte>
+  <carte cid="61" pkmnid="425">
+  </carte>
+  <carte cid="62" pkmnid="133">
+  </carte>
+  <carte cid="63" pkmnid="133">
+  </carte>
+  <carte cid="64" pkmnid="309">
+  </carte>
+  <carte cid="65" pkmnid="431">
+  </carte>
+  <carte cid="66" pkmnid="449">
+  </carte>
+  <carte cid="67" pkmnid="140">
+  </carte>
+  <carte cid="68" pkmnid="446">
+  </carte>
+  <carte cid="69" pkmnid="138">
+  </carte>
+  <carte cid="70" pkmnid="25">
+  </carte>
+  <carte cid="71" pkmnid="393">
+  </carte>
+  <carte cid="72" pkmnid="393">
+  </carte>
+  <carte cid="73" nom="Sancoki Mer Orient">
+  </carte>
+  <carte cid="74" pkmnid="21">
+  </carte>
+  <carte cid="75" pkmnid="396">
+  </carte>
+  <carte cid="76" pkmnid="434">
+  </carte>
+  <carte cid="77" pkmnid="387">
+  </carte>
+  <carte cid="78" pkmnid="387">
+  </carte>
+  <carte cid="79" nom="Stade crépuscule">
+  </carte>
+  <carte cid="80" nom="Sombre Ball">
+  </carte>
+  <carte cid="81" nom="Restauration d'énergie">
+  </carte>
+  <carte cid="82" nom="Excavateur de fossiles">
+  </carte>
+  <carte cid="83" nom="La gentillesse de Maman">
+  </carte>
+  <carte cid="84" nom="Vieil Ambre">
+  </carte>
+  <carte cid="85" nom="Poké Ball">
+  </carte>
+  <carte cid="86" nom="Rapide Ball">
+  </carte>
+  <carte cid="87" nom="Super rappel">
+  </carte>
+  <carte cid="88" nom="Point d'échange">
+  </carte>
+  <carte cid="89" nom="Fossile Dôme">
+  </carte>
+  <carte cid="90" nom="Recherche d'énergie">
+  </carte>
+  <carte cid="91" nom="Fossile Nautile">
+  </carte>
+  <carte cid="92" nom="Appel à l'énergie">
+  </carte>
+  <carte cid="93" nom="Energie Obscurité">
+  </carte>
+  <carte cid="94" nom="Energie Santé">
+  </carte>
+  <carte cid="95" nom="Energie Métal">
+  </carte>
+  <carte cid="96" nom="Energie guérison">
+  </carte>
+  <carte cid="97" nom="Carchacrok Niv.X">
+  </carte>
+  <carte cid="98" nom="Givrali Niv.X">
+  </carte>
+  <carte cid="99" nom="Phyllali Niv.X">
+  </carte>
+  <carte cid="100" nom="Porygon-Z Niv.X">
+  </carte>
+</extension>

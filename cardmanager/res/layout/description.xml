@@ -5,7 +5,8 @@
 	android:layout_height="wrap_content"
 	android:orientation="vertical"
 	android:paddingTop="10dp">
-	<TextView
+	<fr.codlab.cartes.widget.RobotoTextview
+        typeface="thin"
 		android:id="@+id/description"
 		android:paddingLeft="20dp"
 		android:layout_width="fill_parent"

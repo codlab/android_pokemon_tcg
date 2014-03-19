@@ -18,6 +18,7 @@ import fr.codlab.cartes.fragments.CodesFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
+import fr.codlab.cartes.listener.IExtensionLoadedListener;
 import fr.codlab.cartes.redeemcode.IGetLogin;
 import fr.codlab.cartes.redeemcode.ITextCode;
 import fr.codlab.cartes.util.Extension;
@@ -62,7 +63,7 @@ import android.widget.Toast;
 public class MainActivity extends SlidingViewPagerFragmentActivity implements IExtensionMaster, IGetLogin, ITextCode,
 
         IabHelper.QueryInventoryFinishedListener,
-        IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener {
+        IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener, IExtensionLoadedListener {
 
     /**
      * PLAYSTORE PART
@@ -429,7 +430,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                     }
 
                     if ((extension != null) && (id > 0 && id < MAX)) {
-                        _arrayExtension.add(ExtensionManager.getExtension(this, id, nb, intitule, extension, false));
+                        _arrayExtension.add(ExtensionManager.getExtension(this, this, id, nb, intitule, extension, false));
                     }
                 }
             }
@@ -446,6 +447,11 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
         ListView _list = (ListView) v.findViewById(R.id.principal_extensions);
         _list.setAdapter(_adapter);
+    }
+
+    public void onExtensionLoaded(int id){
+        if(_adapter != null)
+            _adapter.onExtensionLoaded(id);
     }
 
     public void notifyChanged() {
@@ -597,6 +603,9 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     public void onClick(String nom,
                         int id,
                         String intitule) {
+        if(ExtensionManager.isLoaded(id) == false){
+            return;
+        }
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
         if (viewer != null) {
             _name = nom;

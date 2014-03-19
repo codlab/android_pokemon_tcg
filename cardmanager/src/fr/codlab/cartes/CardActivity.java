@@ -68,7 +68,7 @@ public class CardActivity extends SherlockFragmentActivity implements IClickBund
 		if (_bundle != null && _bundle.containsKey("intitule")) {
 			_factorise.setSetShortName(this.getIntent().getStringExtra("intitule"));
 		}
-		_extension = ExtensionManager.getExtension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
+		_extension = ExtensionManager.getExtension(this.getApplicationContext(), null, _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
 		if(findViewById(R.id.visucarte_gallery) != null){

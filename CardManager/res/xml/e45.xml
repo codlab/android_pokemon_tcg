@@ -1,0 +1,1771 @@
+<extension nb="90" reverse="true">
+  <carte cid="1" pkmnid="182" types="plante" rarete="holo">
+  	<pv>110</pv>
+  	<description>Les Joliflor se réunissent souvent pour danser. On pense qu'il s'agit d'un rituel pour appeler le Soleil.</description>
+  	<pokepower nom="Foulée rapide">Une seule fois pendant votre tour (avant votre attaque), vous pouvez retirer un marqueur de dégât à chacun de vos Pokémon. Ce pouvoir ne peut-être utilisé si Joliflor est affecté par un statut spécial.</pokepower>
+  	<attaques>
+  		<attaque nom="Danse nocturne">
+  			<types>
+  				<type>plante</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30x</degats>
+  			<description>Lancez 3 pièces. Cette attaque inflige 30 dégâts multipliés par le nombre de côtés face. Joliflor est maintenant endormi.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>eau</resistance>
+  	</resistances>
+  	<retraite cout="1"></retraite>
+  </carte>
+  <carte cid="2" pkmnid="196" types="psy" rarete="holo">
+  	<types>
+  		<type>psy</type>
+  	</types>
+  	<description>Son fin pelage enregistre les courants d'air provoqués par les déplacements de ses ennemis.</description>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1">1</retraite>
+  	<attaques>
+  		<attaque nom="Suggestion solaire">
+  			<description>Retirez jusqu'à 4 marqueurs de dégâts à vos Pokémon et placez-les comme vous le voulez sur les Pokémon de votre adversaire.</description>
+  			<types>
+  				<type>psy</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Rafale psy">
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant confus.</description>
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="3" pkmnid="205" types="acier" rarete="holo">
+  	<pv>90</pv>
+  	<attaques>
+  		<attaque nom="Miroi-tir">
+  			<degats>30</degats>
+  			<description>Si le Pokémon défenseur essaie d'attaquer pendant le prochain tour de votre adversaire, ce dernier lance une pièce. Si c'est pile, votre adversaire ne fait rien.</description>
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Explosion générale">
+  			<degats>30x</degats>
+  			<description>Inflige 30 dégâts multipliés par le nombre de Pomdepik et de Foretress que vous avez en jeu. Cette attaque inflige 30 dégâts à chacun de vos Pompdepik et Foretress en jeu.</description>
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite>3</retraite>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  </carte>
+  <carte cid="4" pkmnid="472" types="combat" rarete="holo">
+  	<pv>90</pv>
+  	<faiblesses>
+  		<faiblesse>eau</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>electrique</resistance>
+  	</resistances>
+  	<retraite cout="1" />
+  	<attaques>
+  		<attaque nom="Croc ninja">
+  			<degats>30</degats>
+  			<types>
+  				<type>combat</type>
+  			</types>
+  			<description>Si, avant que Scorvol n'inflige de déâts, le Pokémon défenseur n'a aucun marqueur de dégâts et qu'il subit ensuite des dégâts à cause de cette attaque (après application de la faiblesse et de la résistance), il est maintenant paralysé.</description>
+  		</attaque>
+  		<attaque nom="Direct toxik">
+  			<degats>50</degats>
+  			<types>
+  				<type>combat</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Le Pokémon défenseur est maintenant empoisonné.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="5" pkmnid="229" rarete="holo" types="obscur">
+  	<pv>90</pv>
+  	<attaques>
+  		<attaque nom="Contre-attaque de feu">
+  			<degats>20+</degats>
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<description>Si votre adversaire dispose de n'importe que Pokémon combat en jeu, cette attaque inflige 20 dégâts plus 60 dégâts suplémentaires.</description>
+  		</attaque>
+  		<attaque nom="Cri des ténèbres">
+  			<degats>50</degats>
+  			<description>Votre adversaire défausse une carte de sa main</description>
+  			<types>
+  				<type>obscur</type>
+  				<type>obscur</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesses>combat</faiblesses>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="6" pkmnid="219" rarete="holo" types="feu">
+  </carte>
+  <carte cid="7" pkmnid="212" rarete="holo" types="acier">
+  	<pv>90</pv>
+  	<attaques>
+  		<attaque nom="Coupe">
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>50</degats>
+  		</attaque>
+  		<attaque nom="Griffe Acier">
+  			<degats>80</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="8" pkmnid="235" types="incolore" rarete="holo">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Frap'Keu">
+  			<degats>20x</degats>
+  			<description>Lancez 2 pièces. Cette attaque inflige 20 dégâts multipliés par le nombre de faces.</description>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<pokepower nom="Portrait">Une seule fois pendant votre tour, avant votre attaque, si Queulorior est votre Pokémon Actif, vous pouvez demander à voir la main de votre adversaire. Dans ce cas, choisissez l'une des cartes Supporter qui s'y trouvent et utilisez les effets de cette carte pour ce Poké-Power. Ce pouvoir ne peut être utilisé si Queulorior est affecté par un effet spécial.</pokepower>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<retraite>1</retraite>
+  </carte>
+  <carte cid="9" pkmnid="468" rarete="holo" types="incolore">
+  </carte>
+  <carte cid="10" pkmnid="197" rarete="holo" types="obscur">
+  	<pv>90</pv>
+  	<description>Pour se défendre, ce Pokémon émet un gaz empoisonné par les pores de sa peau.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Croc Lunaire">
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Pendant le prochain tour de votre adversaire, prévenez tous les effets d'attaques (y compris les dégâts) infligés à Noctali par un Pokémon possèdant des poképowers ou des pokebodies.</description>
+  		</attaque>
+  		<attaque nom="Coup d'poing éclair">
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30+</degats>
+  			<description>Lancez une pièce. Si c'est face, cette attaque inflige 30 dégâts plus 30 dégâts supplémentaires.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="11" pkmnid="85" types="incolore" rarete="rare">
+  	<pv>80</pv>
+  	<pokebody nom="Soutien de retraite">Tant que Dodrio est votre Banc, le cout de retraite de votre Pokémon actif est réduit de 2 énergies incolores</pokebody>
+  	<attaques>
+  		<attaque nom="Rafal'Bec">
+  			<degats>20+</degats>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce jusqu'à ce qu'elle tombe sur pile. Cette attaque inflige 20 dégâts plus 20 dégâts pour chaque face.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="12" pkmnid="426" rarete="rare" types="psy">
+  	<pv>90</pv>
+  	<attaques>
+  		<attaque nom="Charge Ballon">
+  			<degats>60</degats>
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Grodrive s'inflige 20 dégâts.</description>
+  		</attaque>
+  		<attaque nom="Envolée">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Mélangez Grodrive et toutes les cartes qui lui sont attachées dans votre deck. Ensuite, votre adversaire mélange le Pokémon défenseur et toutes les cartes qui lui sont attachées avec son deck. (Vous choisissez votre nouveau Pokémon actif en premier)</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>obscur</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  </carte>
+  <carte cid="13" pkmnid="205" types="acier" rarete="rare">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Volée de piques">
+  			<types>
+  				<type>acier</type>
+  			</types>
+  			<description>Cette inflige 10 points de dégâts à chacun des Pokémon de votre adversaire (N'appliquez pas la faiblesse et la résistance aux Pokémon de Banc).</description>
+  		</attaque>
+  		<attaque nom="Gyroballe">
+  			<degats>30</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Vous pouvez échanger Foretress avec un des Pokémon de votre Banc. Dans ce cas; votre adversaire échange ele Pokémon défenseur avec un des Pokémon de son banc.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="14" nom="">
+  </carte>
+  <carte cid="15" pkmnid="430" rarete="rare" types="obscur">
+  	<pv>90</pv>
+  	<description>Un Pokémon qui ne tolère pas l'échec de ses sbires Cornèbres</description>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<retraite cout="2"/>
+  	<attaques>
+  		<attaque nom="Cyclone">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>20</degats>
+  			<description>Votre adversaire échange le Pokémon défenseur avec l'un de ses Pokémon sur le banc.</description>
+  		</attaque>
+  		<attaque nom="Angle Mort">
+  			<types>
+  				<type>obscur</type>
+  				<type>obscur</type>
+  			</types>
+  			<description>Choisissez l'un des Pokémon de votre adversaire possèdant des marqueurs de dégâts. Cette attaque inflige 50 dégâts à ce Pokémon. (N'appliquez ni la faiblesse ni la résistance au Pokémon du banc)</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="16" pkmnid="430" types="obscur" rarete="rare">
+  	<pv>90</pv>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances><resistance>combat</resistance></resistances>
+  	<retraite>2</retraite>
+  	<attaques>
+  		<attaque nom="Etreinte d'ombre">
+  			<degats>30</degats>
+  			<description>Le Pokémon défenseur ne peut pas battre en retraite lors du prochain tour de votre adversaire.</description>
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Vengeance">
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Inflige 10 points de dégâts supplémentaires pour chacun des Pokémon obscur dans votre pile de défausse.</description>
+  			<degats>10+</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="17" pkmnid="470" rarete="rare" types="plante">
+  	<pv>90</pv>
+  	<description>Un Phyllali qui dort par beau temps produit un air frais et pur par photosynthèse.</description>
+  	<attaques>
+  		<attaque nom="Vent Miasme">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<degats>50x</degats>
+  			<description>Inflige 50 dégâts multipliés par le nombre de d'états spéciaux affectant le Pokémon défenseur.</description>
+  		</attaque>
+  		<attaque nom="Senteur apaisante">
+  			<types>
+  				<type>plante</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Le Pokémon défenseur est maintenant endormi</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>eau</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="18" nom="Métalosse" types="acier" rarete="rare">
+  	<pv>130</pv>
+  	<attaques>
+  		<attaque nom="Force">
+  			<degats>70</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Quadruple Explosion">
+  			<degats>50x</degats>
+  			<description>Lancez 4 pièces. Cette attaque inflige 50 dégâts multipliés par le nombre de face.</description>
+  			<types>
+  				<type>acier</type>
+  				<type>acier</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="4"/>
+  </carte>
+  <carte cid="19" pkmnid="429" types="psy" rarete="rare">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Endormissement">
+  			<types>
+  				<type>psy</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant Endormi.</description>
+  		</attaque>
+  		<attaque nom="Poltergeist">
+  			<degats>30x</degats>
+  			<description>Regardez la main de votre adversaire. Cette attaque inflige 30 dégâts multipliés par le nombre de cartes Dresseurs, Supporter et Stades qui se trouvent dans la main de votre adversaire.</description>
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="20" pkmnid="479" types="electrique" rarete="rare">
+  	<pv>60</pv>
+  	<description>Un Pokémon longtemps étudié comme source d'énergie pour un secteur très spécial.</description>
+  	<pokepower nom="Sournoiserie">Une seule fois pendant votre tour (avant votre attaque), vous pouvez échanger l'une de vos cartes récompense qui est face cachée avec la carte du dessus de votre deck. Ce pouvoir ne peut être utilisé si Motisma est affecté par un statut spécial.</pokepower>
+  	<attaques>
+  		<attaque nom="Flèche plasma">
+  			<types>
+  				<type>electrique</type>
+  			</types>
+  			<description>Choisissez l'un des Pokémon de vos adversaire. Cette attaque inflige 20 dégâts pour chaque énergie attachées à ce Pokémon. Les dégâts infligés par cette attaque ne sont pas affectées par la faiblesse et la résistance.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<fatiblesse>obscur</fatiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="21" pkmnid="227" rarete="rare" types="acier">
+  	<pv>80</pv>
+  	<description>Après avoir fait son nid dans les ronces, ses petits s'endurciessent à force d'être sans cesse éraflés.</description>
+  	<faiblesses>
+  		<faiblesses>feu</faiblesses>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Manteau d'acier">
+  			<types>
+  				<type>acier</type>
+  			</types>
+  			<description>Chercher une carte énergie acier dans votre deck et attachez-la à l'un de vos Pokémon. Mélangez ensuite votre deck.</description>
+  		</attaque>
+  		<attaque nom="Aile tranchante">
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>40</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="22" pkmnid="357" types="plante" rarete="rare">
+  	<pv>90</pv>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<retraite cout="2"/>
+  	<attaques>
+  		<attaque nom="Fruit Frais">
+  			<types>
+  				<type>plante</type>
+  			</types>
+  			<description>Retirez 6 marqueurs de dégâts de l'un des Pokémon de votre Banc.</description>
+  		</attaque>
+  		<attaque nom="Vent Glacial">
+  			<degats>40</degats>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="23" pkmnid="416" types="plante" rarete="rare">
+  	<pv>100</pv>
+  	<pokebody nom="Signal de Défense">Prévenez tous les dégâts par des attaques aux Pokémon plante de votre Banc.</pokebody>
+  	<attaques>
+  		<attaque nom="Vent frénétique">
+  			<degats>60</degats>
+  			<types>
+  				<type>plante</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Pendant votre prochain tour, le Coût de retraite d'Apireine est de 0</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3"/>
+  </carte>
+  <carte cid="24" pkmnid="45" rarete="rare" types="plante">
+  	<pv>120</pv>
+  	<pokebody nom="Fleur allégène">Aucun joueur ne peut jouer de carte Dresseur de sa main</pokebody>
+  	<attaques>
+  		<attaque nom="Pollen étincelant">
+  			<degats>50+</degats>
+  			<types>
+  				<type>plante</type>
+  				<type>plante</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>lancez une pièce. Si c'est face, cette attaque inflige 50 dégâts plus 20 dégâts supplémentaires. Si c'est pile, le Pokémon Défenseur est maintenant Confus.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  </carte>
+  <carte cid="25" pkmnid="461" rarete="rare" types="obscur">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Feinte">
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Choisiseez l'un des Pokémon de votre adversaire. Cette attaque inflige 30 dégâts à ce Pokémon. Les dégâts de cette attaque ne sont pas affectés par la faiblesse, la résistance, les Poképowers et les pokébodies ou tout autre effet ou action sur ce Pokémon.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<pokepower nom="Griffentaille">Une seule fois pendant votre tour, avant votre attaque, lorsque vous jouez Dimoret de votre main pour faire évoluer l'un de vos Pokémon, vous pouvez demander à voir la main de votre adversaire. Choisissez une carte dans le main de votre adversaire et défaussez-la.</pokepower>
+  </carte>
+  <carte cid="26" pkmnid="136" rarete="uncommon" types="feu">
+  	<pv>90</pv>
+  	<description>Il stocke de l'air dans sa poche de flammes et le chauffe à une température de 1700°C.</description>
+  	<attaques>
+  		<attaque nom="Queue de flammes">
+  			<degats>30</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Lance-Flamme">
+  			<degats>90</degats>
+  			<types>
+  				<type>feu</type>
+  				<type>feu</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Défaussez une carte énergie attachée à Pyroli.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>eau</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="27" pkmnid="44" rarete="uncommon" types="plante">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Poudre Miracle">
+  			<types>
+  				<type>plante</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, choisissez un état spécial. Le Pokémon défenseur est maintenant affecté par cet état spécial.</description>
+  			<degats>30</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="28" pkmnid="135" types="electrique" rarete="uncommon">
+  	<pv>80</pv>
+  	<description>Il concentre la carge électrique créée dans chacune de ses cellules pour projeter un éclair.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>acier</resistance>
+  	</resistances>
+  	<attaques>
+  		<attaque nom="Hâte">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, éitez tous les effets d'attaques (y compris les dégâts) infligés à Voltali pendant le prochain tour de votre adversaire.</description>
+  			<degats>20</degats>
+  		</attaque>
+  		<attaque nom="Eclair fulgurant">
+  			<types>
+  				<type>electrique</type>
+  				<type>electrique</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>70</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="29" pkmnid="305" types="acier" rarete="uncommon">
+  	<pv>90</pv>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="3"/>
+  	<description>Il raffole de minerai de fer. Il défend son territoire en chargeant avec son corps d'acier.</description>
+  	<attaques>
+  		<attaque nom="Attaque de ferraille">
+  			<types>
+  				<type>acier</type>
+  			</types>
+  			<degats>20</degats>
+  			<description>Lancez une pièce. Si c'est face, récupérez une carte énergie acier das votre pile de défausse et attachez-là à Galegon.</description>
+  		</attaque>
+  		<attaque nom="Charge">
+  			<types>
+  				<type>acier</type>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>60</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="30" nom="Métang" rarete="uncommon" types="acier">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Enfoncer">
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  		</attaque>
+  		<attaque nom="Double Ecrasement">
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez 2 pièces. Cette attaque inflige 50 dégâts multipliés par le nombre de face.</description>
+  			<degats>50x</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  	<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="2"/>
+  </carte>
+  <carte cid="31" pkmnid="89" types="psy" rarete="uncommon">
+  	<pv>100</pv>
+  	<attaques>
+  		<attaque nom="Gliss'Crade">
+  			<types>
+  				<type>psy</type>
+  			</types>
+  			<description>Echangez le Pokémon Défenseur de votre adversaire avec l'un des Pokémon de Banc de votre adversaire. Le nouveau Pokémon Défenseur est maintenant Confus et Empoisonné.</description>
+  		</attaque>
+  		<attaque nom="Abattre">
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Si le Pokémon Défenseur est affecté par un état spécial, cette attaque inflige 50 dégâts plsu 30 dégâts supplémentaires.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3"/>
+  </carte>
+  <carte cid="32" nom="">
+  </carte>
+  <carte cid="33" pkmnid="26" types="electrique" rarete="uncommon">
+  	<pv>80</pv>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>acier</resistance>
+  	</resistances>
+  	<attaques>
+  		<attaque nom="Mise au Poing">
+  			<degats>30</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Etincelle">
+  			<degats>40</degats>
+  			<types>
+  				<type>electrique</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Inflige 20 dégâts à l'un des Pokémon se trouvant sur le Banc de votre adversaire. (N'appliquez ni la faiblesse ni la résistance aux Pokémon de votre banc).</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="34" pkmnid="20" types="incolore" rarete="uncommon">
+  	<pv>80</pv>
+  	<description>Ses moustaches favorisent son équilibre. Ses crocs grandissent sans cesse pour mieux mâcher.</description>
+  	<attaques>
+  		<attaque nom="Incisives aiguisés">
+  			<degats>10x</degats>
+  			<types>
+  				<type>incolore</type>
+  				<description>Inflige 10 dégâts multipliés par le nombre de marqueurs de dégâts sur le Pokémon défenseur.</description>
+  			</types>
+  		</attaque>
+  		<attaque nom="Rongetout">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Défaussez une carte énergie attachée au Pokémon défenseur.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  </carte>
+  <carte cid="35" pkmnid="302" types="obscur" rarete="uncommon">
+  	<pv>60</pv>
+  	<description>Ce Pokémon vit dans les grottes obscures et mange des gemmes qu'il déterre avec ses griffes acérées.</description>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Déraciner">
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<description>Cherchez une carte dans votre pile de défausse, montrez-là à votre adversaire, puis placez-là sur le dessus de votre deck.</description>
+  		</attaque>
+  		<attaque nom="Main sombre">
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>20+</degats>
+  			<description>Si vous aez plus de cartes dans votre main que votre adversaire, cette attaque inflige 20 dégâts plus 30 dégâts supplémentaires.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="36" pkmnid="123" types="plante" rarete="uncommon">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Frap'Invisible">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>20</degats>
+  			<description>Pendant le prochain tour de votre adversaire, si Insécateur doit subir les dégâts d'une attaque, lancez une pièce. Si c'est face, Insécateur ne subit pas les dégâts infligés par cette attaque.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="37" pkmnid="435" rarete="uncommonc" types="obscur">
+  	<pv>80</pv>
+  	<description>Il attaque en projetant un liquide puant sur ses ennemis. L'odeur s'atténue quand il tire en rafale.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Gaz étourdissant">
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant empoisonné. Si c'est pile, le Pokémon défenseur est maintenant paralysé.</description>
+  		</attaque>
+  		<attaque nom="Combo-Griffe">
+  			<degats>30x</degats>
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez 3 pièces. cette attaque inflige 30 dégâts mutipliés par le nombre de côtés face.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="38" pkmnid="80" rarete="uncommon" types="eau">
+  	<pv>90</pv>
+  	<description>D'une nature assez léthargique, il ne ressent plus la douleur à cause du poison injecté par le Kokiyas.</description>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  	<attaques>
+  		<attaque nom="Régénration ventrale">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Retirez 3 marqueurs de dégâts à Flagadoss, ainsi que tous ses états spéciaux.</description>
+  		</attaque>
+  		<attaque nom="Voyage surprenant">
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>50</degats>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant Confus. Si c'est pile, Flagadoss est maintenant Confus.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="39" pkmnid="176" rarete="uncommon" types="incolore">
+  	<pv>80</pv>
+  	<attaques>
+  		<attaque nom="Relancer">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Cherchez une carte dans votre deck et placez la dans votre main. Mélangez ensuite votre deck.</description>
+  		</attaque>
+  		<attaque nom="Vol">
+  			<degats>30</degats>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est pile, cette attaque ne fait rien. Si c'est face, évitez tous les effets d'attaque (y compris les dégâts) infligés à Togetic pendant le prochain tour de votre adversaire.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="40" pkmnid="201" types="psy" rarete="uncommon">
+  	<attaques>
+  		<attaque nom="Puissance Cachée">
+  			<degats>10</degats>
+  			<types>
+  				<type>psy</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<pv>50</pv>
+  	<pokepower nom="Ténèbres">Une seule fois pendant votre tour, lorsque vous prenez Zarbi dans votre main et le placez sur votre banc, vous pouvez chercher une carte énergie obscur dans votre deck, la montrer à votre adversaire et la placer dnas votre main. Ensuite mélangez votre deck.</pokepower>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="41" pkmnid="134" rarete="uncommon" types="eau">
+  	<pv>90</pv>
+  	<description>Si ses nageoires vibrent, il y a des chances qu'il se mette à pleuvoir dans les prochaines heures.</description>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  	<attaques>
+  		<attaque nom="Spirale épuisante">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Retirez 2 marqueurs de dégâts à Aquali</description>
+  			<degats>20</degats>
+  		</attaque>
+  		<attaque nom="Double splash">
+  			<types>
+  				<type>eau</type>
+  				<type>eau</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Choisissez 2 des Pokémon de votre adversaire. Cette attaque inflige 30 dégâts à chacun d'entre eux. (N'appliquez ni la faiblesse ni la résistance aux Pokémon du banc)</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="42" pkmnid="304" rarete="common" types="acier">
+  	<pv>50</pv>
+  	<description>L'armure d'acier qui recouvre son corps s'émiette quand il évolue pour laisser place à une nouvelle.</description>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Strido-son">
+  			<types>
+  				<type>acier</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant Confus.</description>
+  		</attaque>
+  		<attaque nom="Coup d'boule">
+  			<degats>20</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="43" pkmnid="374" types="acier" rarete="common">
+  	<pv>50</pv>
+  	<attaques>
+  		<attaque nom="Allonger">
+  			<degats>10</degats>
+  			<types>
+  				<type>acier</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Simplécrasement">
+  			<degats>50</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>lancez une pièce. Si c'est pile, cette attaque ne fait rien.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="44" pkmnid="415" rarete="common" types="plante">
+  	<pv>30</pv>
+  	<description>Les Apitrini s'agglutinent par grappes de 100 à la nuit tombée pour dormir.</description>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Assaut furieux">
+  			<description>Si Apireine se trouve sur votre banc et a des marqueurs de dégâts, cette attaque inflige 20 dégâts plus 60 dégâts supplémentaires et le Pokémon défenseur est maintenant empoisonné.</description>
+  			<degats>20+</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="45" pkmnid="84" rarete="common" types="incolore">
+  	<pv>50</pv>
+  	<attaques>
+  		<attaque nom="Picpic">
+  			<degats>10</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Double coup d'tête">
+  			<degats>50</degats>
+  			<description>Lancez 2 pièces. Si vous obtenez un côté pile, cette attaque ne fait rien.</description>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="46" pkmnid="425" rarete="common" types="psy">
+  	<pv>50</pv>
+  	<description>Un enfant aurait disparu après avoir confondu un ballon de baudruche avec un baudrive.</description>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Lilliput">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Tous les dégâts infligés à Baudrive par des attaques pendant le prochain tour de votre adversaire sont réduits de 20 (après application de la faiblesse et de la résistance).</description>
+  		</attaque>
+  		<attaque nom="Tirer">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, échangez le Pokémon défenseur avec un Pokémon du banc de votre adversaire.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="47" pkmnid="133" rarete="common" types="incolore">
+  	<pv>50</pv>
+  	<attaques>
+  		<attaque nom="Charge">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<degats>10</degats>
+  		</attaque>
+  		<attaque nom="Morsure">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>20</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="48" pkmnid="133" rarete="common" types="incolore">
+  	<pv>50</pv>
+  	<description>Son ADN très instable s'adapte toujours à son environnement. Il évolue quand ce dernier change.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Appel à la famille">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Choisissez un Pokémon de base dans votre deck et placez-le sur votre banc. Ensuite mélangez votre deck.</description>
+  		</attaque>
+  		<attaque nom="Chatouille">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>10</degats>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant paralysé.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="49" pkmnid="207" types="combat" rarete="common">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Poison Neural">
+  			<degats>20</degats>
+  			<types>
+  				<type>combat</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défenseur est maintenant Paralysé et Endormi.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>eau</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>electrique</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="50" nom="">
+  </carte>
+  <carte cid="51" pkmnid="107" rarete="common" types="combat">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Détection">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, évitez tous les effets d'attaques (y compris les dégâts) infligés à Tygnon pendant le prochain tour de votre adversaire.</description>
+  		</attaque>
+  		<attaque nom="Stratopercut">
+  			<types>
+  				<type>combat</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Les dégâts infligés par cette attaque ne sont pas affectés par la résistance.</description>
+  			<degats>30</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="52" pkmnid="106" rarete="common" types="combat">
+  	<pv>80</pv>
+  	<description>S'il commence à donner des séries de coups de pied, ses jambes grandissent et il gagne en allonge.</description>
+  	<attaques>
+  		<attaque nom="Koud'pied">
+  			<degats>20</degats>
+  			<types>
+  				<type>combat</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Pied Voltige">
+  			<degats>60</degats>
+  			<types>
+  				<type>combat</type>
+  				<type>combat</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  </carte>
+  <carte cid="53" pkmnid="228" rarete="common" types="obscur">
+  	<pv>50</pv>
+  	<description>Il communique en produisant différets cris avec ses semblables ou quand il poursuit sa proie.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Croc aiguisé">
+  			<degats>30</degats>
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="54" pkmnid="228" types="obscur" rarete="common">
+  	<pv>50</pv>
+  	<attaques>
+  		<attaque nom="Sauter">
+  			<degats>
+  				<degat>10+</degat>
+  			</degats>
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, cette attaque inflige 10 dégâts plus 10 dégats supplémentaires.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="55" pkmnid="296" types="combat" rarete="common">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Ecraser">
+  			<types>
+  				<type>combat</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>lancez 2 pièces. Cette attaque inflige 20 dégâts plus 10 dégâts supplémentaires pour chaque côté face.</description>
+  			<degats>20+</degats>
+  		</attaque>
+  		<attaque nom="Gifle">
+  			<types>
+  				<type>combat</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>40</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  </carte>
+  <carte cid="56" pkmnid="303" rarete="common" types="acier">
+  	<pv>60</pv>
+  	<description>Ses cornes d'acier forment une grande mâchoire avec laquelle il mord férocement ses adversaires.</description>
+  	<attaques>
+  		<attaque nom="Pioche égoïste">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Regardez la carte du dessus de votre deck. Vous pouvez l'ajouter à votre main. Sinon, défaussez-là et piochez une carte.</description>
+  		</attaque>
+  		<attaque nom="Mâchoire destructrice">
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Lancez une pièce. Si c'est face, le Pokémon défensuer est maintenant paralysé et vous devez défausser une énergie qui lui est attachée.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="57" pkmnid="200" types="psy" rarete="common">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Marmonner">
+  			<degats>10</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Pioche Mutuelle">
+  			<types>
+  				<type>psy</type>
+  			</types>
+  			<description>Chaque joueur pioche 1 carte</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>obscur</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>incolore</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="58" nom="Cornèbre" types="obscur" rarete="common">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Etonnement">
+  			<degats>10</degats>
+  			<types>
+  				<type>obscur</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, choisisez au hasard une carte dans la main de votre adversaire. Regardez la carte que vous avez choisie, puis demandez  à votre adversaire de la mélanger dans votre deck.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="59" nom="Cornèbre" rarete="common" types="obscur">
+  	<pv>70</pv>
+  	<description>Il parait qu'une fois pourchassé, il attire son ennemi dans la montagne où il se perdra.</description>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  	<attaques>
+  		<attaque nom="Glissade">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<degats>10</degats>
+  		</attaque>
+  		<attaque nom="Tranch'Obscur">
+  			<types>
+  				<type>obscur</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="60" pkmnid="43" types="plante" rarete="common">
+  	<pv>40</pv>
+  	<attaques>
+  		<attaque nom="Collision">
+  			<degats>10</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Trouver un ami">
+  			<types>
+  				<type>plante</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est face, cherchez un pokémon plante dans votre deck, montrez-le à votre adversaire, puis ajoutez le à votre main. Mélangez ensuite votre deck.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="61" pkmnid="25" types="electrique" rarete="common">
+  	<pv>50</pv>
+  	<attaques>
+  		<attaque nom="Souplesse">
+  			<degats>10x</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez 2 pièces. Cette attaque inflige 10 dégâts multipliés par le nombre de faces.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>acier</resistance>
+  	</resistances>
+  	<retraite cout="1"/>
+  </carte>
+  <carte cid="62" pkmnid="204" rarete="common" types="plante">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Roulade">
+  			<degats>10</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2"/>
+  </carte>
+  <carte cid="63" pkmnid="204" rarete="common" types="plante">
+  	<pv>60</pv>
+  	<description>Il renforce sa carapace en y rajoutant des écorces d'arbre. Il devient alors plus lourd.</description>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2" />
+  	<attaques>
+  		<attaque nom="Puissance">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Pendant votre prochain tour, l'attaque suprise de Pomdepik inflige 80 dégâts de base.</description>
+  		</attaque>
+  		<attaque nom="Attaque surprise">
+  			<types>
+  				<type>plante</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez une pièce. Si c'est pile, cette attaque ne fait rien.</description>
+  			<degats>40</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="64" pkmnid="19" rarete="common" types="incolore">
+  	<pv>40</pv>
+  	<description>Vivant là où se trouve la nourriture, ce charognard passe ses journées à la rechercher.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<retraite cout="1" />
+  	<attaques>
+  		<attaque nom="Ronge">
+  			<types>incolore</types>
+  		</attaque>
+  		<degats>20</degats>
+  	</attaques>
+  </carte>
+  <carte cid="65" pkmnid="123" types="plante" rarete="common">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Coupe">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>20</degats>
+  		</attaque>
+  		<attaque nom="Coup déchirant">
+  			<types>
+  				<type>plante</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>50</degats>
+  			<description>Insécateur ne peut pas utiliser son coup déchirant pendant votre prochain tour.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<retraite  cout="1" />
+  </carte>
+  <carte cid="66" pkmnid="79" rarete="common" types="eau">
+  	<pv>60</pv>
+  	<description>Une sève sucrée coule du bout de sa queue. Peu nutritive, elle reste agréable à mâcouiller.</description>
+  	<faiblesses>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2" />
+  	<attaques>
+  		<attaque nom="Méga boum">
+  			<types>
+	  			<type>incolore</type>
+  			</types>
+  			<description>Regardez les 5 crtes du dessus de votre deck. Choisissez autant de Pokémon de base que vous le voulez et placez-les sur votre Banc. Mélangez les autres cartes avec votre deck.</description>
+	    </attaque>
+  		<attaque nom="Pluie éclaboussante">
+  			<types>
+	  			<type>eau</type>
+	  			<type>incolore</type>
+  			</types>
+  			<degats>20</degats>
+	    </attaque>
+    </attaques>
+  </carte>
+  <carte cid="67" pkmnid="218" rarete="common" types="feu">
+  	<pv>60</pv>
+  	<pokepower>Une seule fois pendant votre tour (avant votre attaque), vous pouvez défausser la carte du dessus de votre deck. S'il s'agit d'une carte énergie feu, attachez-là à Limagma. Ce pouvoir ne peut-être utilisé si Limagma est affecté par un statut spécial.</pokepower>
+  	<faiblesses>
+  		<faiblesse>eau</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2" />
+  	<attaques>
+  		<attaque nom="Fournaise">
+  			<types>
+  				<type>feu</type>
+  				<type>feu</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>40</degats>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="68" pkmnid="215" types="obscur" rarete="common">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Combo-griffe">
+  			<degats>10x</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Lancez 3 pièces. Cette attaque inflige 10 dégâts multipliés par le nombre de face.</description>
+  		</attaque>
+  		<attaque nom="Baston">
+  			<degats>20x</degats>
+  			<types>
+  				<type>obscur</type>
+  				<type>obscur</type>
+  			</types>
+  			<description>Lancez une pièce pour chacun de vos Pokémon en jeu. Cette attaque inflige 20 dégâts multipliés par le nombre de face.</description>
+  		</attaque>
+  	</attaques>
+  	<description>De nature agressive, il chasse les Roucool de leur nid et dévore les oeufs abandonnés.</description>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  </carte>
+  <carte cid="69" pkmnid="434" types="obscur" rarete="common">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Double Ecorchure">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<degats>10x</degats>
+  			<description>lancez 2 pièces. Cette attaque inflige 10 dégâts mutipliés par le nombre de côtés face.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="1" />
+  </carte>
+  <carte cid="70" pkmnid="175" types="incolore" rarete="common">
+  	<pv>40</pv>
+  	<attaques>
+  		<attaque nom="Supplication">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Demandez à votre adversaire si vous pouvez piocher 2 cartes. S'il accepte, piochez 2 cartes. S'il refuse, cette attaque inflige 20 dégâts au Pokémon défenseur.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<retraite  cout="1" />
+  </carte>
+  <carte cid="71" nom="Tour Cendrée" types="stade" rarete="uncommon" visible="false">
+  	<description>Cette carte reste en jeu lorsque vous la jouez. Défaussez-là si une autre carte Stade est jouée. Si une autre carte du même nom est en jeu, vous ne pouvez pas l'utiliser.
+  	Une seule fois pendant le tour de chaque joueur, ce joueur peut lancer une pièce. Si c'est face, il cherche une carte énergie de base dans sa pile de défausse, la montre à son adversaire et l'ajoute à sa main.</description>
+  </carte>
+  <carte cid="72" nom="Défenseur" types="dresseur" rarete="uncommon" visible="false">
+  	<description>Attachez défenseur à l'un de vos Pokémon. Défaussez cette carte une fois le prochain tour de votre adversaire terminé. Tous les dégâts d'attaque infligés par votre adversaire au Pokémon auquel Défenseur est attaché sont réduits de 20 (après application de la faiblesse et de la résistance).</description>
+  </carte>
+  <carte cid="73" nom="Chang'énergie" types="dresseur" rarete="uncommon" visible="false">
+  	<description>Choisissez une carte énergie dans votre main, montrez-là à votre adversaire et placez-là sur le dessus de votre deck. Cherchez une carte énergie dans votre deck, montrez-là à votre adversaire, puis ajoutez-là à votre main. Mélangez ensuite votre deck.</description>
+  </carte>
+  <carte cid="74" nom="">
+  </carte>
+  <carte cid="75" nom="Boîte légendaire" rarete="uncommon" types="dresseur" visible="false">
+  	<description>Dévoilez les 10 cartes du dessus de votre deck. Si vous déoilez les deux moitiés d'un Pokémon Légende, placez ces cartes sur votre banc et attachez toutes les cartes énergies dévoilées à ce Pokémon Légende. Mélangez les autres cartes avec votre deck. (Vous ne pouvez jouer qu'un seul Pokémon Légende de cette façon).</description>
+  </carte>
+  <carte cid="76" nom="Ruines d'Alpha" rarete="uncommon" types="dresseur" visible="false">
+  	<description>Cette carte reste en jeu lorsque vous la jouez. Défaussez là si une autre carte stade est jouée. Si une autre carte du même nom est en jeu, vous ne pouvez pas l'utiliser.
+  	Chaque Pokémon en jeu n'a aucun résistance.</description>
+  </carte>
+  <carte cid="77" nom="Entrainement de Sage" rarete="uncommon" types="supporter" visible="false">
+  	<description>Vous ne pouvez jouer qu'une seule carte supporter par tour. Lorsque vous jouez cette carte, placez là près de votre Pokémon actif. Une fois votre tour terminé, défaussez cette carte.
+  	Regardez les 5 cartes du dessus de votre deck. Choisissez-en 2 et ajoutez-les à votre main. Défaussez les autres cartes.</description>
+  </carte>
+  <carte cid="78" nom="Fourberie de la Team Rocket" rarete="uncommon" type="supporter" visible="false">
+  	<description>Vous ne pouvez jouer qu'une seule carte supporter par tour. Lorsque vous jouez cette carte, placez là près de votre Pokémon actif. Une fois votre tour terminé, défaussez cette carte.
+  	Piochez 2 cartes. Ensuite, votre adversaire défausse une carte de sa main.</description>
+  </carte>
+  <carte cid="79" nom="Energie Obscurité" types="obscur" rarete="uncommon" visible="false">
+  	<description>Si le Pokémon auquel est attachée Energie obscurité lance une attaque, cette dernière inflige 10 dégâts supplémentaires au Pokémon actif. (avant application de la faiblesse et de la résistance). Ignorez cet effet si le Pokémon auquel est attachée Energie Obscurité n'est pas de type obscur. Energie obscurité fournit de l'énergie obscurité. (Ne compte pas comme une énergie de base)</description>
+  </carte>
+  <carte cid="80" nom="Energie Métal" types="acier" rarete="uncommon" visible="false">
+  	<description>Les dégâts d'attaque infligés au Pokémon auquel énergie métal est attachée sont réduits de 10 (après application de la faiblesse et de la résistance). Ignorez cet effet si le Pokémon auquel est attachée énergie métal n'est pas acier. Energie métal fournit de l'énergie acier. (Ne compte pas comme une énergie de base).</description>
+  </carte>
+  <carte cid="81" pkmnid="196" rarete="holo" types="psy">
+  	<pv>100</pv>
+  	<pokebody nom="Souvenirs d'évolution">Mentali peut réutiliser les attaques de tous les Pokémon que vous avez joué et qui sont des évolutions d'Evoli. (Vous devrez néanmoins avoir les Energies nécessaires pour utiliser chaque attaque).</pokebody>
+  	<attaques>
+  		<attaque nom="Rayonnement solaire">
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>30</degats>
+  			<description>Retirez 1 marqueur de dégât à chacun de vos Pokémon.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesses>psy</faiblesses>
+  	</faiblesses>
+  	<retraite cout="1" />
+  </carte>
+  <carte cid="82" pkmnid="229" rarete="holo" types="obscur">
+  	<pv>110</pv>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite>1</retraite>
+  	<pokepower nom="Haleine de feu">Une seule fois pendant votre tour (avant votre attaque), vous pouvez lancer une pièce. Si c'est face, le Pokémon défenseur est maintenant brûlé. Ce pouvoir ne peut être utilisé si démolosse est affecté par un état spécial.</pokepower>
+  	<attaques>
+  		<attaque nom="Pince des ténêbres">
+  			<degats>70</degats>
+  			<types>
+  				<type>obscure</type>
+  				<type>obscure</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Le Pokémon défenseur ne peut pas battre en retraite urant le prochain tour de votre adversaire.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="83" pkmnid="26" types="electrique" rarete="holo">
+  	<pv>100</pv>
+  	<pokepower nom="Voltage Maxi">Autant de fois que vous le voulez (avant votre attaque), vous pouvez prendre une carte énergie électrique attachée à l'un de vos Pokémon de votre banc et l'attacher à Raichu. Ce pouvoir ne peut-être utilisé si Raichu est affectée par un état spécial.</pokepower>
+  	<attaques>
+  		<attaque nom="Méga tonnerre">
+  			<degats>120</degats>
+  			<description>Défaussez toutes les cartes énergies attachées à Raichu</description>
+  			<types>
+  				<type>electrique</type>
+  				<type>electrique</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>combat</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>acier</resistance>
+  	</resistances>
+  	<retraite cout="1" />
+  </carte>
+  <carte cid="84" pkmnid="212" types="acier" rarete="holo">
+  	<pv>100</pv>
+  	<faiblesses>
+  		<faiblesse>feu</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>psy</resistance>
+  	</resistances>
+  	<retraite cout="2" />
+  	<pokebody nom="Armure rouge">Evitez tous les dégâts d'attaque infligés à Cizayox par les Pokémon de votre adversaire auxquels sont attachées des cartes d'énergies spéciale.</pokebody>
+  	<attaques>
+  		<attaques nom="Ciseaux d'acier">
+  			<degats>30+</degats>
+  			<types>
+  				<type>acier</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Inflige 30 dégâts plus 20 dégâts supplémentaires pour chaque énergie acier attachées à Cizayox.</description>
+  		</attaques>
+  	</attaques>
+  </carte>
+  <carte cid="85" pkmnid="199" types="psy" rarete="holo">
+  	<pv>100</pv>
+  	<pokepower nom="Choix de l'adversaire">Une sule fois pendant votre tour (avant otre attaque), vous pouvez dévoiler 2 cartes du dessus de votre deck pour que votre adversaire choisisse l'une d'entre elles. Ajoutez cette carte dans votre main et placez l'autre carte au dessous de votre deck. Ce pouvoir ne peut pas être utilisé si Roigada est affecté par un état spécial.</pokepower>
+  	<faiblesses>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2" />
+  	<attaques>
+  		<attaque nom="Super psy">
+  			<degats>60</degats>
+  			<types>
+  				<type>psy</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="86" pkmnid="197" types="obscur" rarete="holo">
+  	<pv>100</pv>
+  	<attaques>
+  		<attaque nom="Evorafale">
+  			<degats>50+</degats>
+  			<types>
+  				<type>obscure</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Inflige 50 dégâts plus 10 dégâts supplémentaires pour chacun de vos Pokémon en jeuqui est une évolution d'Evoli.</description>
+  		</attaque>
+  	</attaques>
+  	<pokepower nom="Lune nuageuse">Une seule fois pendant votre tour (avant votre attaque), si Noctali est votre Pokémon actif, vous pouvez lancer une pièce. Si c'est face, reprenez Noctali dans votre main ainsi que toutes les cartes qui lui sont attachées. Ce pouvoir ne peut être utilisé si Noctali est affecté par un état spécial.</pokepower>
+  </carte>
+  <carte cid="87" nom="Kyogre et Groudon Légende" types="eau,combat" rarete="holo">
+  	<pv>150</pv>
+  	<description>Lorsque ce Pokémon est mis K.O. , votre adversaire prend 2 cartes récompense.</description>
+  	<attaques>
+  		<attaques nom="Méga raz de marée">
+  			<degats>30x</degats>
+  			<types>
+  				<type>eau</type>
+  				<type>eau</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Défaussez les 5 cartes du dessus du deck de votre adversaire. Cette attaque inflige 30 dégâts, mulitpliés par le nombre de cartes énergies que vous avez défaussés, à tous les Pokémon du banc de votre adversaire (n'appliquez ni la faiblesse ni la résistance aux Pokémon du banc).</description>
+  		</attaques>
+  		<attaque nom="Eruption massive">
+  			<types>
+  				<type>combat</type>
+  				<type>combat</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>100x</degats>
+  			<description>Défaussez les 5 cartes du dessus du deck de votre adversaire, cette attaque inflige 100 multipliés par le nombre d'énergies que vous avez défaussés.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>plante</faiblesse>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3" />
+  </carte>
+  <carte cid="88" nom="Kyogre et Groudon Légende" rarete="holo" types="eau,combat">
+  	<pv>150</pv>
+  	<description>Lorsque ce Pokémon est mis K.O. , votre adversaire prend 2 cartes récompense.</description>
+  	<attaques>
+  		<attaques nom="Méga raz de marée">
+  			<degats>30x</degats>
+  			<types>
+  				<type>eau</type>
+  				<type>eau</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Défaussez les 5 cartes du dessus du deck de votre adversaire. Cette attaque inflige 30 dégâts, mulitpliés par le nombre de cartes énergies que vous avez défaussés, à tous les Pokémon du banc de votre adversaire (n'appliquez ni la faiblesse ni la résistance aux Pokémon du banc).</description>
+  		</attaques>
+  		<attaque nom="Eruption massive">
+  			<types>
+  				<type>combat</type>
+  				<type>combat</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>100x</degats>
+  			<description>Défaussez les 5 cartes du dessus du deck de votre adversaire, cette attaque inflige 100 multipliés par le nombre d'énergies que vous avez défaussés.</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse>plante</faiblesse>
+  		<faiblesse>electrique</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3" />
+  </carte>
+  <carte cid="89" pkmnids="384,386" nom="%1 and %2 Legend" rarete="holo" types="incolore,psy">
+  	<attaques nom="Châtiments stellaire">
+  		<types>
+  			<typ>feu</typ>
+  			<typ>feu</typ>
+  			<typ>electrique</typ>
+  			<typ>incolore</typ>
+  		</types>
+  		<description>Défaussez toutes les cartes énergies feu attachées à Rayquaza et Deoxys Légende.</description>
+  	</attaques>
+  	<pokebody>Si le Pokémon de votre adversaire est ms K.O. par une attaque de Rayquaza et Deoxys Légende, prenez une carte Récompense supplémentaire.</pokebody>
+  	<faiblesses>
+  		<faiblesse>incolore</faiblesse>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3" />
+  	<decription>Lorsque ce Pokémon est mis K.O., votre adversaire prend 2 cartes récompense.</decription>
+  </carte>
+  <carte cid="90" pkmnids="384,386" nom="%1 and %2 Legend" rarete="holo" types="incolore,psy">
+  	<attaques nom="Châtiments stellaire">
+  		<types>
+  			<typ>feu</typ>
+  			<typ>feu</typ>
+  			<typ>electrique</typ>
+  			<typ>incolore</typ>
+  		</types>
+  		<description>Défaussez toutes les cartes énergies feu attachées à Rayquaza et Deoxys Légende.</description>
+  	</attaques>
+  	<pokebody>Si le Pokémon de votre adversaire est ms K.O. par une attaque de Rayquaza et Deoxys Légende, prenez une carte Récompense supplémentaire.</pokebody>
+  	<faiblesses>
+  		<faiblesse>incolore</faiblesse>
+  		<faiblesse>psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="3" />
+  	<decription>Lorsque ce Pokémon est mis K.O., votre adversaire prend 2 cartes récompense.</decription>
+  </carte>
+  <carte cid="91" nom="Alphabet Alpha" types="dresseur" rarete="holo" visible="false">
+  	<description>Les joueurs reprennent toutes les cartes Stade mises en jeu.</description>
+  </carte>
+</extension>

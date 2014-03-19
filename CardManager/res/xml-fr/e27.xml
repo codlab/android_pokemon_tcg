@@ -1,0 +1,224 @@
+<extension nb="110" reverse="true">
+  <carte cid="1" pkmnid="348">
+  </carte>
+  <carte cid="2" pkmnid="346">
+  </carte>
+  <carte cid="3" pkmnid="386">
+  </carte>
+  <carte cid="4" pkmnid="386">
+  </carte>
+  <carte cid="5" pkmnid="386">
+  </carte>
+  <carte cid="6" pkmnid="386">
+  </carte>
+  <carte cid="7" pkmnid="330">
+  </carte>
+  <carte cid="8" pkmnid="130">
+  </carte>
+  <carte cid="9" pkmnid="141">
+  </carte>
+  <carte cid="10" pkmnid="230">
+  </carte>
+  <carte cid="11" pkmnid="380">
+  </carte>
+  <carte cid="12" pkmnid="381">
+  </carte>
+  <carte cid="13" pkmnid="139">
+  </carte>
+  <carte cid="14" pkmnid="18">
+  </carte>
+  <carte cid="15" pkmnid="26">
+  </carte>
+  <carte cid="16" pkmnid="384">
+  </carte>
+  <carte cid="17" pkmnid="45">
+  </carte>
+  <carte cid="18" pkmnid="359">
+  </carte>
+  <carte cid="19" pkmnid="182">
+  </carte>
+  <carte cid="20" pkmnid="257">
+  </carte>
+  <carte cid="21" pkmnid="380">
+  </carte>
+  <carte cid="22" pkmnid="381">
+  </carte>
+  <carte cid="23" pkmnid="303">
+  </carte>
+  <carte cid="24" pkmnid="150">
+  </carte>
+  <carte cid="25" pkmnid="299">
+  </carte>
+  <carte cid="26" pkmnid="384">
+  </carte>
+  <carte cid="27" pkmnid="378">
+  </carte>
+  <carte cid="28" pkmnid="377">
+  </carte>
+  <carte cid="29" pkmnid="379">
+  </carte>
+  <carte cid="30" pkmnid="369">
+  </carte>
+  <carte cid="31" pkmnid="302">
+  </carte>
+  <carte cid="32" pkmnid="336">
+  </carte>
+  <carte cid="33" pkmnid="324">
+  </carte>
+  <carte cid="34" pkmnid="335">
+  </carte>
+  <carte cid="35" pkmnid="142">
+  </carte>
+  <carte cid="36" pkmnid="323">
+  </carte>
+  <carte cid="37" pkmnid="358">
+  </carte>
+  <carte cid="38" pkmnid="344">
+  </carte>
+  <carte cid="39" pkmnid="256">
+  </carte>
+  <carte cid="40" pkmnid="232">
+  </carte>
+  <carte cid="41" pkmnid="103">
+  </carte>
+  <carte cid="42" pkmnid="44">
+  </carte>
+  <carte cid="43" pkmnid="55">
+  </carte>
+  <carte cid="44" nom="Morpheo de Holon">
+  </carte>
+  <carte cid="45" pkmnid="305">
+  </carte>
+  <carte cid="46" pkmnid="310">
+  </carte>
+  <carte cid="47" pkmnid="284">
+  </carte>
+  <carte cid="48" pkmnid="53">
+  </carte>
+  <carte cid="49" pkmnid="17">
+  </carte>
+  <carte cid="50" pkmnid="57">
+  </carte>
+  <carte cid="51" pkmnid="26">
+  </carte>
+  <carte cid="52" pkmnid="117">
+  </carte>
+  <carte cid="53" pkmnid="319">
+  </carte>
+  <carte cid="54" pkmnid="329">
+  </carte>
+  <carte cid="55" pkmnid="340">
+  </carte>
+  <carte cid="56" pkmnid="202">
+  </carte>
+  <carte cid="57" pkmnid="347">
+  </carte>
+  <carte cid="58" pkmnid="304">
+  </carte>
+  <carte cid="59" pkmnid="343">
+  </carte>
+  <carte cid="60" pkmnid="339">
+  </carte>
+  <carte cid="61" pkmnid="318">
+  </carte>
+  <carte cid="62" pkmnid="341">
+  </carte>
+  <carte cid="63" pkmnid="341">
+  </carte>
+  <carte cid="64" pkmnid="309">
+  </carte>
+  <carte cid="65" pkmnid="102">
+  </carte>
+  <carte cid="66" pkmnid="116">
+  </carte>
+  <carte cid="67" pkmnid="140">
+  </carte>
+  <carte cid="68" pkmnid="345">
+  </carte>
+  <carte cid="69" pkmnid="129">
+  </carte>
+  <carte cid="70" pkmnid="56">
+  </carte>
+  <carte cid="71" pkmnid="52">
+  </carte>
+  <carte cid="72" pkmnid="322">
+  </carte>
+  <carte cid="73" pkmnid="43">
+  </carte>
+  <carte cid="74" pkmnid="138">
+  </carte>
+  <carte cid="75" pkmnid="231">
+  </carte>
+  <carte cid="76" pkmnid="172">
+  </carte>
+  <carte cid="77" pkmnid="16">
+  </carte>
+  <carte cid="78" pkmnid="25">
+  </carte>
+  <carte cid="79" pkmnid="25">
+  </carte>
+  <carte cid="80" pkmnid="261">
+  </carte>
+  <carte cid="81" pkmnid="54">
+  </carte>
+  <carte cid="82" pkmnid="283">
+  </carte>
+  <carte cid="83" pkmnid="255">
+  </carte>
+  <carte cid="84" pkmnid="328">
+  </carte>
+  <carte cid="85" nom="Aventurier Holon">
+  </carte>
+  <carte cid="86" nom="Fossile Holon">
+  </carte>
+  <carte cid="87" nom="Lac Holon">
+  </carte>
+  <carte cid="88" nom="Le projet de M. Rochard">
+  </carte>
+  <carte cid="89" nom="La découverte de Professeur Kosmo">
+  </carte>
+  <carte cid="90" nom="Super bonbon">
+  </carte>
+  <carte cid="91" nom="Fossile griffe">
+  </carte>
+  <carte cid="92" nom="Mystérieux fossile">
+  </carte>
+  <carte cid="93" nom="Fossile racine">
+  </carte>
+  <carte cid="94" nom="Energie Obscurité">
+  </carte>
+  <carte cid="95" nom="Energie Métal">
+  </carte>
+  <carte cid="96" nom="Energies multiples">
+  </carte>
+  <carte cid="97" nom="Energie Métal Obscur">
+  </carte>
+  <carte cid="98" nom="Energie Multicolore Delta">
+  </carte>
+  <carte cid="99" nom="Colhomard ex">
+  </carte>
+  <carte cid="100" nom="Mew ex">
+  </carte>
+  <carte cid="101" nom="Grahyena ex">
+  </carte>
+  <carte cid="102" pkmnid="130">
+  </carte>
+  <carte cid="103" pkmnid="150">
+  </carte>
+  <carte cid="104" nom="Pikachu Star">
+  </carte>
+  <carte cid="105" nom="Energie Plante">
+  </carte>
+  <carte cid="106" nom="Energie Feu">
+  </carte>
+  <carte cid="107" nom="Energie Eau">
+  </carte>
+  <carte cid="108" nom="Energie Electrik">
+  </carte>
+  <carte cid="109" nom="Energie Psy">
+  </carte>
+  <carte cid="110" nom="Energie Combat">
+  </carte>
+  <carte cid="111" pkmnid="151">
+  </carte>
+</extension>

@@ -1,0 +1,130 @@
+<extension nb="64" firstedition="true">
+  <carte cid="1" pkmnid="36" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="2" pkmnid="101" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="3" pkmnid="136" types="feu" rarete="holo">
+  </carte>
+  <carte cid="4" pkmnid="135" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="5" pkmnid="115" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="6" pkmnid="122" types="psy" rarete="holo">
+  </carte>
+  <carte cid="7" pkmnid="31" types="plante" rarete="holo">
+  </carte>
+  <carte cid="8" pkmnid="18" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="9" pkmnid="127" types="plante" rarete="holo">
+  </carte>
+  <carte cid="10" pkmnid="123" types="plante" rarete="holo">
+  </carte>
+  <carte cid="11" pkmnid="143" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="12" pkmnid="134" types="eau" rarete="holo">
+  </carte>
+  <carte cid="13" pkmnid="49" types="plante" rarete="holo">
+  </carte>
+  <carte cid="14" pkmnid="71" types="plante" rarete="holo">
+  </carte>
+  <carte cid="15" pkmnid="45" types="plante" rarete="holo">
+  </carte>
+  <carte cid="16" pkmnid="40" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="17" pkmnid="36" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="18" pkmnid="101" types="electrique" rarete="rare">
+  </carte>
+  <carte cid="19" pkmnid="136" types="feu" rarete="rare">
+  </carte>
+  <carte cid="20" pkmnid="135" types="electrique" rarete="rare">
+  </carte>
+  <carte cid="21" pkmnid="115" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="22" pkmnid="122" types="psy" rarete="rare">
+  </carte>
+  <carte cid="23" pkmnid="31" types="plante" rarete="rare">
+  </carte>
+  <carte cid="24" pkmnid="18" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="25" pkmnid="127" types="plante" rarete="rare">
+  </carte>
+  <carte cid="26" pkmnid="123" types="plante" rarete="rare">
+  </carte>
+  <carte cid="27" pkmnid="143" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="28" pkmnid="134" types="eau" rarete="rare">
+  </carte>
+  <carte cid="29" pkmnid="49" types="plante" rarete="rare">
+  </carte>
+  <carte cid="30" pkmnid="71" types="plante" rarete="rare">
+  </carte>
+  <carte cid="31" pkmnid="45" types="plante" rarete="rare">
+  </carte>
+  <carte cid="32" pkmnid="40" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="33" pkmnid="12" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="34" pkmnid="85" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="35" pkmnid="103" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="36" pkmnid="22" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="37" pkmnid="44" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="38" pkmnid="108" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="39" pkmnid="105" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="40" pkmnid="30" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="41" pkmnid="47" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="42" pkmnid="53" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="43" pkmnid="57" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="44" pkmnid="78" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="45" pkmnid="112" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="46" pkmnid="119" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="47" pkmnid="128" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="48" pkmnid="70" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="49" pkmnid="69" types="plante" rarete="common">
+  </carte>
+  <carte cid="50" pkmnid="104" types="combat" rarete="common">
+  </carte>
+  <carte cid="51" pkmnid="133" types="incolore" rarete="common">
+  </carte>
+  <carte cid="52" pkmnid="102" types="plante" rarete="common">
+  </carte>
+  <carte cid="53" pkmnid="118" types="eau" rarete="common">
+  </carte>
+  <carte cid="54" pkmnid="39" types="incolore" rarete="common">
+  </carte>
+  <carte cid="55" pkmnid="56" types="combat" rarete="common">
+  </carte>
+  <carte cid="56" pkmnid="52" types="incolore" rarete="common">
+  </carte>
+  <carte cid="57" pkmnid="29" types="plante" rarete="common">
+  </carte>
+  <carte cid="58" pkmnid="43" types="plante" rarete="common">
+  </carte>
+  <carte cid="59" pkmnid="46" types="plante" rarete="common">
+  </carte>
+  <carte cid="60" pkmnid="25" types="electrique" rarete="common">
+  </carte>
+  <carte cid="61" pkmnid="111" types="combat" rarete="common">
+  </carte>
+  <carte cid="62" pkmnid="21" types="incolore" rarete="common">
+  </carte>
+  <carte cid="63" pkmnid="48" types="plante" rarete="common">
+  </carte>
+  <carte cid="64" nom="Poké Ball" types="dresseur" rarete="common">
+  </carte>
+</extension>

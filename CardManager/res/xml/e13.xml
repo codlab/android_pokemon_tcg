@@ -1,0 +1,374 @@
+<extension nb="147" reverse="true">
+  <carte cid="1" spcid="H1" pkmnid="181">
+  </carte>
+  <carte cid="2" spcid="H2" pkmnid="59">
+  </carte>	
+  <carte cid="3" spcid="H3" pkmnid="168">
+  </carte>	
+  <carte cid="4" spcid="H4" pkmnid="184">
+  </carte>	
+  <carte cid="5" spcid="H5" pkmnid="182">
+  </carte>	
+  <carte cid="6" spcid="H6" pkmnid="242">
+  </carte>	
+  <carte cid="7" spcid="H7" pkmnid="101">
+  </carte>	
+  <carte cid="8" spcid="H8" pkmnid="244">
+  </carte>	
+  <carte cid="9" spcid="H9" pkmnid="196">
+  </carte>	
+  <carte cid="10" spcid="H10" pkmnid="103">
+  </carte>	
+  <carte cid="11" spcid="H11" pkmnid="229">
+  </carte>	
+  <carte cid="12" spcid="H12" pkmnid="97">
+  </carte>	
+  <carte cid="13" spcid="H13" pkmnid="189">
+  </carte>	
+  <carte cid="14" spcid="H14" pkmnid="230">
+  </carte>	
+  <carte cid="15" spcid="H15" pkmnid="171">
+  </carte>	
+  <carte cid="16" spcid="H16" pkmnid="82">
+  </carte>	
+  <carte cid="17" spcid="H17" pkmnid="89">
+  </carte>	
+  <carte cid="18" spcid="H18" pkmnid="34">
+  </carte>	
+  <carte cid="19" spcid="H19" pkmnid="38">
+  </carte>	
+  <carte cid="20" spcid="H20" pkmnid="224">
+  </carte>	
+  <carte cid="21" spcid="H21" pkmnid="212">
+  </carte>	
+  <carte cid="22" spcid="H22" pkmnid="199">
+  </carte>	
+  <carte cid="23" spcid="H23" pkmnid="208">
+  </carte>	
+  <carte cid="24" spcid="H24" pkmnid="185">
+  </carte>	
+  <carte cid="25" spcid="H25" pkmnid="245">
+  </carte>	
+  <carte cid="26" spcid="H26" pkmnid="73">
+  </carte>	
+  <carte cid="27" spcid="H27" pkmnid="176">
+  </carte>	
+  <carte cid="28" spcid="H28" pkmnid="248">
+  </carte>	
+  <carte cid="29" spcid="H29" pkmnid="197">
+  </carte>	
+  <carte cid="30" spcid="H30" pkmnid="71">
+  </carte>	
+  <carte cid="31" spcid="H31" pkmnid="45">
+  </carte>	
+  <carte cid="32" spcid="H32" nom="Elector">
+  </carte>	
+  <carte cid="33" spcid="1" pkmnid="181">
+  </carte>	
+  <carte cid="34" spcid="2" pkmnid="59">
+  </carte>	
+  <carte cid="35" spcid="3" pkmnid="168">
+  </carte>	
+  <carte cid="36" spcid="4" pkmnid="184">
+  </carte>	
+  <carte cid="37" spcid="5" pkmnid="182">
+  </carte>	
+  <carte cid="38" spcid="6" pkmnid="242">
+  </carte>	
+  <carte cid="39" spcid="7" pkmnid="232">
+  </carte>	
+  <carte cid="40" spcid="8" pkmnid="101">
+  </carte>	
+  <carte cid="41" spcid="9" pkmnid="239">
+  </carte>	
+  <carte cid="42" spcid="10" pkmnid="244">
+  </carte>	
+  <carte cid="43" spcid="11" pkmnid="196">
+  </carte>	
+  <carte cid="44" spcid="12" pkmnid="103">
+  </carte>	
+  <carte cid="45" spcid="13" pkmnid="103">
+  </carte>	
+  <carte cid="46" spcid="14" pkmnid="229">
+  </carte>	
+  <carte cid="47" spcid="15" pkmnid="229">
+  </carte>	
+  <carte cid="48" spcid="16" pkmnid="97">
+  </carte>	
+  <carte cid="49" spcid="17" pkmnid="189">
+  </carte>	
+  <carte cid="50" spcid="18" nom="Lipoutou">
+  </carte>	
+  <carte cid="51" spcid="19" pkmnid="230">
+  </carte>	
+  <carte cid="52" spcid="20" pkmnid="171">
+  </carte>	
+  <carte cid="53" spcid="21" pkmnid="171">
+  </carte>	
+  <carte cid="54" spcid="22" pkmnid="82">
+  </carte>	
+  <carte cid="55" spcid="23" pkmnid="89">
+  </carte>	
+  <carte cid="56" spcid="24" pkmnid="34">
+  </carte>	
+  <carte cid="57" spcid="25" pkmnid="38">
+  </carte>	
+  <carte cid="58" spcid="26" pkmnid="224">
+  </carte>	
+  <carte cid="59" spcid="27" pkmnid="47">
+  </carte>	
+  <carte cid="60" spcid="28" pkmnid="233">
+  </carte>	
+  <carte cid="61" spcid="29" pkmnid="57">
+  </carte>	
+  <carte cid="62" spcid="30" pkmnid="195">
+  </carte>	
+  <carte cid="63" spcid="31" pkmnid="78">
+  </carte>	
+  <carte cid="64" spcid="32" nom="Cisayox">
+  </carte>	
+  <carte cid="65" spcid="33" pkmnid="80">
+  </carte>	
+  <carte cid="66" spcid="34" pkmnid="199">
+  </carte>	
+  <carte cid="67" spcid="35" pkmnid="208">
+  </carte>	
+  <carte cid="68" spcid="36" pkmnid="185">
+  </carte>	
+  <carte cid="69" spcid="37" pkmnid="245">
+  </carte>	
+  <carte cid="70" spcid="38" pkmnid="73">
+  </carte>	
+  <carte cid="71" spcid="39" pkmnid="176">
+  </carte>	
+  <carte cid="72" spcid="40" pkmnid="248">
+  </carte>	
+  <carte cid="73" spcid="41" pkmnid="197">
+  </carte>	
+  <carte cid="74" spcid="42" pkmnid="71">
+  </carte>	
+  <carte cid="75" spcid="43" pkmnid="45">
+  </carte>	
+  <carte cid="76" spcid="44" nom="Elector">
+  </carte>	
+  <carte cid="77" spcid="45" pkmnid="69">
+  </carte>	
+  <carte cid="78" spcid="46" pkmnid="85">
+  </carte>	
+  <carte cid="79" spcid="47" pkmnid="180">
+  </carte>	
+  <carte cid="80" spcid="48" pkmnid="162">
+  </carte>	
+  <carte cid="81" spcid="49" nom="Gloom">
+  </carte>	
+  <carte cid="82" spcid="50a" pkmnid="55">
+  </carte>	
+  <carte cid="83" spcid="50b" pkmnid="55">
+  </carte>	
+  <carte cid="84" spcid="51" pkmnid="59">
+  </carte>	
+  <carte cid="85" spcid="52" pkmnid="82">
+  </carte>	
+  <carte cid="86" spcid="53" pkmnid="183">
+  </carte>	
+  <carte cid="87" spcid="54" pkmnid="105">
+  </carte>	
+  <carte cid="88" spcid="55" pkmnid="33">
+  </carte>	
+  <carte cid="89" spcid="56" pkmnid="247">
+  </carte>	
+  <carte cid="90" spcid="57" pkmnid="123">
+  </carte>	
+  <carte cid="91" spcid="58" nom="Hypocéan">
+  </carte>	
+  <carte cid="92" spcid="59" pkmnid="230">
+  </carte>	
+  <carte cid="93" spcid="60" pkmnid="188">
+  </carte>	
+  <carte cid="94" spcid="61" pkmnid="238">
+  </carte>	
+  <carte cid="95" spcid="62" pkmnid="167">
+  </carte>	
+  <carte cid="96" spcid="63" pkmnid="236">
+  </carte>	
+  <carte cid="97" spcid="64" pkmnid="100">
+  </carte>	
+  <carte cid="98" spcid="65" pkmnid="70">
+  </carte>	
+  <carte cid="99" spcid="66" pkmnid="194">
+  </carte>	
+  <carte cid="100" spcid="67" pkmnid="190">
+  </carte>	
+  <carte cid="101" spcid="68" pkmnid="69">
+  </carte>	
+  <carte cid="102" spcid="69" pkmnid="113">
+  </carte>	
+  <carte cid="103" spcid="70" pkmnid="170">
+  </carte>	
+  <carte cid="104" spcid="71" pkmnid="170">
+  </carte>	
+  <carte cid="105" spcid="72" pkmnid="104">
+  </carte>	
+  <carte cid="106" spcid="73" pkmnid="84">
+  </carte>	
+  <carte cid="107" spcid="74" pkmnid="96">
+  </carte>	
+  <carte cid="108" spcid="74" pkmnid="96">
+  </carte>	
+  <carte cid="109" spcid="75" pkmnid="133">
+  </carte>	
+  <carte cid="110" spcid="76" pkmnid="102">
+  </carte>	
+  <carte cid="111" spcid="77" pkmnid="102">
+  </carte>	
+  <carte cid="112" spcid="78" nom="Poissirène">
+  </carte>	
+  <carte cid="113" spcid="79" pkmnid="88">
+  </carte>	
+  <carte cid="114" spcid="80" pkmnid="58">
+  </carte>	
+  <carte cid="115" spcid="81" pkmnid="107">
+  </carte>	
+  <carte cid="116" spcid="82" pkmnid="237">
+  </carte>	
+  <carte cid="117" spcid="83" pkmnid="187">
+  </carte>	
+  <carte cid="118" spcid="84" pkmnid="116">
+  </carte>	
+  <carte cid="119" spcid="85" pkmnid="116">
+  </carte>	
+  <carte cid="120" spcid="86" pkmnid="228">
+  </carte>	
+  <carte cid="121" spcid="87" pkmnid="228">
+  </carte>	
+  <carte cid="122" spcid="88" pkmnid="115">
+  </carte>	
+  <carte cid="123" spcid="89" pkmnid="246">
+  </carte>	
+  <carte cid="124" spcid="90" pkmnid="108">
+  </carte>	
+  <carte cid="125" spcid="91" pkmnid="81">
+  </carte>	
+  <carte cid="126" spcid="92" pkmnid="56">
+  </carte>	
+  <carte cid="127" spcid="93" pkmnid="179">
+  </carte>	
+  <carte cid="128" spcid="94" pkmnid="241">
+  </carte>	
+  <carte cid="129" spcid="95a" pkmnid="122">
+  </carte>	
+  <carte cid="130" spcid="95b" pkmnid="122">
+  </carte>	
+  <carte cid="131" spcid="96" nom="Nidoran (m)">
+  </carte>	
+  <carte cid="132" spcid="97" pkmnid="43">
+  </carte>	
+  <carte cid="133" spcid="98" pkmnid="95">
+  </carte>	
+  <carte cid="134" spcid="99" pkmnid="46">
+  </carte>	
+  <carte cid="135" spcid="100" pkmnid="231">
+  </carte>	
+  <carte cid="136" spcid="101" pkmnid="127">
+  </carte>	
+  <carte cid="137" spcid="102" pkmnid="77">
+  </carte>	
+  <carte cid="138" spcid="103a" pkmnid="137">
+  </carte>	
+  <carte cid="139" spcid="103b" pkmnid="137">
+  </carte>	
+  <carte cid="140" spcid="104" pkmnid="175">
+  </carte>	
+  <carte cid="141" spcid="105" pkmnid="223">
+  </carte>	
+  <carte cid="142" spcid="106" pkmnid="123">
+  </carte>	
+  <carte cid="143" spcid="107" pkmnid="161">
+  </carte>	
+  <carte cid="144" spcid="108" pkmnid="79">
+  </carte>	
+  <carte cid="145" spcid="109" pkmnid="235">
+  </carte>	
+  <carte cid="146" spcid="110" pkmnid="215">
+  </carte>	
+  <carte cid="147" spcid="111" pkmnid="167">
+  </carte>	
+  <carte cid="148" spcid="112" pkmnid="114">
+  </carte>	
+  <carte cid="149" spcid="113" pkmnid="72">
+  </carte>	
+  <carte cid="150" spcid="114" pkmnid="175">
+  </carte>	
+  <carte cid="151" spcid="115" pkmnid="100">
+  </carte>	
+  <carte cid="152" spcid="116" pkmnid="37">
+  </carte>	
+  <carte cid="153" spcid="117" pkmnid="194">
+  </carte>	
+  <carte cid="154" spcid="118" nom="Forêt de Noigrume">
+  </carte>	
+  <carte cid="155" spcid="119" nom="Cube Obscur 01">
+  </carte>	
+  <carte cid="156" spcid="120" nom="Transfert d'énergie">
+  </carte>	
+  <carte cid="157" spcid="121" nom="Cube de Combat 01">
+  </carte>	
+  <carte cid="158" spcid="122" nom="Cube de Feu 01">
+  </carte>	
+  <carte cid="159" spcid="123" nom="Gardien de la forêt">
+  </carte>	
+  <carte cid="160" spcid="124" nom="Cube Plante 01">
+  </carte>	
+  <carte cid="161" spcid="125" nom="Baie de soin">
+  </carte>	
+  <carte cid="162" spcid="126" nom="Jongleur">
+  </carte>	
+  <carte cid="163" spcid="127" nom="Cube Electrik 01">
+  </carte>	
+  <carte cid="164" spcid="128" nom="Baie de mémoire">
+  </carte>	
+  <carte cid="165" spcid="129" nom="Cube de Metal 01">
+  </carte>	
+  <carte cid="166" spcid="130" nom="Fan Club Pokémon">
+  </carte>	
+  <carte cid="167" spcid="131" nom="Parc Pokémon">
+  </carte>	
+  <carte cid="168" spcid="132" nom="Cube Psy 01">
+  </carte>	
+  <carte cid="169" spcid="133" nom="Superviseur">
+  </carte>	
+  <carte cid="170" spcid="134" nom="Super Suppression d'énergie 2">
+  </carte>	
+  <carte cid="171" spcid="135" nom="Echarde Temporelle">
+  </carte>	
+  <carte cid="172" spcid="136" nom="Volontaires de la Ville">
+  </carte>	
+  <carte cid="173" spcid="137" nom="Représentant de Commerce">
+  </carte>	
+  <carte cid="174" spcid="138" nom="Ruines sous-marines">
+  </carte>	
+  <carte cid="175" spcid="139" nom="Centrale d'Energie">
+  </carte>	
+  <carte cid="176" spcid="140" nom="Cube Eau 01">
+  </carte>	
+  <carte cid="177" spcid="141" nom="Garde faiblesse">
+  </carte>	
+  <carte cid="178" spcid="142" nom="Energie Ténèbres">
+  </carte>	
+  <carte cid="179" spcid="143" nom="Energie Métal">
+  </carte>	
+  <carte cid="180" spcid="144" nom="Energie multicolore">
+  </carte>	
+  <carte cid="181" spcid="145" nom="Energie Super">
+  </carte>	
+  <carte cid="182" spcid="146" nom="Energie cristal">
+  </carte>	
+  <carte cid="183" spcid="147" nom="Energie de Distortion">
+  </carte>	
+  <carte cid="184" spcid="148" pkmnid="230">
+  </carte>	
+  <carte cid="185" spcid="149" pkmnid="249">
+  </carte>	
+  <carte cid="186" spcid="150" pkmnid="34">
+  </carte>
+</extension>

@@ -1,0 +1,142 @@
+<extension nb="140">
+    <carte cid="1" types="plante" pkmnid="114" rarete="common"/>
+    <carte cid="2" types="plante" pkmnid="465" rarete="rare"/>
+    <carte cid="3" types="plante" pkmnid="213" rarete="uncommon"/>
+    <carte cid="4" types="plante" pkmnid="420" rarete="uncommon"/>
+    <carte cid="5" types="plante" pkmnid="455" rarete="uncommon"/>
+    <carte cid="6" types="plante" pkmnid="495" rarete="common"/>
+    <carte cid="7" types="plante" pkmnid="496" rarete="uncommon"/>
+    <carte cid="8" types="plante" pkmnid="497" rarete="holo"/>
+    <carte cid="9" types="plante" pkmnid="540" rarete="common"/>
+    <carte cid="10" types="plante" pkmnid="540" rarete="common"/>
+    <carte cid="11" types="plante" pkmnid="541" rarete="uncommon"/>
+    <carte cid="12" types="plante" pkmnid="542" rarete="holo"/>
+    <carte cid="13" types="plante" pkmnid="557" rarete="common"/>
+    <carte cid="14" types="plante" pkmnid="558" rarete="uncommon"/>
+    <carte cid="15" types="plante" pkmnid="640" rarete="holo"/>
+    <carte cid="16" types="plante" pkmnid="649" rarete="holo"/>
+    <carte cid="17" types="feu" pkmnid="4" rarete="common"/>
+    <carte cid="18" types="feu" pkmnid="5" rarete="uncommon"/>
+    <carte cid="19" types="feu" pkmnid="6" rarete="holo"/>
+    <carte cid="20" types="feu" pkmnid="37" rarete="common"/>
+    <carte cid="21" types="feu" pkmnid="38" rarete="rare"/>
+    <carte cid="22" types="feu" pkmnid="146" rarete="holo"/>
+    <carte cid="23" types="feu" pkmnid="494" rarete="holo"/>
+    <carte cid="24" types="feu" pkmnid="494" nom="%s EX" rarete="ultra"/>
+    <carte cid="25" types="feu" pkmnid="498" rarete="common"/>
+    <carte cid="26" types="feu" pkmnid="499" rarete="uncommon"/>
+    <carte cid="27" types="feu" pkmnid="500" rarete="holo"/>
+    <carte cid="28" types="feu" pkmnid="643" rarete="holo"/>
+    <carte cid="29" types="feu" pkmnid="643" nom="%s EX" rarete="ultra"/>
+    <carte cid="30" types="eau" pkmnid="129" rarete="common"/>
+    <carte cid="31" types="eau" pkmnid="130" rarete="rare"/>
+    <carte cid="32" types="eau" pkmnid="144" rarete="holo"/>
+    <carte cid="33" types="eau" pkmnid="393" rarete="common"/>
+    <carte cid="34" types="eau" pkmnid="394" rarete="uncommon"/>
+    <carte cid="35" types="eau" pkmnid="395" rarete="rare"/>
+    <carte cid="36" types="eau" pkmnid="489" rarete="rare"/>
+    <carte cid="37" types="eau" pkmnid="501" rarete="common"/>
+    <carte cid="38" types="eau" pkmnid="502" rarete="uncommon"/>
+    <carte cid="39" types="eau" pkmnid="503" rarete="holo"/>
+    <carte cid="40" types="eau" pkmnid="535" rarete="common"/>
+    <carte cid="41" types="eau" pkmnid="536" rarete="uncommon"/>
+    <carte cid="42" types="eau" pkmnid="537" rarete="rare"/>
+    <carte cid="43" types="eau" pkmnid="646" rarete="holo"/>
+    <carte cid="44" types="eau" pkmnid="646" nom="%s EX" rarete="ultra"/>
+    <carte cid="45" types="eau" pkmnid="647" nom="%s EX" rarete="ultra"/>
+    <carte cid="46" types="electrique" pkmnid="145" rarete="holo"/>
+    <carte cid="47" types="electrique" pkmnid="311" rarete="uncommon"/>
+    <carte cid="48" types="electrique" pkmnid="312" rarete="uncommon"/>
+    <carte cid="49" types="electrique" pkmnid="587" rarete="uncommon"/>
+    <carte cid="50" types="electrique" pkmnid="642" rarete="holo"/>
+    <carte cid="51" types="electrique" pkmnid="644" rarete="holo"/>
+    <carte cid="52" types="electrique" pkmnid="644" nom="%s EX" rarete="ultra"/>
+    <carte cid="53" types="psy" pkmnid="150" rarete="holo"/>
+    <carte cid="54" types="psy" pkmnid="150" nom="%s EX" rarete="ultra"/>
+    <carte cid="55" types="psy" pkmnid="177" rarete="common"/>
+    <carte cid="56" types="psy" pkmnid="178" rarete="rare"/>
+    <carte cid="57" types="psy" pkmnid="200" rarete="common"/>
+    <carte cid="58" types="psy" pkmnid="429" rarete="rare"/>
+    <carte cid="59" types="psy" pkmnid="280" rarete="common"/>
+    <carte cid="60" types="psy" pkmnid="281" rarete="uncommon"/>
+    <carte cid="61" types="psy" pkmnid="302" rarete="uncommon"/>
+    <carte cid="62" types="psy" pkmnid="453" rarete="common"/>
+    <carte cid="63" types="psy" pkmnid="454" rarete="rare"/>
+    <carte cid="64" types="psy" pkmnid="527" rarete="common"/>
+    <carte cid="65" types="psy" pkmnid="528" rarete="uncommon"/>
+    <carte cid="66" types="psy" pkmnid="561" rarete="holo"/>
+    <carte cid="67" types="psy" pkmnid="568" rarete="common"/>
+    <carte cid="68" types="psy" pkmnid="569" rarete="holo"/>
+    <carte cid="69" types="psy" pkmnid="574" rarete="common"/>
+    <carte cid="70" types="psy" pkmnid="574" rarete="common"/>
+    <carte cid="71" types="psy" pkmnid="575" rarete="uncommon"/>
+    <carte cid="72" types="psy" pkmnid="576" rarete="holo"/>
+    <carte cid="73" types="psy" pkmnid="577" rarete="common"/>
+    <carte cid="74" types="psy" pkmnid="577" rarete="common"/>
+    <carte cid="75" types="psy" pkmnid="578" rarete="uncommon"/>
+    <carte cid="76" types="psy" pkmnid="579" rarete="rare"/>
+    <carte cid="77" types="psy" pkmnid="609" nom="%s EX" rarete="ultra"/>
+    <carte cid="78" types="psy" pkmnid="658" rarete="holo"/>
+    <carte cid="79" types="combat" pkmnid="457" rarete="uncommon"/>
+    <carte cid="80" types="combat" pkmnid="458" rarete="holo"/>
+    <carte cid="81" types="combat" pkmnid="475" rarete="rare"/>
+    <carte cid="82" types="combat" pkmnid="530" nom="%s EX" rarete="ultra"/>
+    <carte cid="83" types="combat" pkmnid="618" rarete="uncommon"/>
+    <carte cid="84" types="combat" pkmnid="639" rarete="holo"/>
+    <carte cid="85" types="combat" pkmnid="645" rarete="holo"/>
+    <carte cid="86" types="combat" pkmnid="648" rarete="rare"/>
+    <carte cid="87" types="obscur" pkmnid="442" rarete="uncommon"/>
+    <carte cid="88" types="obscur" pkmnid="491" nom="%s EX" rarete="ultra"/>
+    <carte cid="89" types="obscur" pkmnid="570" rarete="common"/>
+    <carte cid="90" types="obscur" pkmnid="571" rarete="holo"/>
+    <carte cid="91" types="metal" pkmnid="638" rarete="holo"/>
+    <carte cid="92" types="dragon" pkmnid="334" rarete="uncommon"/>
+    <carte cid="93" types="dragon" pkmnid="384" rarete="holo"/>
+    <carte cid="94" types="dragon" pkmnid="443" rarete="common"/>
+    <carte cid="95" types="dragon" pkmnid="444" rarete="uncommon"/>
+    <carte cid="96" types="dragon" pkmnid="445" rarete="holo"/>
+    <carte cid="97" types="dragon" pkmnid="633" rarete="common"/>
+    <carte cid="98" types="dragon" pkmnid="634" rarete="uncommon"/>
+    <carte cid="99" types="dragon" pkmnid="635" rarete="holo"/>
+    <carte cid="100" types="dragon" pkmnid="646" nom="%s Noir EX" rarete="ultra"/>
+    <carte cid="101" types="dragon" pkmnid="646" nom="%s Blanc EX" rarete="ultra"/>
+    <carte cid="102" types="incolore" pkmnid="259" nom="%s EX" rarete="ultra"/>
+    <carte cid="103" types="incolore" pkmnid="333" rarete="common"/>
+    <carte cid="104" types="incolore" pkmnid="572" rarete="common"/>
+    <carte cid="105" types="incolore" pkmnid="573" rarete="holo"/>
+    <carte cid="106" types="incolore" pkmnid="621" rarete="uncommon"/>
+    <carte cid="107" types="incolore" pkmnid="626" rarete="uncommon"/>
+    <carte cid="108" types="incolore" pkmnid="641" rarete="holo"/>
+    <carte cid="109" types="supporter" nom="Bianca" rarete="uncommon"/>
+    <carte cid="110" types="supporter" nom="Cedric Juniper" rarete="uncommon"/>
+    <carte cid="111" types="dresseur" nom="Maillet Écrasant" rarete="uncommon"/>
+    <carte cid="112" types="dresseur" nom="Echange d'énergie" rarete="uncommon"/>
+    <carte cid="113" types="incolore" nom="Double Energie Incolore" rarete="uncommon"/>
+    <carte cid="114" types="feu" pkmnid="643" rarete="ultra"/>
+    <carte cid="115" types="electrique" pkmnid="644" rarete="ultra"/>
+    <carte cid="116" types="plante" pkmnid="495" rarete="common"/>
+    <carte cid="117" types="plante" pkmnid="496" rarete="common"/>
+    <carte cid="118" types="plante" pkmnid="497" rarete="uncommon"/>
+    <carte cid="119" types="feu" pkmnid="58" rarete="uncommon"/>
+    <carte cid="120" types="feu" pkmnid="255" rarete="common"/>
+    <carte cid="121" types="eau" pkmnid="393" rarete="uncommon"/>
+    <carte cid="122" types="electrique" pkmnid="25" rarete="uncommon"/>
+    <carte cid="123" types="psy" pkmnid="280" rarete="common"/>
+    <carte cid="124" types="psy" pkmnid="281" rarete="common"/>
+    <carte cid="125" types="psy" pkmnid="282" rarete="uncommon"/>
+    <carte cid="126" types="psy" pkmnid="648" nom="%s EX" rarete="ultra"/>
+    <carte cid="127" types="combat" pkmnid="618" rarete="uncommon"/>
+    <carte cid="128" types="obscur" pkmnid="509" rarete="uncommon"/>
+    <carte cid="129" types="incolore" pkmnid="133" rarete="uncommon"/>
+    <carte cid="130" types="incolore" pkmnid="216" rarete="common"/>
+    <carte cid="131" types="incolore" pkmnid="217" rarete="common"/>
+    <carte cid="132" types="incolore" pkmnid="531" rarete="common"/>
+    <carte cid="133" types="incolore" pkmnid="573" rarete="common"/>
+    <carte cid="134" types="incolore" pkmnid="573" rarete="uncommon"/>
+    <carte cid="135" types="supporter" pkmnid="Elesa" rarete="common"/>
+    <carte cid="136" types="plante" pkmnid="492" nom="%s EX" rarete="ultra"/>
+    <carte cid="137" types="feu" pkmnid="643" rarete="ultra"/>
+    <carte cid="138" types="electrique" pkmnid="587" rarete="ultra"/>
+    <carte cid="139" types="psy" pkmnid="151" nom="%s EX" rarete="ultra"/>
+    <carte cid="140" types="psy" pkmnid="648" nom="%s EX" rarete="ultra"/>
+</extension>

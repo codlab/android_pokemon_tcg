@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.listener.IExtensionLoadedListener;
 import fr.codlab.cartes.util.Extension;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.BaseAdapter;
 
-public class PrincipalExtensionAdapter extends BaseAdapter {
+public class PrincipalExtensionAdapter extends BaseAdapter implements IExtensionLoadedListener {
 	private Context context;
 	private MainActivity _principal;
 	private ArrayList<Extension> _item;
@@ -25,6 +27,10 @@ public class PrincipalExtensionAdapter extends BaseAdapter {
 		context=a;
 		_item=item;
 	}
+
+    public void onExtensionLoaded(int id){
+        Log.d("IExtensionLoadedListener", "having extension loaded " + id);
+    }
 
 	public View getView(int pos, View inView, ViewGroup parent) {
 		View v = inView;

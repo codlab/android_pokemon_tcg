@@ -48,7 +48,7 @@ final public class ExtensionUi {
 
 	private void update(){
 		if(_activity != null && to_change){
-			_extension = ExtensionManager.getExtension(_activity.getApplication().getApplicationContext(), _id, 0, _intitule, _name, true);
+			_extension = ExtensionManager.getExtension(_activity.getApplication().getApplicationContext(), null, _id, 0, _intitule, _name, true);
 			to_change = false;
 		}
 	}

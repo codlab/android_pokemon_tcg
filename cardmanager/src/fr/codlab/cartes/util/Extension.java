@@ -15,6 +15,7 @@ import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBDPublic;
+import fr.codlab.cartes.listener.IExtensionLoadedListener;
 
 final public class Extension {
     /**
@@ -59,6 +60,8 @@ final public class Extension {
     private boolean _is_first_edition;
     private boolean _is_reverse;
 
+    private boolean _is_loaded;
+
     Extension(int id) {
         _id = id;
     }
@@ -70,7 +73,7 @@ final public class Extension {
      * @param nom
      * @param mustParseXml
      */
-     Extension(Context principal, int id, int nb, String intitule, String nom, boolean mustParseXml) {
+     Extension(Context principal, final IExtensionLoadedListener extensionloaded_listener, int id, int nb, String intitule, String nom, boolean mustParseXml) {
         _name = nom;
         _is_first_edition = false;
         _is_reverse = false;
@@ -78,15 +81,34 @@ final public class Extension {
         _p = principal;
         _intitule = intitule;
         _aCartes = new ArrayList<Card>();
+         _is_loaded = false;
         //_ressources=Principal.extensions[_id-1];
         _ressources = principal.getResources().getIdentifier((_id < 10 ? "e0" : "e") + Integer.toString(id), "xml", "fr.codlab.cartes");
         _nb = nb;
 
-        if (mustParseXml)
-            parseXml();
+        if (mustParseXml){
+            Thread t = new Thread(){
+                public void run(){
+                    parseXml();
+                    if(extensionloaded_listener != null)
+                        extensionloaded_listener.onExtensionLoaded(_id);
+                    _is_loaded = true;
+                }
+            };
+            t.start();
+
+        }else{
+            if(extensionloaded_listener != null){
+                extensionloaded_listener.onExtensionLoaded(_id);
+                _is_loaded = true;
+            }
+        }
         updatePossessed();
     }
 
+    public boolean isLoaded(){
+        return _is_loaded;
+    }
     public boolean equals(Object object){
         return object != null && object instanceof Extension && ((Extension)object)._id == _id;
     }

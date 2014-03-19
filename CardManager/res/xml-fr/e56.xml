@@ -1,0 +1,124 @@
+<extension nb="122">
+    <carte id="1" types="plante" idpkmn="13" rarete="common"/>
+    <carte id="2" types="plante" idpkmn="14" rarete="uncommon"/>
+    <carte id="3" types="plante" idpkmn="15" rarete="rare"/>
+    <carte id="4" types="plante" idpkmn="102" rarete="uncommon"/>
+    <carte id="5" types="plante" idpkmn="103" rarete="rare"/>
+    <carte id="6" types="plante" idpkmn="252" rarete="common"/>
+    <carte id="7" types="plante" idpkmn="253" rarete="uncommon"/>
+    <carte id="8" types="plante" idpkmn="254" rarete="holo"/>
+    <carte id="9" types="plante" idpkmn="331" rarete="common"/>
+    <carte id="10" types="plante" idpkmn="332" rarete="uncommon"/>
+    <carte id="11" types="plante" idpkmn="470" rarete="rare"/>
+    <carte id="12" types="feu" idpkmn="136" rarete="uncommon"/>
+    <carte id="13" types="feu" idpkmn="485" nom="%s EX" rarete="ultra"/>
+    <carte id="14" types="feu" idpkmn="607" rarete="common"/>
+    <carte id="15" types="feu" idpkmn="608" rarete="uncommon"/>
+    <carte id="16" types="feu" idpkmn="609" rarete="holo"/>
+    <carte id="17" types="feu" idpkmn="643" rarete="holo"/>
+    <carte id="18" types="eau" idpkmn="116" rarete="common"/>
+    <carte id="19" types="eau" idpkmn="117" rarete="uncommon"/>
+    <carte id="20" types="eau" idpkmn="134" rarete="uncommon"/>
+    <carte id="21" types="eau" idpkmn="194" rarete="common"/>
+    <carte id="22" types="eau" idpkmn="195" rarete="rare"/>
+    <carte id="23" types="eau" idpkmn="471" rarete="rare"/>
+    <carte id="24" types="eau" idpkmn="535" rarete="common"/>
+    <carte id="25" types="eau" idpkmn="536" rarete="uncommon"/>
+    <carte id="26" types="eau" idpkmn="537" rarete="rare"/>
+    <carte id="27" types="eau" idpkmn="582" rarete="common"/>
+    <carte id="28" types="eau" idpkmn="583" rarete="uncommon"/>
+    <carte id="29" types="eau" idpkmn="584" rarete="rare"/>
+    <carte id="30" types="eau" idpkmn="615" rarete="uncommon"/>
+    <carte id="31" types="eau" idpkmn="646" rarete="holo"/>
+    <carte id="32" types="electrique" idpkmn="100" rarete="common"/>
+    <carte id="33" types="electrique" idpkmn="101" rarete="holo"/>
+    <carte id="34" types="electrique" idpkmn="135" rarete="uncommon"/>
+    <carte id="35" types="electrique" idpkmn="170" rarete="common"/>
+    <carte id="36" types="electrique" idpkmn="171" rarete="uncommon"/>
+    <carte id="37" types="electrique" idpkmn="417" rarete="common"/>
+    <carte id="38" types="electrique" idpkmn="642" nom="%s EX" rarete="ultra"/>
+    <carte id="39" types="electrique" idpkmn="644" rarete="holo"/>
+    <carte id="40" types="psy" idpkmn="29" rarete="common"/>
+    <carte id="41" types="psy" idpkmn="30" rarete="uncommon"/>
+    <carte id="42" types="psy" idpkmn="31" rarete="rare"/>
+    <carte id="43" types="psy" idpkmn="32" rarete="common"/>
+    <carte id="44" types="psy" idpkmn="33" rarete="uncommon"/>
+    <carte id="45" types="psy" idpkmn="88" rarete="common"/>
+    <carte id="46" types="psy" idpkmn="89" rarete="rare"/>
+    <carte id="47" types="psy" idpkmn="122" rarete="rare"/>
+    <carte id="48" types="psy" idpkmn="196" rarete="uncommon"/>
+    <carte id="49" types="psy" idpkmn="302" rarete="rare"/>
+    <carte id="50" types="psy" idpkmn="374" rarete="common"/>
+    <carte id="51" types="psy" idpkmn="375" rarete="uncommon"/>
+    <carte id="52" types="psy" idpkmn="376" rarete="holo"/>
+    <carte id="53" types="psy" idpkmn="386" nom="%s EX" rarete="ultra"/>
+    <carte id="54" types="psy" idpkmn="562" rarete="common"/>
+    <carte id="55" types="psy" idpkmn="562" rarete="common"/>
+    <carte id="56" types="psy" idpkmn="563" rarete="holo"/>
+    <carte id="57" types="psy" idpkmn="564" rarete="rare"/>
+    <carte id="58" types="combat" idpkmn="34" rarete="rare"/>
+    <carte id="59" types="combat" idpkmn="56" rarete="common"/>
+    <carte id="60" types="combat" idpkmn="57" rarete="common"/>
+    <carte id="61" types="combat" idpkmn="95" rarete="uncommon"/>
+    <carte id="62" types="combat" idpkmn="296" rarete="common"/>
+    <carte id="63" types="combat" idpkmn="297" rarete="rare"/>
+    <carte id="64" types="obscur" idpkmn="197" rarete="holo"/>
+    <carte id="65" types="obscur" idpkmn="215" rarete="common"/>
+    <carte id="66" types="obscur" idpkmn="461" rarete="rare"/>
+    <carte id="67" types="obscur" idpkmn="359" rarete="holo"/>
+    <carte id="68" types="obscur" idpkmn="551" rarete="common"/>
+    <carte id="69" types="obscur" idpkmn="552" rarete="uncommon"/>
+    <carte id="70" types="obscur" idpkmn="553" rarete="rare"/>
+    <carte id="71" types="obscur" idpkmn="624" rarete="common"/>
+    <carte id="72" types="obscur" idpkmn="624" rarete="common"/>
+    <carte id="73" types="obscur" idpkmn="625" rarete="rare"/>
+    <carte id="74" types="obscur" idpkmn="625" rarete="uncommon"/>
+    <carte id="75" types="obscur" idpkmn="633" rarete="common"/>
+    <carte id="76" types="obscur" idpkmn="633" rarete="common"/>
+    <carte id="77" types="obscur" idpkmn="634" rarete="uncommon"/>
+    <carte id="78" types="obscur" idpkmn="635" rarete="holo"/>
+    <carte id="79" types="metal" idpkmn="208" rarete="rare"/>
+    <carte id="80" types="metal" idpkmn="303" rarete="uncommon"/>
+    <carte id="81" types="dragon" idpkmn="147" rarete="common"/>
+    <carte id="82" types="dragon" idpkmn="148" rarete="uncommon"/>
+    <carte id="83" types="dragon" idpkmn="149" rarete="holo"/>
+    <carte id="84" types="dragon" idpkmn="230" rarete="holo"/>
+    <carte id="85" types="dragon" idpkmn="380" nom="%s EX" rarete="ultra"/>
+    <carte id="86" types="dragon" idpkmn="381" nom="%s EX" rarete="ultra"/>
+    <carte id="87" types="incolore" idpkmn="19" rarete="common"/>
+    <carte id="88" types="incolore" idpkmn="20" rarete="rare"/>
+    <carte id="89" types="incolore" idpkmn="133" rarete="common"/>
+    <carte id="90" types="incolore" idpkmn="133" rarete="common"/>
+    <carte id="91" types="incolore" idpkmn="163" rarete="common"/>
+    <carte id="92" types="incolore" idpkmn="164" rarete="uncommon"/>
+    <carte id="93" types="incolore" idpkmn="241" rarete="uncommon"/>
+    <carte id="94" types="incolore" idpkmn="352" rarete="rare"/>
+    <carte id="95" types="incolore" idpkmn="396" rarete="common"/>
+    <carte id="96" types="incolore" idpkmn="397" rarete="uncommon"/>
+    <carte id="97" types="incolore" idpkmn="398" rarete="rare"/>
+    <carte id="98" types="incolore" idpkmn="641" nom="%s EX" rarete="ultra"/>
+    <carte id="99" types="dresseur" nom="Pierrallégée" rarete="uncommon"/>
+    <carte id="100" types="stade" nom="Ville Gelée" rarete="uncommon"/>
+    <carte id="101" types="supporter" nom="Ghetis" rarete="holo"/>
+    <carte id="102" types="supporter" nom="Trio des Ombres" rarete="uncommon"/>
+    <carte id="103" types="dresseur" nom="Récupération d'Énergie Supérieure" rarete="uncommon"/>
+    <carte id="104" types="dresseur" nom="Badge de la Team Plasma" rarete="uncommon"/>
+    <carte id="105" types="dresseur" nom="Team Plasma Ball" rarete="uncommon"/>
+    <carte id="106" types="energie spéciale" nom="Énergie Plasma" rarete="uncommon"/>
+    <carte id="107" types="dresseur" nom="Rosée de vie" rarete="holo"/>
+    <carte id="108" types="dresseur" nom="Garde Roche" rarete="holo"/>
+    <carte id="109" types="feu" idpkmn="485" nom="%s EX" rarete="ultra"/>
+    <carte id="110" types="electrique" idpkmn="642" nom="%s EX" rarete="ultra"/>
+    <carte id="111" types="psy" idpkmn="386" nom="%s EX" rarete="ultra"/>
+    <carte id="112" types="dragon" idpkmn="380" nom="%s EX" rarete="ultra"/>
+    <carte id="113" types="dragon" idpkmn="381" nom="%s EX" rarete="ultra"/>
+    <carte id="114" types="incolore" idpkmn="641" nom="%s EX" rarete="ultra"/>
+    <carte id="115" types="supporter" nom="Ghetis" rarete="ultra"/>
+    <carte id="116" types="supporter" nom="Professeur Keteleeria" rarete="ultra"/>
+    <carte id="117" types="eau" idpkmn="395" rarete="ultra"/>
+    <carte id="118" types="psy" idpkmn="561" rarete="ultra"/>
+    <carte id="119" types="psy" idpkmn="569" rarete="ultra"/>
+    <carte id="120" types="dragon" idpkmn="445" rarete="ultra"/>
+    <carte id="121" types="dresseur" nom="Potion Max" rarete="ultra"/>
+    <carte id="122" types="dresseur" nom="Hyper Ball" rarete="ultra"/>
+</extension>

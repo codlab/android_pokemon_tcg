@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.TreeMap;
 
+import fr.codlab.cartes.listener.IExtensionLoadedListener;
+
 /**
  * Created by kevinleperf on 10/08/13.
  */
@@ -22,7 +24,7 @@ public class ExtensionManager {
         return _extensions;
     }
 
-    public static synchronized Extension getExtension(Context principal, int id, int nb, String intitule, String nom, boolean mustParseXml) {
+    public static synchronized Extension getExtension(Context principal, IExtensionLoadedListener listener,  int id, int nb, String intitule, String nom, boolean mustParseXml) {
         Log.d("getExtension"," "+id);
         if (getExtension().contains(new Extension(id))) {
             int idx = getExtension().indexOf(new Extension(id));
@@ -30,9 +32,17 @@ public class ExtensionManager {
             return getExtension().get(idx);
         } else {
             Log.d("IndexOf","new");
-            Extension tmp = new Extension(principal, id, nb, intitule, nom, true);
+            Extension tmp = new Extension(principal, listener, id, nb, intitule, nom, true);
             getExtension().add(tmp);
             return tmp;
         }
+    }
+    public static synchronized boolean isLoaded(int id){
+        if (getExtension().contains(new Extension(id))) {
+            int idx = getExtension().indexOf(new Extension(id));
+            Log.d("IndexOf",idx+"");
+            return getExtension().get(idx).isLoaded();
+        }
+        return false;
     }
 }

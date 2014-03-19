@@ -1,0 +1,234 @@
+<extension nb="112" reverse="true">
+  <carte cid="1" pkmnid="15">
+  </carte>
+  <carte cid="2" pkmnid="12">
+  </carte>
+  <carte cid="3" pkmnid="87">
+  </carte>
+  <carte cid="4" pkmnid="132">
+  </carte>
+  <carte cid="5" pkmnid="103">
+  </carte>
+  <carte cid="6" pkmnid="115">
+  </carte>
+  <carte cid="7" pkmnid="105">
+  </carte>
+  <carte cid="8" pkmnid="33">
+  </carte>
+  <carte cid="9" pkmnid="31">
+  </carte>
+  <carte cid="10" pkmnid="18">
+  </carte>
+  <carte cid="11" pkmnid="62">
+  </carte>
+  <carte cid="12" pkmnid="26">
+  </carte>
+  <carte cid="13" pkmnid="78">
+  </carte>
+  <carte cid="14" pkmnid="80">
+  </carte>
+  <carte cid="15" pkmnid="143">
+  </carte>
+  <carte cid="16" pkmnid="128">
+  </carte>
+  <carte cid="17" pkmnid="71">
+  </carte>
+  <carte cid="18" pkmnid="59">
+  </carte>
+  <carte cid="19" pkmnid="113">
+  </carte>
+  <carte cid="20" pkmnid="91">
+  </carte>
+  <carte cid="21" pkmnid="85">
+  </carte>
+  <carte cid="22" pkmnid="51">
+  </carte>
+  <carte cid="23" pkmnid="83">
+  </carte>
+  <carte cid="24" pkmnid="22">
+  </carte>
+  <carte cid="25" pkmnid="97">
+  </carte>
+  <carte cid="26" pkmnid="99">
+  </carte>
+  <carte cid="27" pkmnid="82">
+  </carte>
+  <carte cid="28" pkmnid="57">
+  </carte>
+  <carte cid="29" pkmnid="123">
+  </carte>
+  <carte cid="30" pkmnid="114">
+  </carte>
+  <carte cid="31" pkmnid="5">
+  </carte>
+  <carte cid="32" pkmnid="96">
+  </carte>
+  <carte cid="33" pkmnid="102">
+  </carte>
+  <carte cid="34" pkmnid="93">
+  </carte>
+  <carte cid="35" pkmnid="2">
+  </carte>
+  <carte cid="36" pkmnid="14">
+  </carte>
+  <carte cid="37" pkmnid="108">
+  </carte>
+  <carte cid="38" pkmnid="56">
+  </carte>
+  <carte cid="39" pkmnid="11">
+  </carte>
+  <carte cid="40" pkmnid="30">
+  </carte>
+  <carte cid="41" pkmnid="33">
+  </carte>
+  <carte cid="42" pkmnid="95">
+  </carte>
+  <carte cid="43" pkmnid="47">
+  </carte>
+  <carte cid="44" pkmnid="53">
+  </carte>
+  <carte cid="45" pkmnid="17">
+  </carte>
+  <carte cid="46" pkmnid="61">
+  </carte>
+  <carte cid="47" pkmnid="137">
+  </carte>
+  <carte cid="48" pkmnid="20">
+  </carte>
+  <carte cid="49" nom="Aeromite">
+  </carte>
+  <carte cid="50" pkmnid="8">
+  </carte>
+  <carte cid="51" pkmnid="70">
+  </carte>
+  <carte cid="52" pkmnid="40">
+  </carte>
+  <carte cid="53" pkmnid="69">
+  </carte>
+  <carte cid="54" pkmnid="1">
+  </carte>
+  <carte cid="55" pkmnid="1">
+  </carte>
+  <carte cid="56" pkmnid="10">
+  </carte>
+  <carte cid="57" pkmnid="4">
+  </carte>
+  <carte cid="58" pkmnid="4">
+  </carte>
+  <carte cid="59" pkmnid="35">
+  </carte>
+  <carte cid="60" pkmnid="104">
+  </carte>
+  <carte cid="61" pkmnid="50">
+  </carte>
+  <carte cid="62" pkmnid="84">
+  </carte>
+  <carte cid="63" pkmnid="92">
+  </carte>
+  <carte cid="64" pkmnid="58">
+  </carte>
+  <carte cid="65" pkmnid="39">
+  </carte>
+  <carte cid="66" pkmnid="98">
+  </carte>
+  <carte cid="67" pkmnid="129">
+  </carte>
+  <carte cid="68" pkmnid="81">
+  </carte>
+  <carte cid="69" pkmnid="52">
+  </carte>
+  <carte cid="70" nom="Nidoran Femelle">
+  </carte>
+  <carte cid="71" nom="Nidoran Male">
+  </carte>
+  <carte cid="72" pkmnid="46">
+  </carte>
+  <carte cid="73" pkmnid="16">
+  </carte>
+  <carte cid="74" pkmnid="25">
+  </carte>
+  <carte cid="75" pkmnid="60">
+  </carte>
+  <carte cid="76" pkmnid="77">
+  </carte>
+  <carte cid="77" pkmnid="19">
+  </carte>
+  <carte cid="78" pkmnid="86">
+  </carte>
+  <carte cid="79" pkmnid="90">
+  </carte>
+  <carte cid="80" pkmnid="79">
+  </carte>
+  <carte cid="81" pkmnid="21">
+  </carte>
+  <carte cid="82" pkmnid="7">
+  </carte>
+  <carte cid="83" pkmnid="7">
+  </carte>
+  <carte cid="84" pkmnid="48">
+  </carte>
+  <carte cid="85" pkmnid="100">
+  </carte>
+  <carte cid="86" pkmnid="13">
+  </carte>
+  <carte cid="87" nom="Entretien de Léo">
+  </carte>
+  <carte cid="88" nom="Le réseau de Célio">
+  </carte>
+  <carte cid="89" nom="Suppression d'Energie 2">
+  </carte>
+  <carte cid="90" nom="Recherche d'Energie">
+  </carte>
+  <carte cid="91" nom="Multi Expéditions">
+  </carte>
+  <carte cid="92" nom="Superball">
+  </carte>
+  <carte cid="93" nom="Herbe Sauveuse">
+  </carte>
+  <carte cid="94" nom="Mont Sélénite">
+  </carte>
+  <carte cid="95" nom="Pokeball">
+  </carte>
+  <carte cid="96" nom="Pokedex">
+  </carte>
+  <carte cid="97" nom="Inversion de Pokémon">
+  </carte>
+  <carte cid="98" nom="Recherche du Professeur Chen">
+  </carte>
+  <carte cid="99" nom="Super Rappel">
+  </carte>
+  <carte cid="100" nom="Cherche VS">
+  </carte>
+  <carte cid="101" nom="Potion">
+  </carte>
+  <carte cid="102" nom="Echange">
+  </carte>
+  <carte cid="103" nom="Energie Multiple">
+  </carte>
+  <carte cid="104" nom="Tortank EX">
+  </carte>
+  <carte cid="105" nom="Dracaufeu EX">
+  </carte>
+  <carte cid="106" nom="Melodelfe EX">
+  </carte>
+  <carte cid="107" nom="Electrode EX">
+  </carte>
+  <carte cid="108" nom="Ectoplasma EX">
+  </carte>
+  <carte cid="109" nom="Leviator EX">
+  </carte>
+  <carte cid="110" nom="Mr Mime EX">
+  </carte>
+  <carte cid="111" nom="Mr Mime EX">
+  </carte>
+  <carte cid="112" nom="Florizarre EX">
+  </carte>
+  <carte cid="113" pkmnid="4">
+  </carte>
+  <carte cid="114" nom="Artikodin EX">
+  </carte>
+  <carte cid="115" nom="Sulfura EX">
+  </carte>
+  <carte cid="116" nom="Elector EX">
+  </carte>
+</extension>

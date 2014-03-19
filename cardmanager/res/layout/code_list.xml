@@ -17,7 +17,8 @@
         android:src="@drawable/trash"
         android:paddingRight="10dp" />
 
-    <TextView
+    <fr.codlab.cartes.widget.RobotoTextview
+        typeface="thin"
         android:id="@+id/codes_code"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

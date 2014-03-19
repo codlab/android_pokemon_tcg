@@ -1,0 +1,332 @@
+<extension nb="165" reverse="true">
+  <carte cid="1" pkmnid="65">
+  </carte>
+  <carte cid="2" pkmnid="181">
+  </carte>
+  <carte cid="3" pkmnid="24">
+  </carte>
+  <carte cid="4" pkmnid="9">
+  </carte>
+  <carte cid="5" pkmnid="12">
+  </carte>
+  <carte cid="6" pkmnid="6">
+  </carte>
+  <carte cid="7" pkmnid="36">
+  </carte>
+  <carte cid="8" pkmnid="91">
+  </carte>
+  <carte cid="9" pkmnid="149">
+  </carte>
+  <carte cid="10" pkmnid="51">
+  </carte>
+  <carte cid="11" pkmnid="22">
+  </carte>
+  <carte cid="12" pkmnid="160">
+  </carte>
+  <carte cid="13" pkmnid="94">
+  </carte>
+  <carte cid="14" pkmnid="76">
+  </carte>
+  <carte cid="15" pkmnid="99">
+  </carte>
+  <carte cid="16" pkmnid="68">
+  </carte>
+  <carte cid="17" pkmnid="240">
+  </carte>
+  <carte cid="18" pkmnid="154">
+  </carte>
+  <carte cid="19" pkmnid="151">
+  </carte>
+  <carte cid="20" pkmnid="150">
+  </carte>
+  <carte cid="21" pkmnid="38">
+  </carte>
+  <carte cid="22" pkmnid="172">
+  </carte>
+  <carte cid="23" pkmnid="18">
+  </carte>
+  <carte cid="24" pkmnid="62">
+  </carte>
+  <carte cid="25" pkmnid="26">
+  </carte>
+  <carte cid="26" pkmnid="78">
+  </carte>
+  <carte cid="27" pkmnid="227">
+  </carte>
+  <carte cid="28" pkmnid="157">
+  </carte>
+  <carte cid="29" pkmnid="248">
+  </carte>
+  <carte cid="30" pkmnid="3">
+  </carte>
+  <carte cid="31" pkmnid="45">
+  </carte>
+  <carte cid="32" pkmnid="110">
+  </carte>
+  <carte cid="33" pkmnid="65">
+  </carte>
+  <carte cid="34" pkmnid="181">
+  </carte>
+  <carte cid="35" pkmnid="24">
+  </carte>
+  <carte cid="36" pkmnid="9">
+  </carte>
+  <carte cid="37" pkmnid="9">
+  </carte>
+  <carte cid="38" pkmnid="12">
+  </carte>
+  <carte cid="39" pkmnid="6">
+  </carte>
+  <carte cid="40" pkmnid="6">
+  </carte>
+  <carte cid="41" pkmnid="36">
+  </carte>
+  <carte cid="42" pkmnid="91">
+  </carte>
+  <carte cid="43" pkmnid="149">
+  </carte>
+  <carte cid="44" pkmnid="51">
+  </carte>
+  <carte cid="45" pkmnid="22">
+  </carte>
+  <carte cid="46" pkmnid="160">
+  </carte>
+  <carte cid="47" pkmnid="160">
+  </carte>
+  <carte cid="48" pkmnid="94">
+  </carte>
+  <carte cid="49" pkmnid="76">
+  </carte>
+  <carte cid="50" pkmnid="99">
+  </carte>
+  <carte cid="51" pkmnid="68">
+  </carte>
+  <carte cid="52" pkmnid="240">
+  </carte>
+  <carte cid="53" pkmnid="154">
+  </carte>
+  <carte cid="54" pkmnid="154">
+  </carte>
+  <carte cid="55" pkmnid="151">
+  </carte>
+  <carte cid="56" pkmnid="150">
+  </carte>
+  <carte cid="57" pkmnid="38">
+  </carte>
+  <carte cid="58" pkmnid="172">
+  </carte>
+  <carte cid="59" pkmnid="18">
+  </carte>
+  <carte cid="60" pkmnid="62">
+  </carte>
+  <carte cid="61" pkmnid="26">
+  </carte>
+  <carte cid="62" pkmnid="78">
+  </carte>
+  <carte cid="63" pkmnid="227">
+  </carte>
+  <carte cid="64" pkmnid="157">
+  </carte>
+  <carte cid="65" pkmnid="157">
+  </carte>
+  <carte cid="66" pkmnid="248">
+  </carte>
+  <carte cid="67" pkmnid="3">
+  </carte>
+  <carte cid="68" pkmnid="3">
+  </carte>
+  <carte cid="69" pkmnid="45">
+  </carte>
+  <carte cid="70" pkmnid="110">
+  </carte>
+  <carte cid="71" pkmnid="153">
+  </carte>
+  <carte cid="72" pkmnid="113">
+  </carte>
+  <carte cid="73" pkmnid="5">
+  </carte>
+  <carte cid="74" pkmnid="159">
+  </carte>
+  <carte cid="75" pkmnid="148">
+  </carte>
+  <carte cid="76" pkmnid="125">
+  </carte>
+  <carte cid="77" pkmnid="180">
+  </carte>
+  <carte cid="78" pkmnid="44">
+  </carte>
+  <carte cid="79" pkmnid="75">
+  </carte>
+  <carte cid="80" pkmnid="93">
+  </carte>
+  <carte cid="81" pkmnid="106">
+  </carte>
+  <carte cid="82" pkmnid="2">
+  </carte>
+  <carte cid="83" pkmnid="124">
+  </carte>
+  <carte cid="84" pkmnid="64">
+  </carte>
+  <carte cid="85" pkmnid="67">
+  </carte>
+  <carte cid="86" pkmnid="126">
+  </carte>
+  <carte cid="87" pkmnid="11">
+  </carte>
+  <carte cid="88" pkmnid="17">
+  </carte>
+  <carte cid="89" pkmnid="61">
+  </carte>
+  <carte cid="90" pkmnid="247">
+  </carte>
+  <carte cid="91" pkmnid="156">
+  </carte>
+  <carte cid="92" pkmnid="8">
+  </carte>
+  <carte cid="93" pkmnid="63">
+  </carte>
+  <carte cid="94" pkmnid="1">
+  </carte>
+  <carte cid="95" pkmnid="1">
+  </carte>
+  <carte cid="96" pkmnid="10">
+  </carte>
+  <carte cid="97" pkmnid="4">
+  </carte>
+  <carte cid="98" pkmnid="4">
+  </carte>
+  <carte cid="99" pkmnid="152">
+  </carte>
+  <carte cid="100" pkmnid="152">
+  </carte>
+  <carte cid="101" pkmnid="35">
+  </carte>
+  <carte cid="102" pkmnid="222">
+  </carte>
+  <carte cid="103" pkmnid="104">
+  </carte>
+  <carte cid="104" pkmnid="155">
+  </carte>
+  <carte cid="105" pkmnid="155">
+  </carte>
+  <carte cid="106" pkmnid="50">
+  </carte>
+  <carte cid="107" pkmnid="147">
+  </carte>
+  <carte cid="108" pkmnid="23">
+  </carte>
+  <carte cid="109" pkmnid="92">
+  </carte>
+  <carte cid="110" pkmnid="74">
+  </carte>
+  <carte cid="111" pklnid="118">
+  </carte>
+  <carte cid="112" pkmnid="187">
+  </carte>
+  <carte cid="113" pkmnid="228">
+  </carte>
+  <carte cid="114" pkmnid="109">
+  </carte>
+  <carte cid="115" pkmnid="98">
+  </carte>
+  <carte cid="116" pkmnid="246">
+  </carte>
+  <carte cid="117" pkmnid="66">
+  </carte>
+  <carte cid="118" pkmnid="129">
+  </carte>
+  <carte cid="119" pkmnid="179">
+  </carte>
+  <carte cid="120" pkmnid="183">
+  </carte>
+  <carte cid="121" pkmnid="52">
+  </carte>
+  <carte cid="122" pkmnid="43">
+  </carte>
+  <carte cid="123" pkmnid="16">
+  </carte>
+  <carte cid="124" pkmnid="25">
+  </carte>
+  <carte cid="125" pkmnid="60">
+  </carte>
+  <carte cid="126" pkmnid="77">
+  </carte>
+  <carte cid="127" pkmnid="211">
+  </carte>
+  <carte cid="128" pkmnid="19">
+  </carte>
+  <carte cid="129" pkmnid="90">
+  </carte>
+  <carte cid="130" pkmnid="21">
+  </carte>
+  <carte cid="131" pkmnid="7">
+  </carte>
+  <carte cid="132" pkmnid="7">
+  </carte>
+  <carte cid="133" pkmnid="128">
+  </carte>
+  <carte cid="134" pkmnid="158">
+  </carte>
+  <carte cid="135" pkmnid="158">
+  </carte>
+  <carte cid="136" pkmnid="37">
+  </carte>
+  <carte cid="137" nom="Bill's Maintenance">
+  </carte>
+  <carte cid="138" nom="Copycat">
+  </carte>
+  <carte cid="139" nom="Dual Ball">
+  </carte>
+  <carte cid="140" nom="Energy Removal 2">
+  </carte>
+  <carte cid="141" nom="Energy Restore">
+  </carte>
+  <carte cid="142" nom="Mary's Impulse">
+  </carte>
+  <carte cid="143" nom="Master Ball">
+  </carte>
+  <carte cid="144" nom="Multi Technical Machine 01">
+  </carte>
+  <carte cid="145" nom="Pokémon Nurse">
+  </carte>
+  <carte cid="146" nom="Pokémon Reversal">
+  </carte>
+  <carte cid="147" nom="Power Charge">
+  </carte>
+  <carte cid="148" nom="Professor Elm's Training Method">
+  </carte>
+  <carte cid="149" nom="Professor Oak's Research">
+  </carte>
+  <carte cid="150" nom="Strength Charm">
+  </carte>
+  <carte cid="151" nom="Super Scoop Up">
+  </carte>
+  <carte cid="152" nom="Warp Point">
+  </carte>
+  <carte cid="153" nom="Energy Search">
+  </carte>
+  <carte cid="154" nom="Full Heal">
+  </carte>
+  <carte cid="155" nom="Moo-Moo Milk">
+  </carte>
+  <carte cid="156" nom="Potion">
+  </carte>
+  <carte cid="157" nom="Switch">
+  </carte>
+  <carte cid="158" nom="Darkness Energy">
+  </carte>
+  <carte cid="159" nom="Metal Energy">
+  </carte>
+  <carte cid="160" nom="Fighting">
+  </carte>
+  <carte cid="161" nom="Fire">
+  </carte>
+  <carte cid="162" nom="Grass">
+  </carte>
+  <carte cid="163" nom="Lightning">
+  </carte>
+  <carte cid="164" nom="Psychic">
+  </carte>
+  <carte cid="165" nom="Water">
+  </carte>
+  </extension>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+<item android:id="@+extension/download" 
+     android:title="@string/download"
+     android:icon="@drawable/downloadfr"
+     android:showAsAction="always"  />
+      
+<item android:id="@+extension/downloadus" 
+     android:title="@string/downloadus"
+     android:icon="@drawable/downloadus"
+     android:showAsAction="always"  />
+</menu>

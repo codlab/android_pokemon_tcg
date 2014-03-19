@@ -5,7 +5,8 @@
 	android:layout_height="wrap_content"
 	android:orientation="vertical"
 	android:paddingTop="10dp">
-	<TextView
+	<fr.codlab.cartes.widget.RobotoTextview
+        typeface="thin"
 		android:id="@+id/nom_attaque"
 		android:paddingLeft="10dp"
 		android:textSize="22dp"
@@ -24,13 +25,15 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:layout_weight="1">
-		<TextView android:id="@+id/attaque.degat"
+		<fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin" android:id="@+id/attaque.degat"
 			android:layout_width="wrap_content"
 			android:paddingLeft="10dp"
 			android:paddingRight="10dp"
 			android:gravity="center_vertical|center_horizontal"
 			android:layout_height="wrap_content" />
- 		<TextView android:id="@+id/description"
+ 		<fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin" android:id="@+id/description"
 			android:layout_gravity="left"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"/>

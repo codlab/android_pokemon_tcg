@@ -113,7 +113,7 @@ final public class CardFragment extends SherlockFragment implements IClickBundle
 		if (_pack.containsKey("intitule")) {
 			_factorise.setSetShortName(_pack.getString("intitule"));
 		}
-		_extension = ExtensionManager.getExtension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
+		_extension = ExtensionManager.getExtension(getActivity().getApplicationContext(), null, _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
 		if(getActivity().findViewById(R.id.visucarte_gallery) != null){

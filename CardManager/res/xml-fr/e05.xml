@@ -1,0 +1,266 @@
+<extension nb="132" firstedition="true">
+  <carte cid="1" pkmnid="59" nom="%s d'Auguste" types="feu" rarete="holo">
+  </carte>
+  <carte cid="2" pkmnid="6" nom="%s d'Auguste" types="feu" rarete="holo">
+  </carte>
+  <carte cid="3" pkmnid="38" nom="%s de Pierre" types="feu" rarete="holo">
+  </carte>
+  <carte cid="4" pkmnid="3" nom="%s d'Erika" types="plante" rarete="holo">
+  </carte>
+  <carte cid="5" pkmnid="130" nom="%s de Giovanni" types="eau" rarete="holo">
+  </carte>
+  <carte cid="6" pkmnid="68" nom="%s de Giovanni" types="combat" rarete="holo">
+  </carte>
+  <carte cid="7" pkmnid="34" nom="%s de Giovanni" types="plante" rarete="holo">
+  </carte>
+  <carte cid="8" pkmnid="53" nom="%s de Giovanni" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="9" pkmnid="15" nom="%s de Koga" types="plante" rarete="holo">
+  </carte>
+  <carte cid="10" pkmnid="132" nom="%s de Koga" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="11" pkmnid="26" nom="%s du Major Bob" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="12" pkmnid="55" nom="%s d'Ondine" types="eau" rarete="holo">
+  </carte>
+  <carte cid="13" pkmnid="130" nom="%s d'Ondine" types="eau" rarete="holo">
+  </carte>
+  <carte cid="14" pkmnid="150" nom="%s de la Team Rocket" types="psy" rarete="holo">
+  </carte>
+  <carte cid="15" pkmnid="145" nom="%s de la Team Rocket" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="16" pkmnid="65" nom="%s de Morganne" types="psy" rarete="holo">
+  </carte>
+  <carte cid="17" nom="Auguste" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="18" nom="Giovanni" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="19" nom="Koga" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="20" nom="Morganne" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="21" pkmnid="38" nom="%s d'Auguste" types="feu" rarete="rare">
+  </carte>
+  <carte cid="22" pkmnid="51" nom="%s de Pierre" types="combat" rarete="rare">
+  </carte>
+  <carte cid="23" pkmnid="31" nom="%s de Giovanni" types="plante" rarete="rare">
+  </carte>
+  <carte cid="24" pkmnid="127" nom="%s de Giovanni" types="plante" rarete="rare">
+  </carte>
+  <carte cid="25" pkmnid="24" nom="%s de Koga" types="plante" rarete="rare">
+  </carte>
+  <carte cid="26" pkmnid="89" nom="%s de Koga" types="plante" rarete="rare">
+  </carte>
+  <carte cid="27" pkmnid="17" nom="%s de Koga" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="28" pkmnid="135" nom="%s du Major Bob" types="electrique" rarete="rare">
+  </carte>
+  <carte cid="29" pkmnid="94" nom="%s de Morganne" types="psy" rarete="rare">
+  </carte>
+  <carte cid="30" pkmnid="55" nom="%s de Morganne" types="eau" rarete="rare">
+  </carte>
+  <carte cid="31" pkmnid="5" nom="%s d'Auguste" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="32" pkmnid="85" nom="%s d'Auguste" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="33" pkmnid="22" nom="%s d'Auguste" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="34" pkmnid="75" nom="%s de Pierre" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="35" pkmnid="57" nom="%s de Pierre" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="36" pkmnid="28" nom="%s de Pierre" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="37" pkmnid="37" nom="%s de Pierre" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="38" pkmnid="69" nom="%s d'Erika" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="39" pkmnid="1" nom="%s d'Erika" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="40" pkmnid="35" nom="%s d'Erika" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="41" pkmnid="2" nom="%s d'Erika" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="42" pkmnid="67" nom="%s de Giovanni" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="43" pkmnid="52" nom="%s de Giovanni" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="44" pkmnid="30" nom="%s de Giovanni" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="45" pkmnid="33" nom="%s de Giovanni" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="46" pkmnid="42" nom="%s de Koga" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="47" pkmnid="14" nom="%s de Koga" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="48" pkmnid="109" nom="%s de Koga" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="49" pkmnid="16" nom="%s de Koga" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="50" pkmnid="109" nom="%sgo de Koga" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="51" pkmnid="133" nom="%s du Major Bob" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="52" pkmnid="101" nom="%s du Major Bob" types="electrique" rarete="uncommon">
+  </carte>
+  <carte cid="53" pkmnid="19" nom="%sc du Major Bob" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="54" pkmnid="87" nom="%s d'Ondine" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="55" pkmnid="93" nom="%s de Morgane" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="56" pkmnid="97" nom="%s de Morgane" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="57" pkmnid="124" nom="%s de Morgane" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="58" pkmnid="64" nom="%s de Morgane" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="59" pkmnid="122" nom="%s de Morgane" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="60" pkmnid="4" nom="%s d'Auguste" types="feu" rarete="common">
+  </carte>
+  <carte cid="61" pkmnid="84" nom="%s d'Auguste" types="incolore" rarete="common">
+  </carte>
+  <carte cid="62" pkmnid="58" nom="%s d'Auguste" types="feu" rarete="common">
+  </carte>
+  <carte cid="63" pkmnid="56" nom="%s d'Auguste" types="combat" rarete="common">
+  </carte>
+  <carte cid="64" pkmnid="77" nom="%s d'Auguste" types="feu" rarete="common">
+  </carte>
+  <carte cid="65" pkmnid="111" nom="%s d'Auguste" types="combat" rarete="common">
+  </carte>
+  <carte cid="66" pkmnid="37" nom="%s d'Auguste" types="feu" rarete="common">
+  </carte>
+  <carte cid="67" pkmnid="50" nom="%s de Pierre" types="combat" rarete="common">
+  </carte>
+  <carte cid="68" pkmnid="74" nom="%s de Pierre" types="combat" rarete="common">
+  </carte>
+  <carte cid="69" pkmnid="39" nom="%s d'Erika" types="incolore" rarete="common">
+  </carte>
+  <carte cid="70" pkmnid="43" nom="%s d'Erika" types="plante" rarete="common">
+  </carte>
+  <carte cid="71" pkmnid="46" nom="%s d'Erika" types="plante" rarete="common">
+  </carte>
+  <carte cid="72" pkmnid="66" nom="%s de Giovanni" types="combat" rarete="common">
+  </carte>
+  <carte cid="73" pkmnid="129" nom="%s de Giovanni" types="eau" rarete="common">
+  </carte>
+  <carte cid="74" pkmnid="52" nom="%s de Giovanni (Lv17)" types="incolore" rarete="common">
+  </carte>
+  <carte cid="75" pkmnid="29" nom="%s de Giovanni" types="plante" rarete="common">
+  </carte>
+  <carte cid="76" pkmnid="32" nom="%s de Giovanni" types="plante" rarete="common">
+  </carte>
+  <carte cid="77" pkmnid="23" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="78" pkmnid="88" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="79" pkmnid="109" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="80" pkmnid="16" nom="%s de Koga" types="incolore" rarete="common">
+  </carte>
+  <carte cid="81" pkmnid="114" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="82" pkmnid="13" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="83" pkmnid="41" nom="%s de Koga" types="plante" rarete="common">
+  </carte>
+  <carte cid="84" pkmnid="25" nom="%s du Major Bob" types="electrique" rarete="common">
+  </carte>
+  <carte cid="85" pkmnid="19" nom="%s du Major Bob" types="incolore" rarete="common">
+  </carte>
+  <carte cid="86" pkmnid="100" nom="%s du Major Bob" types="electrique" rarete="common">
+  </carte>
+  <carte cid="87" pkmnid="116" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="88" pkmnid="129" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="89" pkmnid="60" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="90" pkmnid="54" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="91" pkmnid="86" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="92" pkmnid="120" nom="%s d'Ondine" types="eau" rarete="common">
+  </carte>
+  <carte cid="93" pkmnid="63" nom="%s de Morganne (Lv12)" types="psy" rarete="common">
+  </carte>
+  <carte cid="94" pkmnid="63" nom="%s de Morganne (Lv18)" types="psy" rarete="common">
+  </carte>
+  <carte cid="95" pkmnid="96" nom="%s de Morganne" types="psy" rarete="common">
+  </carte>
+  <carte cid="96" pkmnid="92" nom="%s de Morgane (Lv9)" types="psy" rarete="common">
+  </carte>
+  <carte cid="97" pkmnid="92" nom="%s de Morgane (Lv10)" types="psy" rarete="common">
+  </carte>
+  <carte cid="98" pkmnid="137" nom="%s de Morgane" types="incolore" rarete="common">
+  </carte>
+  <carte cid="99" pkmnid="54" nom="%s de Morgane" types="eau" rarete="common">
+  </carte>
+  <carte cid="100" nom="Auguste" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="101" nom="La protection de Pierre" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="102" nom="Arène du Chaos" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="103" nom="La Gentillesse d'Erika" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="104" nom="Giovanni" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="105" nom="La carte Atout de Giovanni" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="106" nom="Koga" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="107" nom="Major bob" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="108" nom="Les desirs d'Ondine" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="109" nom="Arène Resistance" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="110" nom="Morgane" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="111" nom="Question d'Auguste #2" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="112" nom="Question d'Auguste #3" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="113" nom="Arène de Cramois'île" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="114" nom="Arène de Parmanie" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="115" nom="La ruse des Ninjas de Koga" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="116" nom="Masterball" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="117" nom="Rappel Max" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="118" nom="Les Larmes d'Ondine" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="119" nom="Arène minée de la Team Rocket" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="120" nom="Expérience secrete de la Team Rocket" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="121" nom="Controle Psychique de Morganne" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="122" nom="Arène de Safrania" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="123" nom="Arène de Jadiel" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="124" nom="Ferveur" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="125" nom="Mur Transparent" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="126" nom="Double Transfert" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="127" nom="Energie Combat" rarete="common">
+  </carte>
+  <carte cid="128" nom="Energie Feu" rarete="common">
+  </carte>
+  <carte cid="129" nom="Energie Plante" rarete="common">
+  </carte>
+  <carte cid="130" nom="Energie Elektrik" rarete="common">
+  </carte>
+  <carte cid="131" nom="Energie Psy" rarete="common">
+  </carte>
+  <carte cid="132" nom="Energie Eau" rarete="common">
+  </carte>
+</extension>
