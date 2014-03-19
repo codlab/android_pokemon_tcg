@@ -53,6 +53,15 @@
 
 
         <dependency>
+            <groupId>Nineold</groupId>
+            <artifactId>jar</artifactId>
+            <version>${project.version}</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../listviewanimations/libs/nineoldandroids-2.4.0.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
             <groupId>jackson-core-2.1.3</groupId>
             <artifactId>jar</artifactId>
             <scope>system</scope>

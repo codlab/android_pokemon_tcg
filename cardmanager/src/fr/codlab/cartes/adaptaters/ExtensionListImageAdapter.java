@@ -2,6 +2,7 @@ package fr.codlab.cartes.adaptaters;
 
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.util.Cache;
 import fr.codlab.cartes.util.CardImageView;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.Language;
@@ -25,11 +26,14 @@ public class ExtensionListImageAdapter extends BaseAdapter {
 
 	//private ImageView[] mImages;
 	private Extension _extension;
+    private final Cache _cache;
 
 	public ExtensionListImageAdapter(Context c, Extension extension) {
 		_context = c;
 		_extension = extension;
+        _cache = new Cache();
 	}
+
 
 
 	public int getCount() {
@@ -48,7 +52,7 @@ public class ExtensionListImageAdapter extends BaseAdapter {
 		//Use this code if you want to load from resources
 		ImageView i = new ImageView(_context);
 		try{
-			CardImageView.setBitmapToImageView(i, _extension.getShortName(), _extension.getShortName()+"_"+_extension.getCarte(position).getCarteId()+( MainActivity.InUse == Language.FR ? "" : "_us"), true);
+			CardImageView.setBitmapToImageView(_cache, position, i, _extension.getShortName(), _extension.getShortName()+"_"+_extension.getCarte(position).getCarteId()+( MainActivity.InUse == Language.FR ? "" : "_us"), true);
 			i.setLayoutParams(new Gallery3D.LayoutParams(80, 130));
 			i.setScaleType(ImageView.ScaleType.CENTER_INSIDE); 
 

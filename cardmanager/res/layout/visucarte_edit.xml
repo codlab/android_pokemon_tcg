@@ -33,7 +33,7 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_us"
+                    android:id="@+id/extension_holo_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -86,7 +86,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_us"
+                    android:id="@+id/extension_normal_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -139,7 +139,7 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_us"
+                    android:id="@+id/extension_reverse_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -147,7 +147,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+extension/reversetext_us"
+                        android:id="@+id/extension_reversetext_us"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -216,7 +216,7 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_fr"
+                    android:id="@+id/extension_holo_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -269,7 +269,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_fr"
+                    android:id="@+id/extension_normal_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -322,7 +322,7 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_fr"
+                    android:id="@+id/extension_reverse_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -330,7 +330,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+extension/reversetext_fr"
+                        android:id="@+id/extension_reversetext_fr"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -399,7 +399,7 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_es"
+                    android:id="@+id/extension_holo_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -452,7 +452,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_es"
+                    android:id="@+id/extension_normal_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -505,7 +505,7 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_es"
+                    android:id="@+id/extension_reverse_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -513,7 +513,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+extension/reversetext_es"
+                        android:id="@+id/extension_reversetext_es"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -582,7 +582,7 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_it"
+                    android:id="@+id/extension_holo_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -635,7 +635,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_it"
+                    android:id="@+id/extension_normal_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -688,7 +688,7 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_it"
+                    android:id="@+id/extension_reverse_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -696,7 +696,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+extension/reversetext_it"
+                        android:id="@+id/extension_reversetext_it"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -764,7 +764,7 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_de"
+                    android:id="@+id/extension_holo_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -817,7 +817,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_de"
+                    android:id="@+id/extension_normal_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -870,7 +870,7 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_de"
+                    android:id="@+id/extension_reverse_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -878,7 +878,7 @@
                     android:orientation="vertical" >
 
                     <TextView
-                        android:id="@+extension/reversetext_de"
+                        android:id="@+id/extension_reversetext_de"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"

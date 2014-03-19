@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.os.Environment;
+import android.support.v4.util.LruCache;
 import android.widget.ImageView;
 import fr.codlab.cartes.R;
 
@@ -71,7 +72,7 @@ public class CardImageView {
 		}
 	}
 	
-	private static void createThumb(ImageView i, File original, String ext, String name){
+	private static void createThumb(Cache cache, ImageView i, File original, String ext, String name){
 
 		try {
 			Bitmap _bmp_origin = BitmapFactory.decodeFile(original.getAbsolutePath());
@@ -105,12 +106,20 @@ public class CardImageView {
 	}
 
 	private static int c=0;
-	public static void setBitmapToImageView(ImageView i, String ext, String name, boolean is_mini_back){
+	public static void setBitmapToImageView(Cache cache, int id, ImageView i, String ext, String name, boolean is_mini_back){
 		hide(name+".jpg");
 		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+thumb+name+".jpg");
+        Bitmap bitmap = cache.getBitmapFromMemCache(id);
+
+        if(bitmap != null){
+            i.setImageBitmap(bitmap);
+            return;
+        }
+
 		if(_mini.exists()){
-			Bitmap _bmp = BitmapFactory.decodeFile(_mini.getAbsolutePath());
-			i.setImageBitmap(_bmp);
+			Bitmap bmp = BitmapFactory.decodeFile(_mini.getAbsolutePath());
+			i.setImageBitmap(bmp);
+            cache.addBitmapToMemoryCache(id, bmp);
 
 			if(c==10){
 				System.gc();
@@ -123,9 +132,11 @@ public class CardImageView {
 			_mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/."+name+".jpg");
 			File _mini2 = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+name+".jpg");
 			if(_mini.exists()){
-				createThumb(i, _mini, ext, name);
+				createThumb(cache, i, _mini, ext, name);
+                return;
 			}else if(_mini2.exists()){
-				createThumb(i, _mini2, ext, name);
+				createThumb(cache, i, _mini2, ext, name);
+                return;
 			}
 		}
 		if(is_mini_back)

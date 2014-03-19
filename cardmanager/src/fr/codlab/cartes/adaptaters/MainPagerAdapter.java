@@ -45,7 +45,7 @@ implements TitleProvider{
 
 	@Override
 	public int getCount() {
-		return _titles.length;
+		return 2;//_titles.length;
 	}
 
 	@Override

@@ -17,6 +17,7 @@
         <module>actionbarsherlock</module>
         <module>slidingmenu</module>
         <module>cardmanager</module>
+        <module>listviewanimations</module>
     </modules>
 
     <scm>

@@ -3,6 +3,7 @@ package fr.codlab.cartes.adaptaters;
 import fr.codlab.cartes.IExtensionListener;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.util.Cache;
 import fr.codlab.cartes.util.CardImageView;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.Language;
@@ -16,6 +17,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.util.LruCache;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,11 +29,14 @@ public class ExtensionListAdapterUtil {
     private Extension _item;
     private Context _context;
     private IExtensionListener _principal;
+    private final Cache _cache;
 
     ExtensionListAdapterUtil(IExtensionListener principal, Extension item, Context context) {
         _principal = principal;
         _item = item;
         _context = context;
+
+        _cache = new Cache();
     }
 
     public Bundle createBundle(int _pos, boolean imgVue) {
@@ -56,7 +61,7 @@ public class ExtensionListAdapterUtil {
     public View populate(final View v, final int pos) {
         try {
             CardImage iv = (CardImage) v.findViewById(R.id.image);
-            CardImageView.setBitmapToImageView(iv, _item.getShortName(), _item.getShortName() + "_" + _item.getCarte(pos).getCarteId() + (MainActivity.InUse == Language.FR ? "" : "_us"), true);
+            CardImageView.setBitmapToImageView(_cache, pos, iv, _item.getShortName(), _item.getShortName() + "_" + _item.getCarte(pos).getCarteId() + (MainActivity.InUse == Language.FR ? "" : "_us"), true);
         } catch (Exception e) {
         }
 
@@ -86,7 +91,6 @@ public class ExtensionListAdapterUtil {
         }
         final int position = pos;
         TextView bTitle = (TextView) v.findViewById(R.id.carte);
-        Log.d("_item",""+(_item == null ? "null":"not null"));
         bTitle.setText(_item.getCarte(pos).getNom());
 
         TextView bInfos = (TextView) v.findViewById(R.id.infos);

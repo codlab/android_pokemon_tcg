@@ -8,31 +8,31 @@
         android:id="@+id/principal_paypal"
         android:title=""
         android:icon="@drawable/paypal_button"
-        android:showAsAction="always" />
+        android:showAsAction="ifRoom" />
     <!-- ifRoom| -->
     <item
         android:id="@+id/principal_useus"
         android:title="@string/cardus"
         android:icon="@drawable/iconus"
-        android:showAsAction="withText|always" />
+        android:showAsAction="ifRoom" />
     <item
         android:id="@+id/principal_usefr"
         android:title="@string/cardfr"
         android:icon="@drawable/iconfr"
-        android:showAsAction="withText|ifRoom" />
+        android:showAsAction="ifRoom" />
     <item
         android:id="@+id/principal_usede"
         android:title="@string/cardde"
         android:icon="@drawable/iconde"
-        android:showAsAction="withText|ifRoom" />
+        android:showAsAction="ifRoom" />
     <item
         android:id="@+id/principal_usees"
         android:title="@string/cardes"
         android:icon="@drawable/icones"
-        android:showAsAction="withText|ifRoom" />
+        android:showAsAction="ifRoom" />
     <item
         android:id="@+id/principal_useit"
         android:title="@string/cardit"
         android:icon="@drawable/iconit"
-        android:showAsAction="withText|ifRoom" />
+        android:showAsAction="ifRoom" />
 </menu>
