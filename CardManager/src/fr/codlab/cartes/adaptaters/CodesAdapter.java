@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import fr.codlab.cartes.IExtensionListener;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.bdd.SGBD;
+import fr.codlab.cartes.bdd.SGBDPublic;
 import fr.codlab.cartes.fragments.CodesFragment;
 import fr.codlab.cartes.util.Code;
 import fr.codlab.cartes.util.Extension;
@@ -30,7 +30,7 @@ public class CodesAdapter extends BaseAdapter {
 	public CodesAdapter(CodesFragment _parent) {
 		_context=_parent;
 		_new = new ArrayList<Code>();
-		SGBD _s = new SGBD(_context.getActivity());
+        SGBDPublic _s = new SGBDPublic(_context.getActivity());
 		_s.open();
 		Code [] _c = _s.getCodes();
 		_s.close();
@@ -50,7 +50,7 @@ public class CodesAdapter extends BaseAdapter {
 				alertDialog.setButton(_context.getActivity().getText(R.string.ok), new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						try{
-							SGBD sd = new SGBD(_context.getActivity());
+                            SGBDPublic sd = new SGBDPublic(_context.getActivity());
 							sd.open();
 							sd.deleteCodes(_new.get(id).getId());
 							sd.close();
@@ -83,10 +83,10 @@ public class CodesAdapter extends BaseAdapter {
 	public View getView(final int pos, View inView, ViewGroup parent) {
 		if(inView == null){
 			LayoutInflater inflater = (LayoutInflater) _context.getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			inView = inflater.inflate(R.layout.code_list, null);//item_pager_extension
+			inView = inflater.inflate(R.layout.code_list, parent, false);//item_pager_extension
 		}
 
-		ImageView img = (ImageView)inView.findViewById(R.codes.delete);
+		ImageView img = (ImageView)inView.findViewById(R.id.codes_delete);
 		img.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -95,7 +95,7 @@ public class CodesAdapter extends BaseAdapter {
 			}
 
 		});
-		TextView t = (TextView)inView.findViewById(R.codes.code);
+		TextView t = (TextView)inView.findViewById(R.id.codes_code);
 
 		t.setText(_new.get(pos).getCode());
 		Log.d("code", _new.get(pos).getCode());

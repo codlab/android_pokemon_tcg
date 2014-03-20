@@ -3,7 +3,7 @@ package fr.codlab.cartes.updater;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import fr.codlab.cartes.bdd.SGBD;
+import fr.codlab.cartes.bdd.SGBDPublic;
 import android.content.Context;
 
 public class Updater implements IAuthHttp, ICreateAccountHttp, IDownloadHttp, IUploadHttp{
@@ -63,7 +63,7 @@ public class Updater implements IAuthHttp, ICreateAccountHttp, IDownloadHttp, IU
 			String _login_tmp = URLEncoder.encode(login, "UTF-8");
 			String _password_tmp =  URLEncoder.encode(password, "UTF-8");
 			if(_login != null && _password != null && _login.equals(_login_tmp) && _password.equals(_password_tmp) && _encrypted_password != null){
-				SGBD s = new SGBD(c);
+                SGBDPublic s = new SGBDPublic(c);
 				s.open();
 				String data = s.getEncodedPossessions();
 				UploadHttp a = new UploadHttp(c, this, _login, _encrypted_password, data);

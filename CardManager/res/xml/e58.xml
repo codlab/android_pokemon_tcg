@@ -76,7 +76,7 @@
     <carte cid="75" types="psy" pkmnid="578" rarete="uncommon"/>
     <carte cid="76" types="psy" pkmnid="579" rarete="rare"/>
     <carte cid="77" types="psy" pkmnid="609" nom="%s EX" rarete="ultra"/>
-    <carte cid="78" types="psy" pkmnid="658" rarete="holo"/>
+    <carte cid="78" types="psy" pkmnid="648" rarete="holo"/>
     <carte cid="79" types="combat" pkmnid="457" rarete="uncommon"/>
     <carte cid="80" types="combat" pkmnid="458" rarete="holo"/>
     <carte cid="81" types="combat" pkmnid="475" rarete="rare"/>
@@ -109,9 +109,9 @@
     <carte cid="108" types="incolore" pkmnid="641" rarete="holo"/>
     <carte cid="109" types="supporter" nom="Bianca" rarete="uncommon"/>
     <carte cid="110" types="supporter" nom="Cedric Juniper" rarete="uncommon"/>
-    <carte cid="111" types="dresseur" nom="Maillet Écrasant" rarete="uncommon"/>
-    <carte cid="112" types="dresseur" nom="Echange d'énergie" rarete="uncommon"/>
-    <carte cid="113" types="incolore" nom="Double Energie Incolore" rarete="uncommon"/>
+    <carte cid="111" types="dresseur" nom="Crushing Hammer" rarete="uncommon"/>
+    <carte cid="112" types="dresseur" nom="Energy Search" rarete="uncommon"/>
+    <carte cid="113" types="incolore" nom="Double Colorless" rarete="uncommon"/>
     <carte cid="114" types="feu" pkmnid="643" rarete="ultra"/>
     <carte cid="115" types="electrique" pkmnid="644" rarete="ultra"/>
     <carte cid="116" types="plante" pkmnid="495" rarete="common"/>
@@ -133,7 +133,7 @@
     <carte cid="132" types="incolore" pkmnid="531" rarete="common"/>
     <carte cid="133" types="incolore" pkmnid="573" rarete="common"/>
     <carte cid="134" types="incolore" pkmnid="573" rarete="uncommon"/>
-    <carte cid="135" types="supporter" pkmnid="Elesa" rarete="common"/>
+    <carte cid="135" types="supporter" nom="Elesa" rarete="common"/>
     <carte cid="136" types="plante" pkmnid="492" nom="%s EX" rarete="ultra"/>
     <carte cid="137" types="feu" pkmnid="643" rarete="ultra"/>
     <carte cid="138" types="electrique" pkmnid="587" rarete="ultra"/>

@@ -9,6 +9,7 @@ import fr.codlab.cartes.adaptaters.ExtensionListImageAdapter;
 import fr.codlab.cartes.manageui.CarteUi;
 import fr.codlab.cartes.util.Card;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.ExtensionManager;
 import fr.codlab.cartes.widget.Gallery3D;
 import android.content.Intent;
 import android.os.Bundle;
@@ -67,12 +68,12 @@ public class CardActivity extends SherlockFragmentActivity implements IClickBund
 		if (_bundle != null && _bundle.containsKey("intitule")) {
 			_factorise.setSetShortName(this.getIntent().getStringExtra("intitule"));
 		}
-		_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
+		_extension = ExtensionManager.getExtension(this.getApplicationContext(), null, _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
-		if(findViewById(R.visucarte.gallery) != null){
+		if(findViewById(R.id.visucarte_gallery) != null){
    
-			gallery = (Gallery3D)findViewById(R.visucarte.gallery);
+			gallery = (Gallery3D)findViewById(R.id.visucarte_gallery);
 			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(this.getApplicationContext(),  _extension);
 			gallery.setAdapter(coverImageAdapter);
 			gallery.setOnItemClickListener(new OnItemClickListener() {
@@ -120,7 +121,7 @@ public class CardActivity extends SherlockFragmentActivity implements IClickBund
 		}
 
 		//mise en forme avec le pager
-		_factorise.setContext(this.findViewById(R.visucarte.top));
+		_factorise.setContext(this.findViewById(R.id.visucarte_top));
 		_factorise.manageFirstPopulate();
 	}
 

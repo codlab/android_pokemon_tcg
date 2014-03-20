@@ -51,6 +51,8 @@
         </activity>
         <activity android:name="fr.codlab.cartes.ExtensionActivity" >
         </activity>
+        <activity android:name="fr.codlab.cartes.Preferences">
+        </activity>
 
         <receiver
             android:name=".push.PushReceiver"

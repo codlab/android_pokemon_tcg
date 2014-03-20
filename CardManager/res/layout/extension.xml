@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
+	android:layout_height="fill_parent"
+    android:background="@drawable/fond" >
 	<LinearLayout android:orientation="vertical"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
 		android:background="@drawable/maintitle">
-		<TextView android:id="@+id/visu.extension.nom"
+		<fr.codlab.cartes.widget.RobotoTextview
+            typeface="regular" android:id="@+id/visu.extension.nom"
+            android:paddingTop="10dp"
 			android:gravity="center_horizontal|center_vertical" android:textSize="22dp"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
 			android:text="Set de base" />
@@ -13,22 +16,26 @@
 			android:layout_width="fill_parent" android:layout_height="wrap_content">
 			<LinearLayout android:orientation="horizontal"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:paddingTop="5dp" android:layout_alignParentLeft="true">
-				<TextView android:gravity="left" android:layout_width="wrap_content"
+				android:paddingTop="5dp" android:paddingLeft="10dp" android:layout_alignParentLeft="true">
+				<fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin" android:gravity="left" android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_alignParentLeft="true" android:text="@string/total" />
-				<TextView android:id="@+id/visu.extension.cartes"
+				<fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin" android:id="@+id/visu.extension.cartes"
 					android:gravity="left" android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			</LinearLayout>
 			<LinearLayout android:orientation="horizontal"
 				android:layout_width="fill_parent" android:layout_height="wrap_content"
 				android:gravity="right" android:paddingTop="5dp"
-				android:paddingRight="5dp">
-				<TextView android:gravity="left" android:layout_width="wrap_content"
+				android:paddingRight="10dp">
+				<fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin" android:gravity="left" android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_alignParentLeft="true" android:text="@string/possedees" />
-				<TextView android:id="@+id/visu.extension.possess"
+				<fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin" android:id="@+id/visu.extension.possess"
 					android:gravity="right" android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			</LinearLayout>

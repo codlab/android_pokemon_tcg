@@ -12,9 +12,11 @@ import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
+import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.util.CardImageView;
 
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
@@ -26,6 +28,7 @@ import android.util.Log;
  *
  */
 final class DownloadFile extends AsyncTask<String, Double, Long>{
+    private Context _context;
 	private URL _url;
 	private long total;
 	private int phase = 0;
@@ -49,10 +52,11 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 		_url_exception = false;
 	}
 
-	DownloadFile(IDownloadFile listener, String ext, String tmp){
+	DownloadFile(Context context, IDownloadFile listener, String ext, String tmp){
 		this();
 		_ext = ext;
 		_listener = listener;
+        _context = context;
 	}
 
 	@Override
@@ -113,7 +117,9 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 				zipInFile = new ZipFile(_zipfile);
 				lenghtOfFile = zipInFile.size();
 				File tmp = null;
-				for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();){
+                int quality = _context.getSharedPreferences(MainActivity.PREFS,0).getInt("quality", 50);
+
+                for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();){
 					ZipEntry zipMediaEntry = entries.nextElement();
 					if (zipMediaEntry.isDirectory()){
 						File mediaDir = new File(getLocation()+zipMediaEntry.getName());
@@ -153,7 +159,7 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 								bisMediaFile.close();
 						}
 						if(tmp != null){
-							CardImageView.createThumb(_ext, tmp.getName());
+							CardImageView.createThumb(quality, _ext, tmp.getName());
 							tmp = null;
 						}
 					}

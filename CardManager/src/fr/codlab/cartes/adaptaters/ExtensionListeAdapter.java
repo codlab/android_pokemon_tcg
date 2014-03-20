@@ -29,13 +29,6 @@ public class ExtensionListeAdapter extends BaseAdapter {
 			LayoutInflater inflater = (LayoutInflater) _context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			inView = inflater.inflate(R.layout.image_list, null);//item_pager_extension
 		}
-		
-		/*ItemExtensionListingCardPagerAdapter adapter = new ItemExtensionListing(_context, _util, pos);
-		TitlePageIndicator indicator =
-				(TitlePageIndicator)findViewById( R.id.indicator );
-		ViewPager pager = 
-		pager.setAdapter(adapter);
-		indicator.setViewPager(pager);*/
 		_util.populate(inView, pos);
 		return(inView);
 	}

@@ -6,9 +6,9 @@
               android:layout_height="50dp">
 
     <com.inmobi.androidsdk.IMAdView
-            android:id="@+principal/adview"
+            android:id="@+id/principal_adview"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            adSlot="15"
+            android:layout_height="90dp"
+            adSize="11"
             appId="4028cba63479e2210134dc11ed010a40"/>
 </LinearLayout>

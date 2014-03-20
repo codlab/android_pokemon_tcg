@@ -54,7 +54,7 @@ public class Downloader implements IDownloadFile {
 	private void downloadImages(){
 		if(_download_progress == null && !_finish){
 			downloadCreate();
-			downloadFile = new DownloadFile(this, _ext, "card_images.zip");
+			downloadFile = new DownloadFile(_parent, this, _ext, "card_images.zip");
 			downloadFile.execute(_url);
 		}
 	}

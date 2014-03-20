@@ -17,11 +17,12 @@
             android:paddingRight="3dp"
             android:background="@drawable/bordpatch" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/editus"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                typeface="thin"/>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -33,20 +34,21 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_us"
+                    android:id="@+id/extension_holo_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="@string/holo"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -55,38 +57,40 @@
                         android:layout_weight="1"
                         android:orientation="horizontal" >
 
-                        <ImageView
+                        <fr.codlab.cartes.widget.RobotoTextview
                             android:id="@+id/holocarte_us_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
-                            android:src="@drawable/minus" />
+                            android:src="@drawable/minus"
+                            typeface="thin"/>
 
                         <ImageView
                             android:id="@+id/holocarte_us_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
                         android:id="@+id/holocarte_us_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
                 </LinearLayout>
 
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_us"
+                    android:id="@+id/extension_normal_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -94,12 +98,13 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
                         android:text="@string/normal"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -110,8 +115,8 @@
 
                         <ImageView
                             android:id="@+id/carte_us_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -119,41 +124,43 @@
 
                         <ImageView
                             android:id="@+id/carte_us_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
                         android:id="@+id/carte_us_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
                 </LinearLayout>
 
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_us"
+                    android:id="@+id/extension_reverse_us"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+extension/reversetext_us"
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        android:id="@+id/extension_reversetext_us"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="@string/reverse"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -164,8 +171,8 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_us_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -173,21 +180,22 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_us_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
                         android:id="@+id/reversecarte_us_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
-                        android:textColor="#000000" />
+                        android:textColor="#000000"
+                        typeface="thin"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -200,7 +208,8 @@
             android:paddingRight="3dp"
             android:background="@drawable/bordpatch"  >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/editfr"
@@ -216,14 +225,15 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_fr"
+                    android:id="@+id/extension_holo_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -240,8 +250,8 @@
 
                         <ImageView
                             android:id="@+id/holocarte_fr_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -249,15 +259,16 @@
 
                         <ImageView
                             android:id="@+id/holocarte_fr_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/holocarte_fr_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -269,7 +280,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_fr"
+                    android:id="@+id/extension_normal_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -277,7 +288,8 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
@@ -293,8 +305,8 @@
 
                         <ImageView
                             android:id="@+id/carte_fr_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -302,15 +314,16 @@
 
                         <ImageView
                             android:id="@+id/carte_fr_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/carte_fr_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -322,15 +335,16 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_fr"
+                    android:id="@+id/extension_reverse_fr"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+extension/reversetext_fr"
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
+                        android:id="@+id/extension_reversetext_fr"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -347,8 +361,8 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_fr_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -356,15 +370,16 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_fr_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/reversecarte_fr_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -383,7 +398,8 @@
             android:paddingRight="3dp"
             android:background="@drawable/bordpatch"  >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edites"
@@ -399,14 +415,15 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_es"
+                    android:id="@+id/extension_holo_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -423,8 +440,8 @@
 
                         <ImageView
                             android:id="@+id/holocarte_es_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -432,15 +449,16 @@
 
                         <ImageView
                             android:id="@+id/holocarte_es_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/holocarte_es_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -452,7 +470,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_es"
+                    android:id="@+id/extension_normal_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -460,7 +478,8 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
@@ -476,8 +495,8 @@
 
                         <ImageView
                             android:id="@+id/carte_es_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -485,15 +504,16 @@
 
                         <ImageView
                             android:id="@+id/carte_es_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/carte_es_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -505,15 +525,16 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_es"
+                    android:id="@+id/extension_reverse_es"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+extension/reversetext_es"
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
+                        android:id="@+id/extension_reversetext_es"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -530,8 +551,8 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_es_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -539,15 +560,16 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_es_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/reversecarte_es_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -566,7 +588,8 @@
             android:paddingRight="3dp"
             android:background="@drawable/bordpatch"  >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/editit"
@@ -582,14 +605,15 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_it"
+                    android:id="@+id/extension_holo_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -606,8 +630,8 @@
 
                         <ImageView
                             android:id="@+id/holocarte_it_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -615,15 +639,16 @@
 
                         <ImageView
                             android:id="@+id/holocarte_it_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/holocarte_it_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -635,7 +660,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_it"
+                    android:id="@+id/extension_normal_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -643,7 +668,8 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
@@ -659,8 +685,8 @@
 
                         <ImageView
                             android:id="@+id/carte_it_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -668,15 +694,16 @@
 
                         <ImageView
                             android:id="@+id/carte_it_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/carte_it_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -688,15 +715,16 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_it"
+                    android:id="@+id/extension_reverse_it"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+extension/reversetext_it"
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
+                        android:id="@+id/extension_reversetext_it"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -713,8 +741,8 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_it_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -722,15 +750,16 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_it_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/reversecarte_it_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -748,7 +777,8 @@
             android:paddingRight="3dp"
             android:background="@drawable/bordpatch"  >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/editde"
@@ -764,14 +794,15 @@
                 <!-- HOLO -->
 
                 <LinearLayout
-                    android:id="@+extension/holo_de"
+                    android:id="@+id/extension_holo_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -788,8 +819,8 @@
 
                         <ImageView
                             android:id="@+id/holocarte_de_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -797,15 +828,16 @@
 
                         <ImageView
                             android:id="@+id/holocarte_de_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/holocarte_de_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -817,7 +849,7 @@
                 <!-- NORMAL -->
 
                 <LinearLayout
-                    android:id="@+extension/normal_de"
+                    android:id="@+id/extension_normal_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -825,7 +857,8 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="vertical" >
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
@@ -841,8 +874,8 @@
 
                         <ImageView
                             android:id="@+id/carte_de_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -850,15 +883,16 @@
 
                         <ImageView
                             android:id="@+id/carte_de_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/carte_de_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -870,15 +904,16 @@
                 <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
-                    android:id="@+extension/reverse_de"
+                    android:id="@+id/extension_reverse_de"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:orientation="vertical" >
 
-                    <TextView
-                        android:id="@+extension/reversetext_de"
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
+                        android:id="@+id/extension_reversetext_de"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
@@ -895,8 +930,8 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_de_sub"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="left"
                             android:layout_weight="1"
                             android:padding="2dp"
@@ -904,15 +939,16 @@
 
                         <ImageView
                             android:id="@+id/reversecarte_de_add"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
                             android:layout_gravity="right"
                             android:layout_weight="1"
                             android:padding="2dp"
                             android:src="@drawable/plus" />
                     </LinearLayout>
 
-                    <TextView
+                    <fr.codlab.cartes.widget.RobotoTextview
+                        typeface="thin"
                         android:id="@+id/reversecarte_de_possedees"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
@@ -922,7 +958,5 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        
-        </LinearLayout>
-
+    </LinearLayout>
 </ScrollView>

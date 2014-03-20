@@ -11,6 +11,7 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.dl.Downloader;
 import fr.codlab.cartes.dl.DownloaderFactory;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.ExtensionManager;
 
 /**
  * Class made to manage how a specified Ui must be modified with set data
@@ -47,7 +48,7 @@ final public class ExtensionUi {
 
 	private void update(){
 		if(_activity != null && to_change){
-			_extension = new Extension(_activity.getApplication().getApplicationContext(), _id, 0, _intitule, _name, true);
+			_extension = ExtensionManager.getExtension(_activity.getApplication().getApplicationContext(), null, _id, 0, _intitule, _name, true);
 			to_change = false;
 		}
 	}
@@ -73,10 +74,10 @@ final public class ExtensionUi {
 
 	public boolean onOptionsItemSelected(MenuItem item){
 		switch (item.getItemId()) {
-		case R.extension.download:
+		case R.id.extension_download:
 			_downloader = DownloaderFactory.downloadFR(_activity,_intitule);
 			return true;
-		case R.extension.downloadus:
+		case R.id.extension_downloadus:
 			_downloader = DownloaderFactory.downloadUS(_activity,_intitule);
 			return true;
 		default:
@@ -94,11 +95,19 @@ final public class ExtensionUi {
 		v.setText(nom);
     }
     
-    public void updateProgress(TextView v, int t, int m){
-		v.setText(" "+t+"/"+m);
+    public void updateProgress(final TextView v, final int t, final int m){
+        _activity.runOnUiThread(new Runnable(){
+            public void run(){
+                v.setText(" "+t+"/"+m);
+            }
+        });
     }
     
-    public void updatePossessed(TextView v, int p){
-		v.setText(" "+p);
+    public void updatePossessed(final TextView v, final int p){
+        _activity.runOnUiThread(new Runnable(){
+            public void run(){
+                v.setText(" "+p);
+            }
+        });
     }
 }

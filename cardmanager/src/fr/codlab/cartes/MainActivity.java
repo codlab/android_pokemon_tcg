@@ -18,7 +18,7 @@ import fr.codlab.cartes.fragments.CodesFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
-import fr.codlab.cartes.listener.IExtensionLoadedListener;
+import fr.codlab.cartes.listener.*;
 import fr.codlab.cartes.redeemcode.IGetLogin;
 import fr.codlab.cartes.redeemcode.ITextCode;
 import fr.codlab.cartes.util.Extension;
@@ -63,7 +63,7 @@ import android.widget.Toast;
 public class MainActivity extends SlidingViewPagerFragmentActivity implements IExtensionMaster, IGetLogin, ITextCode,
 
         IabHelper.QueryInventoryFinishedListener,
-        IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener, IExtensionLoadedListener {
+        IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener, IExtensionLoadedListener, fr.codlab.cartes.listener.IExtensionListener {
 
     /**
      * PLAYSTORE PART
@@ -459,7 +459,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void notifyDataChanged() {
-        for (int ind = 0; ind < _arrayExtension.size(); _arrayExtension.get(ind).updatePossessed(), ind++)
+        for (int ind = 0; ind < _arrayExtension.size(); _arrayExtension.get(ind).updatePossessed(this), ind++)
             ;
         notifyChanged();
     }
@@ -482,6 +482,9 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 this.createDonationDialog(false, false);
                 return true;
             //modification en mode US
+            case R.id.principal_settings:
+                startActivity(new Intent(this, Preferences.class));
+                return true;
             case android.R.id.home:
                 if (_carte != null || _extension != null || _codes != null) {
                     FragmentManager fm = getSupportFragmentManager();
@@ -722,7 +725,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 _arrayExtension.get(ind).getId() != extension_id; ind++)
             ;
         if (ind < _arrayExtension.size()) {
-            _arrayExtension.get(ind).updatePossessed();
+            _arrayExtension.get(ind).updatePossessed(this);
         }
         notifyChanged();
     }
@@ -761,4 +764,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         mHelper = null;
     }
 
+    @Override
+    public void onUpdateFinished() {
+
+    }
 }

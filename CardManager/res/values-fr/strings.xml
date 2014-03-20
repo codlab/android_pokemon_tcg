@@ -97,4 +97,12 @@
     <string name="managetcgolittle">Vous ne perdrez plus vos codes</string>
     <string name="ok">Ok</string>
     <string name="cancel">Annuler</string>
+
+    <string name="drive_blackberry">Vous utilisez actuellement la version Android de l\'application qui a été portée sur votre blackberryEn raison d\'un conflit entre les WebView et le clavvier Logiciel de votre terminal, veuillez indiquer ci-après vos informations de connexion afin que l\'application puisse directement les copier dans le contenu de la page d\'Authentification de Google.</string>
+    <string name="drive_blackberry_email">Votre Email</string>
+    <string name="drive_blackberry_password">Votre Mot de Passe</string>
+    <string name="drive_login">Connectez-vous</string>
+
+    <string name="download_flappi_kachu">Clic sur l\'image pour télécharger le jeu Flappi Kachu!</string>
+
 </resources>

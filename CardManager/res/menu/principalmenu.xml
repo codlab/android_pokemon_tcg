@@ -1,26 +1,44 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
-<item android:id="@+principal/paypal"
-     android:title=""
-     android:icon="@drawable/paypal_button"
-     android:showAsAction="always" /><!-- ifRoom| -->
-<item android:id="@+principal/useus" 
-     android:title="@string/cardus"
-     android:icon="@drawable/iconus"
-     android:showAsAction="withText|always" />
-<item android:id="@+principal/usefr" 
-     android:title="@string/cardfr"
-     android:icon="@drawable/iconfr"
-     android:showAsAction="withText|ifRoom" />
-<item android:id="@+principal/usede" 
-     android:title="@string/cardde"
-     android:icon="@drawable/iconde"
-     android:showAsAction="withText|ifRoom" />
-<item android:id="@+principal/usees" 
-     android:title="@string/cardes"
-     android:icon="@drawable/icones"
-     android:showAsAction="withText|ifRoom" />
-<item android:id="@+principal/useit" 
-     android:title="@string/cardit"
-     android:icon="@drawable/iconit"
-     android:showAsAction="withText|ifRoom" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_donation"
+        android:icon="@drawable/ic_action_store"
+        android:showAsAction="always"
+        android:title="@string/make_donation" />
+
+    <item
+        android:id="@+id/principal_settings"
+        android:title="@string/settings"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/principal_paypal"
+        android:title=""
+        android:icon="@drawable/paypal_button"
+        android:showAsAction="never" />
+    <!-- ifRoom| -->
+    <item
+        android:id="@+id/principal_useus"
+        android:title="@string/cardus"
+        android:icon="@drawable/iconus"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/principal_usefr"
+        android:title="@string/cardfr"
+        android:icon="@drawable/iconfr"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/principal_usede"
+        android:title="@string/cardde"
+        android:icon="@drawable/iconde"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/principal_usees"
+        android:title="@string/cardes"
+        android:icon="@drawable/icones"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/principal_useit"
+        android:title="@string/cardit"
+        android:icon="@drawable/iconit"
+        android:showAsAction="ifRoom" />
 </menu>

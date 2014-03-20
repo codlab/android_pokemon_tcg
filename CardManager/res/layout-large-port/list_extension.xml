@@ -17,13 +17,15 @@
         android:cacheColorHint="#00000000"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
             android:id="@+id/extension.nom"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
             android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            typeface="regular"
+            />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -37,16 +39,18 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="0dp"
-                    android:text="@string/collection" />
+                    android:text="@string/collection"
+                    typeface="thin" />
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
                     android:id="@+id/extcollection"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    typeface="thin" />
             </LinearLayout>
 
             <LinearLayout
@@ -55,15 +59,17 @@
                 android:layout_weight="1"
                 android:orientation="horizontal" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/extposses" />
+                    android:text="@string/extposses"
+                    typeface="thin" />
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
                     android:id="@+id/extpossedees"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    typeface="thin" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -4,6 +4,9 @@ import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.nhaarman.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
+import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 
 import fr.codlab.cartes.IExtensionListener;
 import fr.codlab.cartes.IExtensionMaster;
@@ -17,13 +20,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-final public class ExtensionFragment extends SherlockFragment implements IExtensionListener, IExtensionMaster{
+final public class ExtensionFragment extends SherlockFragment implements IExtensionListener, IExtensionMaster, OnDismissCallback {
 	private static ExtensionUi _factorise = null;
 	private IExtensionMaster _parent;
-	private View _this;
 
 	public ExtensionFragment(){
 		super();
@@ -43,7 +46,6 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View mainView = inflater.inflate(R.layout.extension, container, false);		
-		_this = mainView;
 		return mainView;
 
 	}
@@ -88,6 +90,7 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 		if(getSherlockActivity() instanceof SlidingViewPagerFragmentActivity)
 			((SlidingViewPagerFragmentActivity)getSherlockActivity()).setViewPagerSelected(0);
 
+
 	}
 
 	public void onDestroy(){
@@ -98,15 +101,15 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 
 
 	public void updateName(String nom){
-		_factorise.updateName(((TextView)_this.findViewById(R.id.visu_extension_nom)), nom);
+		_factorise.updateName(((TextView)getView().findViewById(R.id.visu_extension_nom)), nom);
 	}
 
 	public void updateProgress(int t, int m){
-		_factorise.updateProgress(((TextView)_this.findViewById(R.id.visu_extension_cartes)), t, m);
+		_factorise.updateProgress(((TextView)getView().findViewById(R.id.visu_extension_cartes)), t, m);
 	}
 
 	public void updatePossessed(int p){
-		_factorise.updatePossessed(((TextView)_this.findViewById(R.id.visu_extension_possess)), p);
+		_factorise.updatePossessed(((TextView)getView().findViewById(R.id.visu_extension_possess)), p);
 	}
 
 	public void updated(int id){
@@ -114,7 +117,7 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 	}
 	@Override
 	public void update(int i){
-		ListView _liste = (ListView)_this.findViewById(R.id.visu_extension_liste);
+		ListView _liste = (ListView)getView().findViewById(R.id.visu_extension_liste);
 		if(_liste.getAdapter()!=null && _liste.getAdapter() instanceof ExtensionListeAdapter)
 			((ExtensionListeAdapter)_liste.getAdapter()).notifyDataSetChanged();
 		_parent.update(i);
@@ -129,8 +132,14 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 
 			//liste des images
 			ExtensionListeAdapter _adapter = new ExtensionListeAdapter(this, this.getActivity().getApplication().getApplicationContext(), _extension);
-			ListView _liste = (ListView)_this.findViewById(R.id.visu_extension_liste);
-			_liste.setAdapter(_adapter);
+			ListView _liste = (ListView)getView().findViewById(R.id.visu_extension_liste);
+			//_liste.setAdapter(_adapter);
+
+            SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
+            swingBottomInAnimationAdapter.setInitialDelayMillis(300);
+            swingBottomInAnimationAdapter.setAbsListView(_liste);
+
+            _liste.setAdapter(swingBottomInAnimationAdapter);
 		}catch(Exception e){
 
 		}
@@ -161,5 +170,8 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 	}
 
 
+    @Override
+    public void onDismiss(AbsListView listView, int[] reverseSortedPositions) {
 
+    }
 }

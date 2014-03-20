@@ -3,7 +3,7 @@
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent" android:focusable="true"
 	android:focusableInTouchMode="true"
-	android:id="@+visucarte/top"
+	android:id="@+id/visucarte_top"
 		android:background="@drawable/fond">
 	<fr.codlab.cartes.viewpagerindicator.TitlePageIndicator
 		android:id="@+id/indicator" android:layout_width="fill_parent"
@@ -13,9 +13,9 @@
 		android:id="@+id/viewpager" android:layout_width="fill_parent"
 		android:layout_height="0dp"
 		android:layout_weight="1"    />
-	<fr.codlab.cartes.widget.Gallery3D
-		android:id="@+visucarte/gallery"
+	<!--<fr.codlab.cartes.widget.Gallery3D
+		android:id="@+id/visucarte_gallery"
 		android:layout_width="fill_parent"
-		android:layout_height="130dp"   />
+		android:layout_height="130dp"   />-->
 	    
 </LinearLayout>

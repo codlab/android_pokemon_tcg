@@ -10,11 +10,13 @@ import android.graphics.Matrix;
 import android.os.Environment;
 import android.support.v4.util.LruCache;
 import android.widget.ImageView;
+
+import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 
 public class CardImageView {
-	private static int quality = 50;
-	private static final float H=100f;
+	//private static int quality = 75;
+	private static final float H=200f;
 	private static final String thumb=".thumb2_";
 
 	public static void hide(String card){
@@ -36,7 +38,7 @@ public class CardImageView {
 				_origin2.renameTo(new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/."+card));
 		}
 	}
-	public static void createThumb(String ext, String original){
+	public static void createThumb(int quality, String ext, String original){
 		hide(original);
 		File _origin = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/."+original);
 		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+thumb+original);
@@ -72,7 +74,7 @@ public class CardImageView {
 		}
 	}
 	
-	private static void createThumb(Cache cache, ImageView i, File original, String ext, String name){
+	private static void createThumb(int quality, Cache cache, ImageView i, File original, String ext, String name){
 
 		try {
 			Bitmap _bmp_origin = BitmapFactory.decodeFile(original.getAbsolutePath());
@@ -106,7 +108,7 @@ public class CardImageView {
 	}
 
 	private static int c=0;
-	public static void setBitmapToImageView(Cache cache, int id, ImageView i, String ext, String name, boolean is_mini_back){
+	public static void setBitmapToImageView(int quality, Cache cache, int id, ImageView i, String ext, String name, boolean is_mini_back){
 		hide(name+".jpg");
 		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+thumb+name+".jpg");
         Bitmap bitmap = cache.getBitmapFromMemCache(id);
@@ -132,10 +134,10 @@ public class CardImageView {
 			_mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/."+name+".jpg");
 			File _mini2 = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+name+".jpg");
 			if(_mini.exists()){
-				createThumb(cache, i, _mini, ext, name);
+				createThumb(quality, cache, i, _mini, ext, name);
                 return;
 			}else if(_mini2.exists()){
-				createThumb(cache, i, _mini2, ext, name);
+				createThumb(quality, cache, i, _mini2, ext, name);
                 return;
 			}
 		}

@@ -25,11 +25,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class ExtensionListAdapterUtil {
+public class ExtensionListAdapterUtil implements fr.codlab.cartes.listener.IExtensionListener {
     private Extension _item;
     private Context _context;
     private IExtensionListener _principal;
     private final Cache _cache;
+    private int _quality=50;
 
     ExtensionListAdapterUtil(IExtensionListener principal, Extension item, Context context) {
         _principal = principal;
@@ -37,6 +38,8 @@ public class ExtensionListAdapterUtil {
         _context = context;
 
         _cache = new Cache();
+        _quality = context.getSharedPreferences(MainActivity.PREFS,0).getInt("quality", 50);
+
     }
 
     public Bundle createBundle(int _pos, boolean imgVue) {
@@ -52,16 +55,21 @@ public class ExtensionListAdapterUtil {
     }
 
     public void updateAll() {
-        _item.updatePossessed();
+        _item.updatePossessed(this);
+    }
+
+    @Override
+    public void onUpdateFinished() {
         _principal.updateProgress(_item.getProgress(), _item.getCount());
         _principal.updatePossessed(_item.getPossessed());
         _principal.updated(_item.getId());
+
     }
 
     public View populate(final View v, final int pos) {
         try {
             CardImage iv = (CardImage) v.findViewById(R.id.image);
-            CardImageView.setBitmapToImageView(_cache, pos, iv, _item.getShortName(), _item.getShortName() + "_" + _item.getCarte(pos).getCarteId() + (MainActivity.InUse == Language.FR ? "" : "_us"), true);
+            CardImageView.setBitmapToImageView(_quality, _cache, pos, iv, _item.getShortName(), _item.getShortName() + "_" + _item.getCarte(pos).getCarteId() + (MainActivity.InUse == Language.FR ? "" : "_us"), true);
         } catch (Exception e) {
         }
 
@@ -251,4 +259,5 @@ public class ExtensionListAdapterUtil {
     public long getItemId(int pos) {
         return _item.getCarte(pos).getId();
     }
+
 }

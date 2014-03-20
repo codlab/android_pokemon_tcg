@@ -7,7 +7,8 @@ import fr.codlab.cartes.attributes.Ability;
 import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
-import fr.codlab.cartes.bdd.SGBD;
+import fr.codlab.cartes.bdd.SGBDPublic;
+
 import android.content.Context;
 import android.util.Log;
 
@@ -242,7 +243,7 @@ public class Card implements Serializable{
 			_quantite_normal+=p;
 			if(_quantite_normal<0)
 				_quantite_normal=getQuantite(principal, Language.US, Rarity.NORMAL);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, Language.US, _quantite_normal);
 			dd.close();
@@ -251,7 +252,7 @@ public class Card implements Serializable{
 			_quantite_reverse+=p;
 			if(_quantite_reverse<0)
 				_quantite_reverse=getQuantite(principal, Language.US, Rarity.REVERSE);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, Language.US, _quantite_reverse);
 			dd.close();
@@ -260,7 +261,7 @@ public class Card implements Serializable{
 			_quantite_holo+=p;
 			if(_quantite_holo<0)
 				_quantite_holo=getQuantite(principal, Language.US, Rarity.HOLO);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, Language.US, _quantite_holo);
 			dd.close();
@@ -271,7 +272,7 @@ public class Card implements Serializable{
 			_quantite_normal_it+=p;
 			if(_quantite_normal_it<0)
 				_quantite_normal_it=getQuantite(principal, Language.IT, Rarity.NORMAL);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, Language.IT, _quantite_normal_it);
 			dd.close();
@@ -280,7 +281,7 @@ public class Card implements Serializable{
 			_quantite_reverse_it+=p;
 			if(_quantite_reverse_it<0)
 				_quantite_reverse_it=getQuantite(principal, Language.IT, Rarity.REVERSE);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, Language.IT, _quantite_reverse_it);
 			dd.close();
@@ -289,7 +290,7 @@ public class Card implements Serializable{
 			_quantite_holo_it+=p;
 			if(_quantite_holo_it<0)
 				_quantite_holo_it=getQuantite(principal, Language.IT, Rarity.HOLO);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, Language.IT, _quantite_holo_it);
 			dd.close();
@@ -300,7 +301,7 @@ public class Card implements Serializable{
 			_quantite_normal_fr+=p;
 			if(_quantite_normal_fr<0)
 				_quantite_normal_fr=getQuantite(principal, Language.FR, Rarity.NORMAL);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, Language.FR, _quantite_normal_fr);
 			dd.close();
@@ -309,7 +310,7 @@ public class Card implements Serializable{
 			_quantite_reverse_fr+=p;
 			if(_quantite_reverse_fr<0)
 				_quantite_reverse_fr=getQuantite(principal, Language.FR, Rarity.REVERSE);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, Language.FR, _quantite_reverse_fr);
 			dd.close();
@@ -318,7 +319,7 @@ public class Card implements Serializable{
 			_quantite_holo_fr+=p;
 			if(_quantite_holo_fr<0)
 				_quantite_holo_fr=getQuantite(principal, Language.FR, Rarity.HOLO);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, Language.FR, _quantite_holo_fr);
 			dd.close();
@@ -329,7 +330,7 @@ public class Card implements Serializable{
 			_quantite_normal_es+=p;
 			if(_quantite_normal_es<0)
 				_quantite_normal_es=getQuantite(principal, Language.ES, Rarity.NORMAL);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, Language.ES, _quantite_normal_es);
 			dd.close();
@@ -338,7 +339,7 @@ public class Card implements Serializable{
 			_quantite_reverse_es+=p;
 			if(_quantite_reverse_es<0)
 				_quantite_reverse_es=getQuantite(principal, Language.ES, Rarity.REVERSE);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, Language.ES, _quantite_reverse_es);
 			dd.close();
@@ -347,7 +348,7 @@ public class Card implements Serializable{
 			_quantite_holo_es+=p;
 			if(_quantite_holo_es<0)
 				_quantite_holo_es=getQuantite(principal, Language.ES, Rarity.HOLO);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, Language.ES, _quantite_holo_es);
 			dd.close();
@@ -358,7 +359,7 @@ public class Card implements Serializable{
 			_quantite_normal_de+=p;
 			if(_quantite_normal_de<0)
 				_quantite_normal_de=getQuantite(principal, Language.DE, Rarity.NORMAL);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, Language.DE, _quantite_normal_de);
 			dd.close();
@@ -367,7 +368,7 @@ public class Card implements Serializable{
 			_quantite_reverse_de+=p;
 			if(_quantite_reverse_de<0)
 				_quantite_reverse_de=getQuantite(principal, Language.DE, Rarity.REVERSE);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, Language.DE, _quantite_reverse_de);
 			dd.close();
@@ -376,7 +377,7 @@ public class Card implements Serializable{
 			_quantite_holo_de+=p;
 			if(_quantite_holo_de<0)
 				_quantite_holo_de=getQuantite(principal, Language.DE, Rarity.HOLO);
-			SGBD dd=new SGBD(principal);
+			SGBDPublic dd=new SGBDPublic(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, Language.DE, _quantite_holo_de);
 			dd.close();
@@ -403,7 +404,7 @@ public class Card implements Serializable{
 	public int getQuantiteUS(Context principal, Rarity rarete){
 		if(rarete == Rarity.NORMAL){
 			if(true || _quantite_normal==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_normal = dd.getPossessionCarteExtensionNormal(_extension, Language.US, _carteId);
 				dd.close();
@@ -412,7 +413,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.REVERSE){
 			if(true || _quantite_reverse==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_reverse = dd.getPossessionCarteExtensionReverse(_extension, Language.US, _carteId);
 				dd.close();
@@ -421,7 +422,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.HOLO){
 			if(true || _quantite_holo==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_holo = dd.getPossessionCarteExtensionHolo(_extension, Language.US, _carteId);
 				dd.close();
@@ -433,7 +434,7 @@ public class Card implements Serializable{
 	public int getQuantiteFR(Context principal, Rarity rarete){
 		if(rarete == Rarity.NORMAL){
 			if(true || _quantite_normal_fr==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_normal_fr = dd.getPossessionCarteExtensionNormal(_extension, Language.FR, _carteId);
 				dd.close();
@@ -442,7 +443,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.REVERSE){
 			if(true || _quantite_reverse_fr==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_reverse_fr = dd.getPossessionCarteExtensionReverse(_extension, Language.FR, _carteId);
 				dd.close();
@@ -451,7 +452,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.HOLO){
 			if(true || _quantite_holo_fr==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_holo_fr = dd.getPossessionCarteExtensionHolo(_extension, Language.FR, _carteId);
 				dd.close();
@@ -463,7 +464,7 @@ public class Card implements Serializable{
 	public int getQuantiteES(Context principal, Rarity rarete){
 		if(rarete == Rarity.NORMAL){
 			if(true || _quantite_normal_es==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_normal_es = dd.getPossessionCarteExtensionNormal(_extension, Language.ES, _carteId);
 				dd.close();
@@ -472,7 +473,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.REVERSE){
 			if(true || _quantite_reverse_es==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_reverse_es = dd.getPossessionCarteExtensionReverse(_extension, Language.ES, _carteId);
 				dd.close();
@@ -481,7 +482,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.HOLO){
 			if(true || _quantite_holo_es==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_holo_es = dd.getPossessionCarteExtensionHolo(_extension, Language.ES, _carteId);
 				dd.close();
@@ -493,7 +494,7 @@ public class Card implements Serializable{
 	public int getQuantiteIT(Context principal, Rarity rarete){
 		if(rarete == Rarity.NORMAL){
 			if(true || _quantite_normal_it==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_normal_it = dd.getPossessionCarteExtensionNormal(_extension, Language.IT, _carteId);
 				dd.close();
@@ -502,7 +503,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.REVERSE){
 			if(true || _quantite_reverse_it==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_reverse_it = dd.getPossessionCarteExtensionReverse(_extension, Language.IT, _carteId);
 				dd.close();
@@ -511,7 +512,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.HOLO){
 			if(true || _quantite_holo_it==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_holo_it = dd.getPossessionCarteExtensionHolo(_extension, Language.IT, _carteId);
 				dd.close();
@@ -523,7 +524,7 @@ public class Card implements Serializable{
 	public int getQuantiteDE(Context principal, Rarity rarete){
 		if(rarete == Rarity.NORMAL){
 			if(true || _quantite_normal_de==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_normal_de = dd.getPossessionCarteExtensionNormal(_extension, Language.DE, _carteId);
 				dd.close();
@@ -532,7 +533,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.REVERSE){
 			if(true || _quantite_reverse_de==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_reverse_de = dd.getPossessionCarteExtensionReverse(_extension, Language.DE, _carteId);
 				dd.close();
@@ -541,7 +542,7 @@ public class Card implements Serializable{
 		}
 		if(rarete == Rarity.HOLO){
 			if(true || _quantite_holo_de==-1){
-				SGBD dd=new SGBD(principal);
+				SGBDPublic dd=new SGBDPublic(principal);
 				dd.open();
 				_quantite_holo_de = dd.getPossessionCarteExtensionHolo(_extension, Language.DE, _carteId);
 				dd.close();

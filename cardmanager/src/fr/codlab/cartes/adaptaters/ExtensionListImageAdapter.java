@@ -52,7 +52,8 @@ public class ExtensionListImageAdapter extends BaseAdapter {
 		//Use this code if you want to load from resources
 		ImageView i = new ImageView(_context);
 		try{
-			CardImageView.setBitmapToImageView(_cache, position, i, _extension.getShortName(), _extension.getShortName()+"_"+_extension.getCarte(position).getCarteId()+( MainActivity.InUse == Language.FR ? "" : "_us"), true);
+            int quality = _context.getSharedPreferences(MainActivity.PREFS,0).getInt("quality", 50);
+			CardImageView.setBitmapToImageView(quality, _cache, position, i, _extension.getShortName(), _extension.getShortName()+"_"+_extension.getCarte(position).getCarteId()+( MainActivity.InUse == Language.FR ? "" : "_us"), true);
 			i.setLayoutParams(new Gallery3D.LayoutParams(80, 130));
 			i.setScaleType(ImageView.ScaleType.CENTER_INSIDE); 
 

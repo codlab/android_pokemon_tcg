@@ -22,6 +22,21 @@
 			<scope>provided</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>eu.codlab</groupId>
+            <artifactId>listviewanimations</artifactId>
+            <version>${project.version}</version>
+            <type>apklib</type>
+        </dependency>
+
+
+        <dependency>
+            <groupId>eu.codlab</groupId>
+            <artifactId>sliderpreference</artifactId>
+            <version>${project.version}</version>
+            <type>apklib</type>
+        </dependency>
+
 		<dependency>
 			<groupId>eu.codlab</groupId>
 			<artifactId>actionbarsherlock</artifactId>

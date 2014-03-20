@@ -1,4 +1,4 @@
-<extensions nb="55">
+<extensions nb="58">
   <extension images="true" nom="Base" nb="102" id="1" intitule="bas"></extension>
   <extension nom="Jungle" nb="65" id="2" intitule="jun"></extension>
   <extension nom="Fossile" nb="63" id="3" intitule="fos"></extension>
@@ -52,7 +52,11 @@
   <extension nom="BW Dark Explorers" nb="108" id="52" intitule="de"></extension>
   <extension nom="BW Dragons Exalted" nb="128" id="53" intitule="dre"></extension>
   <extension images="true" nom="BW Boundaries Crossed" nb="153" id="54" intitule="bc"></extension>
-  <extension nom="BW Plasma Storm" nb="138" id="55" intitule="ps"></extension>
+  <extension nom="BW Tempete Plasma" nb="138" id="55" intitule="ps"></extension>
+  <extension nom="BW Glaciation Plasma" nb="122" id="56" intitule="pf"></extension>
+  <extension nom="BW Explosion Plasma" nb="105" id="57" intitule="pb"></extension>
+  <extension nom="BW Legendary Treasures" nb="140" id="58" intitule="plt"></extension>
+    <extension nom="XY" nb="146" id="59" intitule="xy"></extension>
   <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
   <pextension nom="Promos Pokémon USA" id="991"></pextension>
   <pextension nom="POP Série 1" id="993" intitule="pop1"></pextension>

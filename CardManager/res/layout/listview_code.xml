@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/fond" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -10,8 +11,9 @@
         android:background="@drawable/maintitle"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+codes/titre"
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="regular"
+            android:id="@+id/codes_titre"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
@@ -24,7 +26,8 @@
             android:orientation="horizontal"
                 android:paddingTop="5dp" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_alignParentLeft="true"
@@ -33,13 +36,13 @@
                 android:padding="5dp" />
 
                 <EditText
-                    android:id="@+codes/addcode"
+                    android:id="@+id/codes_addcode"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:gravity="left" />
                 <Button 
-                    android:id="@+codes/submit"
+                    android:id="@+id/codes_submit"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:layout_alignParentLeft="true"
@@ -58,17 +61,12 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+codes/liste"
+        android:id="@+id/codes_liste"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:cacheColorHint="#00000000"
         android:fastScrollEnabled="true" />
 
-    <com.inmobi.androidsdk.IMAdView
-        android:id="@+principal/adview"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        adSlot="15"
-        appId="4028cba63479e2210134dc11ed010a40" />
+    <include layout="@layout/ads" />
 </LinearLayout>

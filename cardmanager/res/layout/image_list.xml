@@ -47,7 +47,8 @@
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin"
                     android:id="@+id/infos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -81,7 +82,8 @@
                 android:paddingLeft="3dp"
                 android:paddingRight="3dp" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin"
                     android:id="@+id/extension_quick"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -105,7 +107,8 @@
                         android:layout_weight="1"
                         android:orientation="vertical" >
 
-                        <TextView
+                        <fr.codlab.cartes.widget.RobotoTextview
+                            typeface="thin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|center_horizontal"
@@ -137,7 +140,8 @@
                                 android:src="@drawable/plus" />
                         </LinearLayout>
 
-                        <TextView
+                        <fr.codlab.cartes.widget.RobotoTextview
+                            typeface="thin"
                             android:id="@+id/holocarte.possedees"
                             android:layout_width="wrap_content"
                             android:layout_height="fill_parent"

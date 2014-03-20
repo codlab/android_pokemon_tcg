@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="preferExternal"
     package="fr.codlab.cartes"
-    android:versionCode="39"
-    android:versionName="4.5" >
+    android:versionCode="46"
+    android:versionName="4.12" >
 
     <uses-sdk
         android:minSdkVersion="7"
@@ -15,7 +15,7 @@
 
     <!-- Only this application can receive the messages and registration result -->
     <permission
-        android:name="com.example.myapp.permission.C2D_MESSAGE"
+        android:name="fr.codlab.cartes.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="fr.codlab.cartes.permission.C2D_MESSAGE" />
@@ -35,7 +35,9 @@
         android:description="@string/app_desc"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@style/custom" android:hardwareAccelerated="true">
+        android:theme="@style/custom"
+        android:hardwareAccelerated="true"
+        android:name=".TCGApplication">
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,11 +45,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardActivity" >
+        <activity android:name="fr.codlab.cartes.CardActivity" >
         </activity>
-        <activity android:name=".CodesActivity" >
+        <activity android:name="fr.codlab.cartes.CodesActivity" >
         </activity>
-        <activity android:name=".ExtensionActivity" >
+        <activity android:name="fr.codlab.cartes.ExtensionActivity" >
+        </activity>
+        <activity android:name="fr.codlab.cartes.Preferences">
         </activity>
 
         <receiver

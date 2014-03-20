@@ -23,7 +23,7 @@ import android.widget.TextView;
  * @author kevin le perf
  *
  */
-public class ExtensionActivity extends SherlockFragmentActivity implements IExtensionListener, OnDismissCallback {
+public class ExtensionActivity extends SherlockFragmentActivity implements IExtensionListener, OnDismissCallback, fr.codlab.cartes.listener.IExtensionListener {
 	private static ExtensionUi _factorise;
 	private Extension _extension;
 	public ExtensionActivity(){
@@ -136,7 +136,7 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 	@Override
 	public void updated(int id) {
 		_extension = _factorise.getExtension();
-		_extension.updatePossessed();
+		_extension.updatePossessed(this);
 		updateProgress(_extension.getProgress(),_extension.getCount());
 		updatePossessed(_extension.getPossessed());
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
@@ -152,6 +152,11 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 
     @Override
     public void onDismiss(AbsListView listView, int[] reverseSortedPositions) {
+
+    }
+
+    @Override
+    public void onUpdateFinished() {
 
     }
 }

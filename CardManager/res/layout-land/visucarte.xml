@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+visucarte/top"
+    android:id="@+id/visucarte_top"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:focusable="true"
@@ -9,7 +9,7 @@
             android:background="@drawable/fond"  >
 
     <fr.codlab.cartes.widget.Gallery3D
-        android:id="@+visucarte/gallery"
+        android:id="@+id/visucarte_gallery"
         android:layout_width="130dp"
         android:layout_height="fill_parent" />"
     <LinearLayout

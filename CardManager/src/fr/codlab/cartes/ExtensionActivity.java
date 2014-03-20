@@ -3,6 +3,9 @@ package fr.codlab.cartes;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.nhaarman.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeDismissAdapter;
+import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
@@ -10,6 +13,7 @@ import fr.codlab.cartes.manageui.ExtensionUi;
 import fr.codlab.cartes.util.Extension;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,7 +23,7 @@ import android.widget.TextView;
  * @author kevin le perf
  *
  */
-public class ExtensionActivity extends SherlockFragmentActivity implements IExtensionListener {
+public class ExtensionActivity extends SherlockFragmentActivity implements IExtensionListener, OnDismissCallback, fr.codlab.cartes.listener.IExtensionListener {
 	private static ExtensionUi _factorise;
 	private Extension _extension;
 	public ExtensionActivity(){
@@ -28,25 +32,25 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		if(_factorise == null)
+        Bundle objetbunble  = this.getIntent().getExtras();
+
+        int _id = 0;
+        String _nom="";
+        String _intitule="";
+        if (objetbunble != null && objetbunble.containsKey("extension")) {
+            _id = (objetbunble.getInt("extension",0));
+        }
+
+        if (objetbunble != null && objetbunble.containsKey("nom")) {
+            _nom = this.getIntent().getStringExtra("nom");
+        }
+        if (objetbunble != null && objetbunble.containsKey("intitule")) {
+            _intitule = this.getIntent().getStringExtra("intitule");
+        }
+
+        if(_factorise == null)
 			_factorise = new ExtensionUi(this);
 		_factorise.setActivity(this);
-
-		int _id = 0;
-		String _nom="";
-		String _intitule="";
-		Bundle objetbunble  = this.getIntent().getExtras();
-		if (objetbunble != null && objetbunble.containsKey("extension")) {
-			_id = (objetbunble.getInt("extension",0));
-		}
-
-		if (objetbunble != null && objetbunble.containsKey("nom")) {
-			_nom = this.getIntent().getStringExtra("nom");
-		}
-		if (objetbunble != null && objetbunble.containsKey("intitule")) {
-			_intitule = this.getIntent().getStringExtra("intitule");
-		}
-		
 		_factorise.define(_nom, _id, _intitule);
 		this.setContentView(R.layout.extension);
 		//mise a jour du nom de l'extension et des informations
@@ -59,7 +63,14 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 		//liste des images
 		ExtensionListeAdapter _adapter = new ExtensionListeAdapter(this, this, _extension);
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
-		_liste.setAdapter(_adapter);
+
+
+        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(new SwipeDismissAdapter(_adapter, this));
+        swingBottomInAnimationAdapter.setInitialDelayMillis(300);
+        swingBottomInAnimationAdapter.setAbsListView(_liste);
+
+        _liste.setAdapter(swingBottomInAnimationAdapter);
+		//_liste.setAdapter(_adapter);
 	}
 
 
@@ -125,7 +136,7 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 	@Override
 	public void updated(int id) {
 		_extension = _factorise.getExtension();
-		_extension.updatePossessed();
+		_extension.updatePossessed(this);
 		updateProgress(_extension.getProgress(),_extension.getCount());
 		updatePossessed(_extension.getPossessed());
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
@@ -138,4 +149,14 @@ public class ExtensionActivity extends SherlockFragmentActivity implements IExte
 		i.putExtras(bundle);
 		setResult(RESULT_OK, i); 
 	}
+
+    @Override
+    public void onDismiss(AbsListView listView, int[] reverseSortedPositions) {
+
+    }
+
+    @Override
+    public void onUpdateFinished() {
+
+    }
 }

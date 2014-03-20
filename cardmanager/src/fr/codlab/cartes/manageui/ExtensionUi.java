@@ -95,11 +95,19 @@ final public class ExtensionUi {
 		v.setText(nom);
     }
     
-    public void updateProgress(TextView v, int t, int m){
-		v.setText(" "+t+"/"+m);
+    public void updateProgress(final TextView v, final int t, final int m){
+        _activity.runOnUiThread(new Runnable(){
+            public void run(){
+                v.setText(" "+t+"/"+m);
+            }
+        });
     }
     
-    public void updatePossessed(TextView v, int p){
-		v.setText(" "+p);
+    public void updatePossessed(final TextView v, final int p){
+        _activity.runOnUiThread(new Runnable(){
+            public void run(){
+                v.setText(" "+p);
+            }
+        });
     }
 }

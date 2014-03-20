@@ -27,7 +27,8 @@
             android:textSize="15dp"
             android:textStyle="bold" />
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"

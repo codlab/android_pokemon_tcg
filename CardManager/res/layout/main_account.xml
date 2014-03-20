@@ -4,7 +4,8 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <fr.codlab.cartes.widget.RobotoTextview
+        typeface="thin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -18,7 +19,8 @@
         android:layout_marginBottom="15dp"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -26,7 +28,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+account/nickname"
+            android:id="@+id/account_nickname"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -39,7 +41,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -47,7 +50,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+account/password"
+            android:id="@+id/account_password"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -67,14 +70,14 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+account/create"
+                android:id="@+id/account_create"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/accountcreate" />
 
             <Button
-                android:id="@+account/auth"
+                android:id="@+id/account_auth"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -88,24 +91,19 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+account/down"
+                android:id="@+id/account_down"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/accountdown" />
 
             <Button
-                android:id="@+account/up"
+                android:id="@+id/account_up"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/accountup" />
         </LinearLayout>
     </LinearLayout>
 
-    <com.inmobi.androidsdk.IMAdView
-        android:id="@+principal/adview"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        adSlot="15"
-        appId="4028cba63479e2210134dc11ed010a40" />
+    <include layout="@layout/ads" />
 
 </LinearLayout>

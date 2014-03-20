@@ -121,7 +121,7 @@ final public class CarteUi implements OnPageChangeListener {
 	public void populateImage(View activity){
 		if(_intitule != null){
 			//chargement de l'image
-			ImageView iv = (ImageView)activity.findViewById(R.carte.visu);
+			ImageView iv = (ImageView)activity.findViewById(R.id.carte_visu);
 			//recuperation hidden file
 			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"/."+_intitule+"_"+_card.getCarteId()+(MainActivity.InUse == Language.FR ? "" : "_us" )+".jpg");
 
@@ -160,9 +160,9 @@ final public class CarteUi implements OnPageChangeListener {
 		moins = (ImageView)activity.findViewById(R.id.carte_it_sub);
 		plus = (ImageView)activity.findViewById(R.id.carte_it_add);
 		editQuantite=(TextView)activity.findViewById(R.id.carte_it_possedees);
-		LinearLayout normal = (LinearLayout)activity.findViewById(R.extension.normal_it);
-		LinearLayout reverse = (LinearLayout)activity.findViewById(R.extension.reverse_it);
-		LinearLayout holo = (LinearLayout)activity.findViewById(R.extension.holo_it);
+		LinearLayout normal = (LinearLayout)activity.findViewById(R.id.extension_normal_it);
+		LinearLayout reverse = (LinearLayout)activity.findViewById(R.id.extension_reverse_it);
+		LinearLayout holo = (LinearLayout)activity.findViewById(R.id.extension_holo_it);
 
 		if(_card.getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
@@ -198,7 +198,7 @@ final public class CarteUi implements OnPageChangeListener {
 		//REVERSE OR FIRST EDITION !
 		if(_card.getIsReverse() || (_extension != null && _extension.isFirstEdition())){
 			if(_extension != null && _extension.isFirstEdition()){
-				TextView v2 = (TextView)activity.findViewById(R.extension.reversetext_it);
+				TextView v2 = (TextView)activity.findViewById(R.id.extension_reversetext_it);
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
@@ -264,9 +264,9 @@ final public class CarteUi implements OnPageChangeListener {
 		moins = (ImageView)activity.findViewById(R.id.carte_de_sub);
 		plus = (ImageView)activity.findViewById(R.id.carte_de_add);
 		editQuantite=(TextView)activity.findViewById(R.id.carte_de_possedees);
-		LinearLayout normal = (LinearLayout)activity.findViewById(R.extension.normal_de);
-		LinearLayout reverse = (LinearLayout)activity.findViewById(R.extension.reverse_de);
-		LinearLayout holo = (LinearLayout)activity.findViewById(R.extension.holo_de);
+		LinearLayout normal = (LinearLayout)activity.findViewById(R.id.extension_normal_de);
+		LinearLayout reverse = (LinearLayout)activity.findViewById(R.id.extension_reverse_de);
+		LinearLayout holo = (LinearLayout)activity.findViewById(R.id.extension_holo_de);
 
 		if(_card.getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
@@ -302,7 +302,7 @@ final public class CarteUi implements OnPageChangeListener {
 		//REVERSE OR FIRST EDITION !
 		if(_card.getIsReverse() || (_extension != null && _extension.isFirstEdition())){
 			if(_extension != null && _extension.isFirstEdition()){
-				TextView v2 = (TextView)activity.findViewById(R.extension.reversetext_de);
+				TextView v2 = (TextView)activity.findViewById(R.id.extension_reversetext_de);
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
@@ -369,9 +369,9 @@ final public class CarteUi implements OnPageChangeListener {
 		moins = (ImageView)activity.findViewById(R.id.carte_es_sub);
 		plus = (ImageView)activity.findViewById(R.id.carte_es_add);
 		editQuantite=(TextView)activity.findViewById(R.id.carte_es_possedees);
-		LinearLayout normal = (LinearLayout)activity.findViewById(R.extension.normal_es);
-		LinearLayout reverse = (LinearLayout)activity.findViewById(R.extension.reverse_es);
-		LinearLayout holo = (LinearLayout)activity.findViewById(R.extension.holo_es);
+		LinearLayout normal = (LinearLayout)activity.findViewById(R.id.extension_normal_es);
+		LinearLayout reverse = (LinearLayout)activity.findViewById(R.id.extension_reverse_es);
+		LinearLayout holo = (LinearLayout)activity.findViewById(R.id.extension_holo_es);
 
 		if(_card.getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
@@ -407,7 +407,7 @@ final public class CarteUi implements OnPageChangeListener {
 		//REVERSE OR FIRST EDITION !
 		if(_card.getIsReverse() || (_extension != null && _extension.isFirstEdition())){
 			if(_extension != null && _extension.isFirstEdition()){
-				TextView v2 = (TextView)activity.findViewById(R.extension.reversetext_es);
+				TextView v2 = (TextView)activity.findViewById(R.id.extension_reversetext_es);
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
@@ -474,9 +474,9 @@ final public class CarteUi implements OnPageChangeListener {
 		moins = (ImageView)activity.findViewById(R.id.carte_fr_sub);
 		plus = (ImageView)activity.findViewById(R.id.carte_fr_add);
 		editQuantite=(TextView)activity.findViewById(R.id.carte_fr_possedees);
-		LinearLayout normal = (LinearLayout)activity.findViewById(R.extension.normal_fr);
-		LinearLayout reverse = (LinearLayout)activity.findViewById(R.extension.reverse_fr);
-		LinearLayout holo = (LinearLayout)activity.findViewById(R.extension.holo_fr);
+		LinearLayout normal = (LinearLayout)activity.findViewById(R.id.extension_normal_fr);
+		LinearLayout reverse = (LinearLayout)activity.findViewById(R.id.extension_reverse_fr);
+		LinearLayout holo = (LinearLayout)activity.findViewById(R.id.extension_holo_fr);
 
 		if(_card.getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
@@ -512,7 +512,7 @@ final public class CarteUi implements OnPageChangeListener {
 		//REVERSE OR FIRST EDITION !
 		if(_card.getIsReverse() || (_extension != null && _extension.isFirstEdition())){
 			if(_extension != null && _extension.isFirstEdition()){
-				TextView v2 = (TextView)activity.findViewById(R.extension.reversetext_fr);
+				TextView v2 = (TextView)activity.findViewById(R.id.extension_reversetext_fr);
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
@@ -579,9 +579,9 @@ final public class CarteUi implements OnPageChangeListener {
 		moins = (ImageView)activity.findViewById(R.id.carte_us_sub);
 		plus = (ImageView)activity.findViewById(R.id.carte_us_add);
 		editQuantite=(TextView)activity.findViewById(R.id.carte_us_possedees);
-		LinearLayout normal = (LinearLayout)activity.findViewById(R.extension.normal_us);
-		LinearLayout reverse = (LinearLayout)activity.findViewById(R.extension.reverse_us);
-		LinearLayout holo = (LinearLayout)activity.findViewById(R.extension.holo_us);
+		LinearLayout normal = (LinearLayout)activity.findViewById(R.id.extension_normal_us);
+		LinearLayout reverse = (LinearLayout)activity.findViewById(R.id.extension_reverse_us);
+		LinearLayout holo = (LinearLayout)activity.findViewById(R.id.extension_holo_us);
 
 		if(_card.getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
@@ -617,7 +617,7 @@ final public class CarteUi implements OnPageChangeListener {
 		//REVERSE OR FIRST EDITION !
 		if(_card.getIsReverse() || (_extension != null && _extension.isFirstEdition())){
 			if(_extension != null && _extension.isFirstEdition()){
-				TextView v2 = (TextView)activity.findViewById(R.extension.reversetext_us);
+				TextView v2 = (TextView)activity.findViewById(R.id.extension_reversetext_us);
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
@@ -688,7 +688,7 @@ final public class CarteUi implements OnPageChangeListener {
 		if(_all_visible && _card.getPV()>0)
 			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_card.getPV()));
 		if(!_all_visible){
-			((View)activity.findViewById(R.carte.hpzone)).setVisibility(View.GONE);
+			((View)activity.findViewById(R.id.carte_hpzone)).setVisibility(View.GONE);
 		}
 
 		//affichage common, rare, uncommon, holo, ultra

@@ -11,6 +11,7 @@ import fr.codlab.cartes.adaptaters.ExtensionListImageAdapter;
 import fr.codlab.cartes.manageui.CarteUi;
 import fr.codlab.cartes.util.Card;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.ExtensionManager;
 import fr.codlab.cartes.widget.Gallery3D;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,17 +24,21 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
 final public class CardFragment extends SherlockFragment implements IClickBundle, OnPageChangeListener{
-	private View _this;
 	private Bundle _pack;
 	private CarteUi _factorise;
 	private Extension _extension;
 	private Gallery3D gallery;
 	private IExtensionMaster _parent;
 
-	public CardFragment(Bundle pack, IExtensionMaster parent) {
-		this();
+	/*public CardFragment(Bundle pack, IExtensionMaster parent) {
+		_factorise = new CarteUi(this);
 		_pack = pack;
 		setParent(parent);
+	}*/
+	
+	public void setArguments(Bundle pack){
+		super.setArguments(pack);
+		_pack = pack;
 	}
 
 	public CardFragment(){
@@ -48,9 +53,6 @@ final public class CardFragment extends SherlockFragment implements IClickBundle
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View mainView = inflater.inflate(R.layout.visucarte, container, false);		
-		_this = mainView;
-
-
 		return mainView;
 	}
 
@@ -92,7 +94,7 @@ final public class CardFragment extends SherlockFragment implements IClickBundle
 		}
 
 		//mise en forme avec le pager
-		_factorise.setContext(_this);
+		_factorise.setContext(getView());
 		if(_extension != null)
 			_factorise.setExtension(_extension);
 		_factorise.manageFirstPopulate();
@@ -111,12 +113,12 @@ final public class CardFragment extends SherlockFragment implements IClickBundle
 		if (_pack.containsKey("intitule")) {
 			_factorise.setSetShortName(_pack.getString("intitule"));
 		}
-		_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
+		_extension = ExtensionManager.getExtension(getActivity().getApplicationContext(), null, _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
-		if(getActivity().findViewById(R.visucarte.gallery) != null){
+		if(getActivity().findViewById(R.id.visucarte_gallery) != null){
 
-			gallery = (Gallery3D)getActivity().findViewById(R.visucarte.gallery);
+			gallery = (Gallery3D)getActivity().findViewById(R.id.visucarte_gallery);
 			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(getActivity(), _extension);
 			gallery.setAdapter(coverImageAdapter);
 			gallery.setOnItemClickListener(new OnItemClickListener() {
@@ -132,7 +134,7 @@ final public class CardFragment extends SherlockFragment implements IClickBundle
 	}
 
 	public void setListExtension(MainActivity _activity_main){
-		_activity_main.setListExtension(_this);
+		_activity_main.setListExtension(getView());
 	}
 
 	public void save(Bundle saveInstance){

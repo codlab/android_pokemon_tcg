@@ -18,6 +18,7 @@
         <module>slidingmenu</module>
         <module>cardmanager</module>
         <module>listviewanimations</module>
+        <module>sliderpreference</module>
     </modules>
 
     <scm>

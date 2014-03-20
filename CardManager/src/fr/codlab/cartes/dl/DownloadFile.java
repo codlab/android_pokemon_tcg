@@ -12,9 +12,11 @@ import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
+import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.util.CardImageView;
 
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
@@ -26,11 +28,20 @@ import android.util.Log;
  *
  */
 final class DownloadFile extends AsyncTask<String, Double, Long>{
+    private Context _context;
 	private URL _url;
 	private long total;
 	private int phase = 0;
-	private final static String _location = Environment.getExternalStorageDirectory().getAbsolutePath()+"/"; 
-	private IDownloadFile _listener;
+	private final static String _location = Environment.getExternalStorageDirectory().getAbsolutePath()+"/";
+    private final static String _sdcard = "/sdcard/";
+
+    private String getLocation(){
+        File f = new File(_location);
+        if(f.exists() && f.isDirectory())
+            return _location;
+        return _sdcard;
+    }
+    private IDownloadFile _listener;
 	private boolean _sd_card_exception;
 	private boolean _url_exception;
 	private String _ext;
@@ -41,10 +52,11 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 		_url_exception = false;
 	}
 
-	DownloadFile(IDownloadFile listener, String ext, String tmp){
+	DownloadFile(Context context, IDownloadFile listener, String ext, String tmp){
 		this();
 		_ext = ext;
 		_listener = listener;
+        _context = context;
 	}
 
 	@Override
@@ -105,20 +117,23 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 				zipInFile = new ZipFile(_zipfile);
 				lenghtOfFile = zipInFile.size();
 				File tmp = null;
-				for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();){
+                int quality = _context.getSharedPreferences(MainActivity.PREFS,0).getInt("quality", 50);
+
+                for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();){
 					ZipEntry zipMediaEntry = entries.nextElement();
 					if (zipMediaEntry.isDirectory()){
-						File mediaDir = new File(_location+zipMediaEntry.getName());
+						File mediaDir = new File(getLocation()+zipMediaEntry.getName());
 						mediaDir.mkdirs();
 					}else{
 						BufferedInputStream bisMediaFile = null;
 						FileOutputStream fosMediaFile = null; 
 						BufferedOutputStream bosMediaFile = null;
 						try{
-							String strFileName = _location+zipMediaEntry.getName();
+							String strFileName = getLocation()+zipMediaEntry.getName();
 							tmp = new File(strFileName);
 							File uncompressDir = tmp.getParentFile();
 							uncompressDir.mkdirs();
+                            Log.d("extracting file", strFileName);
 
 							bisMediaFile = new BufferedInputStream(zipInFile.getInputStream(zipMediaEntry));
 							fosMediaFile = new FileOutputStream(strFileName);
@@ -144,16 +159,13 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 								bisMediaFile.close();
 						}
 						if(tmp != null){
-							CardImageView.createThumb(_ext, tmp.getName());
+							CardImageView.createThumb(quality, _ext, tmp.getName());
 							tmp = null;
 						}
 					}
 					publishProgress((50000 + (int)(((total*50.)/lenghtOfFile)*1000))*1./1000);
 					total++;
 				}
-			}
-			catch(NoSdCardException e){
-				throw e;
 			}
 			catch (Exception ex)
 			{

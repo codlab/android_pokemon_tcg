@@ -8,13 +8,13 @@
      android:background="@drawable/fond">
 
     <fr.codlab.cartes.viewpagerindicator.TitlePageIndicator
-        android:id="@+maintablet/indicator"
+        android:id="@+id/maintablet_indicator"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#FF444444" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+maintablet/pager"
+        android:id="@+id/maintablet_pager"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 

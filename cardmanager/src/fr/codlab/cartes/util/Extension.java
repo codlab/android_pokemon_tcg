@@ -15,9 +15,10 @@ import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBDPublic;
+import fr.codlab.cartes.listener.IExtensionListener;
 import fr.codlab.cartes.listener.IExtensionLoadedListener;
 
-final public class Extension {
+final public class Extension implements IExtensionListener {
     /**
      * The Set's cards
      */
@@ -103,7 +104,7 @@ final public class Extension {
                 _is_loaded = true;
             }
         }
-        updatePossessed();
+        updatePossessed(this);
     }
 
     public boolean isLoaded(){
@@ -343,7 +344,15 @@ final public class Extension {
         return _progression;
     }
 
+
     private class AsyncUpdatePossessed extends AsyncTask<Boolean, Boolean, Boolean> {
+        private IExtensionListener _listener;
+        private AsyncUpdatePossessed(){
+
+        }
+        public AsyncUpdatePossessed(IExtensionListener listener) {
+            _listener = listener;
+        }
 
         @Override
         protected Boolean doInBackground(Boolean... booleans) {
@@ -361,6 +370,8 @@ final public class Extension {
             bdd = null;
             boolean res = avant != _possedees;
             _possedees = avant;
+            if(_listener != null)
+                _listener.onUpdateFinished();
             //_p.setNbPossedeesExtensionAtIndex(_id, _possedees);
             //_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);
             return res;
@@ -381,8 +392,8 @@ final public class Extension {
      *
      * @return
      */
-    public boolean updatePossessed() {
-        AsyncUpdatePossessed updater = new AsyncUpdatePossessed();
+    public boolean updatePossessed(IExtensionListener listener) {
+        AsyncUpdatePossessed updater = new AsyncUpdatePossessed(listener);
         updater.executeUpdate();
 
 		/*SGBD bdd = new SGBD(_p);
@@ -403,6 +414,11 @@ final public class Extension {
 		//_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);
 		return res;*/
         return true;
+    }
+
+    @Override
+    public void onUpdateFinished() {
+
     }
 
     public Card getCarte(int pos) {

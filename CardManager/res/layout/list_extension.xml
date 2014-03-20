@@ -17,12 +17,13 @@
         android:cacheColorHint="#00000000"
         android:orientation="vertical" >
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="regular"
             android:id="@+id/extension.nom"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -30,13 +31,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="2dp"
                 android:text="@string/collection" />
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:id="@+id/extcollection"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
@@ -47,13 +50,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="2dp"
                 android:text="@string/extposses" />
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:id="@+id/extpossedees"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />

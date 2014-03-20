@@ -4,6 +4,12 @@
         android:icon="@drawable/ic_action_store"
         android:showAsAction="always"
         android:title="@string/make_donation" />
+
+    <item
+        android:id="@+id/principal_settings"
+        android:title="@string/settings"
+        android:showAsAction="never" />
+
     <item
         android:id="@+id/principal_paypal"
         android:title=""

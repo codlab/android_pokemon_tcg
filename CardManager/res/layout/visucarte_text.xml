@@ -8,25 +8,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
-            <com.inmobi.androidsdk.IMAdView
-                android:id="@+principal/adview"
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                adSlot="15"
-                appId="4028cba63479e2210134dc11ed010a40" />
-        </LinearLayout>
+        <include layout="@layout/ads" />
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="regular"
                 android:id="@+id/carte.nom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,14 +26,14 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+carte/hpzone"
+                android:id="@+id/carte_hpzone"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:orientation="horizontal" >
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin"
                     android:id="@+id/carte.pv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -52,7 +42,8 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <TextView
+                <fr.codlab.cartes.widget.RobotoTextview
+                    typeface="thin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
@@ -65,7 +56,6 @@
         </LinearLayout>
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
@@ -77,7 +67,8 @@
                 android:layout_gravity="right"
                 android:paddingLeft="20dp" />
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:id="@+id/carte.numero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,7 +80,8 @@
         <LinearLayout
             android:id="@+id/carte.pokebody.pokepower"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/carte.attaques"
@@ -104,7 +96,8 @@
             android:orientation="horizontal"
             android:paddingLeft="10dp" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/faiblesse"
@@ -119,7 +112,8 @@
             android:orientation="horizontal"
             android:paddingRight="10dp" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/resistance"
@@ -134,7 +128,8 @@
             android:orientation="horizontal"
             android:paddingTop="15dp" >
 
-            <TextView
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
@@ -143,7 +138,8 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
+        <fr.codlab.cartes.widget.RobotoTextview
+            typeface="thin"
             android:id="@+id/carte.description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

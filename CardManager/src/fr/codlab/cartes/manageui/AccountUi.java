@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import fr.codlab.cartes.IExtensionMaster;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.bdd.SGBD;
+import fr.codlab.cartes.bdd.SGBDPublic;
 import fr.codlab.cartes.updater.IUpdater;
 import fr.codlab.cartes.updater.Updater;
 
@@ -47,15 +47,15 @@ public class AccountUi implements IUpdater{
 		c = v.getContext();
 		SharedPreferences s = c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE);
 
-		((TextView)v.findViewById(R.account.nickname)).setText(s.getString("_NICK_", ""));
-		((TextView)v.findViewById(R.account.password)).setText(s.getString("_PASS_", ""));
+		((TextView)v.findViewById(R.id.account_nickname)).setText(s.getString("_NICK_", ""));
+		((TextView)v.findViewById(R.id.account_password)).setText(s.getString("_PASS_", ""));
 
-		Button button = (Button)v.findViewById(R.account.create);
+		Button button = (Button)v.findViewById(R.id.account_create);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
-				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				String login = ((TextView)v.findViewById(R.id.account_nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.id.account_password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				_updater.create(c, login, password);
@@ -63,12 +63,12 @@ public class AccountUi implements IUpdater{
 			}
 		});
 
-		button = (Button)v.findViewById(R.account.auth);
+		button = (Button)v.findViewById(R.id.account_auth);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
-				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				String login = ((TextView)v.findViewById(R.id.account_nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.id.account_password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				_updater.authent(c, login, password);
@@ -76,24 +76,24 @@ public class AccountUi implements IUpdater{
 			}
 		});
 
-		button = (Button)v.findViewById(R.account.down);
+		button = (Button)v.findViewById(R.id.account_down);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
-				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				String login = ((TextView)v.findViewById(R.id.account_nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.id.account_password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				createWaiter(c, c.getString(R.string.accountdownloadtitle),c.getString(R.string.accountwaittext),0);
 				_updater.download(c, login, password);
 			}
 		});
-		button = (Button)v.findViewById(R.account.up);
+		button = (Button)v.findViewById(R.id.account_up);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
-				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				String login = ((TextView)v.findViewById(R.id.account_nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.id.account_password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				createWaiter(c, c.getString(R.string.accountuploadtitle),c.getString(R.string.accountwaittext),0);
@@ -213,7 +213,7 @@ public class AccountUi implements IUpdater{
 		if(_activity_main != null){
 			_activity_main.runOnUiThread(new Thread(){
 				public void run(){
-					SGBD s = new SGBD(c);
+					SGBDPublic s = new SGBDPublic(c);
 					s.createfromEncodedPossessions(res,AccountUi.this);
 				}
 			});
