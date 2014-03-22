@@ -1,0 +1,214 @@
+<extension nb="106" reverse="true">
+  <carte cid="1" pkmnid="257">
+  </carte>
+  <carte cid="2" pkmnid="488">
+  </carte>
+  <carte cid="3" pkmnid="491">
+  </carte>
+  <carte cid="4" pkmnid="491">
+  </carte>
+  <carte cid="5" pkmnid="417">
+  </carte>
+  <carte cid="6" pkmnid="474">
+  </carte>
+  <carte cid="7" pkmnid="479">
+  </carte>
+  <carte cid="8" pkmnid="254">
+  </carte>
+  <carte cid="9" pkmnid="260">
+  </carte>
+  <carte cid="10" pkmnid="465">
+  </carte>
+  <carte cid="11" pkmnid="468">
+  </carte>
+  <carte cid="12" pkmnid="334">
+  </carte>
+  <carte cid="13" nom="Dardagnan">
+  </carte>
+  <carte cid="14" pkmnid="12">
+  </carte>
+  <carte cid="15" pkmnid="344">
+  </carte>
+  <carte cid="16" pkmnid="483">
+  </carte>
+  <carte cid="17" pkmnid="295">
+  </carte>
+  <carte cid="18" pkmnid="229">
+  </carte>
+  <carte cid="19" pkmnid="97">
+  </carte>
+  <carte cid="20" pkmnid="99">
+  </carte>
+  <carte cid="21" pkmnid="131">
+  </carte>
+  <carte cid="22" pkmnid="380">
+  </carte>
+  <carte cid="23" pkmnid="381">
+  </carte>
+  <carte cid="24" pkmnid="303">
+  </carte>
+  <carte cid="25" pkmnid="350">
+  </carte>
+  <carte cid="26" pkmnid="484">
+  </carte>
+  <carte cid="27" pkmnid="57">
+  </carte>
+  <carte cid="28" pkmnid="199">
+  </carte>
+  <carte cid="29" nom="Zarbi [H]">
+  </carte>
+  <carte cid="30" pkmnid="321">
+  </carte>
+  <carte cid="31" pkmnid="110">
+  </carte>
+  <carte cid="32" pkmnid="40">
+  </carte>
+  <carte cid="33" pkmnid="24">
+  </carte>
+  <carte cid="34" pkmnid="332">
+  </carte>
+  <carte cid="35" pkmnid="256">
+  </carte>
+  <carte cid="36" pkmnid="225">
+  </carte>
+  <carte cid="37" nom="Mustéflott">
+  </carte>
+  <carte cid="38" pkmnid="368">
+  </carte>
+  <carte cid="39" pkmnid="210">
+  </carte>
+  <carte cid="40" pkmnid="253">
+  </carte>
+  <carte cid="41" pkmnid="297">
+  </carte>
+  <carte cid="42" pkmnid="367">
+  </carte>
+  <carte cid="43" pkmnid="264">
+  </carte>
+  <carte cid="44" pkmnid="294">
+  </carte>
+  <carte cid="45" pkmnid="219">
+  </carte>
+  <carte cid="46" pkmnid="259">
+  </carte>
+  <carte cid="47" pkmnid="11">
+  </carte>
+  <carte cid="48" pkmnid="279">
+  </carte>
+  <carte cid="49" pkmnid="233">
+  </carte>
+  <carte cid="50" pkmnid="432">
+  </carte>
+  <carte cid="51" pkmnid="369">
+  </carte>
+  <carte cid="52" pkmnid="336">
+  </carte>
+  <carte cid="53" pkmnid="227">
+  </carte>
+  <carte cid="54" pkmnid="80">
+  </carte>
+  <carte cid="55" pkmnid="176">
+  </carte>
+  <carte cid="56" nom="Zarbi [F]">
+  </carte>
+  <carte cid="57" nom="Zarbi [G]">
+  </carte>
+  <carte cid="58" pkmnid="320">
+  </carte>
+  <carte cid="59" pkmnid="335">
+  </carte>
+  <carte cid="60" pkmnid="343">
+  </carte>
+  <carte cid="61" nom="Mustébouée">
+  </carte>
+  <carte cid="62" pkmnid="331">
+  </carte>
+  <carte cid="63" pkmnid="10">
+  </carte>
+  <carte cid="64" pkmnid="366">
+  </carte>
+  <carte cid="65" pkmnid="96">
+  </carte>
+  <carte cid="66" pkmnid="23">
+  </carte>
+  <carte cid="67" pkmnid="349">
+  </carte>
+  <carte cid="68" pkmnid="431">
+  </carte>
+  <carte cid="69" pkmnid="228">
+  </carte>
+  <carte cid="70" pkmnid="174">
+  </carte>
+  <carte cid="71" pkmnid="314">
+  </carte>
+  <carte cid="72" pkmnid="39">
+  </carte>
+  <carte cid="73" pkmnid="14">
+  </carte>
+  <carte cid="74" pkmnid="109">
+  </carte>
+  <carte cid="75" pkmnid="98">
+  </carte>
+  <carte cid="76" pkmnid="337">
+  </carte>
+  <carte cid="77" nom="Lovdisc">
+  </carte>
+  <carte cid="78" pkmnid="296">
+  </carte>
+  <carte cid="79" pkmnid="56">
+  </carte>
+  <carte cid="80" pkmnid="258">
+  </carte>
+  <carte cid="81" pkmnid="137">
+  </carte>
+  <carte cid="82" pkmnid="79">
+  </carte>
+  <carte cid="83" pkmnid="218">
+  </carte>
+  <carte cid="84" nom="Snubbull">
+  </carte>
+  <carte cid="85" pkmnid="338">
+  </carte>
+  <carte cid="86" pkmnid="333">
+  </carte>
+  <carte cid="87" pkmnid="114">
+  </carte>
+  <carte cid="88" pkmnid="175">
+  </carte>
+  <carte cid="89" pkmnid="255">
+  </carte>
+  <carte cid="90" pkmnid="252">
+  </carte>
+  <carte cid="91" nom="Zarbi [L]">
+  </carte>
+  <carte cid="92" pkmnid="313">
+  </carte>
+  <carte cid="93" pkmnid="13">
+  </carte>
+  <carte cid="94" pkmnid="293">
+  </carte>
+  <carte cid="95" pkmnid="278">
+  </carte>
+  <carte cid="96" pkmnid="263">
+  </carte>
+  <carte cid="97" nom="Pièce rune">
+  </carte>
+  <carte cid="98" nom="Le dessin de Felicity">
+  </carte>
+  <carte cid="99" nom="Restes">
+  </carte>
+  <carte cid="100" nom="Stade clair de lune">
+  </carte>
+  <carte cid="101" nom="Honor Ball">
+  </carte>
+  <carte cid="102" nom="Super bonbon">
+  </carte>
+  <carte cid="103" nom="Cresselia Niv.X">
+  </carte>
+  <carte cid="104" nom="Darkrai Niv.X">
+  </carte>
+  <carte cid="105" nom="Dialga Niv.X">
+  </carte>
+  <carte cid="106" nom="Palkia Niv.X">
+  </carte>
+</extension>

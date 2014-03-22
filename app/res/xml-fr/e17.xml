@@ -1,0 +1,202 @@
+<extension nb="97" reverse="true">
+  <carte cid="1" pkmnid="359">
+  </carte>
+  <carte cid="2" pkmnid="334">
+  </carte>
+  <carte cid="3" pkmnid="342">
+  </carte>
+  <carte cid="4" pkmnid="330">
+  </carte>
+  <carte cid="5" pkmnid="76">
+  </carte>
+  <carte cid="6" pkmnid="326">
+  </carte>
+  <carte cid="7" pkmnid="312">
+  </carte>
+  <carte cid="8" pkmnid="311">
+  </carte>
+  <carte cid="9" pkmnid="315">
+  </carte>
+  <carte cid="10" pkmnid="373">
+  </carte>
+  <carte cid="11" pkmnid="292">
+  </carte>
+  <carte cid="12" pkmnid="324">
+  </carte>
+  <carte cid="13" pkmnid="342">
+  </carte>
+  <carte cid="14" pkmnid="148">
+  </carte>
+  <carte cid="15" pkmnid="330">
+  </carte>
+  <carte cid="16" pkmnid="203">
+  </carte>
+  <carte cid="17" pkmnid="82">
+  </carte>
+  <carte cid="18" pkmnid="291">
+  </carte>
+  <carte cid="19" pkmnid="373">
+  </carte>
+  <carte cid="20" pkmnid="372">
+  </carte>
+  <carte cid="21" pkmnid="227">
+  </carte>
+  <carte cid="22" nom="Vibrannif">
+  </carte>
+  <carte cid="23" pkmnid="371">
+  </carte>
+  <carte cid="24" pkmnid="323">
+  </carte>
+  <carte cid="25" pkmnid="256">
+  </carte>
+  <carte cid="26" pkmnid="147">
+  </carte>
+  <carte cid="27" pkmnid="180">
+  </carte>
+  <carte cid="28" pkmnid="205">
+  </carte>
+  <carte cid="29" pkmnid="75">
+  </carte>
+  <carte cid="30" pkmnid="75">
+  </carte>
+  <carte cid="31" pkmnid="253">
+  </carte>
+  <carte cid="32" pkmnid="130">
+  </carte>
+  <carte cid="33" pkmnid="116">
+  </carte>
+  <carte cid="34" pkmnid="229">
+  </carte>
+  <carte cid="35" pkmnid="82">
+  </carte>
+  <carte cid="36" pkmnid="259">
+  </carte>
+  <carte cid="37" pkmnid="307">
+  </carte>
+  <carte cid="38" pkmnid="291">
+  </carte>
+  <carte cid="39" nom="Hypocéan">
+  </carte>
+  <carte cid="40" nom="Hypocéan">
+  </carte>
+  <carte cid="41" pkmnid="372">
+  </carte>
+  <carte cid="42" pkmnid="372">
+  </carte>
+  <carte cid="43" pkmnid="353">
+  </carte>
+  <carte cid="44" pkmnid="361">
+  </carte>
+  <carte cid="45" pkmnid="277">
+  </carte>
+  <carte cid="46" nom="Vibrannif">
+  </carte>
+  <carte cid="47" nom="Vibrannif">
+  </carte>
+  <carte cid="48" pkmnid="340">
+  </carte>
+  <carte cid="49" pkmnid="371">
+  </carte>
+  <carte cid="50" pkmnid="371">
+  </carte>
+  <carte cid="51" pkmnid="339">
+  </carte>
+  <carte cid="52" pkmnid="341">
+  </carte>
+  <carte cid="53" pkmnid="341">
+  </carte>
+  <carte cid="54" pkmnid="341">
+  </carte>
+  <carte cid="55" pkmnid="74">
+  </carte>
+  <carte cid="56" pkmnid="74">
+  </carte>
+  <carte cid="57" pkmnid="88">
+  </carte>
+  <carte cid="58" pkmnid="116">
+  </carte>
+  <carte cid="59" pkmnid="228">
+  </carte>
+  <carte cid="60" pkmnid="129">
+  </carte>
+  <carte cid="61" pkmnid="81">
+  </carte>
+  <carte cid="62" pkmnid="81">
+  </carte>
+  <carte cid="63" pkmnid="81">
+  </carte>
+  <carte cid="64" pkmnid="179">
+  </carte>
+  <carte cid="65" pkmnid="258">
+  </carte>
+  <carte cid="66" pkmnid="290">
+  </carte>
+  <carte cid="67" pkmnid="290">
+  </carte>
+  <carte cid="68" pkmnid="290">
+  </carte>
+  <carte cid="69" pkmnid="322">
+  </carte>
+  <carte cid="70" pkmnid="322">
+  </carte>
+  <carte cid="71" nom="Pomdepic">
+  </carte>
+  <carte cid="72" pkmnid="218">
+  </carte>
+  <carte cid="73" pkmnid="325">
+  </carte>
+  <carte cid="74" pkmnid="325">
+  </carte>
+  <carte cid="75" pkmnid="333">
+  </carte>
+  <carte cid="76" pkmnid="276">
+  </carte>
+  <carte cid="77" pkmnid="255">
+  </carte>
+  <carte cid="78" pkmnid="328">
+  </carte>
+  <carte cid="79" pkmnid="328">
+  </carte>
+  <carte cid="80" pkmnid="252">
+  </carte>
+  <carte cid="81" pkmnid="265">
+  </carte>
+  <carte cid="82" nom="Baie Ballon">
+  </carte>
+  <carte cid="83" nom="Pare Choc">
+  </carte>
+  <carte cid="84" nom="Recyclage d'Energie">
+  </carte>
+  <carte cid="85" nom="Système à haute pression">
+  </carte>
+  <carte cid="86" nom="Système à basse pression">
+  </carte>
+  <carte cid="87" nom="Compassion de Mr. Briney">
+  </carte>
+  <carte cid="88" nom="Journaliste télé">
+  </carte>
+  <carte cid="89" nom="Pharamp ex">
+  </carte>
+  <carte cid="90" nom="Dracolosse ex">
+  </carte>
+  <carte cid="91" nom="Grolem ex">
+  </carte>
+  <carte cid="92" nom="Hyporoi ex">
+  </carte>
+  <carte cid="93" nom="Latias ex">
+  </carte>
+  <carte cid="94" nom="Latios ex">
+  </carte>
+  <carte cid="95" nom="Volcaropod ex">
+  </carte>
+  <carte cid="96" nom="Grotadmorv ex">
+  </carte>
+  <carte cid="97" nom="Rayquaza ex">
+  </carte>
+  <carte cid="98" pkmnid="4">
+  </carte>
+  <carte cid="99" pkmnid="5">
+  </carte>
+  <carte cid="100" pkmnid="6">
+  </carte>
+</extension>

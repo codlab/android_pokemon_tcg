@@ -1,0 +1,266 @@
+<extension nb="132" firstedition="true">
+  <carte cid="1" pkmnid="146" nom="Blaine's %s" types="feu" rarete="holo">
+  </carte>
+  <carte cid="2" pkmnid="112" nom="Brock's %s" types="combat" rarete="holo">
+  </carte>
+  <carte cid="3" pkmnid="36" nom="%s de Erika" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="4" pkmnid="146" nom="%s de Erika" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="5" pkmnid="45" nom="%s de Erika" types="plante" rarete="holo">
+  </carte>
+  <carte cid="6" pkmnid="125" nom="Lt. Surge's %s" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="7" pkmnid="22" nom="Lt. Surge's %s" types="incolore" rarete="holo">
+  </carte>
+  <carte cid="8" pkmnid="82" nom="Lt. Surge's %s" types="electrique" rarete="holo">
+  </carte>
+  <carte cid="9" pkmnid="117" nom="Misty's %s" types="eau" rarete="holo">
+  </carte>
+  <carte cid="10" pkmnid="73" nom="Misty's %s" types="eau" rarete="holo">
+  </carte>
+  <carte cid="11" pkmnid="107" nom="Team Rocket's %s" types="combat" rarete="holo">
+  </carte>
+  <carte cid="12" pkmnid="146" nom="%s de la Tean Rocket" types="feu" rarete="holo">
+  </carte>
+  <carte cid="13" pkmnid="123" nom="Team Rocket's %s" types="plante" rarete="holo">
+  </carte>
+  <carte cid="14" pkmnid="94" nom="Sabrina's %s" types="psy" rarete="holo">
+  </carte>
+  <carte cid="15" nom="Brock" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="16" nom="Erika" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="17" nom="Lt. Surge" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="18" nom="Misty" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="19" nom="The Rocket's Trap" types="dresseur" rarete="holo">
+  </carte>
+  <carte cid="20" pkmnid="76" nom="Brock's %s" types="combat" rarete="rare">
+  </carte>
+  <carte cid="21" pkmnid="95" nom="Brock's %s" types="combat" rarete="rare">
+  </carte>
+  <carte cid="22" pkmnid="112" nom="Brock's %s" types="combat" rarete="rare">
+  </carte>
+  <carte cid="23" pkmnid="28" nom="Brock's %s" types="combat" rarete="rare">
+  </carte>
+  <carte cid="24" pkmnid="41" nom="Brock's %s" types="plante" rarete="rare">
+  </carte>
+  <carte cid="25" pkmnid="35" nom="%s de Erika" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="26" pkmnid="71" nom="%s de Erika" types="plante" rarete="rare">
+  </carte>
+  <carte cid="27" pkmnid="125" nom="Lt. Surge's %s" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="28" pkmnid="26" nom="Lt. Surge's %s" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="29" pkmnid="91" nom="Misty's %s" types="eau" rarete="rare">
+  </carte>
+  <carte cid="30" pkmnid="118" nom="Misty's %s" types="eau" rarete="rare">
+  </carte>
+  <carte cid="31" pkmnid="62" nom="Misty's %s" types="eau" rarete="rare">
+  </carte>
+  <carte cid="32" pkmnid="72" nom="Misty's %s" types="eau" rarete="rare">
+  </carte>
+  <carte cid="33" pkmnid="143" nom="Team Rocket's %s" types="incolore" rarete="rare">
+  </carte>
+  <carte cid="34" pkmnid="49" nom="Sabrina's %s" types="plante" rarete="rare">
+  </carte>
+  <carte cid="35" pkmnid="59" nom="Blaine's %s" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="36" pkmnid="115" nom="Blaine's %s" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="37" pkmnid="126" nom="Blaine's %s" types="feu" rarete="uncommon">
+  </carte>
+  <carte cid="38" pkmnid="74" nom="Brock's %s" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="39" pkmnid="42" nom="Brock's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="40" pkmnid="75" nom="Brock's %s" types="combat" rarete="uncommon">
+  </carte>
+  <carte cid="41" pkmnid="108" nom="Brock's %s" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="42" pkmnid="147" nom="Erika's %s" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="43" pkmnid="102" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="44" pkmnid="103" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="45" pkmnid="44" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="46" pkmnid="44" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="47" pkmnid="43" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="48" pkmnid="70" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="49" pkmnid="70" nom="Erika's %s" types="plante" rarete="uncommon">
+  </carte>
+  <carte cid="50" pkmnid="81" nom="Lt. Surge's %s" types="electrique" rarete="uncommon">
+  </carte>
+  <carte cid="51" pkmnid="20" nom="Lt. Surge's %s" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="52" pkmnid="21" nom="Lt. Surge's %s" types="incolore" rarete="uncommon">
+  </carte>
+  <carte cid="53" pkmnid="61" nom="Misty's %s" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="54" pkmnid="54" nom="Misty's %s" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="55" pkmnid="119" nom="Misty's %s" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="56" pkmnid="121" nom="Misty's %s" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="57" pkmnid="72" nom="Misty's %s" types="eau" rarete="uncommon">
+  </carte>
+  <carte cid="58" pkmnid="93" nom="Sabrina's %s" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="59" pkmnid="124" nom="Sabrina's %s" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="60" pkmnid="80" nom="Sabrina's %s" types="psy" rarete="uncommon">
+  </carte>
+  <carte cid="61" pkmnid="4" nom="Blaine's %s" types="feu" rarete="common">
+  </carte>
+  <carte cid="62" pkmnid="58" nom="Blaine's %s" types="feu" rarete="common">
+  </carte>
+  <carte cid="63" pkmnid="77" nom="Blaine's %s" types="feu" rarete="common">
+  </carte>
+  <carte cid="64" pkmnid="128" nom="Blaine's %s" types="incolore" rarete="common">
+  </carte>
+  <carte cid="65" pkmnid="37" nom="Blaine's %s" types="feu" rarete="common">
+  </carte>
+  <carte cid="66" pkmnid="74" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="67" pkmnid="56" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="68" pkmnid="56" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="69" pkmnid="95" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="70" pkmnid="111" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="71" pkmnid="27" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="72" pkmnid="27" nom="Brock's %s" types="combat" rarete="common">
+  </carte>
+  <carte cid="73" pkmnid="37" nom="Brock's %s" types="feu" rarete="common">
+  </carte>
+  <carte cid="74" pkmnid="41" nom="Brock's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="75" pkmnid="69" nom="Erika's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="76" pkmnid="69" nom="Erika's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="77" pkmnid="102" nom="Erika's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="78" pkmnid="43" nom="Erika's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="79" pkmnid="114" nom="Erika's %s" types="plante" rarete="common">
+  </carte>
+  <carte cid="80" pkmnid="81" nom="Lt. Surge's %s" types="electrique" rarete="common">
+  </carte>
+  <carte cid="81" pkmnid="25" nom="Lt. Surge's %s" types="electrique" rarete="common">
+  </carte>
+  <carte cid="82" pkmnid="19" nom="Lt. Surge's %s" types="incolore" rarete="common">
+  </carte>
+  <carte cid="83" pkmnid="21" nom="Lt. Surge's %s" types="incolore" rarete="common">
+  </carte>
+  <carte cid="84" pkmnid="100" nom="Lt. Surge's %s" types="electrique" rarete="common">
+  </carte>
+  <carte cid="85" pkmnid="118" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="86" pkmnid="116" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="87" pkmnid="60" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="88" pkmnid="86" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="89" pkmnid="90" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="90" pkmnid="120" nom="Misty's %s" types="eau" rarete="common">
+  </carte>
+  <carte cid="91" pkmnid="63" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="92" pkmnid="96" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="93" pkmnid="92" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="94" pkmnid="122" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="95" pkmnid="79" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="96" pkmnid="48" nom="Sabrina's %s" types="psy" rarete="common">
+  </carte>
+  <carte cid="97" nom="Blaine's Quiz #1" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="98" nom="Brock" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="99" nom="Charity" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="100" nom="Erika" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="101" nom="Lt. Surge" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="102" nom="Misty" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="103" nom="No removal Gym" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="104" nom="The Rocket's Training Gym" types="dresseur" rarete="rare">
+  </carte>
+  <carte cid="105" nom="Blaine's Last Resort" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="106" nom="Brock's Training Method" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="107" nom="Celadon City Gym" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="108" nom="Cerulean City Gym" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="109" nom="Erika's Maids" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="110" nom="Erika's Perfume" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="111" nom="Good Manners" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="112" nom="Lt. Surge's Treaty" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="113" nom="Minion of Team Rocket" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="114" nom="Misty's Wrath" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="115" nom="Pewter City Gym" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="116" nom="Recall" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="117" nom="Sabrina's ESP" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="118" nom="Secret Mission" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="119" nom="Tickling Machine" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="120" nom="Vermilion City Gym" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="121" nom="Blaine's Gamble" types="dresseur" rarete="uncommon">
+  </carte>
+  <carte cid="122" nom="Energy Flow" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="123" nom="Misty's Duel" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="124" nom="Narrow Gym" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="125" nom="Sabrina's Gaze" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="126" nom="Trash Exchange" types="dresseur" rarete="common">
+  </carte>
+  <carte cid="127" nom="Fight Energy" types="combat" rarete="common">
+  </carte>
+  <carte cid="128" nom="Fire Energy" types="feu" rarete="common">
+  </carte>
+  <carte cid="129" nom="Grass Energy" types="plane" rarete="common">
+  </carte>
+  <carte cid="130" nom="Electrik Energy" types="electrique" rarete="common">
+  </carte>
+  <carte cid="131" nom="Psy Energy" types="psy" rarete="common">
+  </carte>
+  <carte cid="132" nom="Water Energy" types="eau" rarete="common">
+  </carte>
+</extension>

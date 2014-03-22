@@ -1,0 +1,202 @@
+<extension nb="100" reverse="true">
+  <carte cid="1" pkmnid="348">
+  </carte>
+  <carte cid="2" pkmnid="332">
+  </carte>
+  <carte cid="3" pkmnid="346">
+  </carte>
+  <carte cid="4" pkmnid="356">
+  </carte>
+  <carte cid="5" pkmnid="136">
+  </carte>
+  <carte cid="6" pkmnid="135">
+  </carte>
+  <carte cid="7" pkmnid="272">
+  </carte>
+  <carte cid="8" pkmnid="337">
+  </carte>
+  <carte cid="9" pkmnid="303">
+  </carte>
+  <carte cid="10" pkmnid="302">
+  </carte>
+  <carte cid="11" pkmnid="336">
+  </carte>
+  <carte cid="12" pkmnid="275">
+  </carte>
+  <carte cid="13" pkmnid="338">
+  </carte>
+  <carte cid="14" pkmnid="335">
+  </carte>
+  <carte cid="15" pkmnid="59">
+  </carte>
+  <carte cid="16" pkmnid="196">
+  </carte>
+  <carte cid="17" pkmnid="55">
+  </carte>
+  <carte cid="18" pkmnid="352">
+  </carte>
+  <carte cid="19" pkmnid="139">
+  </carte>
+  <carte cid="20" pkmnid="172">
+  </carte>
+  <carte cid="21" pkmnid="28">
+  </carte>
+  <carte cid="22" pkmnid="275">
+  </carte>
+  <carte cid="23" pkmnid="208">
+  </carte>
+  <carte cid="24" pkmnid="197">
+  </carte>
+  <carte cid="25" pkmnid="134">
+  </carte>
+  <carte cid="26" nom="Qulbutoké">
+  </carte>
+  <carte cid="27" pkmnid="347">
+  </carte>
+  <carte cid="28" pkmnid="347">
+  </carte>
+  <carte cid="29" pkmnid="24">
+  </carte>
+  <carte cid="30" pkmnid="184">
+  </carte>
+  <carte cid="31" pkmnid="298">
+  </carte>
+  <carte cid="32" pkmnid="343">
+  </carte>
+  <carte cid="33" pkmnid="286">
+  </carte>
+  <carte cid="34" pkmnid="301">
+  </carte>
+  <carte cid="35" pkmnid="125">
+  </carte>
+  <carte cid="36" pkmnid="239">
+  </carte>
+  <carte cid="37" pkmnid="22">
+  </carte>
+  <carte cid="38" pkmnid="314">
+  </carte>
+  <carte cid="39" pkmnid="140">
+  </carte>
+  <carte cid="40" pkmnid="281">
+  </carte>
+  <carte cid="41" pkmnid="305">
+  </carte>
+  <carte cid="42" pkmnid="345">
+  </carte>
+  <carte cid="43" pkmnid="345">
+  </carte>
+  <carte cid="44" pkmnid="264">
+  </carte>
+  <carte cid="45" pkmnid="271">
+  </carte>
+  <carte cid="46" pkmnid="271">
+  </carte>
+  <carte cid="47" nom="Cornèbre">
+  </carte>
+  <carte cid="48" pkmnid="274">
+  </carte>
+  <carte cid="49" pkmnid="274">
+  </carte>
+  <carte cid="50" pkmnid="279">
+  </carte>
+  <carte cid="51" pkmnid="156">
+  </carte>
+  <carte cid="52" pkmnid="288">
+  </carte>
+  <carte cid="53" pkmnid="313">
+  </carte>
+  <carte cid="54" pkmnid="360">
+  </carte>
+  <carte cid="55" pkmnid="178">
+  </carte>
+  <carte cid="56" pkmnid="304">
+  </carte>
+  <carte cid="57" pkmnid="331">
+  </carte>
+  <carte cid="58" pkmnid="331">
+  </carte>
+  <carte cid="59" pkmnid="155">
+  </carte>
+  <carte cid="60" pkmnid="206">
+  </carte>
+  <carte cid="61" pkmnid="355">
+  </carte>
+  <carte cid="62" pkmnid="355">
+  </carte>
+  <carte cid="63" pkmnid="133">
+  </carte>
+  <carte cid="64" pkmnid="23">
+  </carte>
+  <carte cid="65" pkmnid="58">
+  </carte>
+  <carte cid="66" pkmnid="270">
+  </carte>
+  <carte cid="67" pkmnid="270">
+  </carte>
+  <carte cid="68" pkmnid="183">
+  </carte>
+  <carte cid="69" pkmnid="177">
+  </carte>
+  <carte cid="70" pkmnid="138">
+  </carte>
+  <carte cid="71" pkmnid="95">
+  </carte>
+  <carte cid="72" pkmnid="25">
+  </carte>
+  <carte cid="73" pkmnid="54">
+  </carte>
+  <carte cid="74" pkmnid="280">
+  </carte>
+  <carte cid="75" pkmnid="27">
+  </carte>
+  <carte cid="76" pkmnid="273">
+  </carte>
+  <carte cid="77" pkmnid="273">
+  </carte>
+  <carte cid="78" pkmnid="285">
+  </carte>
+  <carte cid="79" pkmnid="300">
+  </carte>
+  <carte cid="80" pkmnid="287">
+  </carte>
+  <carte cid="81" pkmnid="21">
+  </carte>
+  <carte cid="82" pkmnid="328">
+  </carte>
+  <carte cid="83" pkmnid="320">
+  </carte>
+  <carte cid="84" pkmnid="278">
+  </carte>
+  <carte cid="85" pkmnid="263">
+  </carte>
+  <carte cid="86" nom="Double guerison totale">
+  </carte>
+  <carte cid="87" nom="Annette surfe sur le net">
+  </carte>
+  <carte cid="88" nom="Super Bonbon">
+  </carte>
+  <carte cid="89" nom="Timmy au dressage">
+  </carte>
+  <carte cid="90" nom="Griffe Fossile">
+  </carte>
+  <carte cid="91" nom="Mystérieux Fossile">
+  </carte>
+  <carte cid="92" nom="Fossile Racine">
+  </carte>
+  <carte cid="93" nom="Energies Multiples">
+  </carte>
+  <carte cid="94" nom="Ptera-EX">
+  </carte>
+  <carte cid="95" nom="Galeking-EX">
+  </carte>
+  <carte cid="96" nom="Gardevoir-EX">
+  </carte>
+  <carte cid="97" nom="Kabutops-EX">
+  </carte>
+  <carte cid="98" nom="Raichu-EX">
+  </carte>
+  <carte cid="99" nom="Typhlosion-EX">
+  </carte>
+  <carte cid="100" nom="Wailord-EX">
+  </carte>
+</extension>

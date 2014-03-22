@@ -1,0 +1,68 @@
+<extensions nb="58">
+  <extension images="true" nom="Base" nb="102" id="1" intitule="bas"></extension>
+  <extension nom="Jungle" nb="65" id="2" intitule="jun"></extension>
+  <extension nom="Fossile" nb="63" id="3" intitule="fos"></extension>
+  <extension nom="Team Rocket" nb="83" id="4" intitule="tr"></extension>
+  <extension nom="Neo Genesis" nb="111" id="8" intitule="nge"></extension>
+  <extension nom="Neo Discovery" nb="75" id="9" intitule="ndi"></extension>
+  <extension nom="Neo Revelation" nb="66" id="10" intitule="nre"></extension>
+  <extension nom="Neo Destiny" nb="113" id="11" intitule="nde"></extension>
+  <extension nom="Expédition" nb="165" id="12" intitule="exp"></extension>
+  <extension images="true" nom="Aquapolis" nb="147" id="13" intitule="aqu"></extension>
+  <extension nom="Skyridge" nb="144" id="14" intitule="sky"></extension>
+  <extension nom="Gym Heroes" nb="132" id="6" intitule="gyh"></extension>
+  <extension nom="Gym Challenge" nb="132" id="5" intitule="gyc"></extension>
+  <extension nom="Southern Island" nb="1" id="7" intitule="si"></extension>
+  <extension nom="EX Rubis et Saphir" nb="109" id="15" intitule="rs"></extension>
+  <extension nom="EX Tempête de Sable" nb="100" id="16" intitule="tds"></extension>
+  <extension nom="EX Dragon" nb="97" id="17" intitule="dra"></extension>
+  <extension nom="EX Rouge-Feu/Vert" nb="112" id="18" intitule="rfvf"></extension>
+  <extension nom="EX Magma/Aqua" nb="95" id="19" intitule="tmta"></extension>
+  <extension nom="EX Team Rocket Ret." nb="109" id="21" intitule="trr"></extension>
+  <extension nom="EX Légendes Oubliées" nb="101" id="22" intitule="lo"></extension>
+  <extension nom="EX Deoxys" nb="107" id="20" intitule="dxs"></extension>
+  <extension nom="EX Emeraude" nb="106" id="23" intitule="eme"></extension>
+  <extension nom="EX Forces Cachées" nb="105" id="24" intitule="fc"></extension>
+  <extension nom="EX Espèces Delta" nb="113" id="25" intitule="ed"></extension>
+  <extension images="true" nom="Ex Créateurs de Légendes" nb="92" id="26" intitule="cdl"></extension>
+  <extension nom="Ex Fantomes Holon" nb="110" id="27" intitule="fh"></extension>
+  <extension nom="Ex Gardiens de Cristal" nb="100" id="29" intitule="gdc"></extension>
+  <extension nom="Ex Ile des Dragons" nb="101" id="30" intitule="idd"></extension>
+  <extension nom="Ex Gardiens du Pouvoir" nb="108" id="31" intitule="gdp"></extension>
+  <extension nom="DP Tempête" nb="100" id="32" intitule="dp7"></extension>
+  <extension nom="DP Eveil des Légendes" nb="146" id="33" intitule="dp6"></extension>
+  <extension nom="DP Aube Majestueuse" nb="100" id="34" intitule="dp5"></extension>
+  <extension nom="DP Duels au Sommet" nb="106" id="35" intitule="dp4"></extension>
+  <extension nom="DP Merveilles secrètes" nb="132" id="36" intitule="dp3"></extension>
+  <extension nom="DP Trésors Mystérieux" nb="123" id="37" intitule="dp2"></extension>
+  <extension nom="DP Diamant et Perle" nb="130" id="38" intitule="dp1"></extension>
+  <extension nom="Platine" nb="127" id="41" intitule="pt"></extension>
+  <extension nom="PL Rivaux Emergeants" nb="111" id="42" intitule="pl2"></extension>
+  <extension nom="PL Vainqueurs Supremes" nb="147" id="43" intitule="pl3"></extension>
+  <extension nom="PL Arceus" nb="99" id="44" intitule="pl4"></extension>
+  <extension nom="HeartGold SoulSilver" nb="124" id="39" intitule="gs"></extension>
+  <extension nom="HS Unleashed" nb="95" id="40" intitule="ul"></extension>
+  <extension nom="HS undaunted" nb="91" id="45" intitule="ud"></extension>
+  <extension nom="HS triumph" nb="103" id="46" intitule="tm"></extension>
+  <extension nom="Appel des Légendes" nb="106" id="47" intitule="cl"></extension>
+  <extension images="true" nom="Noir et Blanc" nb="115" id="48" intitule="blw"></extension>
+  <extension nom="BW Pouvois Emergents" nb="98" id="49" intitule="ep"></extension>
+  <extension nom="BW Noble Victories" nb="102" id="50" intitule="nv"></extension>
+  <extension nom="BW Next Destinies" nb="99" id="51" intitule="nd"></extension>
+  <extension nom="BW Dark Explorers" nb="108" id="52" intitule="de"></extension>
+  <extension nom="BW Dragons Exalted" nb="128" id="53" intitule="dre"></extension>
+  <extension images="true" nom="BW Boundaries Crossed" nb="153" id="54" intitule="bc"></extension>
+  <extension nom="BW Tempete Plasma" nb="138" id="55" intitule="ps"></extension>
+  <extension nom="BW Glaciation Plasma" nb="122" id="56" intitule="pf"></extension>
+  <extension nom="BW Explosion Plasma" nb="105" id="57" intitule="pb"></extension>
+  <extension nom="BW Legendary Treasures" nb="140" id="58" intitule="plt"></extension>
+    <extension nom="XY" nb="146" id="59" intitule="xy"></extension>
+  <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
+  <pextension nom="Promos Pokémon USA" id="991"></pextension>
+  <pextension nom="POP Série 1" id="993" intitule="pop1"></pextension>
+  <pextension nom="Promo Stamped" id="994"></pextension>
+  <pextension nom="Blue Forest" id="995"></pextension>
+  <pextension nom="Green Forest" id="996"></pextension>
+  <pextension nom="PCG-P" id="997"></pextension>
+  <pextension nom="POP Série 2" id="998" intitule="pop2"></pextension>
+</extensions>
