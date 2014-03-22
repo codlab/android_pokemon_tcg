@@ -1,1 +1,3 @@
-<manifest package="com.nhaarman.listviewanimations" />
+<manifest package="com.nhaarman.listviewanimations">
+    <application></application>
+</manifest>

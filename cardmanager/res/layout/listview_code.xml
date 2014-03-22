@@ -6,10 +6,13 @@
     android:background="@drawable/fond" >
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/maintitle"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="@color/list_header_background"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp">
 
         <fr.codlab.cartes.widget.RobotoTextview
             typeface="regular"
@@ -19,44 +22,45 @@
             android:gravity="center_horizontal|center_vertical"
             android:text="@string/codestitlemanage"
             android:textSize="22dp" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="@color/list_header_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-                android:paddingTop="5dp" >
+            android:orientation="horizontal">
 
-                <fr.codlab.cartes.widget.RobotoTextview
-                    typeface="thin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentLeft="true"
-                    android:gravity="left|center_vertical"
-                    android:text="@string/codesadd"
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/codesadd"
                 android:padding="5dp" />
 
-                <EditText
-                    android:id="@+id/codes_addcode"
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:gravity="left" />
-                <Button 
-                    android:id="@+id/codes_submit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentLeft="true"
-                    android:gravity="left|center_vertical"
-                    android:text="@string/codesubmit" />
+            <EditText
+                android:id="@+id/codes_addcode"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <Button
+                android:id="@+id/codes_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/codesubmit" />
 
-            
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="10dp"
-            android:background="@drawable/stripexml"
-            android:orientation="vertical" >
         </LinearLayout>
     </LinearLayout>
 
@@ -66,7 +70,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:cacheColorHint="#00000000"
-        android:fastScrollEnabled="true" />
+        android:fastScrollEnabled="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
     <include layout="@layout/ads" />
 </LinearLayout>

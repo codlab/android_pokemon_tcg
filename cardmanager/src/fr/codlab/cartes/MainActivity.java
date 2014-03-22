@@ -15,10 +15,12 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 import fr.codlab.cartes.fragments.CardFragment;
 import fr.codlab.cartes.fragments.CodesFragment;
+import fr.codlab.cartes.fragments.DriveUiFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
 import fr.codlab.cartes.listener.*;
+import fr.codlab.cartes.manageui.DriveUi;
 import fr.codlab.cartes.redeemcode.IGetLogin;
 import fr.codlab.cartes.redeemcode.ITextCode;
 import fr.codlab.cartes.util.Extension;
@@ -43,6 +45,7 @@ import com.android.vending.util.IabHelper;
 import com.android.vending.util.IabResult;
 import com.android.vending.util.Inventory;
 import com.android.vending.util.Purchase;
+import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 import com.slidingmenu.lib.SlidingMenu;
 
 import android.util.Log;
@@ -313,7 +316,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             }
         }
 
-        createExtensions();
+        Thread t  = new Thread(){
+            public void run(){
+                createExtensions();
+            }
+        };
+        t.start();
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         View mobile = findViewById(R.id.mobile);
@@ -375,9 +383,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
 
         //on rajoute le fragment si on est sur tablette
-        Log.d("MainActivity", "findView lol 1");
         if (findViewById(R.id.liste_extension_fragment) != null && getSupportFragmentManager().getBackStackEntryCount() == 0) {
-            Log.d("MainActivity", "findView lol 2");
             FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
             xact.add(R.id.extension_fragment, new InformationScreenFragment(this));
             xact.commit();
@@ -425,7 +431,6 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                         } else if ((attrNom != null) && attrNom.equals("intitule")) {
                             intitule = attrValue;
 
-                            FileMover.Move(Environment.getExternalStorageDirectory().getAbsolutePath(), intitule);
                         }
                     }
 
@@ -446,12 +451,26 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     public void setListExtension(View v) {
         _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
         ListView _list = (ListView) v.findViewById(R.id.principal_extensions);
-        _list.setAdapter(_adapter);
+
+        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
+        swingBottomInAnimationAdapter.setInitialDelayMillis(300);
+        swingBottomInAnimationAdapter.setAbsListView(_list);
+
+        _list.setAdapter(swingBottomInAnimationAdapter);
+
     }
 
-    public void onExtensionLoaded(int id){
-        if(_adapter != null)
-            _adapter.onExtensionLoaded(id);
+    public void onExtensionLoaded(final int id){
+        if(_adapter != null){
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    _adapter.setDataExtension(_arrayExtension);
+                    _adapter.onExtensionLoaded(id);
+                    notifyDataChanged();
+                }
+            });
+        }
     }
 
     public void notifyChanged() {
@@ -482,11 +501,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 this.createDonationDialog(false, false);
                 return true;
             //modification en mode US
+            case R.id.drive:
+                this.onClickDrive();
+                return true;
             case R.id.principal_settings:
                 startActivity(new Intent(this, Preferences.class));
                 return true;
             case android.R.id.home:
-                if (_carte != null || _extension != null || _codes != null) {
+                if(_drive != null){
+                    FragmentManager fm = getSupportFragmentManager();
+                    fm.popBackStack();
+                    _drive = null;
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                }else if (_carte != null || _extension != null || _codes != null) {
                     FragmentManager fm = getSupportFragmentManager();
                     fm.popBackStack();
                     if (_carte != null) {
@@ -504,44 +531,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                     }
                 }
                 return true;
-            case R.id.principal_paypal:
-                Uri uri = Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SEJ9ZE6WLG2H4");
-                startActivity(new Intent(Intent.ACTION_VIEW, uri));
-                return true;
-            case R.id.principal_useus:
-                _shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-                _shared.edit().putInt(MainActivity.USE, MainActivity.US).commit();
-                MainActivity.InUse = Language.US;
-                return true;
-            //modification en mode fr
-            case R.id.principal_usefr:
-                _shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-                _shared.edit().putInt(MainActivity.USE, MainActivity.FR).commit();
-                MainActivity.InUse = Language.FR;
-                return true;
-            //modification en mode es
-            case R.id.principal_usees:
-                _shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-                _shared.edit().putInt(MainActivity.USE, MainActivity.ES).commit();
-                MainActivity.InUse = Language.ES;
-                return true;
-            //modification en mode de
-            case R.id.principal_usede:
-                _shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-                _shared.edit().putInt(MainActivity.USE, MainActivity.DE).commit();
-                MainActivity.InUse = Language.DE;
-                return true;
-            //modification en mode it
-            case R.id.principal_useit:
-                _shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-                _shared.edit().putInt(MainActivity.USE, MainActivity.IT).commit();
-                MainActivity.InUse = Language.IT;
-                return true;
             default:
                 return false;
         }
     }
 
+    DriveUiFragment _drive;
     ExtensionFragment _extension;
     CodesFragment _codes;
     CardFragment _carte;
@@ -551,6 +546,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onSaveInstanceState(Bundle out) {
+        if(_drive != null){
+            try {
+                getSupportFragmentManager().putFragment(out, "DRIVE", _drive);
+            } catch (Exception e) {
+            }
+        }
         if (_codes != null) {
             try {
                 getSupportFragmentManager().putFragment(out, "CODES", _codes);
@@ -583,6 +584,10 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onRestoreInstanceState(Bundle in) {
+        if (in != null && in.containsKey("DRIVE")) {
+            _drive = (DriveUiFragment) getSupportFragmentManager().getFragment(in, "DRIVE");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         if (in != null && in.containsKey("CODES")) {
             _codes = (CodesFragment) getSupportFragmentManager().getFragment(in, "CODES");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -591,6 +596,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             _name = in.getString("NAME");
             _id = in.getInt("ID");
             _intitule = in.getString("INTIT");
+            _extension = (ExtensionFragment) getSupportFragmentManager().getFragment(in, "EXTENSION");
+            _extension.setExtension(_name, _id, _intitule);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         if (in != null && in.containsKey("CARTE")) {
@@ -601,6 +608,49 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         if (in != null)
             super.onRestoreInstanceState(in);
 
+    }
+
+    public void onClickDrive() {
+        Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+        if (viewer != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            if (_carte != null) {
+                if (_carte.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_carte);
+                    xact.commit();
+                }
+                _carte = null;
+                fm.popBackStackImmediate();
+            }
+            if (_codes != null && _codes.isVisible() && _codes.isAdded()) {
+                FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                xact.remove(_codes);
+                xact.commit();
+                _codes = null;
+                fm.popBackStackImmediate();
+            }
+            if (_extension != null) {
+                if (_extension.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_extension);
+                    xact.commit();
+                }
+                _extension = null;
+                fm.popBackStackImmediate();
+            }
+            if (_drive == null || !_drive.isVisible()) {
+                //Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
+                FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                _drive = new DriveUiFragment(this);
+                //xact.show(_extension);
+                //xact.replace(R.id.extension_fragment, _extension, nom);
+                xact.replace(R.id.extension_fragment, _drive, "Drive");
+                xact.addToBackStack(null);
+                xact.commit();
+            }
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     public void onClick(String nom,
@@ -615,6 +665,15 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             _id = id;
             _intitule = intitule;
             FragmentManager fm = getSupportFragmentManager();
+            if (_drive != null) {
+                if (_drive.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_drive);
+                    xact.commit();
+                }
+                _drive = null;
+                fm.popBackStackImmediate();
+            }
             if (_carte != null) {
                 if (_carte.isAdded()) {
                     FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
@@ -659,6 +718,15 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
         if (viewer != null) {
             FragmentManager fm = getSupportFragmentManager();
+            if (_drive != null) {
+                if (_drive.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_drive);
+                    xact.commit();
+                }
+                _drive = null;
+                fm.popBackStackImmediate();
+            }
             if (_carte != null) {
                 if (_carte.isAdded()) {
                     FragmentTransaction xact = getSupportFragmentManager().beginTransaction();

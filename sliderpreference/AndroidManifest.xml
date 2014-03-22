@@ -13,4 +13,5 @@ Licensed under the MIT License (see LICENSE.txt)
         android:minSdkVersion="1"
         android:targetSdkVersion="17" />
 
+    <application></application>
 </manifest>

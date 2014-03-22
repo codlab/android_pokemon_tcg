@@ -110,7 +110,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingRight="10dp" >
+            android:paddingLeft="10dp" >
 
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"

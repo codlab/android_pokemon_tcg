@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.os.Environment;
 import android.support.v4.util.LruCache;
+import android.util.Log;
 import android.widget.ImageView;
 
 import fr.codlab.cartes.MainActivity;
@@ -78,6 +79,8 @@ public class CardImageView {
 
 		try {
 			Bitmap _bmp_origin = BitmapFactory.decodeFile(original.getAbsolutePath());
+            Log.d("createThumb", "bmp_origin " + original.getAbsoluteFile());
+            Log.d("createThumb", "bmp final " + Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+thumb+name+".jpg");
 			if(_bmp_origin != null){
 				//int newWidth = 113;
 				//int newHeight = 150;
@@ -114,6 +117,7 @@ public class CardImageView {
         Bitmap bitmap = cache.getBitmapFromMemCache(id);
 
         if(bitmap != null){
+            Log.d("createThumb","cache exist ; powa "+id);
             i.setImageBitmap(bitmap);
             return;
         }
@@ -131,6 +135,7 @@ public class CardImageView {
 			_mini = null;
 			return;
 		}else{
+            Log.d("createThumb","mini does not exists"+Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+name+".jpg");
 			_mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/."+name+".jpg");
 			File _mini2 = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+ext+"/"+name+".jpg");
 			if(_mini.exists()){

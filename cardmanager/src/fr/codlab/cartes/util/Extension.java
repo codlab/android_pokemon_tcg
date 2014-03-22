@@ -9,6 +9,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Environment;
 
 import fr.codlab.cartes.attributes.Ability;
 import fr.codlab.cartes.attributes.Attack;
@@ -118,6 +119,7 @@ final public class Extension implements IExtensionListener {
      * Parse the Set's XML file
      */
     public void parseXml() {
+        FileMover.Move(Environment.getExternalStorageDirectory().getAbsolutePath(), this._intitule);
         XmlPullParser parser = _p.getResources().getXml(_ressources);
 
         //StringBuilder stringBuilder = new StringBuilder();
@@ -380,7 +382,7 @@ final public class Extension implements IExtensionListener {
 
         void executeUpdate() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                this.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                this.execute();//this.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             } else {
                 this.execute();
             }

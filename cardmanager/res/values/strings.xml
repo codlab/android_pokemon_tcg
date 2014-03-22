@@ -99,6 +99,7 @@
     <string name="cancel">Cancel</string>
 
 
+    <string name="drive_get">Sync with Google Drive</string>
     <string name="drive_blackberry">You are currently using the Android ported app to Blackberry. Due to an issue with the opening webview and the soft keyboard of your device, please enter here your login info. THese will be copied in the login page from the Google Authentication Page.</string>
     <string name="drive_blackberry_email">Your Email</string>
     <string name="drive_blackberry_password">Your password</string>

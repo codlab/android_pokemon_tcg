@@ -30,15 +30,11 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 8
+        minSdkVersion 7
         targetSdkVersion 19
-        versionName project.VERSION_NAME
-        versionCode Integer.parseInt(new Date().format('yyyyMMddHH'))
     }
 
     packagingOptions {
         exclude 'LICENSE.txt'
     }
 }
-
-apply from: '../maven_push.gradle'

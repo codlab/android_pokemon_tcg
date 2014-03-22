@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/listback"
+    android:background="@color/list_item_background"
     android:cacheColorHint="#00000000"
     android:orientation="horizontal"
     android:paddingBottom="10dp" >
@@ -27,10 +27,11 @@
             android:id="@+id/carte"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/cardname"
+            android:background="@color/list_item_title_background"
             android:textColor="#000000"
             android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
         <!-- partie inferieure -->
 
         <LinearLayout
@@ -52,15 +53,17 @@
                     android:id="@+id/infos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/cardnumber"
-                    android:textColor="#000000" />
+                    android:background="@color/list_item_title_background"
+                    android:textColor="#000000"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" />
 
                 <LinearLayout
                     android:id="@+id/vue.types"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right"
-                    android:gravity="right"
+                    android:gravity="right|center_vertical"
                     android:orientation="horizontal" >
 
 

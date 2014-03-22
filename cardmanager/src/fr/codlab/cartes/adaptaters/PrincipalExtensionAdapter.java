@@ -74,7 +74,7 @@ public class PrincipalExtensionAdapter extends BaseAdapter implements IExtension
 
 	@Override
 	public int getCount() {
-		return _item.size()+1;//1 for the code header !
+		return _item != null ? _item.size()+1 : 0;//1 for the code header !
 	}
 
 	@Override
@@ -86,4 +86,8 @@ public class PrincipalExtensionAdapter extends BaseAdapter implements IExtension
 	public long getItemId(int pos) {
 		return pos > 0 ? _item.get(pos-1).getId() :0;//_items[arg0];
 	}
+
+    public void setDataExtension(ArrayList<Extension> arrayExtension) {
+        _item = arrayExtension;
+    }
 }

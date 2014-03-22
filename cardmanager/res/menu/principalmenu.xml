@@ -10,12 +10,13 @@
         android:title="@string/settings"
         android:showAsAction="never" />
 
+    <!-- ifRoom| -->
+    <!--
     <item
         android:id="@+id/principal_paypal"
         android:title=""
         android:icon="@drawable/paypal_button"
         android:showAsAction="never" />
-    <!-- ifRoom| -->
     <item
         android:id="@+id/principal_useus"
         android:title="@string/cardus"
@@ -41,4 +42,5 @@
         android:title="@string/cardit"
         android:icon="@drawable/iconit"
         android:showAsAction="ifRoom" />
+        -->
 </menu>
