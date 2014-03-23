@@ -9,6 +9,8 @@ public interface IExtensionMaster {
 	 * @param extension_id the extension updated
 	 */
 	void update(int extension_id);
+    //@Deprecated
+    //void updateSynced(int extension_id);
 	
 	void onClick(Bundle pack);
 	void onClick(String nom,

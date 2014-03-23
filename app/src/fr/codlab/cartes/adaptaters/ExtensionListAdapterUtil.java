@@ -58,6 +58,10 @@ public class ExtensionListAdapterUtil implements fr.codlab.cartes.listener.IExte
         _item.updatePossessed(this);
     }
 
+    public void updateAllSynced(){
+        _item.updatePossessedSynced(this);
+    }
+
     @Override
     public void onUpdateFinished() {
         _principal.updateProgress(_item.getProgress(), _item.getCount());

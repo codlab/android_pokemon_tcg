@@ -124,14 +124,22 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 		_parent.update(id); 
 	}
 	@Override
-	public void update(int i){
+	public void update(int extension_id){
 		ListView _liste = (ListView)getView().findViewById(R.id.visu_extension_liste);
 		if(_liste.getAdapter()!=null && _liste.getAdapter() instanceof ExtensionListeAdapter)
 			((ExtensionListeAdapter)_liste.getAdapter()).notifyDataSetChanged();
-		_parent.update(i);
+		_parent.update(extension_id);
 	}
 
-	private void update(){
+    /*@Override
+    public void updateSynced(int extension_id) {
+        ListView _liste = (ListView)getView().findViewById(R.id.visu_extension_liste);
+        if(_liste.getAdapter()!=null && _liste.getAdapter() instanceof ExtensionListeAdapter)
+            ((ExtensionListeAdapter)_liste.getAdapter()).notifyDataSetChanged();
+        _parent.update(extension_id);
+    }*/
+
+    private void update(){
 		try{
 			Extension _extension = _factorise.getExtension();
 			updateName(_extension.getName());

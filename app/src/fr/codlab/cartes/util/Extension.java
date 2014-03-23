@@ -418,6 +418,28 @@ final public class Extension implements IExtensionListener {
         return true;
     }
 
+    public boolean updatePossessedSynced(IExtensionListener listener){
+        SGBDPublic bdd = new SGBDPublic(_p);
+        bdd.open();
+        int avant = bdd.getPossessionExtension(_id, Language.US);
+        avant += bdd.getPossessionExtension(_id, Language.FR);
+        avant += bdd.getPossessionExtension(_id, Language.IT);
+        avant += bdd.getPossessionExtension(_id, Language.ES);
+        _progression = bdd.getExtensionProgression(_id, Language.US);
+        _progression += bdd.getExtensionProgression(_id, Language.FR);
+        _progression += bdd.getExtensionProgression(_id, Language.IT);
+        _progression += bdd.getExtensionProgression(_id, Language.ES);
+        bdd.close();
+        bdd = null;
+        boolean res = avant != _possedees;
+        _possedees = avant;
+        if(listener != null)
+            listener.onUpdateFinished();
+        //_p.setNbPossedeesExtensionAtIndex(_id, _possedees);
+        //_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);
+        return res;
+    }
+
     @Override
     public void onUpdateFinished() {
 

@@ -384,6 +384,7 @@ public class Card implements Serializable{
 		}
 	}
 	public void addQuantite(Context principal, int p, Rarity rarete, Language lang){
+        Log.d("MainActivity","addQuantite "+p+" "+rarete+" "+lang);
 		switch(lang){
 		case FR:
 			addQuantiteFR(principal, p, rarete);

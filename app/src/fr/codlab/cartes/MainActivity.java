@@ -490,7 +490,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void notifyChanged() {
-        _adapter.notifyDataSetChanged();
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                _adapter.notifyDataSetChanged();
+            }
+        });
     }
 
     public void notifyDataChanged() {
@@ -823,6 +828,18 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
         notifyChanged();
     }
+
+    /*@Override
+    public void updateSynced(int extension_id) {
+        int ind = 0;
+        for (; ind < _arrayExtension.size() &&
+                _arrayExtension.get(ind).getId() != extension_id; ind++)
+            ;
+        if (ind < _arrayExtension.size()) {
+            _arrayExtension.get(ind).updatePossessedSynced(this);
+        }
+        notifyChanged();
+    }*/
 
     public void setCarte(CardFragment carte) {
         _carte = carte;

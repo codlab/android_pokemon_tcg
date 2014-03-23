@@ -157,6 +157,6 @@ public class SGBDPublic {
 
     public int getPossessionCarteExtensionHolo(long extension, Language lang, long carte) {
         open();
-        return __sgbd.getPossessionCarteExtensionNormal(extension, lang, carte);
+        return __sgbd.getPossessionCarteExtensionHolo(extension, lang, carte);
     }
 }

@@ -848,6 +848,7 @@ class SGBD {
     private final static int HOLO = 2;
 
     private int updatePossessionCarteExtensionGenerique(long extension, long carte, Language lang, int quantite, int type) throws SQLException {
+        Log.d("MainActivity","updatePossessionCarteExtensionGenerique "+extension+" "+carte+" "+lang+" "+quantite+" "+type);
         Cursor mCursor = null;
         switch (lang) {
             case FR:

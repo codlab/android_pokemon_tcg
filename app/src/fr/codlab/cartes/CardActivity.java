@@ -135,8 +135,17 @@ public class CardActivity extends SherlockFragmentActivity implements IClickBund
 		setResult(RESULT_OK, i); 
 	}
 
+    /*@Override
+    public void updateSynced(int extension_id) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("update", extension_id);
+        Intent i = new Intent();
+        i.putExtras(bundle);
+        setResult(RESULT_OK, i);
+    }*/
 
-	@Override
+
+    @Override
 	public void onClick(String nom, int id, String intitule) {
 	}
 
