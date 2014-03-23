@@ -50,7 +50,6 @@ final public class ListViewExtensionFragment extends SherlockFragment implements
     }
 
     public void setListExtension(MainActivity _activity_main){
-        _activity_main.setListExtension(_this);
 
         _liste = (ListView) _this.findViewById(R.id.principal_extensions);
 
@@ -59,6 +58,8 @@ final public class ListViewExtensionFragment extends SherlockFragment implements
         if(_liste.getHeaderViewsCount() == 0)
             _liste.addHeaderView(v);
         //_liste.setAdapter(_adapter);
+
+        _activity_main.setListExtension(_this);
 
         if(Build.VERSION.SDK_INT >= 11){
             _liste.setOnScrollListener(this);

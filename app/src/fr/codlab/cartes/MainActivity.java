@@ -68,6 +68,11 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         IabHelper.QueryInventoryFinishedListener,
         IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener, IExtensionLoadedListener, fr.codlab.cartes.listener.IExtensionListener {
 
+    private InformationScreenFragment _main;
+    private InformationScreenFragment getMain(){
+        if(_main == null)_main = new InformationScreenFragment(this);
+        return _main;
+    }
     /**
      * PLAYSTORE PART
      */
@@ -94,7 +99,6 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 runOnUiThread(new Runnable(){
                     public void run(){
                         if (!result.isSuccess()) {
-                            //Toast.makeText(Int2ExtActivity.this, "Problem setting up inapp " + result, Toast.LENGTH_LONG);
                             // Oh noes, there was a problem.
                         }else{
                             onPlaystoreOK();
@@ -169,7 +173,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             getHelper().queryInventoryAsync(true, additionalSkuList,
                     this);
         }catch(Exception e){
-
+            e.printStackTrace();
         }
     }
 
@@ -315,13 +319,6 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                     break;
             }
         }
-
-        Thread t  = new Thread(){
-            public void run(){
-                createExtensions();
-            }
-        };
-        t.start();
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         View mobile = findViewById(R.id.mobile);
@@ -354,6 +351,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
     }
 
+    @Override
+    public void onResume(){
+        super.onResume();
+
+
+        //on rajoute le fragment si on est sur tablette
+        if (findViewById(R.id.liste_extension_fragment) != null && _main == null && getSupportFragmentManager().getBackStackEntryCount() == 0) {
+            Log.d("MainActivity","having null main");
+            FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+            xact.add(R.id.extension_fragment, getMain());
+            xact.commit();
+        }
+    }
     /**
      * Call after onResume or onCreate
      */
@@ -361,6 +371,13 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     public void onStart() {
         super.onStart();
 
+
+        Thread create  = new Thread(){
+            public void run(){
+                createExtensions();
+            }
+        };
+        create.start();
         /**
          * open menu
          */
@@ -382,17 +399,16 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             t.start();
         }
 
-        //on rajoute le fragment si on est sur tablette
-        if (findViewById(R.id.liste_extension_fragment) != null && getSupportFragmentManager().getBackStackEntryCount() == 0) {
-            FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-            xact.add(R.id.extension_fragment, new InformationScreenFragment(this));
-            xact.commit();
-        }
+        ListViewExtensionFragment viewer = (ListViewExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.liste_extension_fragment);
+        viewer.setListExtension(this);
     }
 
     private void createExtensions() {
-        if (_arrayExtension != null)
+        if (_arrayExtension != null){
+
+            onExtensionLoaded(-1);
             return;
+        }
 
         _arrayExtension = new ArrayList<Extension>();
 
@@ -575,6 +591,13 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             } catch (Exception e) {
             }
         }
+
+        if (_main != null) {
+            try {
+                getSupportFragmentManager().putFragment(out, "MAIN", _main);
+            } catch (Exception e) {
+            }
+        }
         _carte = null;
         _extension = null;
         _codes = null;
@@ -584,6 +607,9 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onRestoreInstanceState(Bundle in) {
+        if (in != null && in.containsKey("MAIN")) {
+            _main = (InformationScreenFragment) getSupportFragmentManager().getFragment(in, "MAIN");
+        }
         if (in != null && in.containsKey("DRIVE")) {
             _drive = (DriveUiFragment) getSupportFragmentManager().getFragment(in, "DRIVE");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
