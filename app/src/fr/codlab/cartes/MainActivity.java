@@ -19,6 +19,7 @@ import fr.codlab.cartes.fragments.DriveUiFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
+import fr.codlab.cartes.fragments.MagikarpFragment;
 import fr.codlab.cartes.listener.*;
 import fr.codlab.cartes.manageui.DriveUi;
 import fr.codlab.cartes.redeemcode.IGetLogin;
@@ -27,6 +28,7 @@ import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.ExtensionManager;
 import fr.codlab.cartes.util.FileMover;
 import fr.codlab.cartes.util.Language;
+import fr.codlab.cartes.util.Platform;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -69,10 +71,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         IabHelper.OnIabPurchaseFinishedListener, IabHelper.OnConsumeFinishedListener, IExtensionLoadedListener, fr.codlab.cartes.listener.IExtensionListener {
 
     private InformationScreenFragment _main;
-    private InformationScreenFragment getMain(){
-        if(_main == null)_main = new InformationScreenFragment(this);
+
+    private InformationScreenFragment getMain() {
+        if (_main == null) _main = new InformationScreenFragment(this);
         return _main;
     }
+
     /**
      * PLAYSTORE PART
      */
@@ -87,72 +91,85 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     private boolean _was_don_1 = false;
     private boolean _was_don_2 = false;
-    private String base64EncodedPublicKey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoBrxvOEVfZwjKXu7GTZJoMAIF9C3TkTwryrYuar1+z2Hkn5l5YIE49exfArUjL65xBuOFrhQ2zUZLxnMfbTixuXxR2g1JFTktVdCvl96eGWU+jYkLTDuovLO2JMtTFT/niHrWUaZ7OiuziqSY5HgERYVzt+CA2j0mmr8F2T+G88T5sBHY9gz0lSHN5ErU+mMjmv9vfYuGdLBvoRhXAY8XYfT9YtH+2+cfbV9UqwnhHWmvz70eZQLt9wU7gGiCCMv2itjdbbdk4T+4gXXd8v6Yb07Hl0upe/7BTbB9iTbmpXo8CAaVdX5VJaLYM7FzOj0jFGmtB7dXw4ctMVcmhcepwIDAQAB";
-    private IabHelper getHelper(){
-        if(mHelper == null)mHelper = new IabHelper(this, base64EncodedPublicKey);
+    private String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoBrxvOEVfZwjKXu7GTZJoMAIF9C3TkTwryrYuar1+z2Hkn5l5YIE49exfArUjL65xBuOFrhQ2zUZLxnMfbTixuXxR2g1JFTktVdCvl96eGWU+jYkLTDuovLO2JMtTFT/niHrWUaZ7OiuziqSY5HgERYVzt+CA2j0mmr8F2T+G88T5sBHY9gz0lSHN5ErU+mMjmv9vfYuGdLBvoRhXAY8XYfT9YtH+2+cfbV9UqwnhHWmvz70eZQLt9wU7gGiCCMv2itjdbbdk4T+4gXXd8v6Yb07Hl0upe/7BTbB9iTbmpXo8CAaVdX5VJaLYM7FzOj0jFGmtB7dXw4ctMVcmhcepwIDAQAB";
+
+    private IabHelper getHelper() {
+        if (mHelper == null) mHelper = new IabHelper(this, base64EncodedPublicKey);
+        mHelper.enableDebugLogging(true);
+
         return mHelper;
     }
-    public void initHelper(){
+
+    public void initHelper() {
         getHelper().startSetup(new IabHelper.OnIabSetupFinishedListener() {
             public void onIabSetupFinished(final IabResult result) {
-                _playstore_ok = true;
-                runOnUiThread(new Runnable(){
-                    public void run(){
-                        if (!result.isSuccess()) {
-                            // Oh noes, there was a problem.
-                        }else{
-                            onPlaystoreOK();
-                        }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        supportInvalidateOptionsMenu();
                     }
                 });
-                // Hooray, IAB is fully set up!
+                if(getHelper().subscriptionsSupported()){
+                    _playstore_ok = true;
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+                            if (!result.isSuccess()) {
+                                // Oh noes, there was a problem.
+                            } else {
+                                onPlaystoreOK();
+                            }
+                        }
+                    });
+                    // Hooray, IAB is fully set up!
+                }
             }
         });
     }
-    public void createDonationDialog(boolean don1_purchased, boolean don2_purchased){
-        if(don1_purchased == true && don2_purchased == true){
+
+    public void createDonationDialog(boolean don1_purchased, boolean don2_purchased) {
+        if (don1_purchased == true && don2_purchased == true) {
             return;
         }
 
-        if(!_playstore_ok){
-            try{
+        if (!_playstore_ok) {
+            try {
                 _was_don_1 = true;
                 initHelper();
-            }catch(Exception e){
+            } catch (Exception e) {
 
             }
-        }else{
+        } else {
             AlertDialog alertDiaLog = new AlertDialog.Builder(this).create();
             alertDiaLog.setTitle(R.string.dialog_donation_title);
             alertDiaLog.setMessage(getString(R.string.dialog_donation_message));
-            alertDiaLog.setButton(getString(R.string.dialog_donation_no_thx), new DialogInterface.OnClickListener(){
+            alertDiaLog.setButton(getString(R.string.dialog_donation_no_thx), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface arg0, int arg1) {
                     arg0.dismiss();
                 }
             });
-            if(don1_purchased == false){
-                alertDiaLog.setButton2(getString(R.string.dialog_donation_mini), new DialogInterface.OnClickListener(){
+            if (don1_purchased == false) {
+                alertDiaLog.setButton2(getString(R.string.dialog_donation_mini), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        try{
-                            getHelper().launchPurchaseFlow(MainActivity.this, "don1", 01,
-                                    MainActivity.this, _random.nextInt(1353676232)+"");
-                        }catch(Exception e){
+                        try {
+                            getHelper().launchPurchaseFlow(MainActivity.this, "don1", 11,
+                                    MainActivity.this, _random.nextInt(1353676232) + "");
+                        } catch (Exception e) {
 
                         }
                         arg0.dismiss();
                     }
                 });
             }
-            if(don2_purchased == false){
-                alertDiaLog.setButton3(getString(R.string.dialog_donation_max), new DialogInterface.OnClickListener(){
+            if (don2_purchased == false) {
+                alertDiaLog.setButton3(getString(R.string.dialog_donation_max), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        try{
-                            getHelper().launchPurchaseFlow(MainActivity.this, "don2", 02,
-                                    MainActivity.this, _random.nextInt(1353676232)+"");
-                        }catch(Exception e){
+                        try {
+                            getHelper().launchPurchaseFlow(MainActivity.this, "don2", 12,
+                                    MainActivity.this, _random.nextInt(1353676232) + "");
+                        } catch (Exception e) {
 
                         }
                         arg0.dismiss();
@@ -165,14 +182,14 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     }
 
-    public void onPlaystoreOK(){
-        try{
+    public void onPlaystoreOK() {
+        try {
             List additionalSkuList = new ArrayList();
             additionalSkuList.add("don1");
             additionalSkuList.add("don2");
             getHelper().queryInventoryAsync(true, additionalSkuList,
                     this);
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -190,34 +207,36 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         String don2 =
                 inventory.getSkuDetails("don2").getPrice();
 
-        if(inventory.hasPurchase("don1")){
+        if (inventory.hasPurchase("don1")) {
             getHelper().consumeAsync(inventory.getPurchase("don1"),
                     this);
         }
-        if(inventory.hasPurchase("don2")){
+        if (inventory.hasPurchase("don2")) {
             getHelper().consumeAsync(inventory.getPurchase("don2"),
                     this);
         }
 
-        if(_random.nextInt(100) < 20)
-            createDonationDialog(inventory.hasPurchase("don1"),inventory.hasPurchase("don2"));
+        if (_random.nextInt(100) < 20)
+            createDonationDialog(inventory.hasPurchase("don1"), inventory.hasPurchase("don2"));
 
         // update the UI
     }
+
     @Override
     public void onIabPurchaseFinished(final IabResult result, final Purchase info) {
-        runOnUiThread(new Runnable(){
-            public void run(){
+        runOnUiThread(new Runnable() {
+            public void run() {
                 if (result.isFailure()) {
                     return;
-                }else if (info.getSku().equals("don1")) {
+                } else if (info.getSku().equals("don1")) {
                     Toast.makeText(MainActivity.this, R.string.purchased_don1, Toast.LENGTH_LONG);
-                }else if (info.getSku().equals("don2")) {
+                } else if (info.getSku().equals("don2")) {
                     Toast.makeText(MainActivity.this, R.string.purchased_don2, Toast.LENGTH_LONG);
                 }
             }
         });
     }
+
     @Override
     public void onConsumeFinished(Purchase purchase, IabResult result) {
     }
@@ -246,18 +265,32 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
      * The Acitivty receive an intent
      */
     protected void onActivityResult(int requestCode, int resultCode,
-                                    Intent i) {
-        try {
-            super.onActivityResult(requestCode, resultCode, i);
-            if (i != null) {
-                Bundle bd = i.getExtras();
-                //on observe les modifications apportees
-                int miseAjour = bd.getInt("update", 0);
-                if (miseAjour >= 0) {
-                    update(miseAjour);
+                                    Intent data) {
+
+        Log.d("IabHelper", "onActivityResult(" + requestCode + "," + resultCode + "," + data);
+        if (Platform.getPlatform() == Platform.ANDROID && mHelper == null) return;
+
+        // Pass on the activity result to the helper for handling
+        if (Platform.getPlatform() != Platform.ANDROID || !mHelper.handleActivityResult(requestCode, resultCode, data)) {
+            // not handled, so handle it ourselves (here's where you'd
+            // perform any handling of activity results not related to in-app
+            // billing...
+            super.onActivityResult(requestCode, resultCode, data);
+
+            try {
+                super.onActivityResult(requestCode, resultCode, data);
+                if (data != null) {
+                    Bundle bd = data.getExtras();
+                    //on observe les modifications apportees
+                    int miseAjour = bd.getInt("update", 0);
+                    if (miseAjour >= 0) {
+                        update(miseAjour);
+                    }
                 }
+            } catch (Exception e) {
             }
-        } catch (Exception e) {
+        } else {
+            Log.d("IabHelper", "onActivityResult handled by IABUtil.");
         }
     }
 
@@ -267,14 +300,16 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         super.onCreate(savedInstanceState);
 
 
-
         _playstore_ok = false;
         _was_don_1 = false;
         _was_don_2 = false;
 
+        if(Platform.getPlatform() == Platform.ANDROID){
+            initHelper();
+        }
+
         setContentView(R.layout.main);
 
-        initHelper();
 
         /**
          * open sliding menu
@@ -352,18 +387,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
 
 
         //on rajoute le fragment si on est sur tablette
         if (findViewById(R.id.liste_extension_fragment) != null && _main == null && getSupportFragmentManager().getBackStackEntryCount() == 0) {
-            Log.d("MainActivity","having null main");
+            Log.d("MainActivity", "having null main");
             FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
             xact.add(R.id.extension_fragment, getMain());
             xact.commit();
         }
     }
+
     /**
      * Call after onResume or onCreate
      */
@@ -372,8 +408,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         super.onStart();
 
 
-        Thread create  = new Thread(){
-            public void run(){
+        Thread create = new Thread() {
+            public void run() {
                 createExtensions();
             }
         };
@@ -404,7 +440,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     private void createExtensions() {
-        if (_arrayExtension != null){
+        if (_arrayExtension != null) {
 
             onExtensionLoaded(-1);
             return;
@@ -476,8 +512,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     }
 
-    public void onExtensionLoaded(final int id){
-        if(_adapter != null){
+    public void onExtensionLoaded(final int id) {
+        if (_adapter != null) {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -506,11 +542,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getSupportMenuInflater();
-        inflater.inflate(R.menu.principalmenu, menu);
-        boolean state = super.onCreateOptionsMenu(menu);
+        if(Platform.getPlatform() == Platform.ANDROID && getHelper().subscriptionsSupported()){
+            MenuInflater inflater = getSupportMenuInflater();
+            inflater.inflate(R.menu.principalmenu_donation, menu);
+            boolean state = super.onCreateOptionsMenu(menu);
 
-        return state;
+            return state;
+        }else{
+            MenuInflater inflater = getSupportMenuInflater();
+            inflater.inflate(R.menu.principalmenu, menu);
+            boolean state = super.onCreateOptionsMenu(menu);
+
+            return state;
+        }
     }
 
     //creation du menu de l'application
@@ -529,12 +573,17 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 startActivity(new Intent(this, Preferences.class));
                 return true;
             case android.R.id.home:
-                if(_drive != null){
+                if (_drive != null) {
                     FragmentManager fm = getSupportFragmentManager();
                     fm.popBackStack();
                     _drive = null;
                     getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-                }else if (_carte != null || _extension != null || _codes != null) {
+                } else if (_magikarp != null) {
+                    FragmentManager fm = getSupportFragmentManager();
+                    fm.popBackStack();
+                    _magikarp = null;
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                } else if (_carte != null || _extension != null || _codes != null) {
                     FragmentManager fm = getSupportFragmentManager();
                     fm.popBackStack();
                     if (_carte != null) {
@@ -557,6 +606,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
     }
 
+    MagikarpFragment _magikarp;
     DriveUiFragment _drive;
     ExtensionFragment _extension;
     CodesFragment _codes;
@@ -567,7 +617,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onSaveInstanceState(Bundle out) {
-        if(_drive != null){
+        if (_drive != null) {
             try {
                 getSupportFragmentManager().putFragment(out, "DRIVE", _drive);
             } catch (Exception e) {
@@ -579,13 +629,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             } catch (Exception e) {
             }
         }
-        if (_name != null) {
+        if (_name != null && _extension != null) {
             out.putString("NAME", _name);
             out.putInt("ID", _id);
             out.putString("INTIT", _intitule);
 
             try {
                 getSupportFragmentManager().putFragment(out, "EXTENSION", _extension);
+            } catch (Exception e) {
+            }
+        }
+        if (_magikarp != null) {
+            try {
+                getSupportFragmentManager().putFragment(out, "MAGIKARP", _magikarp);
             } catch (Exception e) {
             }
         }
@@ -612,6 +668,9 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onRestoreInstanceState(Bundle in) {
+        if (in != null && in.containsKey("MAGIKARP")) {
+            _magikarp = (MagikarpFragment) getSupportFragmentManager().getFragment(in, "MAGIKARP");
+        }
         if (in != null && in.containsKey("MAIN")) {
             _main = (InformationScreenFragment) getSupportFragmentManager().getFragment(in, "MAIN");
         }
@@ -628,6 +687,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             _id = in.getInt("ID");
             _intitule = in.getString("INTIT");
             _extension = (ExtensionFragment) getSupportFragmentManager().getFragment(in, "EXTENSION");
+            if(_extension != null)
             _extension.setExtension(_name, _id, _intitule);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
@@ -645,6 +705,15 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
         if (viewer != null) {
             FragmentManager fm = getSupportFragmentManager();
+            if (_magikarp != null) {
+                if (_magikarp.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_magikarp);
+                    xact.commit();
+                }
+                _magikarp = null;
+                fm.popBackStackImmediate();
+            }
             if (_carte != null) {
                 if (_carte.isAdded()) {
                     FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
@@ -684,10 +753,62 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
     }
 
+    public void onClickMagikarp() {
+        Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+        if (viewer != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            if (_drive != null) {
+                if (_drive.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_drive);
+                    xact.commit();
+                }
+                _drive = null;
+                fm.popBackStackImmediate();
+            }
+            if (_carte != null) {
+                if (_carte.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_carte);
+                    xact.commit();
+                }
+                _carte = null;
+                fm.popBackStackImmediate();
+            }
+            if (_codes != null && _codes.isVisible() && _codes.isAdded()) {
+                FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                xact.remove(_codes);
+                xact.commit();
+                _codes = null;
+                fm.popBackStackImmediate();
+            }
+            if (_extension != null) {
+                if (_extension.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_extension);
+                    xact.commit();
+                }
+                _extension = null;
+                fm.popBackStackImmediate();
+            }
+            if (_magikarp == null || !_magikarp.isVisible()) {
+                //Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
+                FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                _magikarp = new MagikarpFragment(this);
+                //xact.show(_extension);
+                //xact.replace(R.id.extension_fragment, _extension, nom);
+                xact.replace(R.id.extension_fragment, _magikarp, "Drive");
+                xact.addToBackStack(null);
+                xact.commit();
+            }
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
     public void onClick(String nom,
                         int id,
                         String intitule) {
-        if(ExtensionManager.isLoaded(id) == false){
+        if (ExtensionManager.isLoaded(id) == false) {
             return;
         }
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
@@ -696,6 +817,15 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             _id = id;
             _intitule = intitule;
             FragmentManager fm = getSupportFragmentManager();
+            if (_magikarp != null) {
+                if (_magikarp.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_magikarp);
+                    xact.commit();
+                }
+                _magikarp = null;
+                fm.popBackStackImmediate();
+            }
             if (_drive != null) {
                 if (_drive.isAdded()) {
                     FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
@@ -749,6 +879,15 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
         if (viewer != null) {
             FragmentManager fm = getSupportFragmentManager();
+            if (_magikarp != null) {
+                if (_magikarp.isAdded()) {
+                    FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+                    xact.remove(_magikarp);
+                    xact.commit();
+                }
+                _magikarp = null;
+                fm.popBackStackImmediate();
+            }
             if (_drive != null) {
                 if (_drive.isAdded()) {
                     FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
@@ -864,12 +1003,12 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
 
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
 
-        try{
+        try {
             if (getHelper() != null) getHelper().dispose();
-        }catch(Exception e){
+        } catch (Exception e) {
 
         }
         mHelper = null;

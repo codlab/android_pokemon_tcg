@@ -86,7 +86,7 @@ final public class ListViewExtensionFragment extends SherlockFragment implements
             _default_height = _header != null ? _header.getHeight() : 0;
         }
 
-        if(_liste != null && _liste.getCount() > 0 && firstVisibleItem == 0 && _default_height > 0){
+        if(_liste != null && _liste.getCount() > 0 && _liste.getChildAt(0) != null && firstVisibleItem == 0 && _default_height > 0){
 
             int top_value = _liste.getChildAt(0).getTop()/2;
             if(top_value < -_default_height- _default_top)

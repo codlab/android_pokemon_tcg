@@ -43,8 +43,17 @@ public class PrincipalExtensionAdapter extends BaseAdapter implements IExtension
 					_principal.onClickTCGO();
 				}
 			});
+        }else if(pos == 1){
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            v = inflater.inflate(R.layout.list_extension_magikarp, parent, false);
+            v.setOnClickListener(new OnClickListener(){
+                //@Override
+                public void onClick(View v) {
+                    _principal.onClickMagikarp();
+                }
+            });
 		}else{
-			final int position=pos-1;
+			final int position=pos-2;
 			if(v == null ||  v.findViewById(R.id.extension_nom) == null){
 				LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 				v = inflater.inflate(R.layout.list_extension, parent, false);
@@ -74,17 +83,17 @@ public class PrincipalExtensionAdapter extends BaseAdapter implements IExtension
 
 	@Override
 	public int getCount() {
-		return _item != null ? _item.size()+1 : 0;//1 for the code header !
+		return _item != null ? _item.size()+2 : 0;//1 for the code header !
 	}
 
 	@Override
 	public Object getItem(int pos) {
-		return pos > 0 ? _item.get(pos-1) : null;//_items[arg0];
+		return pos > 0 ? _item.get(pos-2) : null;//_items[arg0];
 	}
 
 	@Override
 	public long getItemId(int pos) {
-		return pos > 0 ? _item.get(pos-1).getId() :0;//_items[arg0];
+		return pos > 0 ? _item.get(pos-2).getId() :0;//_items[arg0];
 	}
 
     public void setDataExtension(ArrayList<Extension> arrayExtension) {

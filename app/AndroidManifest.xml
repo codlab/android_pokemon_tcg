@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:installLocation="preferExternal"
     package="fr.codlab.cartes" >
 
     <uses-sdk
@@ -37,7 +36,8 @@
         android:theme="@style/custom"
         android:debuggable="false"
         android:hardwareAccelerated="true"
-        android:name=".TCGApplication">
+        android:name=".TCGApplication"
+        android:largeHeap="true">
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
