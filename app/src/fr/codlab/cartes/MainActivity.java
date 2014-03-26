@@ -109,7 +109,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                         supportInvalidateOptionsMenu();
                     }
                 });
-                if(getHelper().subscriptionsSupported()){
+                if (getHelper().subscriptionsSupported()) {
                     _playstore_ok = true;
                     runOnUiThread(new Runnable() {
                         public void run() {
@@ -304,7 +304,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         _was_don_1 = false;
         _was_don_2 = false;
 
-        if(Platform.getPlatform() == Platform.ANDROID){
+        if (Platform.getPlatform() == Platform.ANDROID) {
             initHelper();
         }
 
@@ -447,79 +447,92 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
 
         _arrayExtension = new ArrayList<Extension>();
+        Thread t = new Thread() {
+            public void run() {
 
-        XmlPullParser parser = getResources().getXml(R.xml.extensions);
-        //StringBuilder stringBuilder = new StringBuilder();
-        //  <extension nom="Base" nb="1" id="id de l'extension" intitule="tag pour les images" />
-        try {
-            int id = 0;
-            int nb = 0;
-            String intitule = "";
-            while (parser.next() != XmlPullParser.END_DOCUMENT) {
-                intitule = "";
-                id = 0;
-                nb = 0;
-                String name = parser.getName();
-                String extension = null;
-                if ((name != null) && name.equals("extension")) {
-                    int size = parser.getAttributeCount();
-                    for (int i = 0; i < size; i++) {
-                        String attrNom = parser.getAttributeName(i);
-                        String attrValue = parser.getAttributeValue(i);
-                        if ((attrNom != null) && attrNom.equals("nom")) {
-                            extension = attrValue;
-                        } else if ((attrNom != null) && attrNom.equals("id")) {
-                            try {
-                                id = Integer.parseInt(attrValue);
-                            } catch (Exception e) {
-                                id = 0;
-                            }
-                        } else if ((attrNom != null) && attrNom.equals("nb")) {
-                            try {
-                                nb = Integer.parseInt(attrValue);
-                            } catch (Exception e) {
-                                nb = 0;
-                            }
-                        } else if ((attrNom != null) && attrNom.equals("intitule")) {
-                            intitule = attrValue;
+                XmlPullParser parser = getResources().getXml(R.xml.extensions);
+                //StringBuilder stringBuilder = new StringBuilder();
+                //  <extension nom="Base" nb="1" id="id de l'extension" intitule="tag pour les images" />
+                try {
+                    int id = 0;
+                    int nb = 0;
+                    String intitule = "";
+                    while (parser.next() != XmlPullParser.END_DOCUMENT) {
+                        intitule = "";
+                        id = 0;
+                        nb = 0;
+                        String name = parser.getName();
+                        String extension = null;
+                        if ((name != null) && name.equals("extension")) {
+                            int size = parser.getAttributeCount();
+                            for (int i = 0; i < size; i++) {
+                                String attrNom = parser.getAttributeName(i);
+                                String attrValue = parser.getAttributeValue(i);
+                                if ((attrNom != null) && attrNom.equals("nom")) {
+                                    extension = attrValue;
+                                } else if ((attrNom != null) && attrNom.equals("id")) {
+                                    try {
+                                        id = Integer.parseInt(attrValue);
+                                    } catch (Exception e) {
+                                        id = 0;
+                                    }
+                                } else if ((attrNom != null) && attrNom.equals("nb")) {
+                                    try {
+                                        nb = Integer.parseInt(attrValue);
+                                    } catch (Exception e) {
+                                        nb = 0;
+                                    }
+                                } else if ((attrNom != null) && attrNom.equals("intitule")) {
+                                    intitule = attrValue;
 
+                                }
+                            }
+
+                            if ((extension != null) && (id > 0 && id < MAX)) {
+                                _arrayExtension.add(ExtensionManager.getExtension(MainActivity.this, MainActivity.this, id, nb, intitule, extension, false));
+                            }
                         }
                     }
-
-                    if ((extension != null) && (id > 0 && id < MAX)) {
-                        _arrayExtension.add(ExtensionManager.getExtension(this, this, id, nb, intitule, extension, false));
-                    }
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
+
+                MainActivity.this.onExtensionLoaded(-1);
             }
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        };
+        t.start();
     }
 
     PrincipalExtensionAdapter _adapter;
 
+
+    private View _last_view;
     public void setListExtension(View v) {
-        _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
-        ListView _list = (ListView) v.findViewById(R.id.principal_extensions);
-
-        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
-        swingBottomInAnimationAdapter.setInitialDelayMillis(300);
-        swingBottomInAnimationAdapter.setAbsListView(_list);
-
-        _list.setAdapter(swingBottomInAnimationAdapter);
-
+        if(v != null) {
+            _last_view = v;
+        }
     }
 
     public void onExtensionLoaded(final int id) {
-        if (_adapter != null) {
+        if (_last_view != null) {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    _adapter.setDataExtension(_arrayExtension);
-                    _adapter.onExtensionLoaded(id);
-                    notifyDataChanged();
+                    if (_last_view != null && _arrayExtension != null) {
+                        _adapter = new PrincipalExtensionAdapter(MainActivity.this, _arrayExtension);
+                        ListView _list = (ListView) _last_view.findViewById(R.id.principal_extensions);
+
+                        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
+                        swingBottomInAnimationAdapter.setInitialDelayMillis(300);
+                        swingBottomInAnimationAdapter.setAbsListView(_list);
+
+                        _list.setAdapter(swingBottomInAnimationAdapter);
+                    }
+                    //_adapter.setDataExtension(_arrayExtension);
+                    //_adapter.notifyDataSetChanged();
+                    //_adapter.onExtensionLoaded(id);
                 }
             });
         }
@@ -542,13 +555,13 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if(Platform.getPlatform() == Platform.ANDROID && getHelper().subscriptionsSupported()){
+        if (Platform.getPlatform() == Platform.ANDROID && getHelper().subscriptionsSupported()) {
             MenuInflater inflater = getSupportMenuInflater();
             inflater.inflate(R.menu.principalmenu_donation, menu);
             boolean state = super.onCreateOptionsMenu(menu);
 
             return state;
-        }else{
+        } else {
             MenuInflater inflater = getSupportMenuInflater();
             inflater.inflate(R.menu.principalmenu, menu);
             boolean state = super.onCreateOptionsMenu(menu);
@@ -603,6 +616,39 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 return true;
             default:
                 return false;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (_drive != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            fm.popBackStack();
+            _drive = null;
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        } else if (_magikarp != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            fm.popBackStack();
+            _magikarp = null;
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        } else if (_carte != null || _extension != null || _codes != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            fm.popBackStack();
+            if (_carte != null) {
+                _carte = null;
+                setViewPagerSelected(0);
+            } else {
+                if (_codes != null) {
+                    _codes = null;
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                }
+                if (_extension != null) {
+                    _extension = null;
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+                }
+            }
+        } else {
+            super.onBackPressed();
         }
     }
 
@@ -687,8 +733,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             _id = in.getInt("ID");
             _intitule = in.getString("INTIT");
             _extension = (ExtensionFragment) getSupportFragmentManager().getFragment(in, "EXTENSION");
-            if(_extension != null)
-            _extension.setExtension(_name, _id, _intitule);
+            if (_extension != null)
+                _extension.setExtension(_name, _id, _intitule);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         if (in != null && in.containsKey("CARTE")) {

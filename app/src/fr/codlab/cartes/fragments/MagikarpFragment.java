@@ -21,7 +21,7 @@ import fr.codlab.cartes.dl.DownloaderMagikarp;
 
 final public class MagikarpFragment extends SherlockFragment {
     private static DownloaderMagikarp _magikarp;
-    private String uri="http://94.125.160.65/?activate_magikarp=true";
+    private String uri="http://94.125.160.65/?event=magikarp";
 
     public MagikarpFragment(){
 		super();
@@ -38,7 +38,7 @@ final public class MagikarpFragment extends SherlockFragment {
             @Override
             public void onClick(View view) {
                 _magikarp = new DownloaderMagikarp(MagikarpFragment.this, getActivity(), uri);
-                _magikarp.activating();
+                _magikarp.activatingOnCreate();
             }
         });
 		return mainView;
@@ -48,7 +48,7 @@ final public class MagikarpFragment extends SherlockFragment {
 	@Override
 	public void onViewCreated(View v, Bundle saved){
         if(_magikarp != null)
-            _magikarp.activating();
+            _magikarp.activatingOnResume();
 	}
 
 	public void onPause(){

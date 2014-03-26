@@ -10,10 +10,6 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    release {
-        runProguard false
-        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-    }
 
 
     sourceSets {
@@ -33,7 +29,6 @@ android {
     sourceSets.main {
         jniLibs.srcDir './libs'
     }
-    sourceSets.main.jni.srcDirs = []
 }
 
 dependencies {

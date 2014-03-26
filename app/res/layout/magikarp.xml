@@ -105,29 +105,6 @@
                     android:autoLink="web"
                     android:paddingLeft="5dp"
                     android:paddingTop="15dp"
-                    android:text="@string/connect3" />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/connect3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:background="@color/area_white"
-                android:orientation="vertical">
-
-                <fr.codlab.cartes.widget.RobotoTextview
-                    typeface="thin"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web"
-                    android:paddingLeft="5dp"
-                    android:paddingTop="15dp"
                     android:text="@string/connect4" />
                 <ImageView
                     android:layout_width="wrap_content"
@@ -152,11 +129,7 @@
                     android:paddingLeft="5dp"
                     android:paddingTop="15dp"
                     android:text="@string/connect5" />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/connect5" />
+
             </LinearLayout>
 
 

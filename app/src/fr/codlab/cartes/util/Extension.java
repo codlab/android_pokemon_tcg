@@ -89,15 +89,10 @@ final public class Extension implements IExtensionListener {
         _nb = nb;
 
         if (mustParseXml){
-            Thread t = new Thread(){
-                public void run(){
                     parseXml();
-                    if(extensionloaded_listener != null)
-                        extensionloaded_listener.onExtensionLoaded(_id);
+                    //if(extensionloaded_listener != null)
+                    //    extensionloaded_listener.onExtensionLoaded(_id);
                     _is_loaded = true;
-                }
-            };
-            t.start();
 
         }else{
             if(extensionloaded_listener != null){
