@@ -100,7 +100,10 @@ final public class Extension implements IExtensionListener {
                 _is_loaded = true;
             }
         }
-        updatePossessed(this);
+         if(Platform.isBlackberry())
+             updatePossessedSynced(this);
+         else
+             updatePossessed(this);
     }
 
     public boolean isLoaded(){

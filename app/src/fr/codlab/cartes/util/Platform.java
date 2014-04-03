@@ -22,4 +22,8 @@ public class Platform {
             return 0;
         }
     }
+
+    public static boolean isBlackberry(){
+        return getPlatform() == BLACKBERRY;
+    }
 }

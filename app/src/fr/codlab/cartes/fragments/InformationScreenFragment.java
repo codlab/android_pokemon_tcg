@@ -10,6 +10,7 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.SlidingViewPagerFragmentActivity;
 import fr.codlab.cartes.adaptaters.MainTabletPagerAdapter;
 import fr.codlab.cartes.dl.DownloaderFactory;
+import fr.codlab.cartes.util.Platform;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
 import android.content.Intent;
@@ -35,8 +36,10 @@ final public class InformationScreenFragment extends SherlockFragment implements
 	}
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View mainView = inflater.inflate(R.layout.main_pager, null);
+		View mainView = inflater.inflate(Platform.isBlackberry() ? R.layout.main_pager_blackberry : R.layout.main_pager, null);
+
         ImageView button_flappi = (ImageView)mainView.findViewById(R.id.flappi);
+
         if(button_flappi != null){
             button_flappi.setOnClickListener(new View.OnClickListener() {
                 @Override

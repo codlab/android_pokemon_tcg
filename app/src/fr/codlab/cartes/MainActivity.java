@@ -101,6 +101,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void initHelper() {
+        if(Platform.isBlackberry())return;
         getHelper().startSetup(new IabHelper.OnIabSetupFinishedListener() {
             public void onIabSetupFinished(final IabResult result) {
                 runOnUiThread(new Runnable() {
@@ -127,6 +128,8 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void createDonationDialog(boolean don1_purchased, boolean don2_purchased) {
+        if(Platform.isBlackberry())return;
+
         if (don1_purchased == true && don2_purchased == true) {
             return;
         }
@@ -183,6 +186,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void onPlaystoreOK() {
+        if(Platform.isBlackberry())return;
         try {
             List additionalSkuList = new ArrayList();
             additionalSkuList.add("don1");
@@ -197,6 +201,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
+        if(Platform.isBlackberry())return;
         if (result.isFailure() || result == null || inventory == null ||
                 inventory.getSkuDetails("don1") == null || inventory.getSkuDetails("don2") == null) {
             return;
@@ -224,6 +229,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onIabPurchaseFinished(final IabResult result, final Purchase info) {
+        if(Platform.isBlackberry())return;
         runOnUiThread(new Runnable() {
             public void run() {
                 if (result.isFailure()) {
@@ -414,6 +420,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             }
         };
         create.start();
+
         /**
          * open menu
          */
@@ -489,7 +496,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                             }
 
                             if ((extension != null) && (id > 0 && id < MAX)) {
-                                _arrayExtension.add(ExtensionManager.getExtension(MainActivity.this, MainActivity.this, id, nb, intitule, extension, false));
+                                _arrayExtension.add(ExtensionManager.getExtension(MainActivity.this, null, id, nb, intitule, extension, false));
                             }
                         }
                     }
@@ -1053,7 +1060,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         super.onDestroy();
 
         try {
-            if (getHelper() != null) getHelper().dispose();
+            if (!Platform.isBlackberry() && getHelper() != null) getHelper().dispose();
         } catch (Exception e) {
 
         }
