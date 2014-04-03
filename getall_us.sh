@@ -2,10 +2,12 @@
 
 rm -rf card_images
 
-mkdir card_images
+mkdir -p card_images
 
-deactivate_fr=0
+deactivate_fr=1
 deactivate_us=1
+deactivate_fr_tcg=0
+deactivate_us_tcg=0
 
 function gg {
   if [ "$#" -eq 4 ]
@@ -44,7 +46,7 @@ function gg {
     fi
     echo "downloading $1$web/$x.jpg"
     
-    wget --timeout=15 -q $1$web/$x.jpg -O $folder/$3\_$x$suffix.jpg
+    wget --timeout=15 -q $1$web/$x.jpg -O $folder/$3\_$x$suffix.png
     if [ $? -gt 0 ]
       then
      
@@ -52,28 +54,107 @@ function gg {
         then
 
         echo "downloading $1/$x.jpg error try without HD"
-        wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.jpg
+        wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.png
         if [ $? -gt 0 ]
           then
-          echo "redownloading $1/$x.jpg"
-          rm $folder/$3\_$x$suffix.jpg
-          wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.jpg
+          echo "redownloading $1/$x.png"
+          rm $folder/$3\_$x$suffix.png
+          wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.png
           if [ $? -gt 0 ]
             then
-            rm $folder/$3\_$x$suffix.jpg
-            #cp nocard.jpeg $folder/$3\_$x$suffix.jpg
+            rm $folder/$3\_$x$suffix.png
+            #cp nocard.jpeg $folder/$3\_$x$suffix.png
           fi
 
         fi
       else
 
-        echo "redownloading $1/$x.jpg"
-        rm $folder/$3\_$x$suffix.jpg
-        wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.jpg
+        echo "redownloading $1/$x.png"
+        rm $folder/$3\_$x$suffix.png
+        wget --timeout=15 -q $1/$x.jpg -O $folder/$3\_$x$suffix.png
         if [ $? -gt 0 ]
           then
-          rm $folder/$3\_$x$suffix.jpg
-          #cp nocard.jpeg card_images/$3/$3\_$x$suffix.jpg
+          rm $folder/$3\_$x$suffix.png
+          #cp nocard.jpeg card_images/$3/$3\_$x$suffix.png
+        fi
+
+
+      fi
+
+    fi
+    let x=$x+1
+  done
+  zip -r $3$suffix.zip $pfolder
+  rm -r $3
+}
+
+function ggTCG {
+  if [ "$#" -ge 4 ]
+    then
+    if [ $deactivate_us_tcg -eq 1 ]
+      then
+      return
+    fi
+  elif [ $deactivate_fr_tcg -eq 1 ]
+    then
+    return
+  fi
+
+  let x=1
+  mkdir -p $3
+  pfolder=$3$suffix/card_images
+  folder=$pfolder/$3
+
+  if [ "$#" -ge 4 ]
+    then
+    suffix=\_$4
+    pfolder=$3$suffix/card_images
+    folder=$pfolder/$3
+  fi
+  mkdir -p $pfolder
+  mkdir -p $folder
+  
+  while [ $x -le $2 ]
+  do
+    suffix=""
+    web=""
+    if [ "$#" -ge 4 ]
+      then
+      web=""
+      suffix=\_$4
+    fi
+    echo "downloading $1/$5_EN_$x.png"
+    
+    wget --timeout=15 -q $1$web/$5_EN_$x.png -O $folder/$3\_$x$suffix.png
+    if [ $? -gt 0 ]
+      then
+     
+      if [ "$#" -ne 4 ]
+        then
+
+        echo "downloading $1/$x.png error try without HD"
+        wget --timeout=15 -q $1/$5_EN_$x.png -O $folder/$3\_$x$suffix.png
+        if [ $? -gt 0 ]
+          then
+          echo "redownloading $1/$x.png"
+          rm $folder/$3\_$x$suffix.png
+          wget --timeout=15 -q $1/$5_EN_$x.png -O $folder/$3\_$x$suffix.png
+          if [ $? -gt 0 ]
+            then
+            rm $folder/$3\_$x$suffix.png
+            #cp nocard.jpeg $folder/$3\_$x$suffix.png
+          fi
+
+        fi
+      else
+
+        echo "redownloading $1/$5_EN_$x"
+        rm $folder/$3\_$x$suffix.png
+        wget --timeout=15 -q $1/$5_EN_$x.png -O $folder/$3\_$x$suffix.png
+        if [ $? -gt 0 ]
+          then
+          rm $folder/$3\_$x$suffix.png
+          #cp nocard.jpeg card_images/$3/$3\_$x$suffix.png
         fi
 
 
@@ -87,7 +168,10 @@ function gg {
   mv $3$suffix.zip ..
   cd ..
   rm -r $3$suffix
+
 }
+
+
 
 #bas
 function bas {
@@ -341,98 +425,98 @@ function gs {
 #ul
 function ul {
   gg http://www.pokecardex.com/serie/UL 96 ul
-  gg http://69.65.41.131/card/unleashed 96 ul us
+  ggTCG http://assets3.pokemon.com/assets/cms2/img/cards/web/HGSS2 96 ul us HGSS2
 }
 
 #ud
 function ud {
   gg http://www.pokecardex.com/serie/UD 91 ud
-  gg http://69.65.41.131/card/undaunted/ 91 ud us
+  ggTCG http://assets1.pokemon.com/assets/cms2/img/cards/web/HGSS3 91 ud us HGSS3
 }
 
 #tm
 function tm {
   gg http://www.pokecardex.com/serie/TM 103 tm
-  gg http://69.65.41.131/card/triumphant 103 tm us
+  ggTCG http://assets7.pokemon.com/assets/cms2/img/cards/web/HGSS4 103 tm us HGSS4
 }
 
 #cl
 function cl {
-  gg http://www.pokecardex.com/serie/CL 106 cl
+  ggTCG http://assets19.pokemon.com/assets/cms2/img/cards/web/COL1 106 cl us COL1
 }
 
 #blw
 function blw {
   gg http://www.pokecardex.com/serie/BW 115 blw
-  gg http://69.65.41.131/card/blackwhite 115 blw us
+  ggTCG http://assets8.pokemon.com/assets/cms2/img/cards/web/BW1 115 blw us BW1
 }
 
 #ep
 function ep {
   gg http://www.pokecardex.com/serie/EP 98 ep
-  gg http://69.65.41.131/card/emergingpowers 98 ep us
+  ggTCG http://assets15.pokemon.com/assets/cms2/img/cards/web/BW2 98 ep us BW2
 }
 
 #nv
 function nv {
   gg http://www.pokecardex.com/serie/NV 101 nv
-  gg http://69.65.41.131/card/noblevictories 101 nv us
+  ggTCG http://assets16.pokemon.com/assets/cms2/img/cards/web/BW3 101 nv us BW3
 }
 
 #nd
 function nd {
   gg http://www.pokecardex.com/serie/ND 99 nd
-  gg http://69.65.41.131/card/nextdestinies 99 nd us
+  ggTCG http://assets18.pokemon.com/assets/cms2/img/cards/web/BW4 99 nd us BW4
 }
 
 #de
 function de {
   gg http://www.pokecardex.com/serie/DEX 108 de
-  gg http://69.65.41.131/card/darkexplorers 108 de us
+  ggTCG http://assets18.pokemon.com/assets/cms2/img/cards/web/BW5 108 de us BW5
 }
 
 #dre
 function dre {
   gg http://www.pokecardex.com/serie/DRX 124 dre
-  gg http://69.65.41.131/card/dragonsexalted 124 dre us
+  ggTCG http://assets25.pokemon.com/assets/cms2/img/cards/web/BW6 124 dre us BW6
 }
 
 #bc
 function bc {
   gg http://www.pokecardex.com/serie/BCR 149 bc
-  gg http://69.65.41.131/card/boundariescrossed 149 bc us
+  ggTCG http://assets19.pokemon.com/assets/cms2/img/cards/web/BW7 149 bc us BW7
 }
 
 #ps
 function ps {
   gg http://www.pokecardex.com/serie/PLS 135 ps
-  gg http://69.65.41.131/card/plasmastorm 135 ps us
+  ggTCG http://assets24.pokemon.com/assets/cms2/img/cards/web/BW8 135 ps us BW8
 }
 
 #pf
 function pf {
   gg http://www.pokecardex.com/serie/PLF 116 pf
-  gg http://69.65.41.131/card/plasmafreeze 116 pf us
+  ggTCG http://assets2.pokemon.com/assets/cms2/img/cards/web/BW9 116 pf us BW9
 }
 
 #pb
 function pb {
   #TODO fr values
   gg http://www.pokecardex.com/serie/PLB 101 pb
-  gg http://69.65.41.131/card/plasmablast 101 pb us
+  ggTCG http://assets12.pokemon.com/assets/cms2/img/cards/web/BW10 101 pb us BW10
 }
 
 #plt
 function plt {
   #TODO fr values
   gg http://www.pokecardex.com/serie/LTR 113 plt
-  gg http://69.65.41.131/card/legendarytreasures 113 plt us
+  ggTCG http://assets6.pokemon.com/assets/cms2/img/cards/web/BW11 113 plt us BW11
 }
 
 #xy
 function xy {
   gg http://www.pokecardex.com/serie/XY 146 xy
-  gg http://69.65.41.131/card/xy 146 xy us
+  ggTCG http://assets11.pokemon.com/assets/cms2/img/cards/web/XY1 146 xy us XY1
 }
 
 
@@ -448,7 +532,7 @@ function part1 {
   exp
   aqu
 }
-#part1
+#part1 &
 
 function part2 {
   sky
@@ -489,27 +573,29 @@ function part4 {
   pl2
   pl3
   pl4
+  echo "finished part 4"
 }
 part4
 
 function part5 {
-  gs
-  ul
-  ud
-  tm
-  cl
-  blw
-  ep
-  nv
-  nd
-  de
-  dre
-  bc
-  ps
+  #gs
+  #ul
+  #ud
+  #tm
+  #cl
+  #blw
+  #ep
+  #nv
+  #nd
+  #de
+  #dre
+  #bc
+  #ps
   pf
   pb
   plt
   xy
+  echo "finished part 5"
 }
 part5
 
