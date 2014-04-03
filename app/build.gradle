@@ -16,16 +16,16 @@ apply plugin: 'android'
 
     signingConfigs {
         debug {
-            storeFile file($PATH)
-            storePassword $MDP
+            storeFile file(PATH)
+            storePassword MDP
             keyAlias "codlab"
-            keyPassword $MDP
+            keyPassword MDP
         }
         release {
-            storeFile file($PATH)
-            storePassword $MDP
+            storeFile file(PATH)
+            storePassword MDP
             keyAlias "codlab"
-            keyPassword $MDP
+            keyPassword MDP
         }
     }
 
