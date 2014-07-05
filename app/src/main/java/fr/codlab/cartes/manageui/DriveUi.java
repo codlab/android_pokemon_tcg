@@ -57,7 +57,7 @@ public class DriveUi {
     private static String CLIENT_ID = "598776849679.apps.googleusercontent.com";
     private static String CLIENT_SECRET = "K1gsxvuAK4GJzNl5v0wB1zs6";
 
-    private static String REDIRECT_URI = "http://localhoststl";//"urn:ietf:wg:oauth:2.0:oob";
+    private static String REDIRECT_URI = "http://localhost";//"urn:ietf:wg:oauth:2.0:oob";
 
     private Context c = null;
     private Activity _activity_main;

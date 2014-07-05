@@ -73,7 +73,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     private InformationScreenFragment _main;
 
     private InformationScreenFragment getMain() {
-        if (_main == null) _main = new InformationScreenFragment(this);
+        if (_main == null) _main = InformationScreenFragment.createInstance(this);
         return _main;
     }
 
@@ -847,7 +847,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             if (_magikarp == null || !_magikarp.isVisible()) {
                 //Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
                 FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-                _magikarp = new MagikarpFragment(this);
+                _magikarp = MagikarpFragment.createInstance(this);
                 //xact.show(_extension);
                 //xact.replace(R.id.extension_fragment, _extension, nom);
                 xact.replace(R.id.extension_fragment, _magikarp, "Drive");
@@ -907,7 +907,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             if (_extension == null || !_extension.isVisible()) {
                 //Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
                 FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-                _extension = new ExtensionFragment(this, nom, id, intitule);
+                _extension = ExtensionFragment.createInstance(this, nom, id, intitule);
                 //xact.show(_extension);
                 //xact.replace(R.id.extension_fragment, _extension, nom);
                 xact.replace(R.id.extension_fragment, _extension, "Extensions");

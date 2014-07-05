@@ -34,7 +34,6 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/custom"
-        android:debuggable="false"
         android:hardwareAccelerated="true"
         android:name=".TCGApplication"
         android:largeHeap="true">

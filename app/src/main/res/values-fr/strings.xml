@@ -98,6 +98,16 @@
     <string name="ok">Ok</string>
     <string name="cancel">Annuler</string>
 
+    <string name="connect_magikarp_unlocked">Magikarp is now waiting for you !</string>
+    <string name="connect_magikarp_activating">activating Magikarp...</string>
+    <string name="connect_magikarp">Unlock Magikarp for your BW / BW2 games</string>
+    <string name="connect">Download your free Magikarp on the Black/White 1/2 GTS (the NDS/3DS and this device must be on the same Wifi network!)</string>
+    <string name="connect_button">Activate it!</string>
+    <string name="connect1">In order to retrieve your Magikarp, go to the Nintendo DS Wifi Connexion settings. On a 3DS, you must be on this screen and NOT the 3DS Connexion since the games are using the NDS Wifi and not the 3DS one.</string>
+    <string name="connect2">Click on the Wifi Connexion you are currently using (note that if you have multiple Wifi Connexion saved on your NDS/3DS, you only need to changed the one you are using to connect on to internet.</string>
+    <string name="connect4">Now deactivate the auto dns configuration. You need to set the value of the first rown to 94.125.160.65. And click on save. You can try to test the Connection with Internet now. If you have set this DNS value, it will be ok. Now Click on the previous button to activate the Magikarp on the GTS for your network ; go to the GTS from your Black/White 1 or 2 and it will be downloaded to your Game, ready to be transfered to X/Y ! </string>
+    <string name="connect5">This Magikarp is free, will never be sold, is legit (but yeah... cloned...) - I really like him so please be gentle with him :)</string>
+
     <string name="drive_get">Sync avec Google Drive</string>
     <string name="drive_blackberry">Vous utilisez actuellement la version Android de l\'application qui a été portée sur votre blackberryEn raison d\'un conflit entre les WebView et le clavvier Logiciel de votre terminal, veuillez indiquer ci-après vos informations de connexion afin que l\'application puisse directement les copier dans le contenu de la page d\'Authentification de Google.</string>
     <string name="drive_blackberry_email">Votre Email</string>

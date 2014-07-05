@@ -42,10 +42,11 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
             _factorise = new ExtensionUi(this.getSherlockActivity());
     }
 
-    public ExtensionFragment(IExtensionMaster parent, String name, int id, String intitule) {
-        this();
-        _parent = parent;
-        define(name, id, intitule);
+    public static ExtensionFragment createInstance(IExtensionMaster parent, String name, int id, String intitule) {
+        ExtensionFragment frag = new ExtensionFragment();
+        frag._parent = parent;
+        frag.define(name, id, intitule);
+        return frag;
     }
 
     private void define(String name, int id, String intitule) {

@@ -30,9 +30,10 @@ final public class InformationScreenFragment extends SherlockFragment implements
 
 	}
 
-	public InformationScreenFragment(IExtensionMaster master){
-		this();
-		_master = master;
+	public static InformationScreenFragment createInstance(IExtensionMaster master){
+        InformationScreenFragment frag = new InformationScreenFragment();
+		frag._master = master;
+        return frag;
 	}
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

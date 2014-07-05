@@ -27,8 +27,8 @@ final public class MagikarpFragment extends SherlockFragment {
 		super();
 	}
 
-	public MagikarpFragment(IExtensionMaster parent){
-		this();
+	public static MagikarpFragment createInstance(IExtensionMaster parent){
+        return new MagikarpFragment();
 	}
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
