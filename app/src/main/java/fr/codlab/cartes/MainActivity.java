@@ -202,7 +202,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     @Override
     public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
         if(Platform.isBlackberry())return;
-        if (result.isFailure() || result == null || inventory == null ||
+        if (result == null || result.isFailure() || inventory == null ||
                 inventory.getSkuDetails("don1") == null || inventory.getSkuDetails("don2") == null) {
             return;
         }
@@ -256,7 +256,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     /**
      * / PLAYSTORE PART
      */
-    public static final int MAX = 60;
+    public static final int MAX = 61;
     private ArrayList<Extension> _arrayExtension;
     public final static String PREFS = "_CODLABCARTES_";
     public final static String USE = "DISPLAY";
@@ -795,7 +795,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             if (_drive == null || !_drive.isVisible()) {
                 //Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
                 FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-                _drive = new DriveUiFragment(this);
+                _drive = DriveUiFragment.createInstance(this);
                 //xact.show(_extension);
                 //xact.replace(R.id.extension_fragment, _extension, nom);
                 xact.replace(R.id.extension_fragment, _drive, "Drive");

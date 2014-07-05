@@ -2,38 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/list_item_background"
-    android:cacheColorHint="#00000000"
-    android:orientation="horizontal" >
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:scaleType="fitEnd"
-        android:src="@drawable/tcgo" />
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/default_middle_margin">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/card_with_shadows_selector"
         android:cacheColorHint="#00000000"
-        android:orientation="vertical" >
+        android:orientation="horizontal"
+        android:padding="@dimen/default_inner_padding">
 
-        <fr.codlab.cartes.widget.RobotoTextview
-            typeface="regular"
-            android:id="@+id/managetcgo"
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tcgo" />
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:text="@string/managetcgo"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+            android:cacheColorHint="#00000000"
+            android:orientation="vertical">
 
-        <fr.codlab.cartes.widget.RobotoTextview
-            typeface="thin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:text="@string/managetcgolittle" />
+            <fr.codlab.cartes.widget.RobotoTextview
+                android:id="@+id/managetcgo"
+                typeface="regular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/managetcgo"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <fr.codlab.cartes.widget.RobotoTextview
+                typeface="thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/managetcgolittle" />
+        </LinearLayout>
+
     </LinearLayout>
-
 </LinearLayout>

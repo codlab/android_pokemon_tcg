@@ -57,47 +57,16 @@ public class DriveUi {
     private static String CLIENT_ID = "598776849679.apps.googleusercontent.com";
     private static String CLIENT_SECRET = "K1gsxvuAK4GJzNl5v0wB1zs6";
 
-    private static String REDIRECT_URI = "http://localhost";//"urn:ietf:wg:oauth:2.0:oob";
+    private static String REDIRECT_URI = "http://localhoststl";//"urn:ietf:wg:oauth:2.0:oob";
 
-    private static Updater _updater = null;
     private Context c = null;
     private Activity _activity_main;
-    private static ProgressDialog _progress;
-    private IExtensionMaster _master = null;
     private View _v;
 
     GoogleAuthorizationCodeFlow flow;
     HttpTransport httpTransport = new NetHttpTransport();
     JsonFactory jsonFactory = new JacksonFactory();
 
-    //load
-    //  if no token
-    //    show ability to connect
-    //  else
-    //    if last time > 5minutes from now
-    //      send event on token with the token
-    //
-    //on button connect click
-    //  navigate
-    //  if landingpage contains localhost and code
-    //    close
-    //    send event on token
-    //  on close click
-    //    close
-    //
-    //on token
-    //  save token
-    //  show message waiting
-    //  sync
-    //  on sync error
-    //    show error message
-    //    show button
-    //    delete token error
-    //  ok
-    //    show sync ok
-    //    set message waiting to synced with date
-    //    save database
-    //
     private GoogleCredential getGoogleCredential() {
         GoogleCredential credential = new GoogleCredential();
         credential.setAccessToken(_activity_main.getSharedPreferences("token", 0).getString("setAccessToken", null));
@@ -442,8 +411,6 @@ public class DriveUi {
     private long sync() {
         try {
             final GoogleCredential credential = getGoogleCredential();
-            //TODO implement sync file
-            //Create a new authorized API client
             Drive service = new Drive.Builder(httpTransport, jsonFactory, credential).build();
 
             FileList list = service.files().list().setQ("title=\'pokemon_tcg.db\'").execute();
@@ -476,13 +443,11 @@ public class DriveUi {
                 .setApprovalPrompt("auto").build();
     }
 
-    public DriveUi(Activity activity_main, IExtensionMaster master, View v) {
+    public DriveUi(Activity activity_main, View v) {
         this();
         _activity_main = activity_main;
-        _master = master;
         c = v.getContext();
         implement(v);
-        _progress = null;
         setThis();
     }
 

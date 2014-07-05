@@ -1,15 +1,13 @@
-
-
 apply plugin: 'android'
 
     android {
         compileSdkVersion 19
-        buildToolsVersion "19.0.1"
+        buildToolsVersion "20"
 
         defaultConfig {
             minSdkVersion 7
             targetSdkVersion 19
-            versionCode getVersionCode()
+            versionCode getDefinedVersionCode()
             versionName getDefinedVersionName()
         }
 
@@ -29,6 +27,15 @@ apply plugin: 'android'
         }
     }
 
+    productFlavors {
+        blackberry{
+            signingConfig signingConfigs.release
+        }
+        kitkat{
+            signingConfig signingConfigs.release
+        }
+    }
+
     buildTypes {
         release {
             runProguard false
@@ -37,10 +44,10 @@ apply plugin: 'android'
     }
 
     lintOptions {
-        checkReleaseBuilds false
+        //checkReleaseBuilds false
         // Or, if you prefer, you can continue to check for errors in release builds,
         // but continue the build even when errors are found:
-        abortOnError false
+        //abortOnError false
     }
 
     packagingOptions {

@@ -32,11 +32,11 @@
     <string name="pv">PV</string>
     <string name="collection">collection : </string>
     <string name="extposses">cartes possédées : </string>
-    <string name="download">DL FR</string>
-    <string name="downloadus">DL EN</string>
-    <string name="downloades">DL SP</string>
-    <string name="downloadit">DL IT</string>
-    <string name="downloadde">DL ALL</string>
+    <string name="download">Téléc. images (FR)</string>
+    <string name="downloadus">Téléc. images (EN)</string>
+    <string name="downloades">Téléc. images (SP)</string>
+    <string name="downloadit">Téléc. images (IT)</string>
+    <string name="downloadde">Téléc. ttes les images</string>
     <string name="cardfr">Util. FR</string>
     <string name="cardus">Util. AN</string>
     <string name="cardes">Util. ES</string>

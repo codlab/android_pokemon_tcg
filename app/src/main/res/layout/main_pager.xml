@@ -12,16 +12,17 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:background="@color/area_white"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:padding="@dimen/default_margin"
+                android:background="@drawable/card_with_shadow"
                 android:orientation="vertical">
 
                 <fr.codlab.cartes.widget.RobotoTextview
@@ -55,9 +56,9 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:background="@color/area_white"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:padding="@dimen/default_margin"
+                android:background="@drawable/card_with_shadow"
                 android:orientation="vertical">
 
                 <fr.codlab.cartes.widget.RobotoTextview
@@ -72,9 +73,9 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp"
-                android:background="@color/area_white"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:padding="@dimen/default_margin"
+                android:background="@drawable/card_with_shadow"
                 android:orientation="vertical">
 
                 <fr.codlab.cartes.widget.RobotoTextview

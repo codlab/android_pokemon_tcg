@@ -8,11 +8,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent" android:layout_height="wrap_content"
-        android:background="@color/list_header_background"
-        android:paddingTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:paddingBottom="5dp">
+        android:background="@drawable/card_with_shadow"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_margin">
 
         <fr.codlab.cartes.widget.RobotoTextview
             typeface="regular"
@@ -27,10 +25,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent" android:layout_height="wrap_content"
-        android:background="@color/list_header_background"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_with_shadow"
+        android:padding="@dimen/default_middle_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
         android:layout_marginRight="10dp">
         <LinearLayout
             android:layout_width="fill_parent"
@@ -71,8 +69,8 @@
         android:layout_weight="1"
         android:cacheColorHint="#00000000"
         android:fastScrollEnabled="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"/>
 
     <include layout="@layout/ads" />
 </LinearLayout>

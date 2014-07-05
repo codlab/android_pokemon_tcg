@@ -4,8 +4,8 @@ rm -rf card_images
 
 mkdir card_images
 
-deactivate_fr=0
-deactivate_us=1
+deactivate_fr=1
+deactivate_us=0
 
 function gg {
   if [ "$#" -eq 4 ]
@@ -435,6 +435,12 @@ function xy {
   gg http://69.65.41.131/card/xy 146 xy us
 }
 
+#xyff
+function xyff {
+  gg http://www.pokecardex.com/serie/FLF 109 xyff
+  gg http://www.serebii.net/card/flashfire 109 xyff us
+}
+
 
 function part1 {
   bas
@@ -462,7 +468,7 @@ function part2 {
   trr
   lo
 }
-part2
+#part2
 
 function part3 {
   dxs
@@ -476,7 +482,7 @@ function part3 {
   gdp
   dp7
 }
-part3
+#part3
 
 function part4 {
   dp6
@@ -490,7 +496,7 @@ function part4 {
   pl3
   pl4
 }
-part4
+#part4
 
 function part5 {
   gs
@@ -511,7 +517,12 @@ function part5 {
   plt
   xy
 }
-part5
+#part5
+
+function part6 {
+ xyff
+}
+part6
 
 #downloading values
 #}

@@ -1,13 +1,10 @@
 package fr.codlab.cartes.fragments;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
@@ -26,15 +23,16 @@ final public class DriveUiFragment extends SherlockFragment implements OnPageCha
 
 	}
 
-	public DriveUiFragment(IExtensionMaster master){
-		this();
-		_master = master;
+	public static DriveUiFragment createInstance(IExtensionMaster master){
+        DriveUiFragment frag = new DriveUiFragment();
+		frag._master = master;
+        return frag;
 	}
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View mainView = inflater.inflate(R.layout.main_drive, container, false);
 
-        DriveUi t = new DriveUi(getActivity(), _master, mainView);
+        DriveUi t = new DriveUi(getActivity(), mainView);
 
         this.setHasOptionsMenu(false);
 

@@ -57,6 +57,7 @@
   <extension nom="BW Explosion Plasma" nb="105" id="57" intitule="pb"></extension>
   <extension nom="BW Legendary Treasures" nb="140" id="58" intitule="plt"></extension>
     <extension nom="XY" nb="146" id="59" intitule="xy"></extension>
+    <extension id="60" intitule="xyff" nb="109" nom="XY Etincelles"></extension>
   <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
   <pextension nom="Promos Pokémon USA" id="991"></pextension>
   <pextension nom="POP Série 1" id="993" intitule="pop1"></pextension>

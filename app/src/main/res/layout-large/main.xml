@@ -13,7 +13,7 @@
     </fragment>
     <FrameLayout
         android:id="@+id/extension_fragment"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_weight="1">
 </FrameLayout>

@@ -487,7 +487,7 @@ function part2 {
   trr
   lo
 }
-part2
+#part2
 
 function part3 {
   dxs
@@ -501,7 +501,7 @@ function part3 {
   gdp
   dp7
 }
-part3
+#part3
 
 function part4 {
   dp6
@@ -516,7 +516,7 @@ function part4 {
   pl4
   echo "finished part 4"
 }
-part4
+#part4
 
 function part5 {
   #gs
@@ -538,7 +538,9 @@ function part5 {
   xy
   echo "finished part 5"
 }
-part5
+#part5
+
+
 
 #downloading values
 #}

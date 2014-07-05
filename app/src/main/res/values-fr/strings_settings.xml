@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extension_image">Images</string>
+    <string name="quality_title">Qualité des images du listing d\'une extension</string>
+
+    <string name="quality_default">50</string>
+    <string name="quality_message">Choisissez la qualité par défaut. Une valeur trop importante peut affecter les performances.</string>
+
+    <string name="delete_summary">Effacer toutes les cartes présentes sur la carte sd</string>
+    <string name="delete_title">Effacer les données présentes sur la carte sd</string>
+
+
+    <string name="extension_use">Langue du listing d\'une extensions</string>
+    <string name="use_title">Language par défaut du mode édition rapide</string>
+    <string-array name="use_entries">
+        <item>Anglais</item>
+        <item>Francais</item>
+        <item>Allemand</item>
+        <item>Espagnol</item>
+        <item>Italien</item>
+    </string-array>
+    <string-array name="use_values">
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>sp</item>
+        <item>it</item>
+    </string-array>
+    <string name="use_default">en</string>
+
+    <string name="settings">Paramètres</string>
+</resources>

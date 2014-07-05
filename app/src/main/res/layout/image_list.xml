@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/list_item_background"
+    android:background="@drawable/card_with_shadows_selector"
     android:cacheColorHint="#00000000"
     android:orientation="horizontal"
     android:paddingBottom="10dp" >
@@ -27,7 +27,6 @@
             android:id="@+id/carte"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/list_item_title_background"
             android:textColor="#000000"
             android:textSize="18dp"
             android:textStyle="bold"

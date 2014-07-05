@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
-            android:background="@color/area_white"
+            android:background="@drawable/card_with_shadow"
             android:orientation="vertical">
             <ImageView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
-            android:background="@color/area_white"
+            android:background="@drawable/card_with_shadow"
             android:orientation="vertical">
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
-            android:background="@color/area_white"
+            android:background="@drawable/card_with_shadow"
             android:orientation="vertical">
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"

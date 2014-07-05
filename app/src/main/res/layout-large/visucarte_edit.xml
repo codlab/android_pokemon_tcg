@@ -2,12 +2,15 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingTop="@dimen/default_margin">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -15,7 +18,8 @@
             android:orientation="vertical"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:background="@drawable/bordpatch" >
+            android:background="@drawable/card_with_shadow"
+            android:layout_marginBottom="@dimen/default_middle_margin">
 
             <fr.codlab.cartes.widget.RobotoTextview
                 android:layout_width="fill_parent"
@@ -206,7 +210,9 @@
             android:orientation="vertical"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:background="@drawable/bordpatch"  >
+            android:background="@drawable/card_with_shadow"
+            android:layout_marginTop="@dimen/default_middle_margin"
+            android:layout_marginBottom="@dimen/default_middle_margin">
 
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"
@@ -396,7 +402,9 @@
             android:orientation="vertical"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:background="@drawable/bordpatch"  >
+            android:background="@drawable/card_with_shadow"
+            android:layout_marginTop="@dimen/default_middle_margin"
+            android:layout_marginBottom="@dimen/default_middle_margin"  >
 
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"
@@ -586,7 +594,8 @@
             android:orientation="vertical"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:background="@drawable/bordpatch"  >
+            android:background="@drawable/card_with_shadow"
+            android:layout_marginBottom="@dimen/default_middle_margin"  >
 
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"
@@ -775,7 +784,9 @@
             android:orientation="vertical"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"
-            android:background="@drawable/bordpatch"  >
+            android:layout_marginTop="@dimen/default_middle_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@drawable/card_with_shadow"  >
 
             <fr.codlab.cartes.widget.RobotoTextview
                 typeface="thin"

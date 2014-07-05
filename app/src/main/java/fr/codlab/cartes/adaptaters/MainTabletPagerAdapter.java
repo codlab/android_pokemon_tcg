@@ -72,7 +72,7 @@ implements TitleProvider{
         }else if(position == 1){
             v = inflater.inflate(R.layout.main_drive, null);
             @SuppressWarnings("unused")
-            DriveUi t = new DriveUi(_activity_main.getActivity(), _master, v);
+            DriveUi t = new DriveUi(_activity_main.getActivity(), v);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
 			@SuppressWarnings("unused")

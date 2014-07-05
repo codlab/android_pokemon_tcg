@@ -15,6 +15,13 @@
 -->
 
 <resources>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_middle_margin">8dp</dimen>
+    <dimen name="default_inner_padding">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="object_radius">2dp</dimen>
 
     <dimen name="slidingmenu_offset">200dp</dimen>
     <dimen name="list_padding">10dp</dimen>
