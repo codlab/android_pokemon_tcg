@@ -20,6 +20,7 @@ import fr.codlab.cartes.listener.IExtensionListener;
 import fr.codlab.cartes.listener.IExtensionLoadedListener;
 
 final public class Extension implements IExtensionListener {
+    private IExtensionLoadedListener _extensionloaded_listener;
     /**
      * The Set's cards
      */
@@ -62,11 +63,26 @@ final public class Extension implements IExtensionListener {
     private boolean _is_first_edition;
     private boolean _is_reverse;
 
-    private boolean _is_loaded;
+    public static enum ExtensionState {
+        UNLOADED,
+        LOADING,
+        LOADED
+    }
+
+    private ExtensionState _state;
+
+    private void setState(ExtensionState state) {
+        _state = state;
+    }
+
+    public ExtensionState getState() {
+        return _state;
+    }
 
     Extension(int id) {
         _id = id;
     }
+
     /**
      * @param principal
      * @param id
@@ -75,7 +91,7 @@ final public class Extension implements IExtensionListener {
      * @param nom
      * @param mustParseXml
      */
-     Extension(Context principal, final IExtensionLoadedListener extensionloaded_listener, int id, int nb, String intitule, String nom, boolean mustParseXml) {
+    Extension(Context principal, final IExtensionLoadedListener extensionloaded_listener, int id, int nb, String intitule, String nom, boolean mustParseXml) {
         _name = nom;
         _is_first_edition = false;
         _is_reverse = false;
@@ -83,40 +99,57 @@ final public class Extension implements IExtensionListener {
         _p = principal;
         _intitule = intitule;
         _aCartes = new ArrayList<Card>();
-         _is_loaded = false;
+        setState(ExtensionState.UNLOADED);
+
         //_ressources=Principal.extensions[_id-1];
         _ressources = principal.getResources().getIdentifier((_id < 10 ? "e0" : "e") + Integer.toString(id), "xml", "fr.codlab.cartes");
         _nb = nb;
 
-        if (mustParseXml){
-                    parseXml();
-                    //if(extensionloaded_listener != null)
-                    //    extensionloaded_listener.onExtensionLoaded(_id);
-                    _is_loaded = true;
+        _extensionloaded_listener = extensionloaded_listener;
 
-        }else{
-            if(extensionloaded_listener != null){
+        if (mustParseXml) {
+            setState(ExtensionState.LOADING);
+            parseXml();
+            //if(extensionloaded_listener != null)
+            //    extensionloaded_listener.onExtensionLoaded(_id);
+
+        } else {
+            if (extensionloaded_listener != null) {
                 extensionloaded_listener.onExtensionLoaded(_id);
-                _is_loaded = true;
             }
         }
-         if(Platform.isBlackberry())
-             updatePossessedSynced(this);
-         else
-             updatePossessed(this);
     }
 
-    public boolean isLoaded(){
-        return _is_loaded;
+    public boolean isLoading() {
+        return getState() == ExtensionState.LOADING;
     }
-    public boolean equals(Object object){
-        return object != null && object instanceof Extension && ((Extension)object)._id == _id;
+
+    public boolean equals(Object object) {
+        return object != null && object instanceof Extension && ((Extension) object)._id == _id;
     }
 
     /**
      * Parse the Set's XML file
      */
     public void parseXml() {
+        Thread t = new Thread() {
+            public void run() {
+                parseXmlThreaded();
+                if (Platform.isBlackberry())
+                    updatePossessedSynced(Extension.this);
+                else
+                    updatePossessed(Extension.this);
+
+                setState(ExtensionState.LOADED);
+                if (_extensionloaded_listener != null) {
+                    _extensionloaded_listener.onExtensionLoaded(_id);
+                }
+            }
+        };
+        t.start();
+    }
+
+    public void parseXmlThreaded() {
         FileMover.Move(Environment.getExternalStorageDirectory().getAbsolutePath(), this._intitule);
         XmlPullParser parser = _p.getResources().getXml(_ressources);
 
@@ -169,7 +202,7 @@ final public class Extension implements IExtensionListener {
                         tampon.setReverse();
                     tampon.setId(_nbCarte);
                     /*if(parser.getAttributeValue(null, "normal") != null &&
-							"true".equals(parser.getAttributeValue(null, "normal")))
+                            "true".equals(parser.getAttributeValue(null, "normal")))
 						tampon.setNormal();
 					if(parser.getAttributeValue(null, "holo") != null &&
 							"true".equals(parser.getAttributeValue(null, "holo")))
@@ -203,10 +236,10 @@ final public class Extension implements IExtensionListener {
                         }
                     if (parser.getAttributeValue(null, "pkmnid") != null)
                         //try {
-                            tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "pkmnid")));
-                        //} catch (Exception e) {
-                        //    e.printStackTrace();
-                        //}
+                        tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "pkmnid")));
+                    //} catch (Exception e) {
+                    //    e.printStackTrace();
+                    //}
                     if (parser.getAttributeValue(null, "rarete") != null)
                         tampon.setRarete(parser.getAttributeValue(null, "rarete"));
                     if (parser.getAttributeValue(null, "normal") != null &&
@@ -347,9 +380,11 @@ final public class Extension implements IExtensionListener {
 
     private class AsyncUpdatePossessed extends AsyncTask<Boolean, Boolean, Boolean> {
         private IExtensionListener _listener;
-        private AsyncUpdatePossessed(){
+
+        private AsyncUpdatePossessed() {
 
         }
+
         public AsyncUpdatePossessed(IExtensionListener listener) {
             _listener = listener;
         }
@@ -370,7 +405,7 @@ final public class Extension implements IExtensionListener {
             bdd = null;
             boolean res = avant != _possedees;
             _possedees = avant;
-            if(_listener != null)
+            if (_listener != null)
                 _listener.onUpdateFinished();
             //_p.setNbPossedeesExtensionAtIndex(_id, _possedees);
             //_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);
@@ -416,7 +451,7 @@ final public class Extension implements IExtensionListener {
         return true;
     }
 
-    public boolean updatePossessedSynced(IExtensionListener listener){
+    public boolean updatePossessedSynced(IExtensionListener listener) {
         SGBDPublic bdd = new SGBDPublic(_p);
         bdd.open();
         int avant = bdd.getPossessionExtension(_id, Language.US);
@@ -431,7 +466,7 @@ final public class Extension implements IExtensionListener {
         bdd = null;
         boolean res = avant != _possedees;
         _possedees = avant;
-        if(listener != null)
+        if (listener != null)
             listener.onUpdateFinished();
         //_p.setNbPossedeesExtensionAtIndex(_id, _possedees);
         //_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);

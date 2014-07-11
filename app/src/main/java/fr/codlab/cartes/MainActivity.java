@@ -11,6 +11,8 @@ import org.xmlpull.v1.XmlPullParserException;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 import fr.codlab.cartes.fragments.CardFragment;
@@ -101,7 +103,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void initHelper() {
-        if(Platform.isBlackberry())return;
+        if (Platform.isBlackberry()) return;
         getHelper().startSetup(new IabHelper.OnIabSetupFinishedListener() {
             public void onIabSetupFinished(final IabResult result) {
                 runOnUiThread(new Runnable() {
@@ -128,7 +130,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void createDonationDialog(boolean don1_purchased, boolean don2_purchased) {
-        if(Platform.isBlackberry())return;
+        if (Platform.isBlackberry()) return;
 
         if (don1_purchased == true && don2_purchased == true) {
             return;
@@ -186,7 +188,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
     }
 
     public void onPlaystoreOK() {
-        if(Platform.isBlackberry())return;
+        if (Platform.isBlackberry()) return;
         try {
             List additionalSkuList = new ArrayList();
             additionalSkuList.add("don1");
@@ -201,7 +203,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
-        if(Platform.isBlackberry())return;
+        if (Platform.isBlackberry()) return;
         if (result == null || result.isFailure() || inventory == null ||
                 inventory.getSkuDetails("don1") == null || inventory.getSkuDetails("don2") == null) {
             return;
@@ -229,7 +231,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onIabPurchaseFinished(final IabResult result, final Purchase info) {
-        if(Platform.isBlackberry())return;
+        if (Platform.isBlackberry()) return;
         runOnUiThread(new Runnable() {
             public void run() {
                 if (result.isFailure()) {
@@ -302,6 +304,10 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        _tmp_intitule = null;
+        _tmp_name = null;
+        _tmp_id = -1;
+
         _random = new Random();
         super.onCreate(savedInstanceState);
 
@@ -496,7 +502,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                             }
 
                             if ((extension != null) && (id > 0 && id < MAX)) {
-                                _arrayExtension.add(ExtensionManager.getExtension(MainActivity.this, null, id, nb, intitule, extension, false));
+                                _arrayExtension.add(ExtensionManager.getExtension(MainActivity.this, MainActivity.this, id, nb, intitule, extension, true));
                             }
                         }
                     }
@@ -516,32 +522,48 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
 
     private View _last_view;
+
     public void setListExtension(View v) {
-        if(v != null) {
+        if (v != null) {
             _last_view = v;
         }
     }
 
     public void onExtensionLoaded(final int id) {
-        if (_last_view != null) {
+        Log.d("MainActivity", "onExtensionLoaded(" + id + ")");
+        if (id >= 0 && _tmp_intitule != null && _tmp_id >= 0 && _tmp_name != null && id == _tmp_id) {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if (_last_view != null && _arrayExtension != null) {
-                        _adapter = new PrincipalExtensionAdapter(MainActivity.this, _arrayExtension);
-                        ListView _list = (ListView) _last_view.findViewById(R.id.principal_extensions);
-
-                        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
-                        swingBottomInAnimationAdapter.setInitialDelayMillis(300);
-                        swingBottomInAnimationAdapter.setAbsListView(_list);
-
-                        _list.setAdapter(swingBottomInAnimationAdapter);
+                    if (_tmp_intitule != null && _tmp_id >= 0 && _tmp_name != null) {
+                        onClick(_tmp_name, _tmp_id, _tmp_intitule);
+                        _tmp_intitule = null;
+                        _tmp_name = null;
+                        _tmp_id = -1;
                     }
-                    //_adapter.setDataExtension(_arrayExtension);
-                    //_adapter.notifyDataSetChanged();
-                    //_adapter.onExtensionLoaded(id);
                 }
             });
+        } else if(id < 0) {
+            if (_last_view != null) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (_last_view != null && _arrayExtension != null) {
+                            _adapter = new PrincipalExtensionAdapter(MainActivity.this, _arrayExtension);
+                            ListView _list = (ListView) _last_view.findViewById(R.id.principal_extensions);
+
+                            SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(_adapter);
+                            swingBottomInAnimationAdapter.setInitialDelayMillis(300);
+                            swingBottomInAnimationAdapter.setAbsListView(_list);
+
+                            _list.setAdapter(swingBottomInAnimationAdapter);
+                        }
+                        //_adapter.setDataExtension(_arrayExtension);
+                        //_adapter.notifyDataSetChanged();
+                        //_adapter.onExtensionLoaded(id);
+                    }
+                });
+            }
         }
     }
 
@@ -858,10 +880,19 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         }
     }
 
+
+    private String _tmp_name;
+    private int _tmp_id;
+    private String _tmp_intitule;
+
     public void onClick(String nom,
                         int id,
                         String intitule) {
-        if (ExtensionManager.isLoaded(id) == false) {
+        if (ExtensionManager.isLoading(id)) {
+            _tmp_name = nom;
+            _tmp_id = id;
+            _tmp_intitule = intitule;
+            Crouton.makeText(this, R.string.set_still_loading, Style.INFO).show();
             return;
         }
         Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);

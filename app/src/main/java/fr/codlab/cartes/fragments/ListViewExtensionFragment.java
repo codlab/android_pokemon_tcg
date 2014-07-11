@@ -85,7 +85,6 @@ final public class ListViewExtensionFragment extends SherlockFragment implements
             _default_height = _header != null ? _header.getHeight() : 0;
         }
 
-        Log.d("onScroll","erer");
         if(_liste != null && _liste.getCount() > 0 && _liste.getChildAt(0) != null && firstVisibleItem == 0 && _default_height > 0){
 
             int top_value = _liste.getChildAt(0).getTop()/2;
@@ -94,9 +93,7 @@ final public class ListViewExtensionFragment extends SherlockFragment implements
 
             _header.setAlpha(1 - (float) (-top_value*2.0/(_default_height)));
             _header.setTop(_default_top+top_value);
-            Log.d("onScroll", "actual " + (1 - (-top_value * 1.0 / (_default_height))) + " " + _default_height + " " + _default_top + " " + (_default_top + top_value));
         }else if(_liste != null && _header != null && _liste.getCount() > 0){
-            Log.d("onScroll", "!ctual " + _default_top+" "+_default_height);
             _header.setTop(_default_top - _default_height);
         }
     }

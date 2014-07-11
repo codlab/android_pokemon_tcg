@@ -37,11 +37,11 @@ public class ExtensionManager {
             return tmp;
         }
     }
-    public static synchronized boolean isLoaded(int id){
+    public static synchronized boolean isLoading(int id){
         if (getExtension().contains(new Extension(id))) {
             int idx = getExtension().indexOf(new Extension(id));
             Log.d("IndexOf",idx+"");
-            return getExtension().get(idx).isLoaded();
+            return getExtension().get(idx).isLoading();
         }
         return false;
     }

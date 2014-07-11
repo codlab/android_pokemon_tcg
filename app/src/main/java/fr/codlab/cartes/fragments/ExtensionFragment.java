@@ -219,7 +219,6 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
         }
         _header.setVisibility(View.VISIBLE);
 
-        Log.d("onScroll2"," "+firstVisibleItem);
         if (_liste.getCount() > 0 && firstVisibleItem == 0 && _default_height > 0) {
 
             _header.setVisibility(View.VISIBLE);
@@ -229,7 +228,6 @@ final public class ExtensionFragment extends SherlockFragment implements IExtens
 
             _header.setAlpha(1 - (float) (-top_value * 2.0 / (_default_height)));
             _header.setTop(_default_top + top_value);
-            Log.d("onScroll", "actual " + (1 - (-top_value * 1.0 / (_default_height))) + " " + _default_height + " " + _default_top + " " + (_default_top + top_value));
         } else if (_liste.getCount() > 0) {
             _header.setTop(_default_top - _default_height);
 

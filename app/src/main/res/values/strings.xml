@@ -108,6 +108,9 @@
     <string name="connect4">Now deactivate the auto dns configuration. You need to set the value of the first rown to 94.125.160.65. And click on save. You can try to test the Connection with Internet now. If you have set this DNS value, it will be ok. Now Click on the previous button to activate the Magikarp on the GTS for your network ; go to the GTS from your Black/White 1 or 2 and it will be downloaded to your Game, ready to be transfered to X/Y ! </string>
     <string name="connect5">This Magikarp is free, will never be sold, is legit (but yeah... cloned...) - I really like him so please be gentle with him :)</string>
 
+    <string name="set_still_loading">Extension set still loading... The page will be launched when finished!</string>
+
+
     <string name="drive_get">Sync with Google Drive</string>
     <string name="drive_blackberry">You are currently using the Android ported app to Blackberry. Due to an issue with the opening webview and the soft keyboard of your device, please enter here your login info. THese will be copied in the login page from the Google Authentication Page.</string>
     <string name="drive_blackberry_email">Your Email</string>
