@@ -1,5 +1,7 @@
 package fr.codlab.cartes.util;
 
+import fr.codlab.cartes.BuildConfig;
+
 /**
  * Created by kevinleperf on 24/03/2014.
  */
@@ -24,6 +26,6 @@ public class Platform {
     }
 
     public static boolean isBlackberry(){
-        return getPlatform() == BLACKBERRY;
+        return getPlatform() == BLACKBERRY || BuildConfig.PLATFORM.equals("BB");
     }
 }

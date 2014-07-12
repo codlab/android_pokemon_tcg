@@ -30,9 +30,11 @@ apply plugin: 'android'
     productFlavors {
         blackberry{
             signingConfig signingConfigs.release
+            buildConfigField "String","PLATFORM","\"BB\""
         }
         kitkat{
             signingConfig signingConfigs.release
+            buildConfigField "String","PLATFORM","\"ANDROID\""
         }
     }
 

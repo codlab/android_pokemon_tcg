@@ -1,4 +1,4 @@
-<extension nb="108">
+<extension nb="108" reverse="true">
 	<carte cid="1" pkmnid="1" types="plante" rarete="common"></carte>
 	<carte cid="2" pkmnid="2" types="plante" rarete="uncommon"></carte>
 	<carte cid="3" pkmnid="3" types="plante" rarete="holo"></carte>

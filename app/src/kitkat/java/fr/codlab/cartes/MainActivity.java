@@ -13,7 +13,6 @@ import com.actionbarsherlock.view.MenuItem;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
-import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 import fr.codlab.cartes.fragments.CardFragment;
 import fr.codlab.cartes.fragments.CodesFragment;
@@ -22,13 +21,11 @@ import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
 import fr.codlab.cartes.fragments.MagikarpFragment;
-import fr.codlab.cartes.listener.*;
-import fr.codlab.cartes.manageui.DriveUi;
+import fr.codlab.cartes.listener.IExtensionLoadedListener;
 import fr.codlab.cartes.redeemcode.IGetLogin;
 import fr.codlab.cartes.redeemcode.ITextCode;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.ExtensionManager;
-import fr.codlab.cartes.util.FileMover;
 import fr.codlab.cartes.util.Language;
 import fr.codlab.cartes.util.Platform;
 
@@ -37,9 +34,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -452,6 +447,26 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
         viewer.setListExtension(this);
     }
 
+    private void closePanel(){
+        if (getSlidingMenu().isSlidingEnabled()) {
+            Thread t = new Thread() {
+                public void run() {
+                    try {
+                        Thread.sleep(100);
+                    } catch (Exception e) {
+                    }
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+                            if (getSlidingMenu().isMenuShowing())
+                                toggle();
+                        }
+                    });
+                }
+            };
+            t.start();
+        }
+    }
+
     private void createExtensions() {
         if (_arrayExtension != null) {
 
@@ -584,7 +599,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (Platform.getPlatform() == Platform.ANDROID && getHelper().subscriptionsSupported()) {
+        if (!Platform.isBlackberry() && getHelper().subscriptionsSupported()) {
             MenuInflater inflater = getSupportMenuInflater();
             inflater.inflate(R.menu.principalmenu_donation, menu);
             boolean state = super.onCreateOptionsMenu(menu);
@@ -826,6 +841,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
             }
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        closePanel();
     }
 
     public void onClickMagikarp() {
@@ -948,6 +964,7 @@ public class MainActivity extends SlidingViewPagerFragmentActivity implements IE
                 _extension.setExtension(nom, id, intitule);
             }
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            closePanel();
         } else {
             Bundle objetbundle = new Bundle();
             objetbundle.putString("nom", nom);

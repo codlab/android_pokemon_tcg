@@ -10,15 +10,8 @@ import fr.codlab.cartes.util.Language;
 import fr.codlab.cartes.util.Rarity;
 import fr.codlab.cartes.views.CardImage;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.v4.util.LruCache;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;

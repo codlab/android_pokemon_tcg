@@ -1,7 +1,18 @@
-<extension nb="109">
-    <carte cid="1" types="plante"	pkmnid="10" rarete="common" />
-    <carte cid="2" types="plante"	pkmnid="11" rarete="uncommon" />
-    <carte cid="3" types="plante"	pkmnid="12" rarete="rare" />
+<extension nb="109" reverse="true">
+    <carte cid="1" types="plante"	pkmnid="10" rarete="common">
+        <attaques>
+            <attaque nom="Piqure" degats="10" types="plante" />
+        </attaques>
+        <talent nom="Evolution Adaptative" description="Ce Pokémon peut évoluer pendant votre premier tour ou pendant le tour où vous jouez."/>
+        </carte>
+    <carte cid="2" types="plante"	pkmnid="11" rarete="uncommon">
+        <attaques>
+            <attaque types="plante" nom="Armure" description="Pendant le prochain tour de votre adversaire, si ce Pokémon doit subir les dégâts d'une attaque, évitez les dégâts infligés à ce Pokémon si ces dégâts sont de 60 ou moins."></attaque>
+        </attaques>
+        <talent nom="Evolution Adaptative" description="Ce Pokémon peut évoluer pendant votre premier tour ou pendant le tour où vous jouez."/>
+    </carte>
+    <carte cid="3" types="plante"	pkmnid="12" rarete="rare">
+    </carte>
     <carte cid="4" types="plante"	pkmnid="204" rarete="common" />
     <carte cid="5" types="plante"	pkmnid="273" rarete="common" />
     <carte cid="6" types="plante"	pkmnid="274" rarete="uncommon" />

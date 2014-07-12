@@ -1,20 +1,14 @@
 package fr.codlab.cartes.adaptaters;
 
 import fr.codlab.cartes.MainActivity;
-import fr.codlab.cartes.R;
 import fr.codlab.cartes.util.Cache;
 import fr.codlab.cartes.util.CardImageView;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.Language;
 import fr.codlab.cartes.widget.Gallery3D;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;

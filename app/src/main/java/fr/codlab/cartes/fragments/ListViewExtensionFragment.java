@@ -1,17 +1,13 @@
 package fr.codlab.cartes.fragments;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
 
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
